@@ -1,0 +1,717 @@
+# -*- coding: utf-8 -*-
+"""
+Збирає Brand + Count зі сторінок rus.auto24.lv і пише у results_auto24.csv
+Працює через реальний браузер (Playwright), щоб обійти Cloudflare/anti-bot.
+"""
+
+from playwright.sync_api import sync_playwright, TimeoutError as PwTimeoutError
+import csv
+import re
+from time import sleep
+
+# >>> СЮДИ ДОДАВАЙ СВОЇ URL-и (зі встановленою маркою у фільтрі) <<<
+URLS = [
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=1&a=100&aj=&b=279&ab=0&ab%5B%5D=-2&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1687&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1693&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=286&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=869&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1329&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1414&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1655&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1096&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1011&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1464&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=9&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=412&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=961&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=568&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=372&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1458&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1207&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=461&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1272&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=429&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=319&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=519&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1135&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1230&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=465&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=197&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=215&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=567&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1287&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=858&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=731&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=538&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=149&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=576&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=2&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=490&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=700&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=700&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1402&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1290&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1461&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=676&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1638&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1599&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1659&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=402&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=67&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=349&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=421&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1307&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=290&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1711&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=234&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=698&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=247&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=609&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=441&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=291&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=890&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1654&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=4&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=292&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=417&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1211&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=515&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1535&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1642&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=336&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=473&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1228&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=427&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=923&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1241&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1673&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=438&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=38&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=89&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=262&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=520&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1148&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=281&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=44&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1708&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=517&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1296&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1672&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=548&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1323&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=371&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1646&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=317&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=633&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=391&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1613&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=294&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1698&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=31&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=354&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=28&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1174&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=20&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=782&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=788&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1367&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=550&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=588&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1452&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1261&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=768&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=395&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1434&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=724&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1744&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=254&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=68&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=21&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=55&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=418&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1112&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1717&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=416&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=295&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1007&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1714&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=510&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=711&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=929&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=437&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=24&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=823&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=396&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1259&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=359&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1400&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1362&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=518&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1552&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=925&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1723&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=956&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1286&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1661&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1192&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1625&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1318&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1316&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=977&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1178&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=533&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1216&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=779&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1164&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=337&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=666&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=297&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=70&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1466&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=14&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=762&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=370&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1416&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1626&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=446&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1366&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=713&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=256&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=325&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=7&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1310&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=932&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=514&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1429&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=462&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=45&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=690&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1189&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1545&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1451&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=243&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1647&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=54&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1121&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=321&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=435&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1118&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1322&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1133&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1671&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1730&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1703&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1562&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1012&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=926&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1301&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=553&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=49&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=838&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1087&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=246&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=1549&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=790&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "https://rus.auto24.lv/kasutatud/nimekiri.php?bn=2&a=100&aj=&b=482&ab=0&ae=1&af=50&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    
+    
+    
+    
+    
+]
+
+OUTPUT_CSV = "results_auto24.csv"
+HEADLESS = True  # якщо хочеш бачити браузер — постав False
+
+SEL_COUNT = "div.current-range span.label strong"
+SEL_BRAND_SELECTED_OPTION = 'select[id*="searchParam-cmn-1-make"] option[selected]'
+SEL_BRAND_FILTER_CHIP = '#item-searchParam-cmn-1-make .search-filter'
+
+
+def extract_digits(text: str) -> str:
+    m = re.search(r"\d+", text or "")
+    return m.group(0) if m else "?"
+
+
+def get_brand_text(page) -> str:
+    # 1) Спроба: із <option selected> у селекті марки
+    if page.locator(SEL_BRAND_SELECTED_OPTION).count():
+        txt = page.locator(SEL_BRAND_SELECTED_OPTION).first.inner_text().strip()
+        if txt and txt.lower() not in {"все", "все марки", "все марки и модели"}:
+            return txt
+
+    # 2) Спроба: чіп відображення вибраного фільтра
+    if page.locator(SEL_BRAND_FILTER_CHIP).count():
+        txt = page.locator(SEL_BRAND_FILTER_CHIP).first.inner_text().strip()
+        if txt:
+            return txt
+
+    # 3) Запасний варіант: із <title>
+    title = (page.title() or "").strip()
+    if title:
+        guess = re.split(r"[-–|•()]", title)[0].strip()
+        if guess:
+            return guess
+
+    return "?"
+
+
+def accept_cookies_if_present(page):
+    # На auto24 зазвичай немає жорсткого попапу, але на випадок:
+    candidates = [
+        'button:has-text("OK")',
+        'button:has-text("Принять")',
+        'button:has-text("Piekrītu")',
+        'button:has-text("Accept")',
+    ]
+    try:
+        for sel in candidates:
+            if page.locator(sel).first.is_visible():
+                page.locator(sel).first.click()
+                break
+    except Exception:
+        pass
+
+
+def fetch_one(page, url: str) -> tuple[str, str]:
+    """
+    Повертає (brand, count). Якщо захист/помилки — намагається кілька разів.
+    """
+    attempts = 3
+    for i in range(1, attempts + 1):
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=60000)
+            accept_cookies_if_present(page)
+
+            # Дочекаємося появи блоку з лічильником (або хоча б body)
+            page.wait_for_selector("body", timeout=15000)
+
+            # Якщо є "Attention Required!" (Cloudflare), пробуємо ще раз пізніше
+            if "Attention Required" in page.content():
+                if i < attempts:
+                    sleep(2 * i)
+                    continue
+                else:
+                    return ("Attention Required!", "?")
+
+            # COUNT
+            count = "?"
+            if page.locator(SEL_COUNT).count():
+                count_txt = page.locator(SEL_COUNT).first.inner_text().strip()
+                count = extract_digits(count_txt)
+
+            # BRAND
+            brand = get_brand_text(page)
+
+            return (brand, count)
+
+        except PwTimeoutError:
+            if i == attempts:
+                return ("?", "?")
+            sleep(2 * i)
+        except Exception:
+            if i == attempts:
+                return ("?", "?")
+            sleep(2 * i)
+
+    return ("?", "?")
+
+
+def main():
+    rows = []
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=HEADLESS)
+        context = browser.new_context(  # мінімальна “людяність”
+            user_agent=("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                        "AppleWebKit/537.36 (KHTML, like Gecko) "
+                        "Chrome/124.0.0.0 Safari/537.36"),
+            viewport={"width": 1400, "height": 900},
+        )
+        page = context.new_page()
+
+        for url in URLS:
+            brand, count = fetch_one(page, url)
+            print(f"Марка: {brand} | Кількість: {count}")
+            rows.append([brand, count])
+
+        browser.close()
+
+    # Запис у CSV
+    with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
+        wr = csv.writer(f)
+        wr.writerow(["Brand", "Count"])
+        wr.writerows(rows)
+
+    print(f"\n✅ Дані збережено у {OUTPUT_CSV} (Brand, Count)")
+
+
+if __name__ == "__main__":
+    main()

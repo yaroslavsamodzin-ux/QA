@@ -1,0 +1,53 @@
+{
+	"id": "75cf40f4-8640-4f56-a8a7-b3034a3b731d",
+	"name": "Prod",
+	"values": [
+		{
+			"key": "url",
+			"value": "",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "username",
+			"value": "",
+			"type": "default",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": false
+		},
+		{
+			"key": "email",
+			"value": "",
+			"type": "any",
+			"enabled": false
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "any",
+			"enabled": false
+		},
+		{
+			"key": "slug",
+			"value": "",
+			"type": "any",
+			"enabled": false
+		},
+		{
+			"key": "randomUserName",
+			"value": "",
+			"type": "any",
+			"enabled": false
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-09-02T10:22:37.079Z",
+	"_postman_exported_using": "Postman/11.60.4"
+}

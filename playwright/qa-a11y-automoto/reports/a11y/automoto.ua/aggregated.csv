@@ -1,0 +1,13 @@
+url,rule,impact,count,help
+"https://automoto.ua/car/Europe","aria-command-name","serious",1,"ARIA commands must have an accessible name"
+"https://automoto.ua/car/Europe","aria-progressbar-name","serious",1,"ARIA progressbar nodes must have an accessible name"
+"https://automoto.ua/car/Europe","button-name","critical",13,"Buttons must have discernible text"
+"https://automoto.ua/car/Europe","color-contrast","serious",25,"Elements must meet minimum color contrast ratio thresholds"
+"https://automoto.ua/car/Europe","image-alt","critical",7,"Images must have alternative text"
+"https://automoto.ua/car/Europe","label","critical",5,"Form elements must have labels"
+"https://automoto.ua/car/Europe","link-in-text-block","serious",2,"Links must be distinguishable without relying on color"
+"https://automoto.ua/car/Europe","link-name","serious",9,"Links must have discernible text"
+"https://automoto.ua/car/Europe","list","serious",2,"<ul> and <ol> must only directly contain <li>, <script> or <template> elements"
+"https://automoto.ua/car/Europe","listitem","serious",2,"<li> elements must be contained in a <ul> or <ol>"
+"https://automoto.ua/car/Europe","meta-viewport","critical",1,"Zooming and scaling must not be disabled"
+"https://automoto.ua/car/Europe","select-name","critical",10,"Select element must have an accessible name"

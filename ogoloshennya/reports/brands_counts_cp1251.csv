@@ -1,0 +1,409 @@
+input_brand,url,h1_text,parsed_brand,parsed_count,brand_slug
+,https://auto.ria.com/uk/car/2pps/,34 оголошення про продаж 2ППС,34 Про 2ппс,34,2pps
+,https://auto.ria.com/uk/car/ackermann-fruehauf/,8 оголошень про продаж Ackermann-Fruehauf,8 Оголошень Про Ackermann-fruehauf,8,ackermann-fruehauf
+,https://auto.ria.com/uk/car/acura/,657 оголошень про продаж Acura,657 Оголошень Про Acura,657,acura
+,https://auto.ria.com/uk/car/alfa-romeo/,354 оголошення про продаж Alfa Romeo,354 Про Alfa Romeo,354,alfa-romeo
+,https://auto.ria.com/uk/car/aprilia/,83 оголошення про продаж Aprilia,83 Про Aprilia,83,aprilia
+,https://auto.ria.com/uk/car/asia/,10 оголошень про продаж Asia,10 Оголошень Про Asia,10,asia
+,https://auto.ria.com/uk/car/aston-martin/,16 оголошень про продаж Aston Martin,16 Оголошень Про Aston Martin,16,aston-martin
+,https://auto.ria.com/uk/car/atlas/,35 оголошень про продаж Atlas,35 Оголошень Про Atlas,35,atlas
+,https://auto.ria.com/uk/car/audi/,18 000+ оголошень про продаж Audi,18 000+ Оголошень Про Audi,,audi
+,https://auto.ria.com/uk/car/azimut/,12 оголошень про продаж Azimut,12 Оголошень Про Azimut,12,azimut
+,https://auto.ria.com/uk/car/bayliner/,36 оголошень про продаж Bayliner,36 Оголошень Про Bayliner,36,bayliner
+,https://auto.ria.com/uk/car/benelli/,40 оголошень про продаж Benelli,40 Оголошень Про Benelli,40,benelli
+,https://auto.ria.com/uk/car/bentley/,71 оголошення про продаж Bentley,71 Про Bentley,71,bentley
+,https://auto.ria.com/uk/car/bmw/,17 500+ оголошення про продаж BMW,17 500+ Про Bmw,,bmw
+,https://auto.ria.com/uk/car/bomag/,37 оголошень про продаж Bomag,37 Оголошень Про Bomag,37,bomag
+,https://auto.ria.com/uk/car/bova/,16 оголошень про продаж BOVA,16 Оголошень Про Bova,16,bova
+,https://auto.ria.com/uk/car/brp/,419 оголошень про продаж BRP,419 Оголошень Про Brp,419,brp
+,https://auto.ria.com/uk/car/buick/,238 оголошень про продаж Buick,238 Оголошень Про Buick,238,buick
+,https://auto.ria.com/uk/car/byd/,991 оголошення про продаж BYD,991 Про Byd,991,byd
+,https://auto.ria.com/uk/car/cadillac/,306 оголошень про продаж Cadillac,306 Оголошень Про Cadillac,306,cadillac
+,https://auto.ria.com/uk/car/caterpillar/,114 оголошень про продаж Caterpillar,114 Оголошень Про Caterpillar,114,caterpillar
+,https://auto.ria.com/uk/car/cfmoto/,290 оголошень про продаж CFMOTO,290 Оголошень Про Cfmoto,290,cfmoto
+,https://auto.ria.com/uk/car/chery/,2 300+ оголошень про продаж Chery,2 300+ Оголошень Про Chery,,chery
+,https://auto.ria.com/uk/car/chevrolet/,7 100+ оголошень про продаж Chevrolet,7 100+ Оголошень Про Chevrolet,,chevrolet
+,https://auto.ria.com/uk/car/chrysler/,713 оголошень про продаж Chrysler,713 Оголошень Про Chrysler,713,chrysler
+,https://auto.ria.com/uk/car/citroen/,4 300+ оголошень про продаж Citroen,4 300+ Оголошень Про Citroen,,citroen
+,https://auto.ria.com/uk/car/crownline/,10 оголошень про продаж Crownline,10 Оголошень Про Crownline,10,crownline
+,https://auto.ria.com/uk/car/dacia/,1 600+ оголошень про продаж Dacia,1 600+ Оголошень Про Dacia,,dacia
+,https://auto.ria.com/uk/car/dadi/,36 оголошень про продаж Dadi,36 Оголошень Про Dadi,36,dadi
+,https://auto.ria.com/uk/car/daewoo/,6 300+ оголошення про продаж Daewoo,6 300+ Про Daewoo,,daewoo
+,https://auto.ria.com/uk/car/daf/,1 600+ оголошення про продаж DAF,1 600+ Про Daf,,daf
+,https://auto.ria.com/uk/car/daihatsu/,112 оголошень про продаж Daihatsu,112 Оголошень Про Daihatsu,112,daihatsu
+,https://auto.ria.com/uk/car/defiant/,19 оголошень про продаж Defiant,19 Оголошень Про Defiant,19,defiant
+,https://auto.ria.com/uk/car/denza/,41 оголошення про продаж Denza,41 Про Denza,41,denza
+,https://auto.ria.com/uk/car/dodge/,1 600+ оголошень про продаж Dodge,1 600+ Оголошень Про Dodge,,dodge
+,https://auto.ria.com/uk/car/dongfeng/,44 оголошення про продаж Dongfeng,44 Про Dongfeng,44,dongfeng
+,https://auto.ria.com/uk/car/ducati/,197 оголошень про продаж Ducati,197 Оголошень Про Ducati,197,ducati
+,https://auto.ria.com/uk/car/elwinn/,11 оголошень про продаж Elwinn,11 Оголошень Про Elwinn,11,elwinn
+,https://auto.ria.com/uk/car/faw/,56 оголошень про продаж FAW,56 Оголошень Про Faw,56,faw
+,https://auto.ria.com/uk/car/fiat/,3 000+ оголошень про продаж Fiat,3 000+ Оголошень Про Fiat,,fiat
+,https://auto.ria.com/uk/car/fisker/,26 оголошень про продаж Fisker,26 Оголошень Про Fisker,26,fisker
+,https://auto.ria.com/uk/car/ford/,16 500+ оголошень про продаж Ford,16 500+ Оголошень Про Ford,,ford
+,https://auto.ria.com/uk/car/geely/,1 500+ оголошення про продаж Geely,1 500+ Про Geely,,geely
+,https://auto.ria.com/uk/car/geon/,602 оголошення про продаж Geon,602 Про Geon,602,geon
+,https://auto.ria.com/uk/car/gilera/,10 оголошень про продаж Gilera,10 Оголошень Про Gilera,10,gilera
+,https://auto.ria.com/uk/car/gmc/,146 оголошень про продаж GMC,146 Оголошень Про Gmc,146,gmc
+,https://auto.ria.com/uk/car/great-wall/,249 оголошень про продаж Great Wall,249 Оголошень Про Great Wall,249,great-wall
+,https://auto.ria.com/uk/car/harley-davidson/,472 оголошення про продаж Harley-Davidson,472 Про Harley-davidson,472,harley-davidson
+,https://auto.ria.com/uk/car/honda/,6 800+ оголошень про продаж Honda,6 800+ Оголошень Про Honda,,honda
+,https://auto.ria.com/uk/car/humbaur/,28 оголошень про продаж Humbaur,28 Оголошень Про Humbaur,28,humbaur
+,https://auto.ria.com/uk/car/hummer/,57 оголошень про продаж Hummer,57 Оголошень Про Hummer,57,hummer
+,https://auto.ria.com/uk/car/husqvarna/,56 оголошень про продаж Husqvarna,56 Оголошень Про Husqvarna,56,husqvarna
+,https://auto.ria.com/uk/car/hyosung/,37 оголошень про продаж Hyosung,37 Оголошень Про Hyosung,37,hyosung
+,https://auto.ria.com/uk/car/hyundai/,10 500+ оголошень про продаж Hyundai,10 500+ Оголошень Про Hyundai,,hyundai
+,https://auto.ria.com/uk/car/infiniti/,1 700+ оголошень про продаж Infiniti,1 700+ Оголошень Про Infiniti,,infiniti
+,https://auto.ria.com/uk/car/isuzu/,78 оголошень про продаж Isuzu,78 Оголошень Про Isuzu,78,isuzu
+,https://auto.ria.com/uk/car/iveco/,655 оголошень про продаж Iveco,655 Оголошень Про Iveco,655,iveco
+,https://auto.ria.com/uk/car/jac/,186 оголошень про продаж JAC,186 Оголошень Про Jac,186,jac
+,https://auto.ria.com/uk/car/jaguar/,943 оголошення про продаж Jaguar,943 Про Jaguar,943,jaguar
+,https://auto.ria.com/uk/car/jawa/,218 оголошень про продаж Jawa,218 Оголошень Про Jawa,218,jawa
+,https://auto.ria.com/uk/car/jcb/,457 оголошень про продаж JCB,457 Оголошень Про Jcb,457,jcb
+,https://auto.ria.com/uk/car/jeep/,3 900+ оголошень про продаж Jeep,3 900+ Оголошень Про Jeep,,jeep
+,https://auto.ria.com/uk/car/kanuni/,30 оголошень про продаж Kanuni,30 Оголошень Про Kanuni,30,kanuni
+,https://auto.ria.com/uk/car/kawasaki/,740 оголошень про продаж Kawasaki,740 Оголошень Про Kawasaki,740,kawasaki
+,https://auto.ria.com/uk/car/kaya/,12 оголошень про продаж Kaya,12 Оголошень Про Kaya,12,kaya
+,https://auto.ria.com/uk/car/kia/,8 100+ оголошення про продаж Kia,8 100+ Про Kia,,kia
+,https://auto.ria.com/uk/car/kogel/,691 оголошення про продаж Kogel,691 Про Kogel,691,kogel
+,https://auto.ria.com/uk/car/krone/,920 оголошень про продаж Krone,920 Оголошень Про Krone,920,krone
+,https://auto.ria.com/uk/car/ktm/,268 оголошень про продаж KTM,268 Оголошень Про Ktm,268,ktm
+,https://auto.ria.com/uk/car/kubota/,Kubota — 208 пропозицій,Kubota — 208 Пропозицій,,kubota
+,https://auto.ria.com/uk/car/lag/,61 оголошення про продаж LAG,61 Про Lag,61,lag
+,https://auto.ria.com/uk/car/lamborghini/,16 оголошень про продаж Lamborghini,16 Оголошень Про Lamborghini,16,lamborghini
+,https://auto.ria.com/uk/car/lancia/,88 оголошень про продаж Lancia,88 Оголошень Про Lancia,88,lancia
+,https://auto.ria.com/uk/car/land-rover/,2 600+ оголошень про продаж Land Rover,2 600+ Оголошень Про Land Rover,,land-rover
+,https://auto.ria.com/uk/car/lexus/,3 100+ оголошення про продаж Lexus,3 100+ Про Lexus,,lexus
+,https://auto.ria.com/uk/car/lifan/,712 оголошень про продаж Lifan,712 Оголошень Про Lifan,712,lifan
+,https://auto.ria.com/uk/car/like-bike/,11 оголошень про продаж Like.Bike,11 Оголошень Про Like.bike,11,like-bike
+,https://auto.ria.com/uk/car/lincoln/,613 оголошень про продаж Lincoln,613 Оголошень Про Lincoln,613,lincoln
+,https://auto.ria.com/uk/car/mag-trailer/,12 оголошень про продаж MAG Trailer,12 Оголошень Про Mag Trailer,12,mag-trailer
+,https://auto.ria.com/uk/car/malaguti/,11 оголошень про продаж Malaguti,11 Оголошень Про Malaguti,11,malaguti
+,https://auto.ria.com/uk/car/man/,1 900+ оголошень про продаж MAN,1 900+ Оголошень Про Man,,man
+,https://auto.ria.com/uk/car/maserati/,136 оголошень про продаж Maserati,136 Оголошень Про Maserati,136,maserati
+,https://auto.ria.com/uk/car/maxxter/,19 оголошень про продаж Maxxter,19 Оголошень Про Maxxter,19,maxxter
+,https://auto.ria.com/uk/car/mazda/,8 000+ оголошень про продаж Mazda,8 000+ Оголошень Про Mazda,,mazda
+,https://auto.ria.com/uk/car/mercedes-benz/,17 500+ оголошень про продаж Mercedes-Benz,17 500+ Оголошень Про Mercedes-benz,,mercedes-benz
+,https://auto.ria.com/uk/car/mercury/,37 оголошень про продаж Mercury,37 Оголошень Про Mercury,37,mercury
+,https://auto.ria.com/uk/car/mg/,261 оголошення про продаж MG,261 Про Mg,261,mg
+,https://auto.ria.com/uk/car/mini/,904 оголошення про продаж MINI,904 Про Mini,904,mini
+,https://auto.ria.com/uk/car/mitsubishi/,6 500+ оголошення про продаж Mitsubishi,6 500+ Про Mitsubishi,,mitsubishi
+,https://auto.ria.com/uk/car/moto-guzzi/,11 оголошень про продаж Moto Guzzi,11 Оголошень Про Moto Guzzi,11,moto-guzzi
+,https://auto.ria.com/uk/car/mv-agusta/,16 оголошень про продаж Mv agusta,16 Оголошень Про Mv Agusta,16,mv-agusta
+,https://auto.ria.com/uk/car/neoplan/,133 оголошення про продаж Neoplan,133 Про Neoplan,133,neoplan
+,https://auto.ria.com/uk/car/new-holland/,New Holland — 441 пропозиція,New Holland — 441 Пропозиція,,new-holland
+,https://auto.ria.com/uk/car/nissan/,13 000+ оголошення про продаж Nissan,13 000+ Про Nissan,,nissan
+,https://auto.ria.com/uk/car/opel/,13 000+ оголошень про продаж Opel,13 000+ Оголошень Про Opel,,opel
+,https://auto.ria.com/uk/car/pacton/,73 оголошення про продаж Pacton,73 Про Pacton,73,pacton
+,https://auto.ria.com/uk/car/peugeot/,7 000+ оголошення про продаж Peugeot,7 000+ Про Peugeot,,peugeot
+,https://auto.ria.com/uk/car/piaggio/,40 оголошень про продаж Piaggio,40 Оголошень Про Piaggio,40,piaggio
+,https://auto.ria.com/uk/car/polaris/,72 оголошення про продаж Polaris,72 Про Polaris,72,polaris
+,https://auto.ria.com/uk/car/pontiac/,12 оголошень про продаж Pontiac,12 Оголошень Про Pontiac,12,pontiac
+,https://auto.ria.com/uk/car/porsche/,1 600+ оголошень про продаж Porsche,1 600+ Оголошень Про Porsche,,porsche
+,https://auto.ria.com/uk/car/powerboat/,13 оголошень про продаж Powerboat,13 Оголошень Про Powerboat,13,powerboat
+,https://auto.ria.com/uk/car/pragmatec/,23 оголошення про продаж Pragmatec,23 Про Pragmatec,23,pragmatec
+,https://auto.ria.com/uk/car/princess/,12 оголошень про продаж Princess,12 Оголошень Про Princess,12,princess
+,https://auto.ria.com/uk/car/renault/,16 500+ оголошень про продаж Renault,16 500+ Оголошень Про Renault,,renault
+,https://auto.ria.com/uk/car/rolls-royce/,32 оголошення про продаж Rolls-Royce,32 Про Rolls-royce,32,rolls-royce
+,https://auto.ria.com/uk/car/rover/,108 оголошень про продаж Rover,108 Оголошень Про Rover,108,rover
+,https://auto.ria.com/uk/car/sabur/,10 оголошень про продаж Sabur,10 Оголошень Про Sabur,10,sabur
+,https://auto.ria.com/uk/car/scania/,408 оголошень про продаж Scania,408 Оголошень Про Scania,408,scania
+,https://auto.ria.com/uk/car/schmitz/,386 оголошень про продаж Schmitz,386 Оголошень Про Schmitz,386,schmitz
+,https://auto.ria.com/uk/car/schmitz-cargobull/,830 оголошень про продаж Schmitz Cargobull,830 Оголошень Про Schmitz Cargobull,830,schmitz-cargobull
+,https://auto.ria.com/uk/car/schwarzmuller/,316 оголошень про продаж Schwarzmuller,316 Оголошень Про Schwarzmuller,316,schwarzmuller
+,https://auto.ria.com/uk/car/seat/,1 400+ оголошення про продаж SEAT,1 400+ Про Seat,,seat
+,https://auto.ria.com/uk/car/senke/,60 оголошень про продаж Senke,60 Оголошень Про Senke,60,senke
+,https://auto.ria.com/uk/car/shark/,24 оголошення про продаж Shark,24 Про Shark,24,shark
+,https://auto.ria.com/uk/car/sinomach/,16 оголошень про продаж Sinomach,16 Оголошень Про Sinomach,16,sinomach
+,https://auto.ria.com/uk/car/skoda/,13 000+ оголошення про продаж Skoda,13 000+ Про Skoda,,skoda
+,https://auto.ria.com/uk/car/smart/,592 оголошення про продаж Smart,592 Про Smart,592,smart
+,https://auto.ria.com/uk/car/sparta/,27 оголошень про продаж Sparta,27 Оголошень Про Sparta,27,sparta
+,https://auto.ria.com/uk/car/speed-gear/,17 оголошень про продаж Speed Gear,17 Оголошень Про Speed Gear,17,speed-gear
+,https://auto.ria.com/uk/car/ssangyong/,782 оголошення про продаж SsangYong,782 Про Ssangyong,782,ssangyong
+,https://auto.ria.com/uk/car/subaru/,2 800+ оголошення про продаж Subaru,2 800+ Про Subaru,,subaru
+,https://auto.ria.com/uk/car/suzuki/,2 600+ оголошення про продаж Suzuki,2 600+ Про Suzuki,,suzuki
+,https://auto.ria.com/uk/car/tcm/,15 оголошень про продаж TCM,15 Оголошень Про Tcm,15,tcm
+,https://auto.ria.com/uk/car/temared/,10 оголошень про продаж Temared,10 Оголошень Про Temared,10,temared
+,https://auto.ria.com/uk/car/tesla/,4 400+ оголошення про продаж Tesla,4 400+ Про Tesla,,tesla
+,https://auto.ria.com/uk/car/toyota/,11 500+ оголошень про продаж Toyota,11 500+ Оголошень Про Toyota,,toyota
+,https://auto.ria.com/uk/car/tracker/,17 оголошень про продаж Tracker,17 Оголошень Про Tracker,17,tracker
+,https://auto.ria.com/uk/car/viper/,486 оголошень про продаж Viper,486 Оголошень Про Viper,486,viper
+,https://auto.ria.com/uk/car/voge/,54 оголошення про продаж Voge,54 Про Voge,54,voge
+,https://auto.ria.com/uk/car/volkswagen/,34 500+ оголошень про продаж Volkswagen,34 500+ Оголошень Про Volkswagen,,volkswagen
+,https://auto.ria.com/uk/car/volvo/,3 800+ оголошення про продаж Volvo,3 800+ Про Volvo,,volvo
+,https://auto.ria.com/uk/car/yamaha/,2 000+ оголошень про продаж Yamaha,2 000+ Оголошень Про Yamaha,,yamaha
+,https://auto.ria.com/uk/car/ycf/,57 оголошень про продаж YCF,57 Оголошень Про Ycf,57,ycf
+,https://auto.ria.com/uk/car/yiben/,25 оголошень про продаж YiBen,25 Оголошень Про Yiben,25,yiben
+,https://auto.ria.com/uk/car/yokomoto/,13 оголошень про продаж Yokomoto,13 Оголошень Про Yokomoto,13,yokomoto
+,https://auto.ria.com/uk/car/zeekr/,293 оголошення про продаж Zeekr,293 Про Zeekr,293,zeekr
+,https://auto.ria.com/uk/car/zongshen/,29 оголошень про продаж Zongshen,29 Оголошень Про Zongshen,29,zongshen
+,https://auto.ria.com/uk/car/atv/,68 оголошень про продаж ATV,68 Оголошень Про Atv,68,atv
+,https://auto.ria.com/uk/car/abarth/,13 оголошень про продаж Abarth,13 Оголошень Про Abarth,13,abarth
+,https://auto.ria.com/uk/car/abm/,12 оголошень про продаж ABM,12 Оголошень Про Abm,12,abm
+,https://auto.ria.com/uk/car/adventure/,11 оголошень про продаж Adventure,11 Оголошень Про Adventure,11,adventure
+,https://auto.ria.com/uk/car/adria/,11 оголошень про продаж Adria,11 Оголошень Про Adria,11,adria
+,https://auto.ria.com/uk/car/acerbi/,13 оголошень про продаж Acerbi,13 Оголошень Про Acerbi,13,acerbi
+,https://auto.ria.com/uk/car/al-ko/,23 оголошення про продаж Al-ko,23 Про Al-ko,23,al-ko
+,https://auto.ria.com/uk/car/aleko/,10 оголошень про продаж ALEKO,10 Оголошень Про Aleko,10,aleko
+,https://auto.ria.com/uk/car/bmw-alpina/,15 оголошень про продаж BMW-Alpina,15 Оголошень Про Bmw-alpina,15,bmw-alpina
+,https://auto.ria.com/uk/car/alfa/,50 оголошень про продаж Alfa,50 Оголошень Про Alfa,50,alfa
+,https://auto.ria.com/uk/car/alpha/,64 оголошення про продаж Alpha,64 Про Alpha,64,alpha
+,https://auto.ria.com/uk/car/ammann/,14 оголошень про продаж Ammann,14 Оголошень Про Ammann,14,ammann
+,https://auto.ria.com/uk/car/amkodor/,10 оголошень про продаж Амкодор,10 Оголошень Про Амкодор,10,amkodor
+,https://auto.ria.com/uk/car/arctic-cat/,17 оголошень про продаж Arctic cat,17 Оголошень Про Arctic Cat,17,arctic-cat
+,https://auto.ria.com/uk/car/ataman/,11 оголошень про продаж Ataman,11 Оголошень Про Ataman,11,ataman
+,https://auto.ria.com/uk/car/aima/,51 оголошення про продаж AIMA,51 Про Aima,51,aima
+,https://auto.ria.com/uk/car/bavaria/,20 оголошень про продаж Bavaria,20 Оголошень Про Bavaria,20,bavaria
+,https://auto.ria.com/uk/car/bajaj/,329 оголошень про продаж Bajaj,329 Оголошень Про Bajaj,329,bajaj
+,https://auto.ria.com/uk/car/baz/,237 оголошень про продаж БАЗ,237 Оголошень Про Баз,237,baz
+,https://auto.ria.com/uk/car/balkancar/,28 оголошень про продаж Balkancar,28 Оголошень Про Balkancar,28,balkancar
+,https://auto.ria.com/uk/car/bashan/,77 оголошень про продаж Bashan,77 Оголошень Про Bashan,77,bashan
+,https://auto.ria.com/uk/car/benalu/,176 оголошень про продаж Benalu,176 Оголошень Про Benalu,176,benalu
+,https://auto.ria.com/uk/car/berger/,20 оголошень про продаж Berger,20 Оголошень Про Berger,20,berger
+,https://auto.ria.com/uk/car/beta/,10 оголошень про продаж Beta,10 Оголошень Про Beta,10,beta
+,https://auto.ria.com/uk/car/blumhardt/,19 оголошень про продаж Blumhardt,19 Оголошень Про Blumhardt,19,blumhardt
+,https://auto.ria.com/uk/car/bober/,10 оголошень про продаж Бобер,10 Оголошень Про Бобер,10,bober
+,https://auto.ria.com/uk/car/bobcat/,57 оголошень про продаж Bobcat,57 Оголошень Про Bobcat,57,bobcat
+,https://auto.ria.com/uk/car/bogdan/,366 оголошень про продаж Богдан,366 Оголошень Про Богдан,366,bogdan
+,https://auto.ria.com/uk/car/bodex/,239 оголошень про продаж Bodex,239 Оголошень Про Bodex,239,bodex
+,https://auto.ria.com/uk/car/bolgan/,13 оголошень про продаж Bolgan,13 Оголошень Про Bolgan,13,bolgan
+,https://auto.ria.com/uk/car/brig/,17 оголошень про продаж BRIG,17 Оголошень Про Brig,17,brig
+,https://auto.ria.com/uk/car/bse/,90 оголошень про продаж BSE,90 Оголошень Про Bse,90,bse
+,https://auto.ria.com/uk/car/burg/,22 оголошення про продаж Burg,22 Про Burg,22,burg
+,https://auto.ria.com/uk/car/raf/,17 оголошень про продаж РАФ,17 Оголошень Про Раф,17,raf
+,https://auto.ria.com/uk/car/vaz-lada/,16 500+ оголошень про продаж ВАЗ,16 500+ Оголошень Про Ваз,,vaz-lada
+,https://auto.ria.com/uk/car/van-hool/,183 оголошення про продаж Van Hool,183 Про Van Hool,183,van-hool
+,https://auto.ria.com/uk/car/wartburg/,14 оголошень про продаж Wartburg,14 Оголошень Про Wartburg,14,wartburg
+,https://auto.ria.com/uk/car/vdl/,20 оголошень про продаж VDL,20 Оголошень Про Vdl,20,vdl
+,https://auto.ria.com/uk/car/weightlifter/,13 оголошень про продаж Weightlifter,13 Оголошень Про Weightlifter,13,weightlifter
+,https://auto.ria.com/uk/car/weltmeister/,33 оголошення про продаж Weltmeister,33 Про Weltmeister,33,weltmeister
+,https://auto.ria.com/uk/car/wielton/,206 оголошень про продаж Wielton,206 Оголошень Про Wielton,206,wielton
+,https://auto.ria.com/uk/car/weekend/,10 оголошень про продаж Weekend,10 Оголошень Про Weekend,10,weekend
+,https://auto.ria.com/uk/car/victory/,18 оголошень про продаж Victory,18 Оголошень Про Victory,18,victory
+,https://auto.ria.com/uk/car/wilcox/,23 оголошення про продаж Wilcox,23 Про Wilcox,23,wilcox
+,https://auto.ria.com/uk/car/willig/,15 оголошень про продаж Willig,15 Оголошень Про Willig,15,willig
+,https://auto.ria.com/uk/car/wirtgen/,14 оголошень про продаж Wirtgen,14 Оголошень Про Wirtgen,14,wirtgen
+,https://auto.ria.com/uk/car/gaz/,2 200+ оголошень про продаж ГАЗ,2 200+ Оголошень Про Газ,,gaz
+,https://auto.ria.com/uk/car/galeon/,13 оголошень про продаж Galeon,13 Оголошень Про Galeon,13,galeon
+,https://auto.ria.com/uk/car/genesis/,29 оголошень про продаж Genesis,29 Оголошень Про Genesis,29,genesis
+,https://auto.ria.com/uk/car/glastron/,10 оголошень про продаж Glastron,10 Оголошень Про Glastron,10,glastron
+,https://auto.ria.com/uk/car/goldhofer/,12 оголошень про продаж Goldhofer,12 Оголошень Про Goldhofer,12,goldhofer
+,https://auto.ria.com/uk/car/gofa/,10 оголошень про продаж GOFA,10 Оголошень Про Gofa,10,gofa
+,https://auto.ria.com/uk/car/gras/,36 оголошень про продаж GRAS,36 Оголошень Про Gras,36,gras
+,https://auto.ria.com/uk/car/groenewegen/,31 оголошення про продаж Groenewegen,31 Про Groenewegen,31,groenewegen
+,https://auto.ria.com/uk/car/genie/,9 оголошень про продаж Genie,9 Оголошень Про Genie,9,genie
+,https://auto.ria.com/uk/car/hidromek/,37 оголошень про продаж Hidromek,37 Оголошень Про Hidromek,37,hidromek
+,https://auto.ria.com/uk/car/delta/,57 оголошень про продаж Delta,57 Оголошень Про Delta,57,delta
+,https://auto.ria.com/uk/car/dennison/,36 оголошень про продаж Dennison,36 Оголошень Про Dennison,36,dennison
+,https://auto.ria.com/uk/car/desot/,10 оголошень про продаж Desot,10 Оголошень Про Desot,10,desot
+,https://auto.ria.com/uk/car/dethleffs/,15 оголошень про продаж Dethleffs,15 Оголошень Про Dethleffs,15,dethleffs
+,https://auto.ria.com/uk/car/general-trailers/,68 оголошень про продаж General Trailers,68 Оголошень Про General Trailers,68,general-trailers
+,https://auto.ria.com/uk/car/janmil/,63 оголошення про продаж Janmil,63 Про Janmil,63,janmil
+,https://auto.ria.com/uk/car/jetour/,113 оголошень про продаж Jetour,113 Оголошень Про Jetour,113,jetour
+,https://auto.ria.com/uk/car/jianshe/,12 оголошень про продаж Jianshe,12 Оголошень Про Jianshe,12,jianshe
+,https://auto.ria.com/uk/car/dnepr/,17 оголошень про продаж Днепр,17 Оголошень Про Днепр,17,dnepr
+,https://auto.ria.com/uk/car/dnipro/,37 оголошень про продаж Дніпро,37 Оголошень Про Дніпро,37,dnipro
+,https://auto.ria.com/uk/car/dnepr-kmz/,234 оголошення про продаж Днепр (КМЗ),234 Про Днепр,234,dnepr-kmz
+,https://auto.ria.com/uk/car/dogan/,9 оголошень про продаж Dogan,9 Оголошень Про Dogan,9,dogan
+,https://auto.ria.com/uk/car/dromech/,13 оголошень про продаж Dromech,13 Оголошень Про Dromech,13,dromech
+,https://auto.ria.com/uk/car/ds/,1 оголошення про продаж ДС,1 Про Дс,1,ds
+,https://auto.ria.com/uk/car/doosan/,28 оголошень про продаж Doosan,28 Оголошень Про Doosan,28,doosan
+,https://auto.ria.com/uk/car/everlast/,18 оголошень про продаж Everlast,18 Оголошень Про Everlast,18,everlast
+,https://auto.ria.com/uk/car/exdrive/,25 оголошень про продаж Exdrive,25 Оголошень Про Exdrive,25,exdrive
+,https://auto.ria.com/uk/car/electric-scooter/,14 оголошень про продаж Electric Scooter,14 Оголошень Про Electric Scooter,14,electric-scooter
+,https://auto.ria.com/uk/car/enerco/,14 оголошень про продаж ENERCO,14 Оголошень Про Enerco,14,enerco
+,https://auto.ria.com/uk/car/eos/,13 оголошень про продаж EOS,13 Оголошень Про Eos,13,eos
+,https://auto.ria.com/uk/car/sdc/,29 оголошень про продаж SDC,29 Оголошень Про Sdc,29,sdc
+,https://auto.ria.com/uk/car/zaz/,4 200+ оголошень про продаж ЗАЗ,4 200+ Оголошень Про Заз,,zaz
+,https://auto.ria.com/uk/car/luaz/,96 оголошень про продаж ЛуАЗ,96 Оголошень Про Луаз,96,luaz
+,https://auto.ria.com/uk/car/zaslaw/,39 оголошень про продаж Zaslaw,39 Оголошень Про Zaslaw,39,zaslaw
+,https://auto.ria.com/uk/car/zil/,252 оголошення про продаж ЗИЛ,252 Про Зил,252,zil
+,https://auto.ria.com/uk/car/zontes/,40 оголошень про продаж Zontes,40 Оголошень Про Zontes,40,zontes
+,https://auto.ria.com/uk/car/zremb/,21 оголошення про продаж Zremb,21 Про Zremb,21,zremb
+,https://auto.ria.com/uk/car/zx/,17 оголошень про продаж ZX,17 Оголошень Про Zx,17,zx
+,https://auto.ria.com/uk/car/kazanka/,51 оголошення про продаж Казанка,51 Про Казанка,51,kazanka
+,https://auto.ria.com/uk/car/kayo/,118 оголошень про продаж Kayo,118 Оголошень Про Kayo,118,kayo
+,https://auto.ria.com/uk/car/kamaz/,448 оголошень про продаж КамАЗ,448 Оголошень Про Камаз,448,kamaz
+,https://auto.ria.com/uk/car/cardi/,12 оголошень про продаж Cardi,12 Оголошень Про Cardi,12,cardi
+,https://auto.ria.com/uk/car/carnehl/,58 оголошень про продаж Carnehl,58 Оголошень Про Carnehl,58,carnehl
+,https://auto.ria.com/uk/car/kassbohrer/,68 оголошень про продаж Kassbohrer,68 Оголошень Про Kassbohrer,68,kassbohrer
+,https://auto.ria.com/uk/car/krym/,54 оголошення про продаж Крим,54 Про Крим,54,krym
+,https://auto.ria.com/uk/car/sea-ray/,10 оголошень про продаж Sea Ray,10 Оголошень Про Sea Ray,10,sea-ray
+,https://auto.ria.com/uk/car/kelberg/,27 оголошень про продаж Kelberg,27 Оголошень Про Kelberg,27,kelberg
+,https://auto.ria.com/uk/car/kempf/,56 оголошень про продаж Kempf,56 Оголошень Про Kempf,56,kempf
+,https://auto.ria.com/uk/car/case-construction/,21 оголошення про продаж Case Construction,21 Про Case Construction,21,case-construction
+,https://auto.ria.com/uk/car/knapen/,14 оголошень про продаж Knapen,14 Оголошень Про Knapen,14,knapen
+,https://auto.ria.com/uk/car/kobelco/,15 оголошень про продаж Kobelco,15 Оголошень Про Kobelco,15,kobelco
+,https://auto.ria.com/uk/car/cobo/,12 оголошень про продаж Cobo,12 Оголошень Про Cobo,12,cobo
+,https://auto.ria.com/uk/car/kovi/,311 оголошень про продаж Kovi,311 Оголошень Про Kovi,311,kovi
+,https://auto.ria.com/uk/car/coder/,12 оголошень про продаж Coder,12 Оголошень Про Coder,12,coder
+,https://auto.ria.com/uk/car/komatsu/,64 оголошення про продаж Komatsu,64 Про Komatsu,64,komatsu
+,https://auto.ria.com/uk/car/comman/,40 оголошень про продаж Comman,40 Оголошень Про Comman,40,comman
+,https://auto.ria.com/uk/car/kraz/,79 оголошень про продаж КрАЗ,79 Оголошень Про Краз,79,kraz
+,https://auto.ria.com/uk/car/cupra/,56 оголошень про продаж Cupra,56 Оголошень Про Cupra,56,cupra
+,https://auto.ria.com/uk/car/keeway/,22 оголошення про продаж Keeway,22 Про Keeway,22,keeway
+,https://auto.ria.com/uk/car/kymco/,18 оголошень про продаж Kymco,18 Оголошень Про Kymco,18,kymco
+,https://auto.ria.com/uk/car/kinlon/,11 оголошень про продаж Kinlon,11 Оголошень Про Kinlon,11,kinlon
+,https://auto.ria.com/uk/car/l-a-g/,10 оголошень про продаж L.A.G.,10 Оголошень Про L.a.g.,10,l-a-g
+,https://auto.ria.com/uk/car/laz/,14 оголошень про продаж ЛАЗ,14 Оголошень Про Лаз,14,laz
+,https://auto.ria.com/uk/car/lamberet/,61 оголошення про продаж Lamberet,61 Про Lamberet,61,lamberet
+,https://auto.ria.com/uk/car/langendorf/,47 оголошень про продаж Langendorf,47 Оголошень Про Langendorf,47,langendorf
+,https://auto.ria.com/uk/car/lecinena/,15 оголошень про продаж Lecinena,15 Оголошень Про Lecinena,15,lecinena
+,https://auto.ria.com/uk/car/ldv/,16 оголошень про продаж LDV,16 Оголошень Про Ldv,16,ldv
+,https://auto.ria.com/uk/car/lds/,13 оголошень про продаж LDS,13 Оголошень Про Lds,13,lds
+,https://auto.ria.com/uk/car/lev/,25 оголошень про продаж Лев,25 Оголошень Про Лев,25,lev
+,https://auto.ria.com/uk/car/lecitrailer/,21 оголошення про продаж LeciTrailer,21 Про Lecitrailer,21,lecitrailer
+,https://auto.ria.com/uk/car/loncin/,278 оголошень про продаж Loncin,278 Оголошень Про Loncin,278,loncin
+,https://auto.ria.com/uk/car/lvovskij-pogruzchik/,18 оголошень про продаж Львовский погрузчик,18 Оголошень Про Львовский Погрузчик,18,lvovskij-pogruzchik
+,https://auto.ria.com/uk/car/lucid/,17 оголошень про продаж Lucid,17 Оголошень Про Lucid,17,lucid
+,https://auto.ria.com/uk/car/linde/,80 оголошень про продаж Linde,80 Оголошень Про Linde,80,linde
+,https://auto.ria.com/uk/car/linhai/,108 оголошень про продаж Linhai,108 Оголошень Про Linhai,108,linhai
+,https://auto.ria.com/uk/car/liugong/,13 оголошень про продаж LiuGong,13 Оголошень Про Liugong,13,liugong
+,https://auto.ria.com/uk/car/magyar/,100 оголошень про продаж Magyar,100 Оголошень Про Magyar,100,magyar
+,https://auto.ria.com/uk/car/maz/,332 оголошення про продаж МАЗ,332 Про Маз,332,maz
+,https://auto.ria.com/uk/car/meierling/,11 оголошень про продаж Meierling,11 Оголошень Про Meierling,11,meierling
+,https://auto.ria.com/uk/car/maxus/,35 оголошень про продаж Maxus,35 Оголошень Про Maxus,35,maxus
+,https://auto.ria.com/uk/car/manitou/,46 оголошень про продаж Manitou,46 Оголошень Про Manitou,46,manitou
+,https://auto.ria.com/uk/car/maisonneuv/,17 оголошень про продаж Maisonneuv,17 Оголошень Про Maisonneuv,17,maisonneuv
+,https://auto.ria.com/uk/car/meiller/,30 оголошень про продаж Meiller,30 Оголошень Про Meiller,30,meiller
+,https://auto.ria.com/uk/car/menci/,29 оголошень про продаж Menci,29 Оголошень Про Menci,29,menci
+,https://auto.ria.com/uk/car/merceron/,18 оголошень про продаж Merceron,18 Оголошень Про Merceron,18,merceron
+,https://auto.ria.com/uk/car/metaco/,14 оголошень про продаж Metaco,14 Оголошень Про Metaco,14,metaco
+,https://auto.ria.com/uk/car/mmz/,13 оголошень про продаж ММЗ,13 Оголошень Про Ммз,13,mmz
+,https://auto.ria.com/uk/car/mol/,18 оголошень про продаж MOL,18 Оголошень Про Mol,18,mol
+,https://auto.ria.com/uk/car/montracon/,15 оголошень про продаж Montracon,15 Оголошень Про Montracon,15,montracon
+,https://auto.ria.com/uk/car/moskvich-azlk/,488 оголошень про продаж Москвич/АЗЛК,488 Оголошень Про Москвич/азлк,488,moskvich-azlk
+,https://auto.ria.com/uk/car/voskhod/,11 оголошень про продаж Восход,11 Оголошень Про Восход,11,voskhod
+,https://auto.ria.com/uk/car/moto-leader/,31 оголошення про продаж Moto-Leader,31 Про Moto-leader,31,moto-leader
+,https://auto.ria.com/uk/car/musstang/,326 оголошень про продаж Musstang,326 Оголошень Про Musstang,326,musstang
+,https://auto.ria.com/uk/car/mustang/,36 оголошень про продаж Mustang,36 Оголошень Про Mustang,36,mustang
+,https://auto.ria.com/uk/car/mikilon/,21 оголошення про продаж Mikilon,21 Про Mikilon,21,mikilon
+,https://auto.ria.com/uk/car/minsk/,92 оголошення про продаж Мінськ,92 Про Мінськ,92,minsk
+,https://auto.ria.com/uk/car/novatrail/,20 оголошень про продаж Novatrail,20 Оголошень Про Novatrail,20,novatrail
+,https://auto.ria.com/uk/car/npp-palych/,19 оголошень про продаж НПП Палич,19 Оголошень Про Нпп Палич,19,npp-palych
+,https://auto.ria.com/uk/car/nooteboom/,14 оголошень про продаж Nooteboom,14 Оголошень Про Nooteboom,14,nooteboom
+,https://auto.ria.com/uk/car/niewiadow/,30 оголошень про продаж Niewiadow,30 Оголошень Про Niewiadow,30,niewiadow
+,https://auto.ria.com/uk/car/ova/,11 оголошень про продаж Ova,11 Оголошень Про Ova,11,ova
+,https://auto.ria.com/uk/car/omt/,10 оголошень про продаж OMT,10 Оголошень Про Omt,10,omt
+,https://auto.ria.com/uk/car/pavam/,11 оголошень про продаж ПАВАМ,11 Оголошень Про Павам,11,pavam
+,https://auto.ria.com/uk/car/paz/,105 оголошень про продаж ПАЗ,105 Оголошень Про Паз,105,paz
+,https://auto.ria.com/uk/car/panav/,50 оголошень про продаж Panav,50 Оголошень Про Panav,50,panav
+,https://auto.ria.com/uk/car/pva/,11 оголошень про продаж ПВА,11 Оголошень Про Пва,11,pva
+,https://auto.ria.com/uk/car/pgmf/,53 оголошення про продаж ПГМФ,53 Про Пгмф,53,pgmf
+,https://auto.ria.com/uk/car/plymouth/,14 оголошень про продаж Plymouth,14 Оголошень Про Plymouth,14,plymouth
+,https://auto.ria.com/uk/car/polestar/,122 оголошення про продаж Polestar,122 Про Polestar,122,polestar
+,https://auto.ria.com/uk/car/pp/,10 оголошень про продаж ПП,10 Оголошень Про Пп,10,pp
+,https://auto.ria.com/uk/car/pricep/,80 оголошень про продаж Причеп,80 Оголошень Про Причеп,80,pricep
+,https://auto.ria.com/uk/car/varz/,10 оголошень про продаж ВАРЗ,10 Оголошень Про Варз,10,varz
+,https://auto.ria.com/uk/car/gkb/,125 оголошень про продаж ГКБ,125 Оголошень Про Гкб,125,gkb
+,https://auto.ria.com/uk/car/kremen/,10 оголошень про продаж Кремінь,10 Оголошень Про Кремінь,10,kremen
+,https://auto.ria.com/uk/car/mega/,87 оголошень про продаж MEGA,87 Оголошень Про Mega,87,mega
+,https://auto.ria.com/uk/car/muravej/,17 оголошень про продаж Муравей,17 Оголошень Про Муравей,17,muravej
+,https://auto.ria.com/uk/car/odaz/,88 оголошень про продаж ОДАЗ,88 Оголошень Про Одаз,88,odaz
+,https://auto.ria.com/uk/car/santej/,28 оголошень про продаж Сантей,28 Оголошень Про Сантей,28,santej
+,https://auto.ria.com/uk/car/szap/,40 оголошень про продаж СЗАП,40 Оголошень Про Сзап,40,szap
+,https://auto.ria.com/uk/car/chmzap/,16 оголошень про продаж ЧМЗАП,16 Оголошень Про Чмзап,16,chmzap
+,https://auto.ria.com/uk/car/progress/,77 оголошень про продаж Прогресс,77 Оголошень Про Прогресс,77,progress
+,https://auto.ria.com/uk/car/prt/,10 оголошень про продаж ПРТ,10 Оголошень Про Прт,10,prt
+,https://auto.ria.com/uk/car/ravon/,90 оголошень про продаж Ravon,90 Оголошень Про Ravon,90,ravon
+,https://auto.ria.com/uk/car/rider/,32 оголошення про продаж Rider,32 Про Rider,32,rider
+,https://auto.ria.com/uk/car/ram/,79 оголошень про продаж Ram,79 Оголошень Про Ram,79,ram
+,https://auto.ria.com/uk/car/reisch/,41 оголошення про продаж Reisch,41 Про Reisch,41,reisch
+,https://auto.ria.com/uk/car/renders/,70 оголошень про продаж Renders,70 Оголошень Про Renders,70,renders
+,https://auto.ria.com/uk/car/robuste/,18 оголошень про продаж Robuste,18 Оголошень Про Robuste,18,robuste
+,https://auto.ria.com/uk/car/rohr/,16 оголошень про продаж Rohr,16 Оголошень Про Rohr,16,rohr
+,https://auto.ria.com/uk/car/ruta/,133 оголошення про продаж РУТА,133 Про Рута,133,ruta
+,https://auto.ria.com/uk/car/rivian/,53 оголошення про продаж Rivian,53 Про Rivian,53,rivian
+,https://auto.ria.com/uk/car/saab/,103 оголошення про продаж Saab,103 Про Saab,103,saab
+,https://auto.ria.com/uk/car/samand/,78 оголошень про продаж Samand,78 Оголошень Про Samand,78,samand
+,https://auto.ria.com/uk/car/samodelnyj/,128 оголошень про продаж Саморобний,128 Оголошень Про Саморобний,128,samodelnyj
+,https://auto.ria.com/uk/car/samro/,66 оголошень про продаж Samro,66 Оголошень Про Samro,66,samro
+,https://auto.ria.com/uk/car/soueast/,12 оголошень про продаж SouEast,12 Оголошень Про Soueast,12,soueast
+,https://auto.ria.com/uk/car/swift/,10 оголошень про продаж SWIFT,10 Оголошень Про Swift,10,swift
+,https://auto.ria.com/uk/car/segway/,42 оголошення про продаж Segway,42 Про Segway,42,segway
+,https://auto.ria.com/uk/car/setra/,64 оголошення про продаж Setra,64 Про Setra,64,setra
+,https://auto.ria.com/uk/car/skybike/,43 оголошення про продаж SkyBike,43 Про Skybike,43,skybike
+,https://auto.ria.com/uk/car/skymoto/,29 оголошень про продаж SkyMoto,29 Оголошень Про Skymoto,29,skymoto
+,https://auto.ria.com/uk/car/sma/,11 оголошень про продаж SMA,11 Оголошень Про Sma,11,sma
+,https://auto.ria.com/uk/car/cmt/,17 оголошень про продаж CMT,17 Оголошень Про Cmt,17,cmt
+,https://auto.ria.com/uk/car/sommer/,22 оголошення про продаж Sommer,22 Про Sommer,22,sommer
+,https://auto.ria.com/uk/car/spier/,14 оголошень про продаж Spier,14 Оголошень Про Spier,14,spier
+,https://auto.ria.com/uk/car/spark/,565 оголошень про продаж Spark,565 Оголошень Про Spark,565,spark
+,https://auto.ria.com/uk/car/stas/,119 оголошень про продаж STAS,119 Оголошень Про Stas,119,stas
+,https://auto.ria.com/uk/car/stokota/,15 оголошень про продаж Stokota,15 Оголошень Про Stokota,15,stokota
+,https://auto.ria.com/uk/car/still/,12 оголошень про продаж Still,12 Оголошень Про Still,12,still
+,https://auto.ria.com/uk/car/stim/,18 оголошень про продаж Stim,18 Оголошень Про Stim,18,stim
+,https://auto.ria.com/uk/car/sumitomo/,19 оголошень про продаж Sumitomo,19 Оголошень Про Sumitomo,19,sumitomo
+,https://auto.ria.com/uk/car/scion/,52 оголошення про продаж Scion,52 Про Scion,52,scion
+,https://auto.ria.com/uk/car/xiaomi/,49 оголошень про продаж Xiaomi,49 Оголошень Про Xiaomi,49,xiaomi
+,https://auto.ria.com/uk/car/sym/,54 оголошення про продаж Sym,54 Про Sym,54,sym
+,https://auto.ria.com/uk/car/tabbert/,21 оголошення про продаж Tabbert,21 Про Tabbert,21,tabbert
+,https://auto.ria.com/uk/car/tad/,16 оголошень про продаж TAD,16 Оголошень Про Tad,16,tad
+,https://auto.ria.com/uk/car/tadano/,10 оголошень про продаж Tadano,10 Оголошень Про Tadano,10,tadano
+,https://auto.ria.com/uk/car/tatra/,12 оголошень про продаж Tatra,12 Оголошень Про Tatra,12,tatra
+,https://auto.ria.com/uk/car/tekken/,170 оголошень про продаж Tekken,170 Оголошень Про Tekken,170,tekken
+,https://auto.ria.com/uk/car/terex/,16 оголошень про продаж Terex,16 Оголошень Про Terex,16,terex
+,https://auto.ria.com/uk/car/chtz/,15 оголошень про продаж ЧТЗ,15 Оголошень Про Чтз,15,chtz
+,https://auto.ria.com/uk/car/trailer/,37 оголошень про продаж Trailer,37 Оголошень Про Trailer,37,trailer
+,https://auto.ria.com/uk/car/trailor/,92 оголошення про продаж Trailor,92 Про Trailor,92,trailor
+,https://auto.ria.com/uk/car/trouillet/,19 оголошень про продаж Trouillet,19 Оголошень Про Trouillet,19,trouillet
+,https://auto.ria.com/uk/car/triumph/,126 оголошень про продаж Triumph,126 Оголошень Про Triumph,126,triumph
+,https://auto.ria.com/uk/car/tula/,12 оголошень про продаж Тула,12 Оголошень Про Тула,12,tula
+,https://auto.ria.com/uk/car/uaz/,429 оголошень про продаж УАЗ,429 Оголошень Про Уаз,429,uaz
+,https://auto.ria.com/uk/car/ukrainska-mriya/,9 оголошень про продаж Українська мрія,9 Оголошень Про Українська Мрія,9,ukrainska-mriya
+,https://auto.ria.com/uk/car/ural/,84 оголошення про продаж Урал,84 Про Урал,84,ural
+,https://auto.ria.com/uk/car/fada/,75 оголошень про продаж Fada,75 Оголошень Про Fada,75,fada
+,https://auto.ria.com/uk/car/faymonville/,11 оголошень про продаж Faymonville,11 Оголошень Про Faymonville,11,faymonville
+,https://auto.ria.com/uk/car/feldbinder/,55 оголошень про продаж Feldbinder,55 Оголошень Про Feldbinder,55,feldbinder
+,https://auto.ria.com/uk/car/floor/,15 оголошень про продаж Floor,15 Оголошень Про Floor,15,floor
+,https://auto.ria.com/uk/car/fluid/,10 оголошень про продаж Fluid,10 Оголошень Про Fluid,10,fluid
+,https://auto.ria.com/uk/car/fliegl/,56 оголошень про продаж Fliegl,56 Оголошень Про Fliegl,56,fliegl
+,https://auto.ria.com/uk/car/four-winns/,12 оголошень про продаж Four Winns,12 Оголошень Про Four Winns,12,four-winns
+,https://auto.ria.com/uk/car/forte/,Forte — 261 пропозиція,Forte — 261 Пропозиція,,forte
+,https://auto.ria.com/uk/car/foton/,46 оголошень про продаж Foton,46 Оголошень Про Foton,46,foton
+,https://auto.ria.com/uk/car/fruehauf/,235 оголошень про продаж Fruehauf,235 Оголошень Про Fruehauf,235,fruehauf
+,https://auto.ria.com/uk/car/feber/,14 оголошень про продаж Feber,14 Оголошень Про Feber,14,feber
+,https://auto.ria.com/uk/car/finval/,19 оголошень про продаж Finval,19 Оголошень Про Finval,19,finval
+,https://auto.ria.com/uk/car/haval/,189 оголошень про продаж Haval,189 Оголошень Про Haval,189,haval
+,https://auto.ria.com/uk/car/khaz-antorus/,17 оголошень про продаж ХАЗ (Анторус),17 Оголошень Про Хаз,17,khaz-antorus
+,https://auto.ria.com/uk/car/hamer/,38 оголошень про продаж Hamer,38 Оголошень Про Hamer,38,hamer
+,https://auto.ria.com/uk/car/hamm/,26 оголошень про продаж Hamm,26 Оголошень Про Hamm,26,hamm
+,https://auto.ria.com/uk/car/hammer/,37 оголошень про продаж Hammer,37 Оголошень Про Hammer,37,hammer
+,https://auto.ria.com/uk/car/hunter/,35 оголошень про продаж Hunter,35 Оголошень Про Hunter,35,hunter
+,https://auto.ria.com/uk/car/haulotte/,51 оголошення про продаж Haulotte,51 Про Haulotte,51,haulotte
+,https://auto.ria.com/uk/car/hafei/,10 оголошень про продаж Hafei,10 Оголошень Про Hafei,10,hafei
+,https://auto.ria.com/uk/car/hendricks/,23 оголошення про продаж Hendricks,23 Про Hendricks,23,hendricks
+,https://auto.ria.com/uk/car/hobby/,62 оголошення про продаж Hobby,62 Про Hobby,62,hobby
+,https://auto.ria.com/uk/car/howo/,11 оголошень про продаж Howo,11 Оголошень Про Howo,11,howo
+,https://auto.ria.com/uk/car/hongda/,16 оголошень про продаж Hongda,16 Оголошень Про Hongda,16,hongda
+,https://auto.ria.com/uk/car/hornet/,16 оголошень про продаж Hornet,16 Оголошень Про Hornet,16,hornet
+,https://auto.ria.com/uk/car/xcmg/,28 оголошень про продаж XCMG,28 Оголошень Про Xcmg,28,xcmg
+,https://auto.ria.com/uk/car/hyster/,26 оголошень про продаж Hyster,26 Оголошень Про Hyster,26,hyster
+,https://auto.ria.com/uk/car/citycoco/,18 оголошень про продаж Citycoco,18 Оголошень Про Citycoco,18,citycoco
+,https://auto.ria.com/uk/car/chana/,22 оголошення про продаж Chana,22 Про Chana,22,chana
+,https://auto.ria.com/uk/car/changan/,49 оголошень про продаж Changan,49 Оголошень Про Changan,49,changan
+,https://auto.ria.com/uk/car/cezet-chezet/,10 оголошень про продаж Cezet (Чезет),10 Оголошень Про Cezet,10,cezet-chezet
+,https://auto.ria.com/uk/car/changhe/,13 оголошень про продаж Changhe,13 Оголошень Про Changhe,13,changhe
+,https://auto.ria.com/uk/car/chereau/,46 оголошень про продаж Chereau,46 Оголошень Про Chereau,46,chereau
+,https://auto.ria.com/uk/car/buster/,8 оголошень про продаж Buster,8 Оголошень Про Buster,8,buster
+,https://auto.ria.com/uk/car/kolibri-kolibri/,19 оголошень про продаж Kolibri (Колибри),19 Оголошень Про Kolibri,19,kolibri-kolibri
+,https://auto.ria.com/uk/car/ob/,12 оголошень про продаж Обь,12 Оголошень Про Обь,12,ob
+,https://auto.ria.com/uk/car/skif/,20 оголошень про продаж Скиф,20 Оголошень Про Скиф,20,skif
+,https://auto.ria.com/uk/car/ums/,17 оголошень про продаж UMS,17 Оголошень Про Ums,17,ums
+,https://auto.ria.com/uk/car/qingqi/,21 оголошення про продаж Qingqi,21 Про Qingqi,21,qingqi
+,https://auto.ria.com/uk/car/shineray/,351 оголошення про продаж Shineray,351 Про Shineray,351,shineray
+,https://auto.ria.com/uk/car/schmidt/,40 оголошень про продаж SCHMIDT,40 Оголошень Про Schmidt,40,schmidt
+,https://auto.ria.com/uk/car/spitzer/,25 оголошень про продаж Spitzer,25 Оголошень Про Spitzer,25,spitzer
+,https://auto.ria.com/uk/car/yuzhanka/,19 оголошень про продаж Южанка,19 Оголошень Про Южанка,19,yuzhanka
+,https://auto.ria.com/uk/car/jungheinrich/,19 оголошень про продаж Jungheinrich,19 Оголошень Про Jungheinrich,19,jungheinrich
+,https://auto.ria.com/uk/car/yutong/,12 оголошень про продаж YUTONG,12 Оголошень Про Yutong,12,yutong
+,https://auto.ria.com/uk/car/jawa-yava-cz/,21 оголошення про продаж Jawa (Ява)-cz,21 Про Jawa,21,jawa-yava-cz
+,https://auto.ria.com/uk/car/yadea/,26 оголошень про продаж Yadea,26 Оголошень Про Yadea,26,yadea
+,https://auto.ria.com/uk/car/yale/,11 оголошень про продаж Yale,11 Оголошень Про Yale,11,yale
+,https://auto.ria.com/uk/car/yanmar/,Yanmar — 171 пропозиція,Yanmar — 171 Пропозиція,,yanmar
+,https://auto.ria.com/uk/car/izh/,467 оголошень про продаж ИЖ,467 Оголошень Про Иж,467,izh
+,https://auto.ria.com/uk/car/ikarus/,14 оголошень про продаж Ikarus,14 Оголошень Про Ikarus,14,ikarus
+,https://auto.ria.com/uk/car/indox/,11 оголошень про продаж Indox,11 Оголошень Про Indox,11,indox
+,https://auto.ria.com/uk/car/indian/,50 оголошень про продаж Indian,50 Оголошень Про Indian,50,indian
+,https://auto.ria.com/uk/car/inter-cars/,30 оголошень про продаж Inter Cars,30 Оголошень Про Inter Cars,30,inter-cars
+,https://auto.ria.com/uk/car/ifa-ifa/,14 оголошень про продаж IFA (ІФА),14 Оголошень Про Ifa,14,ifa-ifa

@@ -1,0 +1,6 @@
+url,rule,impact,count,help
+"https://automoto.com.lv/ru/bu-avto/latviya","button-name","critical",11,"Buttons must have discernible text"
+"https://automoto.com.lv/ru/bu-avto/latviya","link-name","serious",1,"Links must have discernible text"
+"https://automoto.com.lv/ru/bu-avto/latviya","list","serious",1,"<ul> and <ol> must only directly contain <li>, <script> or <template> elements"
+"https://automoto.com.lv/ru/bu-avto/latviya","meta-viewport","critical",1,"Zooming and scaling must not be disabled"
+"https://automoto.com.lv/ru/bu-avto/latviya","select-name","critical",5,"Select element must have an accessible name"

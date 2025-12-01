@@ -1,0 +1,47 @@
+[
+  {
+    "brand": "1",
+    "count": 1,
+    "href": "https://avtobazar.infocar.ua/search-car/"
+  },
+  {
+    "brand": "2",
+    "count": 2,
+    "href": "https://avtobazar.infocar.ua/search-car/?w=2"
+  },
+  {
+    "brand": "3",
+    "count": 3,
+    "href": "https://avtobazar.infocar.ua/search-car/?w=3"
+  },
+  {
+    "brand": "4",
+    "count": 4,
+    "href": "https://avtobazar.infocar.ua/search-car/?w=4"
+  },
+  {
+    "brand": "BMW iX3 (NA",
+    "count": 5,
+    "href": "https://bmw-x3.infocar.ua/ix3_id7323.html"
+  },
+  {
+    "brand": "DS №E-Tense",
+    "count": 4,
+    "href": "https://ds-n-4.infocar.ua/n-4-e-tense_id7329.html"
+  },
+  {
+    "brand": "KIA EV",
+    "count": 5,
+    "href": "https://kia-ev5.infocar.ua/ev5_id7326.html"
+  },
+  {
+    "brand": "Toyota RAV",
+    "count": 4,
+    "href": "https://avtobazar.infocar.ua/car/kievskaya-oblast/borispol/toyota/rav4/suv-2020-819957.html"
+  },
+  {
+    "brand": "ВАЗ в Києві",
+    "count": 2110,
+    "href": "https://avtobazar.infocar.ua/search-car/"
+  }
+]

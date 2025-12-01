@@ -1,0 +1,287 @@
+: 
+{name: 'Acura', id: '963'}
+1
+: 
+{name: 'Alfa Romeo', id: '965'}
+2
+: 
+{name: 'Aston Martin', id: '1762'}
+3
+: 
+{name: 'Audi', id: '969'}
+4
+: 
+{name: 'Bentley', id: '1544'}
+5
+: 
+{name: 'BMW', id: '973'}
+6
+: 
+{name: 'BMW-Alpina', id: '1763'}
+7
+: 
+{name: 'Brilliance', id: '1413'}
+8
+: 
+{name: 'Buick', id: '1764'}
+9
+: 
+{name: 'BYD', id: '1558'}
+10
+: 
+{name: 'Cadillac', id: '1546'}
+11
+: 
+{name: 'Chana', id: '1592'}
+12
+: 
+{name: 'Chery', id: '981'}
+13
+: 
+{name: 'Chevrolet', id: '983'}
+14
+: 
+{name: 'Chrysler', id: '985'}
+15
+: 
+{name: 'Citroen', id: '987'}
+16
+: 
+{name: 'Dacia', id: '989'}
+17
+: 
+{name: 'Dadi', id: '1574'}
+18
+: 
+{name: 'Daewoo', id: '991'}
+19
+: 
+{name: 'Daihatsu', id: '1560'}
+20
+: 
+{name: 'Dodge', id: '997'}
+21
+: 
+{name: 'FAW', id: '1765'}
+22
+: 
+{name: 'Ferrari', id: '1588'}
+23
+: 
+{name: 'Fiat', id: '1007'}
+24
+: 
+{name: 'Ford', id: '1009'}
+25
+: 
+{name: 'Geely', id: '1011'}
+26
+: 
+{name: 'GMC', id: '1594'}
+27
+: 
+{name: 'Great Wall', id: '1015'}
+28
+: 
+{name: 'Groz', id: '1766'}
+29
+: 
+{name: 'Honda', id: '1019'}
+30
+: 
+{name: 'Hummer', id: '1582'}
+31
+: 
+{name: 'Hyundai', id: '1023'}
+32
+: 
+{name: 'Infiniti', id: '1534'}
+33
+: 
+{name: 'Isuzu', id: '1570'}
+34
+: 
+{name: 'Iveco', id: '1550'}
+35
+: 
+{name: 'JAC', id: '1586'}
+36
+: 
+{name: 'Jaguar', id: '1538'}
+37
+: 
+{name: 'Jeep', id: '1035'}
+38
+: 
+{name: 'Kia', id: '1037'}
+39
+: 
+{name: 'Lamborghini', id: '1767'}
+40
+: 
+{name: 'Lancia', id: '1552'}
+41
+: 
+{name: 'Land Rover', id: '1043'}
+42
+: 
+{name: 'Lexus', id: '1045'}
+43
+: 
+{name: 'Lifan', id: '1564'}
+44
+: 
+{name: 'Lincoln', id: '1548'}
+45
+: 
+{name: 'Lotus', id: '1768'}
+46
+: 
+{name: 'Maserati', id: '1576'}
+47
+: 
+{name: 'Maybach', id: '1769'}
+48
+: 
+{name: 'Mazda', id: '1053'}
+49
+: 
+{name: 'McLaren', id: '1770'}
+50
+: 
+{name: 'Mercedes-Benz', id: '1055'}
+51
+: 
+{name: 'Mercury', id: '1771'}
+52
+: 
+{name: 'MG', id: '1566'}
+53
+: 
+{name: 'MINI', id: '1540'}
+54
+: 
+{name: 'Mitsubishi', id: '1063'}
+55
+: 
+{name: 'Nissan', id: '1065'}
+56
+: 
+{name: 'Oldsmobile', id: '1067'}
+57
+: 
+{name: 'Opel', id: '1069'}
+58
+: 
+{name: 'Peugeot', id: '1071'}
+59
+: 
+{name: 'Polestar', id: '3706'}
+60
+: 
+{name: 'Pontiac', id: '1584'}
+61
+: 
+{name: 'Porsche', id: '1077'}
+62
+: 
+{name: 'Proton', id: '1772'}
+63
+: 
+{name: 'Ram', id: '1773'}
+64
+: 
+{name: 'Ravon', id: '1562'}
+65
+: 
+{name: 'Renault', id: '1081'}
+66
+: 
+{name: 'Rolls-Royce', id: '1774'}
+67
+: 
+{name: 'Roewe', id: '1361'}
+68
+: 
+{name: 'Rover', id: '1542'}
+69
+: 
+{name: 'Saab', id: '1554'}
+70
+: 
+{name: 'Samand', id: '1572'}
+71
+: 
+{name: 'Samsung', id: '1775'}
+72
+: 
+{name: 'Seat', id: '1093'}
+73
+: 
+{name: 'Shelby', id: '1776'}
+74
+: 
+{name: 'Skoda', id: '1095'}
+75
+: 
+{name: 'Smart', id: '1097'}
+76
+: 
+{name: 'SsangYong', id: '1101'}
+77
+: 
+{name: 'Subaru', id: '1103'}
+78
+: 
+{name: 'Suzuki', id: '1105'}
+79
+: 
+{name: 'TATA', id: '1777'}
+80
+: 
+{name: 'Tesla', id: '1556'}
+81
+: 
+{name: 'Toyota', id: '1107'}
+82
+: 
+{name: 'Volkswagen', id: '1109'}
+83
+: 
+{name: 'Volvo', id: '1111'}
+84
+: 
+{name: 'Wartburg', id: '1578'}
+85
+: 
+{name: 'ZX', id: '1590'}
+86
+: 
+{name: 'Богдан', id: '1568'}
+87
+: 
+{name: 'ВАЗ', id: '1115'}
+88
+: 
+{name: 'ГАЗ', id: '1117'}
+89
+: 
+{name: 'ЗАЗ', id: '1119'}
+90
+: 
+{name: 'ИЖ', id: '1121'}
+91
+: 
+{name: 'ЛуАЗ', id: '1536'}
+92
+: 
+{name: 'Москвич / АЗЛК', id: '1123'}
+93
+: 
+{name: 'РАФ', id: '1580'}
+94
+: 
+{name: 'УАЗ', id: '1131'}
+95
+: 
+{name: 'Інші', id: '1133'}

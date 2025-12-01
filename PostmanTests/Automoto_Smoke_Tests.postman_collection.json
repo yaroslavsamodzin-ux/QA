@@ -1,0 +1,154 @@
+{
+  "info": {
+    "name": "Automoto.com.lv Smoke Tests",
+    "_postman_id": "automoto-smoke-tests-001",
+    "description": "API Smoke Tests for Automoto.com.lv",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check - Sitemap",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automoto.com.lv/sitemap.xml",
+          "protocol": "https",
+          "host": [
+            "automoto",
+            "com",
+            "lv"
+          ],
+          "path": [
+            "sitemap.xml"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Catalog - Car Listings",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automoto.com.lv/ru/bu-avto",
+          "protocol": "https",
+          "host": [
+            "automoto",
+            "com",
+            "lv"
+          ],
+          "path": [
+            "ru",
+            "bu-avto"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Search - BMW M4",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automoto.com.lv/ru/bu-avto?make=BMW&model=M4",
+          "protocol": "https",
+          "host": [
+            "automoto",
+            "com",
+            "lv"
+          ],
+          "path": [
+            "ru",
+            "bu-avto"
+          ],
+          "query": [
+            {
+              "key": "make",
+              "value": "BMW"
+            },
+            {
+              "key": "model",
+              "value": "M4"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Car Details - BMW M4 Example",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automoto.com.lv/ru/bu-avto/litva/vilnyus/bmw/m4/2022/68538382.html",
+          "protocol": "https",
+          "host": [
+            "automoto",
+            "com",
+            "lv"
+          ],
+          "path": [
+            "ru",
+            "bu-avto",
+            "litva",
+            "vilnyus",
+            "bmw",
+            "m4",
+            "2022",
+            "68538382.html"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Lead Form - Contact Seller",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"QA Smoke Test\",\n  \"phone\": \"+37120000000\",\n  \"email\": \"qa-smoke@mail.com\",\n  \"car_id\": \"68538382\"\n}"
+        },
+        "url": {
+          "raw": "https://automoto.com.lv/api/leads",
+          "protocol": "https",
+          "host": [
+            "automoto",
+            "com",
+            "lv"
+          ],
+          "path": [
+            "api",
+            "leads"
+          ]
+        }
+      }
+    },
+    {
+      "name": "SEO - Main Page Title/Description",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automoto.com.lv/ru/",
+          "protocol": "https",
+          "host": [
+            "automoto",
+            "com",
+            "lv"
+          ],
+          "path": [
+            "ru",
+            ""
+          ]
+        }
+      }
+    }
+  ]
+}

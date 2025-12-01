@@ -1,0 +1,786 @@
+[
+  {
+    "name": "Acura",
+    "slug": "acura",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/acura/",
+    "count": 4,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Alfa Romeo",
+    "slug": "alfa-romeo",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/alfa-romeo/",
+    "count": 3,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Audi",
+    "slug": "audi",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/audi/",
+    "count": 28,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Bentley",
+    "slug": "bentley",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/bentley/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "BMW",
+    "slug": "bmw",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/bmw/",
+    "count": 28,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Brilliance",
+    "slug": "brilliance",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/brilliance/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "Buick",
+    "slug": "buick",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/buick/",
+    "count": 2,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "BYD",
+    "slug": "byd",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/byd/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "Cadillac",
+    "slug": "cadillac",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/cadillac/",
+    "count": 1,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Chery",
+    "slug": "chery",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/chery/",
+    "count": 13,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Chevrolet",
+    "slug": "chevrolet",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/chevrolet/",
+    "count": 33,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Chrysler",
+    "slug": "chrysler",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/chrysler/",
+    "count": 2,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Citroen",
+    "slug": "citroen",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/citroen/",
+    "count": 4,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Dacia",
+    "slug": "dacia",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/dacia/",
+    "count": 3,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Daewoo",
+    "slug": "daewoo",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/daewoo/",
+    "count": 15,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Daihatsu",
+    "slug": "daihatsu",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/daihatsu/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "Dodge",
+    "slug": "dodge",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/dodge/",
+    "count": 5,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Ferrari",
+    "slug": "ferrari",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/ferrari/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "Fiat",
+    "slug": "fiat",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/fiat/",
+    "count": 11,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Ford",
+    "slug": "ford",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/ford/",
+    "count": 45,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Geely",
+    "slug": "geely",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/geely/",
+    "count": 11,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "GMC",
+    "slug": "gmc",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/gmc/",
+    "count": 2,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Great Wall",
+    "slug": "great-wall",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/great-wall/",
+    "count": 2,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Honda",
+    "slug": "honda",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/honda/",
+    "count": 10,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Hummer",
+    "slug": "hummer",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/hummer/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "Hyundai",
+    "slug": "hyundai",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/hyundai/",
+    "count": 29,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Infiniti",
+    "slug": "infiniti",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/infiniti/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "Isuzu",
+    "slug": "isuzu",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/isuzu/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "JAC",
+    "slug": "jac",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/jac/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "Jaguar",
+    "slug": "jaguar",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/jaguar/",
+    "count": 1,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Jeep",
+    "slug": "jeep",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/jeep/",
+    "count": 10,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Kia",
+    "slug": "kia",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/kia/",
+    "count": 19,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Lancia",
+    "slug": "lancia",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/lancia/",
+    "count": 1,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Land Rover",
+    "slug": "land-rover",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/land-rover/",
+    "count": 4,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Lexus",
+    "slug": "lexus",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/lexus/",
+    "count": 10,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Lifan",
+    "slug": "lifan",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/lifan/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "Lincoln",
+    "slug": "lincoln",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/lincoln/",
+    "count": 4,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Maybach",
+    "slug": "maybach",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/maybach/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "Mazda",
+    "slug": "mazda",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/mazda/",
+    "count": 14,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Mercedes-Benz",
+    "slug": "mercedes-benz",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/mercedes-benz/",
+    "count": 22,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Mercury",
+    "slug": "mercury",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/mercury/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "Mini",
+    "slug": "mini",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/mini/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "Mitsubishi",
+    "slug": "mitsubishi",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/mitsubishi/",
+    "count": 34,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Nissan",
+    "slug": "nissan",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/nissan/",
+    "count": 43,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Opel",
+    "slug": "opel",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/opel/",
+    "count": 29,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Peugeot",
+    "slug": "peugeot",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/peugeot/",
+    "count": 10,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Pontiac",
+    "slug": "pontiac",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/pontiac/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "Porsche",
+    "slug": "porsche",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/porsche/",
+    "count": 1,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Renault",
+    "slug": "renault",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/renault/",
+    "count": 14,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Rolls-Royce",
+    "slug": "rolls-royce",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/rolls-royce/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "Rover",
+    "slug": "rover",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/rover/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "Saab",
+    "slug": "saab",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/saab/",
+    "count": 1,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "SEAT",
+    "slug": "seat",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/seat/",
+    "count": 1,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Skoda",
+    "slug": "skoda",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/skoda/",
+    "count": 19,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Smart",
+    "slug": "smart",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/smart/",
+    "count": 2,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Ssang Yong",
+    "slug": "ssang-yong",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/ssang-yong/",
+    "count": 2,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Subaru",
+    "slug": "subaru",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/subaru/",
+    "count": 5,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Suzuki",
+    "slug": "suzuki",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/suzuki/",
+    "count": 4,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Tesla",
+    "slug": "tesla",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/tesla/",
+    "count": 10,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Toyota",
+    "slug": "toyota",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/toyota/",
+    "count": 41,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Volkswagen",
+    "slug": "volkswagen",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/volkswagen/",
+    "count": 76,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Volvo",
+    "slug": "volvo",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/volvo/",
+    "count": 5,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Москвич/ АЗЛК",
+    "slug": "moskvich-azlk",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/moskvich-azlk/",
+    "count": 6,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Заз",
+    "slug": "zaz",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/zaz/",
+    "count": 19,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Газ",
+    "slug": "gaz",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/gaz/",
+    "count": 12,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Ваз",
+    "slug": "vaz",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/vaz/",
+    "count": 51,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Уаз",
+    "slug": "uaz",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/uaz/",
+    "count": 1,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "Другая модель",
+    "slug": "drugaja-model",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/drugaja-model/",
+    "count": 20,
+    "status": "ok",
+    "http_status": 200
+  },
+  {
+    "name": "е39",
+    "slug": "q-е39",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-е39/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "тюнинг",
+    "slug": "q-тюнинг",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-тюнинг/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "ибица",
+    "slug": "q-ибица",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-ибица/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "зберігання",
+    "slug": "q-зберігання",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-зберігання/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "ягуар",
+    "slug": "q-ягуар",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-ягуар/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "механічни",
+    "slug": "q-механічни",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-механічни/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "неил",
+    "slug": "q-неил",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-неил/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "неьем",
+    "slug": "q-неьем",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-неьем/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "ней",
+    "slug": "q-ней",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-ней/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "неом",
+    "slug": "q-неом",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-неом/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "шевроле авео",
+    "slug": "q-шевроле+авео",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-шевроле+авео/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "механической",
+    "slug": "q-механической",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-механической/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "кенго",
+    "slug": "q-кенго",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-кенго/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "дзеркала",
+    "slug": "q-дзеркала",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-дзеркала/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "бита",
+    "slug": "q-бита",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-бита/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "дзеркао",
+    "slug": "q-дзеркао",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-дзеркао/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "битые",
+    "slug": "q-битые",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-битые/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "пикап",
+    "slug": "q-пикап",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-пикап/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "фиат",
+    "slug": "q-фиат",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-фиат/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "система",
+    "slug": "q-система",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-система/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "фиат добло",
+    "slug": "q-фиат+добло",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-фиат+добло/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "литва",
+    "slug": "q-литва",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-литва/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "підсилювач",
+    "slug": "q-підсилювач",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-підсилювач/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "сітроен берлінго",
+    "slug": "q-сітроен+берлінго",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-сітроен+берлінго/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "віваро",
+    "slug": "q-віваро",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-віваро/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "фіат скудо",
+    "slug": "q-фіат+скудо",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-фіат+скудо/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "акцент",
+    "slug": "q-акцент",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-акцент/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "власник",
+    "slug": "q-власник",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-власник/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "элила",
+    "slug": "q-элила",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-элила/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  },
+  {
+    "name": "эли",
+    "slug": "q-эли",
+    "url": "https://ogolosha.ua/transport/legkovye-avtomobili/q-эли/",
+    "count": null,
+    "status": "not_found",
+    "http_status": 200
+  }
+]

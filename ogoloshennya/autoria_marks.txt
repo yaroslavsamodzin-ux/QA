@@ -1,0 +1,380 @@
+5166 ; Abarth
+98 ; Acura
+2396 ; Adler
+5165 ; Aero
+55172 ; AION
+55656 ; Aito
+55399 ; Aiways
+2 ; Aixam
+3 ; Alfa Romeo
+100 ; Alpine
+3988 ; Altamarea
+5821 ; AMC
+5769 ; Anaig
+5276 ; Armstrong Siddeley
+101 ; Aro
+3105 ; Artega
+4 ; Asia
+5793 ; AsiaStar
+5 ; Aston Martin
+6160 ; ATS Corsa
+6 ; Audi
+7 ; Austin
+4355 ; Austin-Healey
+102 ; Autobianchi
+55330 ; Avatr
+55051 ; BAIC
+6228 ; Baojun
+5245 ; Baoya
+103 ; Barkas (Баркас)
+1540 ; Baw
+105 ; Beijing
+8 ; Bentley
+55530 ; Bentley Mulliner
+106 ; Bertone
+3127 ; Bio Auto
+108 ; Blonell
+55266 ; BlueCar
+9 ; BMW
+99 ; BMW-Alpina
+6310 ; Bollinger
+5240 ; Borgward
+329 ; Brilliance
+10 ; Bristol
+109 ; Bugatti
+110 ; Buick
+386 ; BYD
+6260 ; Byton
+11 ; Cadillac
+3221 ; Caterham
+55284 ; CATL
+6294 ; Cenntro
+55610 ; CEVO-C
+407 ; Chana
+1580 ; Changan
+55143 ; Changfeng
+1567 ; Changhe
+55171 ; Chanje
+190 ; Chery
+13 ; Chevrolet
+14 ; Chrysler
+15 ; Citroen
+1451 ; Cupra
+17 ; Dacia
+198 ; Dadi
+55242 ; Daechang
+18 ; Daewoo
+115 ; DAF
+1441 ; DAF / VDL
+3717 ; Dagger
+19 ; Daihatsu
+20 ; Daimler
+4206 ; Datsun
+3071 ; De Lorean
+55740 ; Deepal
+55216 ; Denza
+4328 ; Derways
+4883 ; Detroit Electric
+4077 ; DFSK
+55538 ; Diandongwu
+2243 ; DKW
+118 ; Dodge
+308 ; Dongfeng
+5051 ; Dr. Motor
+4495 ; DS
+55653 ; e.Go
+120 ; Eagle
+5469 ; Elwinn
+55513 ; Emgrand EV 350
+55225 ; Enovate
+1413 ; Ernst Auwarter
+3921 ; Estrima
+55748 ; EVO
+55483 ; Excalibur
+121 ; FAW
+55208 ; FAW Bestune
+55640 ; FCB
+22 ; Ferrari
+23 ; Fiat
+4459 ; Fiat-Abarth
+3444 ; Fisker
+24 ; Ford
+3104 ; Fornasari
+55370 ; Forthing
+187 ; Foton
+25 ; FSO
+197 ; FUQI
+4506 ; Gac
+55252 ; GAC-Honda
+185 ; Geely
+2604 ; Genesis
+2790 ; Geo
+123 ; GMC
+4316 ; Golf Car
+183 ; Gonow
+124 ; Great Wall
+1575 ; Groz
+55752 ; GWM
+191 ; Hafei
+3674 ; Haima
+1784 ; Hanomag
+2053 ; Hansa
+55308 ; Hanteng
+5456 ; Haval
+5791 ; Hawtai
+3411 ; Hindustan
+55403 ; HiPhi
+28 ; Honda
+5572 ; Hong Xing
+55205 ; Hongqi
+5624 ; Horch
+55108 ; Hozon
+55173 ; Hozon Neta
+2595 ; Huabei
+388 ; Huanghai
+55557 ; Huawei
+55619 ; Hudson
+55303 ; Human Horizons
+3002 ; Humber
+127 ; Hummer
+4663 ; Humvee
+29 ; Hyundai
+55563 ; IM
+55587 ; Ineos
+128 ; Infiniti
+4273 ; Innocenti
+3821 ; Iran Khodro
+30 ; Isuzu
+3757 ; ItalCar
+175 ; Iveco
+317 ; JAC
+55217 ; JAC-Volkswagen
+31 ; Jaguar
+1590 ; JCB
+32 ; Jeep
+55069 ; Jetour
+335 ; Jiangnan
+2231 ; Jinbei
+4549 ; Jinbei Minibusus
+1586 ; Jinma
+3018 ; JMC
+1574 ; Jonway
+412 ; Karosa
+55200 ; Karry
+55282 ; Keyton
+55489 ; KG Mobility
+33 ; Kia
+2676 ; King Long
+4606 ; KingWoo
+4843 ; Kirkham
+2643 ; Koenigsegg
+4000 ; Konecranes
+35 ; Lamborghini
+36 ; Lancia
+37 ; Land Rover
+406 ; Landwind
+134 ; LDV
+55215 ; Leap
+55409 ; Leapmotor
+55213 ; Leopaard
+2442 ; Leopard
+55230 ; Lesheng
+55375 ; Letin
+38 ; Lexus
+55440 ; Li Auto
+5339 ; Lichi
+334 ; Lifan
+135 ; Lincoln
+55341 ; Lingpao
+55197 ; Link Tour
+55579 ; Lixiang
+41 ; Lotus
+136 ; LTI
+6317 ; Lucid
+55664 ; Luxeed
+4269 ; Luxgen
+55594 ; Lynk&Co
+3578 ; Mahindra
+4064 ; Marshell
+139 ; Maruti
+45 ; Maserati
+55270 ; Maxus
+46 ; Maybach
+47 ; Mazda
+3101 ; McLaren
+1904 ; MEGA
+48 ; Mercedes-Benz
+144 ; Mercury
+3948 ; Merkur
+49 ; MG
+6055 ; Microcar
+4528 ; Miles
+147 ; MINI
+52 ; Mitsubishi
+402 ; Mitsuoka
+4069 ; Mobility Ventures
+55599 ; Modern Auto
+53 ; Morgan
+54 ; Morris
+5039 ; MPM Motors
+5138 ; MYBRO
+55114 ; NEO
+55214 ; Neta
+55080 ; NIO
+55 ; Nissan
+2489 ; Norster
+2045 ; Nysa (Ныса)
+148 ; Oldsmobile
+2963 ; Oltcit
+56 ; Opel
+2974 ; ORA
+55313 ; Otosan
+3193 ; Packard
+2644 ; Pagani
+1852 ; Peerless
+3446 ; Peg-Perego
+346 ; Peterbilt
+58 ; Peugeot
+3590 ; Pininfarina
+3215 ; Pinzgauer
+181 ; Plymouth
+6131 ; Polestar
+55589 ; Polestone
+149 ; Pontiac
+59 ; Porsche
+2728 ; Praga Baby
+60 ; Proton
+55412 ; Puli
+5340 ; Qifeng
+1332 ; Quicksilver
+4369 ; Ram
+4681 ; Ravon
+55374 ; Raysince
+62 ; Renault
+4466 ; Rezvani
+55281 ; Rich
+3330 ; Rimac
+6227 ; Rivian
+5761 ; Robeta
+55063 ; Roewe
+63 ; Rolls-Royce
+64 ; Rover
+55637 ; RSWG
+55377 ; Runhorse
+65 ; Saab
+3437 ; Saipa
+196 ; Saleen
+192 ; Samand
+325 ; Samsung
+55669 ; Santana
+331 ; Saturn
+2734 ; Sceo
+3268 ; Scion
+67 ; SEAT
+2492 ; Secma
+1726 ; Selena
+55597 ; Seres
+3100 ; Shelby
+1572 ; Shineray
+195 ; Shuanghuan
+4003 ; Sidetracker
+55218 ; Sihao (Sol)
+70 ; Skoda
+55199 ; Skywell
+311 ; SMA
+71 ; Smart
+194 ; SouEast
+55115 ; South-East
+3212 ; Soyat
+411 ; Spyker
+55553 ; SRM
+73 ; SsangYong
+214 ; Star
+55658 ; Stelato
+3228 ; Studebaker
+75 ; Subaru
+2879 ; Suda
+55068 ; Suda Hanen
+385 ; Sunbeam
+76 ; Suzuki
+5341 ; T-King
+77 ; Talbot
+2497 ; Tarpan Honker
+78 ; TATA
+204 ; Tatra
+3922 ; Tazzari
+2233 ; Tesla
+6092 ; Think
+4237 ; Think Global
+4033 ; Thunder Tiger
+1578 ; Tianma
+55081 ; Tiffany
+2050 ; Tiger
+2552 ; Tofas
+79 ; Toyota
+345 ; Trabant
+80 ; Triumph
+81 ; TVR
+3017 ; Ultima
+206 ; Van Hool
+5873 ; Vantage
+82 ; Vauxhall
+83 ; Venturi
+184 ; Venucia
+3320 ; Vepr
+55657 ; VinFast
+84 ; Volkswagen
+85 ; Volvo
+55279 ; Voyah
+2021 ; Wanderer
+2403 ; Wanfeng
+339 ; Wartburg
+55539 ; Weiao
+55113 ; Weilan
+55088 ; Weltmeister
+1992 ; Wiesmann
+1820 ; Willys
+2653 ; Wuling
+55337 ; XEV
+3452 ; Xiaolong
+5107 ; Xiaomi
+55073 ; Xindayang
+338 ; Xinkai
+107 ; Xpeng
+55201 ; Yema
+5285 ; Yogomo
+55546 ; Yudo
+87 ; Yugo
+2309 ; Zastava
+55280 ; Zeekr
+182 ; Zhidou
+2958 ; Zimmer
+3610 ; Zotye
+3089 ; Zuk
+322 ; ZX
+188 ; Богдан
+3000 ; Бронто
+88 ; ВАЗ / Lada
+91 ; ГАЗ
+410 ; ГолАЗ
+170 ; ЕРАЗ
+169 ; Жук
+89 ; ЗАЗ
+168 ; ЗИЛ
+1544 ; ЗИМ
+186 ; ЗИС
+92 ; ИЖ
+189 ; ЛуАЗ
+94 ; Москвич/АЗЛК
+327 ; РАФ
+199 ; Ретро автомобили
+2863 ; Самодельный
+96 ; СеАЗ
+2491 ; СМЗ
+1351 ; СПЭВ / SPEV
+4537 ; ТагАЗ
+2638 ; ТогАЗ
+4038 ; Тренер
+93 ; УАЗ
+4021 ; Циклон
+2307 ; Эстония

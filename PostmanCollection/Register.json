@@ -1,0 +1,375 @@
+{
+	"info": {
+		"_postman_id": "9061d4c8-1395-46db-9cf7-1ba69feb22f5",
+		"name": "Postman extendet Yaroslav Samodzin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47857381",
+		"_collection_link": "https://www.postman.com/yaroslav-samodzin-s-team/workspace/cc363561-ef11-4626-9ec2-68dadba47c32/collection/47857381-9061d4c8-1395-46db-9cf7-1ba69feb22f5?action=share&source=collection_link&creator=47857381"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.collectionVariables.set(\"emailConduit\", pm.response.json().user.email);\r",
+							"pm.collectionVariables.set(\"tokenConduit\", pm.response.json().user.token);\r",
+							"\r",
+							"\r",
+							"// 2) Парсимо ФАКТИЧНЕ тіло запиту (із підставленими {{$random...}}) і зберігаємо пароль\r",
+							"const resolved = pm.variables.replaceIn(pm.request.body.raw);\r",
+							"const pwd = JSON.parse(resolved).user.password;\r",
+							"pm.collectionVariables.set('passwordConduit', pwd);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const ts = Date.now();\r",
+							"pm.collectionVariables.set(\"emailConduit\", `qa_${ts}@gmail.com`);\r",
+							"pm.collectionVariables.set(\"usernameConduit\", `qa_user_${ts}`);\r",
+							"pm.collectionVariables.set(\"passwordConduit\", \"Secret123!\");"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": {\n    \"username\": \"{{usernameConduit}}\",\n    \"email\": \"{{emailConduit}}\",\n    \"password\": \"{{passwordConduit}}\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}users",
+					"host": [
+						"{{BASE_URL}}users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{tokenConduit}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": {\n    \"email\": \"{{emailConduit}}\",\n    \"password\": \"{{passwordConduit}}\"\n  }\n}\n"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}users/login",
+					"host": [
+						"{{BASE_URL}}users"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create an article",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);\r",
+							"  const h = pm.response.json();\r",
+							"pm.collectionVariables.set(\"slugConduit\", h.article.slug);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{tokenConduit}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"article\":{\r\n    \"title\": \"string\",\r\n    \"description\": \"string\",\r\n    \"body\": \"string\",\r\n    \"tagList\": []\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}articles",
+					"host": [
+						"{{BASE_URL}}articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post a comment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.collectionVariables.set(\"commentId\", pm.response.json().comment.id);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{tokenConduit}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"comment\":{\r\n    \"body\": \"XSS\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}articles/{{slugConduit}}/comments",
+					"host": [
+						"{{BASE_URL}}articles"
+					],
+					"path": [
+						"{{slugConduit}}",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a comment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{tokenConduit}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BASE_URL}}articles/{{slugConduit}}/comments/{{commentId}}",
+					"host": [
+						"{{BASE_URL}}articles"
+					],
+					"path": [
+						"{{slugConduit}}",
+						"comments",
+						"{{commentId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an article",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{tokenConduit}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BASE_URL}}articles/{{slugConduit}}",
+					"host": [
+						"{{BASE_URL}}articles"
+					],
+					"path": [
+						"{{slugConduit}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"pm.test(\"Status code is 200 or 204\", function testik () {\r",
+					"pm.expect(pm.response.code).to.be.oneOf([200, 204]);\r",
+					"});\r",
+					"pm.test(\"Response time is less than 300ms\", function () {\r",
+					"  pm.expect(pm.response.responseTime).to.be.below(300);\r",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "https://conduit.mate.academy/api/",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			}
+		},
+		{
+			"key": "usernameConduit",
+			"value": "qa_user_1756807944668",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			}
+		},
+		{
+			"key": "emailConduit",
+			"value": "qa_1756807944668@gmail.com",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			}
+		},
+		{
+			"key": "tokenConduit",
+			"value": "{{vault:json-web-token}}",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			}
+		},
+		{
+			"key": "slug",
+			"value": "string-q29dyn"
+		},
+		{
+			"key": "slugConduit",
+			"value": "string-j6fims"
+		},
+		{
+			"key": "commentConduit",
+			"value": 106582
+		},
+		{
+			"key": "commentId",
+			"value": 106626
+		},
+		{
+			"key": "passwordConduit",
+			"value": ""
+		}
+	]
+}

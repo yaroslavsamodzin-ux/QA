@@ -1,0 +1,36 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://automoto.com.lv/ru/reklama');
+  await page.getByRole('link', { name: 'Узнать стоимость' }).nth(1).click();
+  await page.getByRole('textbox', { name: 'Ваше имя' }).click();
+  await page.getByRole('textbox', { name: 'Ваше имя' }).fill('TestCheck');
+  await page.getByRole('textbox', { name: 'Телефон' }).click();
+  await page.getByRole('textbox', { name: 'Телефон' }).fill('+37100000000');
+  await page.getByRole('checkbox', { name: 'Я соглашаюсь с правилами использования сайта, а также с обработкой моих данных' }).check();
+  await page.getByRole('button', { name: 'Отправить' }).click();
+  await page.getByRole('link', { name: 'Назад' }).click();
+  await page.getByRole('link', { name: 'Узнать стоимость' }).first().click();
+  await page.getByRole('textbox', { name: 'Ваше имя' }).click();
+  await page.getByRole('textbox', { name: 'Ваше имя' }).fill('TestCheck');
+  await page.getByRole('textbox', { name: 'Email' }).click();
+  await page.getByRole('textbox', { name: 'Email' }).fill('Test@posta');
+  await page.getByRole('checkbox', { name: 'Я соглашаюсь с правилами использования сайта, а также с обработкой моих данных' }).check();
+  await page.getByRole('button', { name: 'Отправить' }).click();
+  await page.getByRole('link', { name: 'Назад' }).click();
+  await page.getByRole('link', { name: 'Запросить консультацию' }).click();
+  await page.getByRole('textbox', { name: 'Ваше имя' }).click();
+  await page.getByRole('textbox', { name: 'Ваше имя' }).fill('TestCheck');
+  await page.getByRole('textbox', { name: 'Телефон' }).click();
+  await page.getByRole('textbox', { name: 'Телефон' }).fill('+37100000000');
+  await page.getByRole('checkbox', { name: 'Я соглашаюсь с правилами использования сайта, а также с обработкой моих данных' }).check();
+  await page.getByRole('button', { name: 'Отправить' }).click();
+  await page.getByRole('link', { name: 'Назад' }).click();
+  await page.getByRole('link', { name: 'Посмотреть пакеты' }).click();
+  await page.getByRole('textbox', { name: 'Ваше имя' }).click();
+  await page.getByRole('textbox', { name: 'Ваше имя' }).fill('TestCheck');
+  await page.getByRole('textbox', { name: 'Телефон' }).click();
+  await page.getByRole('textbox', { name: 'Телефон' }).fill('+37100000000');
+  await page.locator('form div').filter({ hasText: 'Я соглашаюсь с правилами использования сайта, а также с обработкой моих данных' }).click();
+  await page.getByRole('button', { name: 'Перезвоните мне' }).click();
+});

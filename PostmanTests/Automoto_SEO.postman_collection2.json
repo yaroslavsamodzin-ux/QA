@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "375df7e7-0369-46cd-a1ad-c090ce5ae444",
+		"name": "Automoto_SEO.postman_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47857381",
+		"_collection_link": "https://www.postman.com/yaroslav-samodzin-s-team/workspace/yaroslav-samodzin/collection/47857381-375df7e7-0369-46cd-a1ad-c090ce5ae444?action=share&source=collection_link&creator=47857381"
+	},
+	"item": [
+		{
+			"name": "Title",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 0) Базовий текст відповіді\r",
+							"let html = '';\r",
+							"try { html = pm.response.text(); } catch (e) { html = ''; }\r",
+							"\r",
+							"// 1) Витягуємо <title> та <meta name=\"description\">\r",
+							"let title = '';\r",
+							"let description = '';\r",
+							"\r",
+							"if (html) {\r",
+							"  const t = html.match(/<title[^>]*>([\\s\\S]*?)<\\/title>/i);\r",
+							"  if (t) title = t[1].replace(/\\s+/g, ' ').trim();\r",
+							"\r",
+							"  const d = html.match(/<meta[^>]+name=[\"']description[\"'][^>]+content=[\"']([\\s\\S]*?)[\"']/i);\r",
+							"  if (d) description = d[1].replace(/\\s+/g, ' ').trim();\r",
+							"}\r",
+							"\r",
+							"// 2) Логи (видно у Postman Console і в Newman CLI)\r",
+							"console.log('TITLE:', title);\r",
+							"console.log('DESCRIPTION:', description);\r",
+							"\r",
+							"// 3) Зберегти в колекційні змінні (для дебагу/звітів)\r",
+							"pm.collectionVariables.set('last_title', title || '');\r",
+							"pm.collectionVariables.set('last_description', description || '');\r",
+							"\r",
+							"// 4) Тести (створюємо ПІСЛЯ присвоєнь)\r",
+							"pm.test('Title витягнуто (може бути порожнім на деяких сторінках)', () => {\r",
+							"  pm.expect(title).to.be.a('string');\r",
+							"});\r",
+							"pm.test(`Title: ${title || '(порожньо)'}`, () => {\r",
+							"  pm.expect(true).to.be.true; // інформативний тест, не фейлить прогін\r",
+							"});\r",
+							"\r",
+							"pm.test('Description витягнуто (може бути порожнім на деяких сторінках)', () => {\r",
+							"  pm.expect(description).to.be.a('string');\r",
+							"});\r",
+							"pm.test(`Description: ${description || '(порожньо)'}`, () => {\r",
+							"  pm.expect(true).to.be.true; // інформативний тест\r",
+							"});\r",
+							"\r",
+							"// (за бажанням) Якщо хочеш падати, коли порожньо — розкоментуй:\r",
+							"// pm.test('Title не порожній', () => pm.expect(title.length).to.be.greaterThan(0));\r",
+							"// pm.test('Description не порожній', () => pm.expect(description.length).to.be.greaterThan(0));\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const fromData = pm.iterationData.get('pageUrl');   // з CSV/JSON\r",
+							"if (fromData) pm.variables.set('pageUrl', fromData);\r",
+							"\r",
+							"const url = pm.variables.get('pageUrl');\r",
+							"console.log('PRE pageUrl =', url);                   // діагностика в CLI\r",
+							"if (!url) throw new Error('pageUrl is empty. Pass via --iteration-data або --env-var.');\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "User-Agent: Mozilla/5.0",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": " accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru,en;q=0.8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{pageUrl}}",
+					"host": [
+						"{{pageUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEO Listing Page",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const fromData = pm.iterationData.get('pageUrl');   // з CSV/JSON\r",
+							"if (fromData) pm.variables.set('pageUrl', fromData);\r",
+							"\r",
+							"const url = pm.variables.get('pageUrl');\r",
+							"console.log('PRE pageUrl =', url);                   // діагностика в CLI\r",
+							"if (!url) throw new Error('pageUrl is empty. Pass via --iteration-data або --env-var.');\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"/* ========== SEO Checks for Listing/Section Pages ========== */\r",
+							"\r",
+							"// 0) Підмінимо request URL з даних і виконаємо запит саме туди (Runner/Newman підставить pageUrl)\r",
+							"if (pm.info.iteration === 0 && !pm.request.url.toString().includes(\"{{pageUrl}}\")) {\r",
+							"  // Якщо ти вказав повний URL руками — усе ок; якщо стоїть {{pageUrl}}, просто ідемо далі\r",
+							"}\r",
+							"\r",
+							"// 1) Базові перевірки\r",
+							"pm.test(\"Status 200 OK\", () => pm.response.to.have.status(200));\r",
+							"pm.test(\"Content-Type: text/html\", () => {\r",
+							"  const ct = (pm.response.headers.get(\"content-type\") || \"\").toLowerCase();\r",
+							"  pm.expect(ct).to.include(\"text/html\");\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"  pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"// 2) Витягуємо HTML\r",
+							"const html = pm.response.text();\r",
+							"const getOne = (re) => {\r",
+							"  const m = html.match(re);\r",
+							"  return m ? (m[1] || m[2] || \"\").toString().trim() : \"\";\r",
+							"};\r",
+							"const getAll = (re) => {\r",
+							"  const arr = []; let m;\r",
+							"  while ((m = re.exec(html)) !== null) arr.push((m[1] || m[2] || \"\").trim());\r",
+							"  return arr;\r",
+							"};\r",
+							"const canon = s => String(s||\"\").toLowerCase().replace(/\\s+/g,\" \").trim();\r",
+							"\r",
+							"// 3) Основні мета-елементи\r",
+							"const title      = getOne(/<title[^>]*>([\\s\\S]*?)<\\/title>/i);\r",
+							"const metaDesc   = getOne(/<meta[^>]+name=[\"']description[\"'][^>]+content=[\"']([\\s\\S]*?)[\"'][^>]*>/i);\r",
+							"const h1         = getOne(/<h1[^>]*>([\\s\\S]*?)<\\/h1>/i);\r",
+							"const canonical  = getOne(/<link[^>]+rel=[\"']canonical[\"'][^>]+href=[\"']([^\"']+)[\"'][^>]*>/i);\r",
+							"const robotsMeta = getOne(/<meta[^>]+name=[\"']robots[\"'][^>]+content=[\"']([^\"']+)[\"'][^>]*>/i);\r",
+							"const ogTitle    = getOne(/<meta[^>]+property=[\"']og:title[\"'][^>]+content=[\"']([\\s\\S]*?)[\"'][^>]*>/i);\r",
+							"const ogDesc     = getOne(/<meta[^>]+property=[\"']og:description[\"'][^>]+content=[\"']([\\s\\S]*?)[\"'][^>]*>/i);\r",
+							"const hreflangs  = getAll(/<link[^>]+rel=[\"']alternate[\"'][^>]+hreflang=[\"']([^\"']+)[\"'][^>]+href=[\"']([^\"']+)[\"'][^>]*>/ig);\r",
+							"\r",
+							"// 4) Наявність/довжини\r",
+							"pm.test(\"Title існує\", () => pm.expect(title).to.be.a(\"string\").and.not.empty);\r",
+							"pm.test(\"Meta description існує\", () => pm.expect(metaDesc).to.be.a(\"string\").and.not.empty);\r",
+							"pm.test(\"H1 існує\", () => pm.expect(h1).to.be.a(\"string\").and.not.empty);\r",
+							"\r",
+							"// дефолтні межі (можеш переозначити env-змінними)\r",
+							"const minTitle = Number(pm.variables.get(\"seo_minTitle\") || 10);\r",
+							"const maxTitle = Number(pm.variables.get(\"seo_maxTitle\") || 120);\r",
+							"const minDesc  = Number(pm.variables.get(\"seo_minDesc\")  || 20);\r",
+							"const maxDesc  = Number(pm.variables.get(\"seo_maxDesc\")  || 250);\r",
+							"\r",
+							"pm.test(`Title length ${minTitle}-${maxTitle}`, () => {\r",
+							"  const len = title.trim().length;\r",
+							"  pm.expect(len, `length=${len}`).to.be.within(minTitle, maxTitle);\r",
+							"});\r",
+							"pm.test(`Description length ${minDesc}-${maxDesc}`, () => {\r",
+							"  const len = metaDesc.trim().length;\r",
+							"  pm.expect(len, `length=${len}`).to.be.within(minDesc, maxDesc);\r",
+							"});\r",
+							"\r",
+							"// 5) Canonical\r",
+							"pm.test(\"Canonical існує\", () => pm.expect(canonical).to.be.a(\"string\").and.not.empty);\r",
+							"pm.test(\"Canonical домен = домен запиту\", () => {\r",
+							"  try {\r",
+							"    const cHost = new URL(canonical).host;\r",
+							"    const rHost = new URL(pm.request.url.toString()).host;\r",
+							"    pm.expect(cHost).to.eql(rHost);\r",
+							"  } catch(e) { /* пропускаємо якщо некоректний URL */ }\r",
+							"});\r",
+							"pm.test(\"Canonical без UTM/смiттєвих параметрів\", () => {\r",
+							"  pm.expect(/[\\?&](utm_|fbclid|gclid)/i.test(canonical)).to.be.false;\r",
+							"});\r",
+							"\r",
+							"// 6) Robots: за замовчанням очікуємо індексацію (noindex — false)\r",
+							"const expectNoindex = String(pm.variables.get(\"seo_expectNoindex\") || \"false\").toLowerCase() === \"true\";\r",
+							"pm.test(expectNoindex ? \"Robots містить noindex\" : \"Robots НЕ містить noindex\", () => {\r",
+							"  const hasNoindex = /noindex/i.test(robotsMeta);\r",
+							"  pm.expect(hasNoindex).to.eql(expectNoindex);\r",
+							"});\r",
+							"\r",
+							"// 7) Узгодженість OG (не обов'язково суворо)\r",
+							"pm.test(\"og:title узгоджений із <title> (м'яка перевірка)\", () => {\r",
+							"  if (!ogTitle) return;\r",
+							"  pm.expect(canon(ogTitle)).to.include(canon(title).split(\" \").slice(0,3).join(\" \"));\r",
+							"});\r",
+							"pm.test(\"og:description узгоджений із meta description (м'яка перевірка)\", () => {\r",
+							"  if (!ogDesc) return;\r",
+							"  pm.expect(canon(ogDesc)).to.include(canon(metaDesc).split(\" \").slice(0,5).join(\" \"));\r",
+							"});\r",
+							"\r",
+							"// 8) Hreflang (якщо використовуються)\r",
+							"pm.test(\"hreflang валідні (якщо присутні)\", () => {\r",
+							"  pm.expect(Array.isArray(hreflangs)).to.be.true;\r",
+							"  // Не фейлимо відсутність, але можна додати суворі правила під ваш сайт\r",
+							"});\r",
+							"\r",
+							"// 9) (Опційно) Ключові слова — через змінні (налаштовуються у Variables)\r",
+							"function tokensFromVar(name){\r",
+							"  const raw = (pm.variables.get(name) || \"\").toString().trim();\r",
+							"  return raw ? raw.split(\"|\").map(s => canon(s)).filter(Boolean) : [];\r",
+							"}\r",
+							"const titleTokens = tokensFromVar(\"seo_titleTokens\");\r",
+							"const descTokens  = tokensFromVar(\"seo_descTokens\");\r",
+							"\r",
+							"if (titleTokens.length){\r",
+							"  pm.test(`Title містить ключові слова: ${titleTokens.join(\" | \")}`, () => {\r",
+							"    const t = canon(title);\r",
+							"    titleTokens.forEach(tok => pm.expect(t).to.include(tok));\r",
+							"  });\r",
+							"}\r",
+							"if (descTokens.length){\r",
+							"  pm.test(`Description містить ключові слова: ${descTokens.join(\" | \")}`, () => {\r",
+							"    const d = canon(metaDesc);\r",
+							"    descTokens.forEach(tok => pm.expect(d).to.include(tok));\r",
+							"  });\r",
+							"}\r",
+							"\r",
+							"// 10) Збереження для дебагу\r",
+							"pm.collectionVariables.set(\"seo_last_title\", title);\r",
+							"pm.collectionVariables.set(\"seo_last_description\", metaDesc);\r",
+							"pm.collectionVariables.set(\"seo_last_h1\", h1);\r",
+							"pm.collectionVariables.set(\"seo_last_canonical\", canonical);\r",
+							"\r",
+							"const brandChunk = pm.variables.get(\"seo_brandSuffix\"); // напр. \"automoto\"\r",
+							"if (brandChunk) {\r",
+							"  pm.test(\"Title містить бренд-суксфікс\", () => {\r",
+							"    pm.expect(canon(title)).to.include(canon(brandChunk));\r",
+							"  });\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "User-Agent: Mozilla/5.0",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": " accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru,en;q=0.8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{pageUrl}}",
+					"host": [
+						"{{pageUrl}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"value": ""
+		}
+	]
+}

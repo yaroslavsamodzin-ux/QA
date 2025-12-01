@@ -1,0 +1,24 @@
+{
+  "base": "https://automoto.com.lv/ru/avto",
+  "range": {
+    "start": 1,
+    "end": 5
+  },
+  "scannedPages": 4,
+  "cardsApprox": 49,
+  "uniqueModelsWithDash": 2,
+  "models": [
+    {
+      "brand": "mercedes-benz",
+      "model": "gl-class",
+      "count": 2,
+      "example": "https://automoto.com.lv/ru/avto"
+    },
+    {
+      "brand": "mini",
+      "model": "cooper-s",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto"
+    }
+  ]
+}

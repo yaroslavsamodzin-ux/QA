@@ -1,0 +1,5 @@
+import autobonuslt from './sites/autobonuslt.js';
+
+const sites = [
+  autobonuslt, // додай інші тут по черзі
+];

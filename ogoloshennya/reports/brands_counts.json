@@ -1,0 +1,3268 @@
+{
+  "items": [
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/2pps/",
+      "h1_text": "34 оголошення про продаж 2ППС",
+      "parsed_brand": "34 Про 2ппс",
+      "parsed_count": 34,
+      "brand_slug": "2pps"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ackermann-fruehauf/",
+      "h1_text": "8 оголошень про продаж Ackermann-Fruehauf",
+      "parsed_brand": "8 Оголошень Про Ackermann-fruehauf",
+      "parsed_count": 8,
+      "brand_slug": "ackermann-fruehauf"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/acura/",
+      "h1_text": "657 оголошень про продаж Acura",
+      "parsed_brand": "657 Оголошень Про Acura",
+      "parsed_count": 657,
+      "brand_slug": "acura"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/alfa-romeo/",
+      "h1_text": "354 оголошення про продаж Alfa Romeo",
+      "parsed_brand": "354 Про Alfa Romeo",
+      "parsed_count": 354,
+      "brand_slug": "alfa-romeo"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/aprilia/",
+      "h1_text": "83 оголошення про продаж Aprilia",
+      "parsed_brand": "83 Про Aprilia",
+      "parsed_count": 83,
+      "brand_slug": "aprilia"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/asia/",
+      "h1_text": "10 оголошень про продаж Asia",
+      "parsed_brand": "10 Оголошень Про Asia",
+      "parsed_count": 10,
+      "brand_slug": "asia"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/aston-martin/",
+      "h1_text": "16 оголошень про продаж Aston Martin",
+      "parsed_brand": "16 Оголошень Про Aston Martin",
+      "parsed_count": 16,
+      "brand_slug": "aston-martin"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/atlas/",
+      "h1_text": "35 оголошень про продаж Atlas",
+      "parsed_brand": "35 Оголошень Про Atlas",
+      "parsed_count": 35,
+      "brand_slug": "atlas"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/audi/",
+      "h1_text": "18 000+ оголошень про продаж Audi",
+      "parsed_brand": "18 000+ Оголошень Про Audi",
+      "parsed_count": null,
+      "brand_slug": "audi"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/azimut/",
+      "h1_text": "12 оголошень про продаж Azimut",
+      "parsed_brand": "12 Оголошень Про Azimut",
+      "parsed_count": 12,
+      "brand_slug": "azimut"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bayliner/",
+      "h1_text": "36 оголошень про продаж Bayliner",
+      "parsed_brand": "36 Оголошень Про Bayliner",
+      "parsed_count": 36,
+      "brand_slug": "bayliner"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/benelli/",
+      "h1_text": "40 оголошень про продаж Benelli",
+      "parsed_brand": "40 Оголошень Про Benelli",
+      "parsed_count": 40,
+      "brand_slug": "benelli"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bentley/",
+      "h1_text": "71 оголошення про продаж Bentley",
+      "parsed_brand": "71 Про Bentley",
+      "parsed_count": 71,
+      "brand_slug": "bentley"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bmw/",
+      "h1_text": "17 500+ оголошення про продаж BMW",
+      "parsed_brand": "17 500+ Про Bmw",
+      "parsed_count": null,
+      "brand_slug": "bmw"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bomag/",
+      "h1_text": "37 оголошень про продаж Bomag",
+      "parsed_brand": "37 Оголошень Про Bomag",
+      "parsed_count": 37,
+      "brand_slug": "bomag"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bova/",
+      "h1_text": "16 оголошень про продаж BOVA",
+      "parsed_brand": "16 Оголошень Про Bova",
+      "parsed_count": 16,
+      "brand_slug": "bova"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/brp/",
+      "h1_text": "419 оголошень про продаж BRP",
+      "parsed_brand": "419 Оголошень Про Brp",
+      "parsed_count": 419,
+      "brand_slug": "brp"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/buick/",
+      "h1_text": "238 оголошень про продаж Buick",
+      "parsed_brand": "238 Оголошень Про Buick",
+      "parsed_count": 238,
+      "brand_slug": "buick"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/byd/",
+      "h1_text": "991 оголошення про продаж BYD",
+      "parsed_brand": "991 Про Byd",
+      "parsed_count": 991,
+      "brand_slug": "byd"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/cadillac/",
+      "h1_text": "306 оголошень про продаж Cadillac",
+      "parsed_brand": "306 Оголошень Про Cadillac",
+      "parsed_count": 306,
+      "brand_slug": "cadillac"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/caterpillar/",
+      "h1_text": "114 оголошень про продаж Caterpillar",
+      "parsed_brand": "114 Оголошень Про Caterpillar",
+      "parsed_count": 114,
+      "brand_slug": "caterpillar"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/cfmoto/",
+      "h1_text": "290 оголошень про продаж CFMOTO",
+      "parsed_brand": "290 Оголошень Про Cfmoto",
+      "parsed_count": 290,
+      "brand_slug": "cfmoto"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/chery/",
+      "h1_text": "2 300+ оголошень про продаж Chery",
+      "parsed_brand": "2 300+ Оголошень Про Chery",
+      "parsed_count": null,
+      "brand_slug": "chery"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/chevrolet/",
+      "h1_text": "7 100+ оголошень про продаж Chevrolet",
+      "parsed_brand": "7 100+ Оголошень Про Chevrolet",
+      "parsed_count": null,
+      "brand_slug": "chevrolet"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/chrysler/",
+      "h1_text": "713 оголошень про продаж Chrysler",
+      "parsed_brand": "713 Оголошень Про Chrysler",
+      "parsed_count": 713,
+      "brand_slug": "chrysler"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/citroen/",
+      "h1_text": "4 300+ оголошень про продаж Citroen",
+      "parsed_brand": "4 300+ Оголошень Про Citroen",
+      "parsed_count": null,
+      "brand_slug": "citroen"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/crownline/",
+      "h1_text": "10 оголошень про продаж Crownline",
+      "parsed_brand": "10 Оголошень Про Crownline",
+      "parsed_count": 10,
+      "brand_slug": "crownline"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/dacia/",
+      "h1_text": "1 600+ оголошень про продаж Dacia",
+      "parsed_brand": "1 600+ Оголошень Про Dacia",
+      "parsed_count": null,
+      "brand_slug": "dacia"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/dadi/",
+      "h1_text": "36 оголошень про продаж Dadi",
+      "parsed_brand": "36 Оголошень Про Dadi",
+      "parsed_count": 36,
+      "brand_slug": "dadi"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/daewoo/",
+      "h1_text": "6 300+ оголошення про продаж Daewoo",
+      "parsed_brand": "6 300+ Про Daewoo",
+      "parsed_count": null,
+      "brand_slug": "daewoo"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/daf/",
+      "h1_text": "1 600+ оголошення про продаж DAF",
+      "parsed_brand": "1 600+ Про Daf",
+      "parsed_count": null,
+      "brand_slug": "daf"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/daihatsu/",
+      "h1_text": "112 оголошень про продаж Daihatsu",
+      "parsed_brand": "112 Оголошень Про Daihatsu",
+      "parsed_count": 112,
+      "brand_slug": "daihatsu"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/defiant/",
+      "h1_text": "19 оголошень про продаж Defiant",
+      "parsed_brand": "19 Оголошень Про Defiant",
+      "parsed_count": 19,
+      "brand_slug": "defiant"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/denza/",
+      "h1_text": "41 оголошення про продаж Denza",
+      "parsed_brand": "41 Про Denza",
+      "parsed_count": 41,
+      "brand_slug": "denza"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/dodge/",
+      "h1_text": "1 600+ оголошень про продаж Dodge",
+      "parsed_brand": "1 600+ Оголошень Про Dodge",
+      "parsed_count": null,
+      "brand_slug": "dodge"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/dongfeng/",
+      "h1_text": "44 оголошення про продаж Dongfeng",
+      "parsed_brand": "44 Про Dongfeng",
+      "parsed_count": 44,
+      "brand_slug": "dongfeng"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ducati/",
+      "h1_text": "197 оголошень про продаж Ducati",
+      "parsed_brand": "197 Оголошень Про Ducati",
+      "parsed_count": 197,
+      "brand_slug": "ducati"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/elwinn/",
+      "h1_text": "11 оголошень про продаж Elwinn",
+      "parsed_brand": "11 Оголошень Про Elwinn",
+      "parsed_count": 11,
+      "brand_slug": "elwinn"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/faw/",
+      "h1_text": "56 оголошень про продаж FAW",
+      "parsed_brand": "56 Оголошень Про Faw",
+      "parsed_count": 56,
+      "brand_slug": "faw"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/fiat/",
+      "h1_text": "3 000+ оголошень про продаж Fiat",
+      "parsed_brand": "3 000+ Оголошень Про Fiat",
+      "parsed_count": null,
+      "brand_slug": "fiat"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/fisker/",
+      "h1_text": "26 оголошень про продаж Fisker",
+      "parsed_brand": "26 Оголошень Про Fisker",
+      "parsed_count": 26,
+      "brand_slug": "fisker"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ford/",
+      "h1_text": "16 500+ оголошень про продаж Ford",
+      "parsed_brand": "16 500+ Оголошень Про Ford",
+      "parsed_count": null,
+      "brand_slug": "ford"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/geely/",
+      "h1_text": "1 500+ оголошення про продаж Geely",
+      "parsed_brand": "1 500+ Про Geely",
+      "parsed_count": null,
+      "brand_slug": "geely"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/geon/",
+      "h1_text": "602 оголошення про продаж Geon",
+      "parsed_brand": "602 Про Geon",
+      "parsed_count": 602,
+      "brand_slug": "geon"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/gilera/",
+      "h1_text": "10 оголошень про продаж Gilera",
+      "parsed_brand": "10 Оголошень Про Gilera",
+      "parsed_count": 10,
+      "brand_slug": "gilera"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/gmc/",
+      "h1_text": "146 оголошень про продаж GMC",
+      "parsed_brand": "146 Оголошень Про Gmc",
+      "parsed_count": 146,
+      "brand_slug": "gmc"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/great-wall/",
+      "h1_text": "249 оголошень про продаж Great Wall",
+      "parsed_brand": "249 Оголошень Про Great Wall",
+      "parsed_count": 249,
+      "brand_slug": "great-wall"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/harley-davidson/",
+      "h1_text": "472 оголошення про продаж Harley-Davidson",
+      "parsed_brand": "472 Про Harley-davidson",
+      "parsed_count": 472,
+      "brand_slug": "harley-davidson"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/honda/",
+      "h1_text": "6 800+ оголошень про продаж Honda",
+      "parsed_brand": "6 800+ Оголошень Про Honda",
+      "parsed_count": null,
+      "brand_slug": "honda"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/humbaur/",
+      "h1_text": "28 оголошень про продаж Humbaur",
+      "parsed_brand": "28 Оголошень Про Humbaur",
+      "parsed_count": 28,
+      "brand_slug": "humbaur"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/hummer/",
+      "h1_text": "57 оголошень про продаж Hummer",
+      "parsed_brand": "57 Оголошень Про Hummer",
+      "parsed_count": 57,
+      "brand_slug": "hummer"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/husqvarna/",
+      "h1_text": "56 оголошень про продаж Husqvarna",
+      "parsed_brand": "56 Оголошень Про Husqvarna",
+      "parsed_count": 56,
+      "brand_slug": "husqvarna"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/hyosung/",
+      "h1_text": "37 оголошень про продаж Hyosung",
+      "parsed_brand": "37 Оголошень Про Hyosung",
+      "parsed_count": 37,
+      "brand_slug": "hyosung"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/hyundai/",
+      "h1_text": "10 500+ оголошень про продаж Hyundai",
+      "parsed_brand": "10 500+ Оголошень Про Hyundai",
+      "parsed_count": null,
+      "brand_slug": "hyundai"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/infiniti/",
+      "h1_text": "1 700+ оголошень про продаж Infiniti",
+      "parsed_brand": "1 700+ Оголошень Про Infiniti",
+      "parsed_count": null,
+      "brand_slug": "infiniti"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/isuzu/",
+      "h1_text": "78 оголошень про продаж Isuzu",
+      "parsed_brand": "78 Оголошень Про Isuzu",
+      "parsed_count": 78,
+      "brand_slug": "isuzu"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/iveco/",
+      "h1_text": "655 оголошень про продаж Iveco",
+      "parsed_brand": "655 Оголошень Про Iveco",
+      "parsed_count": 655,
+      "brand_slug": "iveco"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/jac/",
+      "h1_text": "186 оголошень про продаж JAC",
+      "parsed_brand": "186 Оголошень Про Jac",
+      "parsed_count": 186,
+      "brand_slug": "jac"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/jaguar/",
+      "h1_text": "943 оголошення про продаж Jaguar",
+      "parsed_brand": "943 Про Jaguar",
+      "parsed_count": 943,
+      "brand_slug": "jaguar"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/jawa/",
+      "h1_text": "218 оголошень про продаж Jawa",
+      "parsed_brand": "218 Оголошень Про Jawa",
+      "parsed_count": 218,
+      "brand_slug": "jawa"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/jcb/",
+      "h1_text": "457 оголошень про продаж JCB",
+      "parsed_brand": "457 Оголошень Про Jcb",
+      "parsed_count": 457,
+      "brand_slug": "jcb"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/jeep/",
+      "h1_text": "3 900+ оголошень про продаж Jeep",
+      "parsed_brand": "3 900+ Оголошень Про Jeep",
+      "parsed_count": null,
+      "brand_slug": "jeep"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kanuni/",
+      "h1_text": "30 оголошень про продаж Kanuni",
+      "parsed_brand": "30 Оголошень Про Kanuni",
+      "parsed_count": 30,
+      "brand_slug": "kanuni"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kawasaki/",
+      "h1_text": "740 оголошень про продаж Kawasaki",
+      "parsed_brand": "740 Оголошень Про Kawasaki",
+      "parsed_count": 740,
+      "brand_slug": "kawasaki"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kaya/",
+      "h1_text": "12 оголошень про продаж Kaya",
+      "parsed_brand": "12 Оголошень Про Kaya",
+      "parsed_count": 12,
+      "brand_slug": "kaya"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kia/",
+      "h1_text": "8 100+ оголошення про продаж Kia",
+      "parsed_brand": "8 100+ Про Kia",
+      "parsed_count": null,
+      "brand_slug": "kia"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kogel/",
+      "h1_text": "691 оголошення про продаж Kogel",
+      "parsed_brand": "691 Про Kogel",
+      "parsed_count": 691,
+      "brand_slug": "kogel"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/krone/",
+      "h1_text": "920 оголошень про продаж Krone",
+      "parsed_brand": "920 Оголошень Про Krone",
+      "parsed_count": 920,
+      "brand_slug": "krone"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ktm/",
+      "h1_text": "268 оголошень про продаж KTM",
+      "parsed_brand": "268 Оголошень Про Ktm",
+      "parsed_count": 268,
+      "brand_slug": "ktm"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kubota/",
+      "h1_text": "Kubota — 208 пропозицій",
+      "parsed_brand": "Kubota — 208 Пропозицій",
+      "parsed_count": null,
+      "brand_slug": "kubota"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/lag/",
+      "h1_text": "61 оголошення про продаж LAG",
+      "parsed_brand": "61 Про Lag",
+      "parsed_count": 61,
+      "brand_slug": "lag"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/lamborghini/",
+      "h1_text": "16 оголошень про продаж Lamborghini",
+      "parsed_brand": "16 Оголошень Про Lamborghini",
+      "parsed_count": 16,
+      "brand_slug": "lamborghini"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/lancia/",
+      "h1_text": "88 оголошень про продаж Lancia",
+      "parsed_brand": "88 Оголошень Про Lancia",
+      "parsed_count": 88,
+      "brand_slug": "lancia"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/land-rover/",
+      "h1_text": "2 600+ оголошень про продаж Land Rover",
+      "parsed_brand": "2 600+ Оголошень Про Land Rover",
+      "parsed_count": null,
+      "brand_slug": "land-rover"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/lexus/",
+      "h1_text": "3 100+ оголошення про продаж Lexus",
+      "parsed_brand": "3 100+ Про Lexus",
+      "parsed_count": null,
+      "brand_slug": "lexus"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/lifan/",
+      "h1_text": "712 оголошень про продаж Lifan",
+      "parsed_brand": "712 Оголошень Про Lifan",
+      "parsed_count": 712,
+      "brand_slug": "lifan"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/like-bike/",
+      "h1_text": "11 оголошень про продаж Like.Bike",
+      "parsed_brand": "11 Оголошень Про Like.bike",
+      "parsed_count": 11,
+      "brand_slug": "like-bike"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/lincoln/",
+      "h1_text": "613 оголошень про продаж Lincoln",
+      "parsed_brand": "613 Оголошень Про Lincoln",
+      "parsed_count": 613,
+      "brand_slug": "lincoln"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/mag-trailer/",
+      "h1_text": "12 оголошень про продаж MAG Trailer",
+      "parsed_brand": "12 Оголошень Про Mag Trailer",
+      "parsed_count": 12,
+      "brand_slug": "mag-trailer"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/malaguti/",
+      "h1_text": "11 оголошень про продаж Malaguti",
+      "parsed_brand": "11 Оголошень Про Malaguti",
+      "parsed_count": 11,
+      "brand_slug": "malaguti"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/man/",
+      "h1_text": "1 900+ оголошень про продаж MAN",
+      "parsed_brand": "1 900+ Оголошень Про Man",
+      "parsed_count": null,
+      "brand_slug": "man"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/maserati/",
+      "h1_text": "136 оголошень про продаж Maserati",
+      "parsed_brand": "136 Оголошень Про Maserati",
+      "parsed_count": 136,
+      "brand_slug": "maserati"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/maxxter/",
+      "h1_text": "19 оголошень про продаж Maxxter",
+      "parsed_brand": "19 Оголошень Про Maxxter",
+      "parsed_count": 19,
+      "brand_slug": "maxxter"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/mazda/",
+      "h1_text": "8 000+ оголошень про продаж Mazda",
+      "parsed_brand": "8 000+ Оголошень Про Mazda",
+      "parsed_count": null,
+      "brand_slug": "mazda"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/mercedes-benz/",
+      "h1_text": "17 500+ оголошень про продаж Mercedes-Benz",
+      "parsed_brand": "17 500+ Оголошень Про Mercedes-benz",
+      "parsed_count": null,
+      "brand_slug": "mercedes-benz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/mercury/",
+      "h1_text": "37 оголошень про продаж Mercury",
+      "parsed_brand": "37 Оголошень Про Mercury",
+      "parsed_count": 37,
+      "brand_slug": "mercury"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/mg/",
+      "h1_text": "261 оголошення про продаж MG",
+      "parsed_brand": "261 Про Mg",
+      "parsed_count": 261,
+      "brand_slug": "mg"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/mini/",
+      "h1_text": "904 оголошення про продаж MINI",
+      "parsed_brand": "904 Про Mini",
+      "parsed_count": 904,
+      "brand_slug": "mini"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/mitsubishi/",
+      "h1_text": "6 500+ оголошення про продаж Mitsubishi",
+      "parsed_brand": "6 500+ Про Mitsubishi",
+      "parsed_count": null,
+      "brand_slug": "mitsubishi"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/moto-guzzi/",
+      "h1_text": "11 оголошень про продаж Moto Guzzi",
+      "parsed_brand": "11 Оголошень Про Moto Guzzi",
+      "parsed_count": 11,
+      "brand_slug": "moto-guzzi"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/mv-agusta/",
+      "h1_text": "16 оголошень про продаж Mv agusta",
+      "parsed_brand": "16 Оголошень Про Mv Agusta",
+      "parsed_count": 16,
+      "brand_slug": "mv-agusta"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/neoplan/",
+      "h1_text": "133 оголошення про продаж Neoplan",
+      "parsed_brand": "133 Про Neoplan",
+      "parsed_count": 133,
+      "brand_slug": "neoplan"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/new-holland/",
+      "h1_text": "New Holland — 441 пропозиція",
+      "parsed_brand": "New Holland — 441 Пропозиція",
+      "parsed_count": null,
+      "brand_slug": "new-holland"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/nissan/",
+      "h1_text": "13 000+ оголошення про продаж Nissan",
+      "parsed_brand": "13 000+ Про Nissan",
+      "parsed_count": null,
+      "brand_slug": "nissan"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/opel/",
+      "h1_text": "13 000+ оголошень про продаж Opel",
+      "parsed_brand": "13 000+ Оголошень Про Opel",
+      "parsed_count": null,
+      "brand_slug": "opel"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/pacton/",
+      "h1_text": "73 оголошення про продаж Pacton",
+      "parsed_brand": "73 Про Pacton",
+      "parsed_count": 73,
+      "brand_slug": "pacton"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/peugeot/",
+      "h1_text": "7 000+ оголошення про продаж Peugeot",
+      "parsed_brand": "7 000+ Про Peugeot",
+      "parsed_count": null,
+      "brand_slug": "peugeot"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/piaggio/",
+      "h1_text": "40 оголошень про продаж Piaggio",
+      "parsed_brand": "40 Оголошень Про Piaggio",
+      "parsed_count": 40,
+      "brand_slug": "piaggio"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/polaris/",
+      "h1_text": "72 оголошення про продаж Polaris",
+      "parsed_brand": "72 Про Polaris",
+      "parsed_count": 72,
+      "brand_slug": "polaris"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/pontiac/",
+      "h1_text": "12 оголошень про продаж Pontiac",
+      "parsed_brand": "12 Оголошень Про Pontiac",
+      "parsed_count": 12,
+      "brand_slug": "pontiac"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/porsche/",
+      "h1_text": "1 600+ оголошень про продаж Porsche",
+      "parsed_brand": "1 600+ Оголошень Про Porsche",
+      "parsed_count": null,
+      "brand_slug": "porsche"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/powerboat/",
+      "h1_text": "13 оголошень про продаж Powerboat",
+      "parsed_brand": "13 Оголошень Про Powerboat",
+      "parsed_count": 13,
+      "brand_slug": "powerboat"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/pragmatec/",
+      "h1_text": "23 оголошення про продаж Pragmatec",
+      "parsed_brand": "23 Про Pragmatec",
+      "parsed_count": 23,
+      "brand_slug": "pragmatec"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/princess/",
+      "h1_text": "12 оголошень про продаж Princess",
+      "parsed_brand": "12 Оголошень Про Princess",
+      "parsed_count": 12,
+      "brand_slug": "princess"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/renault/",
+      "h1_text": "16 500+ оголошень про продаж Renault",
+      "parsed_brand": "16 500+ Оголошень Про Renault",
+      "parsed_count": null,
+      "brand_slug": "renault"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/rolls-royce/",
+      "h1_text": "32 оголошення про продаж Rolls-Royce",
+      "parsed_brand": "32 Про Rolls-royce",
+      "parsed_count": 32,
+      "brand_slug": "rolls-royce"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/rover/",
+      "h1_text": "108 оголошень про продаж Rover",
+      "parsed_brand": "108 Оголошень Про Rover",
+      "parsed_count": 108,
+      "brand_slug": "rover"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/sabur/",
+      "h1_text": "10 оголошень про продаж Sabur",
+      "parsed_brand": "10 Оголошень Про Sabur",
+      "parsed_count": 10,
+      "brand_slug": "sabur"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/scania/",
+      "h1_text": "408 оголошень про продаж Scania",
+      "parsed_brand": "408 Оголошень Про Scania",
+      "parsed_count": 408,
+      "brand_slug": "scania"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/schmitz/",
+      "h1_text": "386 оголошень про продаж Schmitz",
+      "parsed_brand": "386 Оголошень Про Schmitz",
+      "parsed_count": 386,
+      "brand_slug": "schmitz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/schmitz-cargobull/",
+      "h1_text": "830 оголошень про продаж Schmitz Cargobull",
+      "parsed_brand": "830 Оголошень Про Schmitz Cargobull",
+      "parsed_count": 830,
+      "brand_slug": "schmitz-cargobull"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/schwarzmuller/",
+      "h1_text": "316 оголошень про продаж Schwarzmuller",
+      "parsed_brand": "316 Оголошень Про Schwarzmuller",
+      "parsed_count": 316,
+      "brand_slug": "schwarzmuller"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/seat/",
+      "h1_text": "1 400+ оголошення про продаж SEAT",
+      "parsed_brand": "1 400+ Про Seat",
+      "parsed_count": null,
+      "brand_slug": "seat"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/senke/",
+      "h1_text": "60 оголошень про продаж Senke",
+      "parsed_brand": "60 Оголошень Про Senke",
+      "parsed_count": 60,
+      "brand_slug": "senke"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/shark/",
+      "h1_text": "24 оголошення про продаж Shark",
+      "parsed_brand": "24 Про Shark",
+      "parsed_count": 24,
+      "brand_slug": "shark"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/sinomach/",
+      "h1_text": "16 оголошень про продаж Sinomach",
+      "parsed_brand": "16 Оголошень Про Sinomach",
+      "parsed_count": 16,
+      "brand_slug": "sinomach"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/skoda/",
+      "h1_text": "13 000+ оголошення про продаж Skoda",
+      "parsed_brand": "13 000+ Про Skoda",
+      "parsed_count": null,
+      "brand_slug": "skoda"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/smart/",
+      "h1_text": "592 оголошення про продаж Smart",
+      "parsed_brand": "592 Про Smart",
+      "parsed_count": 592,
+      "brand_slug": "smart"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/sparta/",
+      "h1_text": "27 оголошень про продаж Sparta",
+      "parsed_brand": "27 Оголошень Про Sparta",
+      "parsed_count": 27,
+      "brand_slug": "sparta"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/speed-gear/",
+      "h1_text": "17 оголошень про продаж Speed Gear",
+      "parsed_brand": "17 Оголошень Про Speed Gear",
+      "parsed_count": 17,
+      "brand_slug": "speed-gear"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ssangyong/",
+      "h1_text": "782 оголошення про продаж SsangYong",
+      "parsed_brand": "782 Про Ssangyong",
+      "parsed_count": 782,
+      "brand_slug": "ssangyong"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/subaru/",
+      "h1_text": "2 800+ оголошення про продаж Subaru",
+      "parsed_brand": "2 800+ Про Subaru",
+      "parsed_count": null,
+      "brand_slug": "subaru"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/suzuki/",
+      "h1_text": "2 600+ оголошення про продаж Suzuki",
+      "parsed_brand": "2 600+ Про Suzuki",
+      "parsed_count": null,
+      "brand_slug": "suzuki"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/tcm/",
+      "h1_text": "15 оголошень про продаж TCM",
+      "parsed_brand": "15 Оголошень Про Tcm",
+      "parsed_count": 15,
+      "brand_slug": "tcm"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/temared/",
+      "h1_text": "10 оголошень про продаж Temared",
+      "parsed_brand": "10 Оголошень Про Temared",
+      "parsed_count": 10,
+      "brand_slug": "temared"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/tesla/",
+      "h1_text": "4 400+ оголошення про продаж Tesla",
+      "parsed_brand": "4 400+ Про Tesla",
+      "parsed_count": null,
+      "brand_slug": "tesla"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/toyota/",
+      "h1_text": "11 500+ оголошень про продаж Toyota",
+      "parsed_brand": "11 500+ Оголошень Про Toyota",
+      "parsed_count": null,
+      "brand_slug": "toyota"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/tracker/",
+      "h1_text": "17 оголошень про продаж Tracker",
+      "parsed_brand": "17 Оголошень Про Tracker",
+      "parsed_count": 17,
+      "brand_slug": "tracker"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/viper/",
+      "h1_text": "486 оголошень про продаж Viper",
+      "parsed_brand": "486 Оголошень Про Viper",
+      "parsed_count": 486,
+      "brand_slug": "viper"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/voge/",
+      "h1_text": "54 оголошення про продаж Voge",
+      "parsed_brand": "54 Про Voge",
+      "parsed_count": 54,
+      "brand_slug": "voge"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/volkswagen/",
+      "h1_text": "34 500+ оголошень про продаж Volkswagen",
+      "parsed_brand": "34 500+ Оголошень Про Volkswagen",
+      "parsed_count": null,
+      "brand_slug": "volkswagen"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/volvo/",
+      "h1_text": "3 800+ оголошення про продаж Volvo",
+      "parsed_brand": "3 800+ Про Volvo",
+      "parsed_count": null,
+      "brand_slug": "volvo"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/yamaha/",
+      "h1_text": "2 000+ оголошень про продаж Yamaha",
+      "parsed_brand": "2 000+ Оголошень Про Yamaha",
+      "parsed_count": null,
+      "brand_slug": "yamaha"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ycf/",
+      "h1_text": "57 оголошень про продаж YCF",
+      "parsed_brand": "57 Оголошень Про Ycf",
+      "parsed_count": 57,
+      "brand_slug": "ycf"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/yiben/",
+      "h1_text": "25 оголошень про продаж YiBen",
+      "parsed_brand": "25 Оголошень Про Yiben",
+      "parsed_count": 25,
+      "brand_slug": "yiben"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/yokomoto/",
+      "h1_text": "13 оголошень про продаж Yokomoto",
+      "parsed_brand": "13 Оголошень Про Yokomoto",
+      "parsed_count": 13,
+      "brand_slug": "yokomoto"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/zeekr/",
+      "h1_text": "293 оголошення про продаж Zeekr",
+      "parsed_brand": "293 Про Zeekr",
+      "parsed_count": 293,
+      "brand_slug": "zeekr"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/zongshen/",
+      "h1_text": "29 оголошень про продаж Zongshen",
+      "parsed_brand": "29 Оголошень Про Zongshen",
+      "parsed_count": 29,
+      "brand_slug": "zongshen"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/atv/",
+      "h1_text": "68 оголошень про продаж ATV",
+      "parsed_brand": "68 Оголошень Про Atv",
+      "parsed_count": 68,
+      "brand_slug": "atv"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/abarth/",
+      "h1_text": "13 оголошень про продаж Abarth",
+      "parsed_brand": "13 Оголошень Про Abarth",
+      "parsed_count": 13,
+      "brand_slug": "abarth"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/abm/",
+      "h1_text": "12 оголошень про продаж ABM",
+      "parsed_brand": "12 Оголошень Про Abm",
+      "parsed_count": 12,
+      "brand_slug": "abm"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/adventure/",
+      "h1_text": "11 оголошень про продаж Adventure",
+      "parsed_brand": "11 Оголошень Про Adventure",
+      "parsed_count": 11,
+      "brand_slug": "adventure"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/adria/",
+      "h1_text": "11 оголошень про продаж Adria",
+      "parsed_brand": "11 Оголошень Про Adria",
+      "parsed_count": 11,
+      "brand_slug": "adria"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/acerbi/",
+      "h1_text": "13 оголошень про продаж Acerbi",
+      "parsed_brand": "13 Оголошень Про Acerbi",
+      "parsed_count": 13,
+      "brand_slug": "acerbi"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/al-ko/",
+      "h1_text": "23 оголошення про продаж Al-ko",
+      "parsed_brand": "23 Про Al-ko",
+      "parsed_count": 23,
+      "brand_slug": "al-ko"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/aleko/",
+      "h1_text": "10 оголошень про продаж ALEKO",
+      "parsed_brand": "10 Оголошень Про Aleko",
+      "parsed_count": 10,
+      "brand_slug": "aleko"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bmw-alpina/",
+      "h1_text": "15 оголошень про продаж BMW-Alpina",
+      "parsed_brand": "15 Оголошень Про Bmw-alpina",
+      "parsed_count": 15,
+      "brand_slug": "bmw-alpina"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/alfa/",
+      "h1_text": "50 оголошень про продаж Alfa",
+      "parsed_brand": "50 Оголошень Про Alfa",
+      "parsed_count": 50,
+      "brand_slug": "alfa"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/alpha/",
+      "h1_text": "64 оголошення про продаж Alpha",
+      "parsed_brand": "64 Про Alpha",
+      "parsed_count": 64,
+      "brand_slug": "alpha"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ammann/",
+      "h1_text": "14 оголошень про продаж Ammann",
+      "parsed_brand": "14 Оголошень Про Ammann",
+      "parsed_count": 14,
+      "brand_slug": "ammann"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/amkodor/",
+      "h1_text": "10 оголошень про продаж Амкодор",
+      "parsed_brand": "10 Оголошень Про Амкодор",
+      "parsed_count": 10,
+      "brand_slug": "amkodor"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/arctic-cat/",
+      "h1_text": "17 оголошень про продаж Arctic cat",
+      "parsed_brand": "17 Оголошень Про Arctic Cat",
+      "parsed_count": 17,
+      "brand_slug": "arctic-cat"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ataman/",
+      "h1_text": "11 оголошень про продаж Ataman",
+      "parsed_brand": "11 Оголошень Про Ataman",
+      "parsed_count": 11,
+      "brand_slug": "ataman"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/aima/",
+      "h1_text": "51 оголошення про продаж AIMA",
+      "parsed_brand": "51 Про Aima",
+      "parsed_count": 51,
+      "brand_slug": "aima"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bavaria/",
+      "h1_text": "20 оголошень про продаж Bavaria",
+      "parsed_brand": "20 Оголошень Про Bavaria",
+      "parsed_count": 20,
+      "brand_slug": "bavaria"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bajaj/",
+      "h1_text": "329 оголошень про продаж Bajaj",
+      "parsed_brand": "329 Оголошень Про Bajaj",
+      "parsed_count": 329,
+      "brand_slug": "bajaj"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/baz/",
+      "h1_text": "237 оголошень про продаж БАЗ",
+      "parsed_brand": "237 Оголошень Про Баз",
+      "parsed_count": 237,
+      "brand_slug": "baz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/balkancar/",
+      "h1_text": "28 оголошень про продаж Balkancar",
+      "parsed_brand": "28 Оголошень Про Balkancar",
+      "parsed_count": 28,
+      "brand_slug": "balkancar"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bashan/",
+      "h1_text": "77 оголошень про продаж Bashan",
+      "parsed_brand": "77 Оголошень Про Bashan",
+      "parsed_count": 77,
+      "brand_slug": "bashan"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/benalu/",
+      "h1_text": "176 оголошень про продаж Benalu",
+      "parsed_brand": "176 Оголошень Про Benalu",
+      "parsed_count": 176,
+      "brand_slug": "benalu"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/berger/",
+      "h1_text": "20 оголошень про продаж Berger",
+      "parsed_brand": "20 Оголошень Про Berger",
+      "parsed_count": 20,
+      "brand_slug": "berger"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/beta/",
+      "h1_text": "10 оголошень про продаж Beta",
+      "parsed_brand": "10 Оголошень Про Beta",
+      "parsed_count": 10,
+      "brand_slug": "beta"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/blumhardt/",
+      "h1_text": "19 оголошень про продаж Blumhardt",
+      "parsed_brand": "19 Оголошень Про Blumhardt",
+      "parsed_count": 19,
+      "brand_slug": "blumhardt"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bober/",
+      "h1_text": "10 оголошень про продаж Бобер",
+      "parsed_brand": "10 Оголошень Про Бобер",
+      "parsed_count": 10,
+      "brand_slug": "bober"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bobcat/",
+      "h1_text": "57 оголошень про продаж Bobcat",
+      "parsed_brand": "57 Оголошень Про Bobcat",
+      "parsed_count": 57,
+      "brand_slug": "bobcat"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bogdan/",
+      "h1_text": "366 оголошень про продаж Богдан",
+      "parsed_brand": "366 Оголошень Про Богдан",
+      "parsed_count": 366,
+      "brand_slug": "bogdan"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bodex/",
+      "h1_text": "239 оголошень про продаж Bodex",
+      "parsed_brand": "239 Оголошень Про Bodex",
+      "parsed_count": 239,
+      "brand_slug": "bodex"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bolgan/",
+      "h1_text": "13 оголошень про продаж Bolgan",
+      "parsed_brand": "13 Оголошень Про Bolgan",
+      "parsed_count": 13,
+      "brand_slug": "bolgan"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/brig/",
+      "h1_text": "17 оголошень про продаж BRIG",
+      "parsed_brand": "17 Оголошень Про Brig",
+      "parsed_count": 17,
+      "brand_slug": "brig"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/bse/",
+      "h1_text": "90 оголошень про продаж BSE",
+      "parsed_brand": "90 Оголошень Про Bse",
+      "parsed_count": 90,
+      "brand_slug": "bse"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/burg/",
+      "h1_text": "22 оголошення про продаж Burg",
+      "parsed_brand": "22 Про Burg",
+      "parsed_count": 22,
+      "brand_slug": "burg"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/raf/",
+      "h1_text": "17 оголошень про продаж РАФ",
+      "parsed_brand": "17 Оголошень Про Раф",
+      "parsed_count": 17,
+      "brand_slug": "raf"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/vaz-lada/",
+      "h1_text": "16 500+ оголошень про продаж ВАЗ",
+      "parsed_brand": "16 500+ Оголошень Про Ваз",
+      "parsed_count": null,
+      "brand_slug": "vaz-lada"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/van-hool/",
+      "h1_text": "183 оголошення про продаж Van Hool",
+      "parsed_brand": "183 Про Van Hool",
+      "parsed_count": 183,
+      "brand_slug": "van-hool"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/wartburg/",
+      "h1_text": "14 оголошень про продаж Wartburg",
+      "parsed_brand": "14 Оголошень Про Wartburg",
+      "parsed_count": 14,
+      "brand_slug": "wartburg"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/vdl/",
+      "h1_text": "20 оголошень про продаж VDL",
+      "parsed_brand": "20 Оголошень Про Vdl",
+      "parsed_count": 20,
+      "brand_slug": "vdl"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/weightlifter/",
+      "h1_text": "13 оголошень про продаж Weightlifter",
+      "parsed_brand": "13 Оголошень Про Weightlifter",
+      "parsed_count": 13,
+      "brand_slug": "weightlifter"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/weltmeister/",
+      "h1_text": "33 оголошення про продаж Weltmeister",
+      "parsed_brand": "33 Про Weltmeister",
+      "parsed_count": 33,
+      "brand_slug": "weltmeister"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/wielton/",
+      "h1_text": "206 оголошень про продаж Wielton",
+      "parsed_brand": "206 Оголошень Про Wielton",
+      "parsed_count": 206,
+      "brand_slug": "wielton"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/weekend/",
+      "h1_text": "10 оголошень про продаж Weekend",
+      "parsed_brand": "10 Оголошень Про Weekend",
+      "parsed_count": 10,
+      "brand_slug": "weekend"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/victory/",
+      "h1_text": "18 оголошень про продаж Victory",
+      "parsed_brand": "18 Оголошень Про Victory",
+      "parsed_count": 18,
+      "brand_slug": "victory"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/wilcox/",
+      "h1_text": "23 оголошення про продаж Wilcox",
+      "parsed_brand": "23 Про Wilcox",
+      "parsed_count": 23,
+      "brand_slug": "wilcox"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/willig/",
+      "h1_text": "15 оголошень про продаж Willig",
+      "parsed_brand": "15 Оголошень Про Willig",
+      "parsed_count": 15,
+      "brand_slug": "willig"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/wirtgen/",
+      "h1_text": "14 оголошень про продаж Wirtgen",
+      "parsed_brand": "14 Оголошень Про Wirtgen",
+      "parsed_count": 14,
+      "brand_slug": "wirtgen"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/gaz/",
+      "h1_text": "2 200+ оголошень про продаж ГАЗ",
+      "parsed_brand": "2 200+ Оголошень Про Газ",
+      "parsed_count": null,
+      "brand_slug": "gaz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/galeon/",
+      "h1_text": "13 оголошень про продаж Galeon",
+      "parsed_brand": "13 Оголошень Про Galeon",
+      "parsed_count": 13,
+      "brand_slug": "galeon"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/genesis/",
+      "h1_text": "29 оголошень про продаж Genesis",
+      "parsed_brand": "29 Оголошень Про Genesis",
+      "parsed_count": 29,
+      "brand_slug": "genesis"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/glastron/",
+      "h1_text": "10 оголошень про продаж Glastron",
+      "parsed_brand": "10 Оголошень Про Glastron",
+      "parsed_count": 10,
+      "brand_slug": "glastron"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/goldhofer/",
+      "h1_text": "12 оголошень про продаж Goldhofer",
+      "parsed_brand": "12 Оголошень Про Goldhofer",
+      "parsed_count": 12,
+      "brand_slug": "goldhofer"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/gofa/",
+      "h1_text": "10 оголошень про продаж GOFA",
+      "parsed_brand": "10 Оголошень Про Gofa",
+      "parsed_count": 10,
+      "brand_slug": "gofa"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/gras/",
+      "h1_text": "36 оголошень про продаж GRAS",
+      "parsed_brand": "36 Оголошень Про Gras",
+      "parsed_count": 36,
+      "brand_slug": "gras"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/groenewegen/",
+      "h1_text": "31 оголошення про продаж Groenewegen",
+      "parsed_brand": "31 Про Groenewegen",
+      "parsed_count": 31,
+      "brand_slug": "groenewegen"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/genie/",
+      "h1_text": "9 оголошень про продаж Genie",
+      "parsed_brand": "9 Оголошень Про Genie",
+      "parsed_count": 9,
+      "brand_slug": "genie"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/hidromek/",
+      "h1_text": "37 оголошень про продаж Hidromek",
+      "parsed_brand": "37 Оголошень Про Hidromek",
+      "parsed_count": 37,
+      "brand_slug": "hidromek"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/delta/",
+      "h1_text": "57 оголошень про продаж Delta",
+      "parsed_brand": "57 Оголошень Про Delta",
+      "parsed_count": 57,
+      "brand_slug": "delta"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/dennison/",
+      "h1_text": "36 оголошень про продаж Dennison",
+      "parsed_brand": "36 Оголошень Про Dennison",
+      "parsed_count": 36,
+      "brand_slug": "dennison"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/desot/",
+      "h1_text": "10 оголошень про продаж Desot",
+      "parsed_brand": "10 Оголошень Про Desot",
+      "parsed_count": 10,
+      "brand_slug": "desot"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/dethleffs/",
+      "h1_text": "15 оголошень про продаж Dethleffs",
+      "parsed_brand": "15 Оголошень Про Dethleffs",
+      "parsed_count": 15,
+      "brand_slug": "dethleffs"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/general-trailers/",
+      "h1_text": "68 оголошень про продаж General Trailers",
+      "parsed_brand": "68 Оголошень Про General Trailers",
+      "parsed_count": 68,
+      "brand_slug": "general-trailers"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/janmil/",
+      "h1_text": "63 оголошення про продаж Janmil",
+      "parsed_brand": "63 Про Janmil",
+      "parsed_count": 63,
+      "brand_slug": "janmil"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/jetour/",
+      "h1_text": "113 оголошень про продаж Jetour",
+      "parsed_brand": "113 Оголошень Про Jetour",
+      "parsed_count": 113,
+      "brand_slug": "jetour"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/jianshe/",
+      "h1_text": "12 оголошень про продаж Jianshe",
+      "parsed_brand": "12 Оголошень Про Jianshe",
+      "parsed_count": 12,
+      "brand_slug": "jianshe"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/dnepr/",
+      "h1_text": "17 оголошень про продаж Днепр",
+      "parsed_brand": "17 Оголошень Про Днепр",
+      "parsed_count": 17,
+      "brand_slug": "dnepr"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/dnipro/",
+      "h1_text": "37 оголошень про продаж Дніпро",
+      "parsed_brand": "37 Оголошень Про Дніпро",
+      "parsed_count": 37,
+      "brand_slug": "dnipro"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/dnepr-kmz/",
+      "h1_text": "234 оголошення про продаж Днепр (КМЗ)",
+      "parsed_brand": "234 Про Днепр",
+      "parsed_count": 234,
+      "brand_slug": "dnepr-kmz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/dogan/",
+      "h1_text": "9 оголошень про продаж Dogan",
+      "parsed_brand": "9 Оголошень Про Dogan",
+      "parsed_count": 9,
+      "brand_slug": "dogan"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/dromech/",
+      "h1_text": "13 оголошень про продаж Dromech",
+      "parsed_brand": "13 Оголошень Про Dromech",
+      "parsed_count": 13,
+      "brand_slug": "dromech"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ds/",
+      "h1_text": "1 оголошення про продаж ДС",
+      "parsed_brand": "1 Про Дс",
+      "parsed_count": 1,
+      "brand_slug": "ds"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/doosan/",
+      "h1_text": "28 оголошень про продаж Doosan",
+      "parsed_brand": "28 Оголошень Про Doosan",
+      "parsed_count": 28,
+      "brand_slug": "doosan"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/everlast/",
+      "h1_text": "18 оголошень про продаж Everlast",
+      "parsed_brand": "18 Оголошень Про Everlast",
+      "parsed_count": 18,
+      "brand_slug": "everlast"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/exdrive/",
+      "h1_text": "25 оголошень про продаж Exdrive",
+      "parsed_brand": "25 Оголошень Про Exdrive",
+      "parsed_count": 25,
+      "brand_slug": "exdrive"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/electric-scooter/",
+      "h1_text": "14 оголошень про продаж Electric Scooter",
+      "parsed_brand": "14 Оголошень Про Electric Scooter",
+      "parsed_count": 14,
+      "brand_slug": "electric-scooter"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/enerco/",
+      "h1_text": "14 оголошень про продаж ENERCO",
+      "parsed_brand": "14 Оголошень Про Enerco",
+      "parsed_count": 14,
+      "brand_slug": "enerco"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/eos/",
+      "h1_text": "13 оголошень про продаж EOS",
+      "parsed_brand": "13 Оголошень Про Eos",
+      "parsed_count": 13,
+      "brand_slug": "eos"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/sdc/",
+      "h1_text": "29 оголошень про продаж SDC",
+      "parsed_brand": "29 Оголошень Про Sdc",
+      "parsed_count": 29,
+      "brand_slug": "sdc"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/zaz/",
+      "h1_text": "4 200+ оголошень про продаж ЗАЗ",
+      "parsed_brand": "4 200+ Оголошень Про Заз",
+      "parsed_count": null,
+      "brand_slug": "zaz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/luaz/",
+      "h1_text": "96 оголошень про продаж ЛуАЗ",
+      "parsed_brand": "96 Оголошень Про Луаз",
+      "parsed_count": 96,
+      "brand_slug": "luaz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/zaslaw/",
+      "h1_text": "39 оголошень про продаж Zaslaw",
+      "parsed_brand": "39 Оголошень Про Zaslaw",
+      "parsed_count": 39,
+      "brand_slug": "zaslaw"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/zil/",
+      "h1_text": "252 оголошення про продаж ЗИЛ",
+      "parsed_brand": "252 Про Зил",
+      "parsed_count": 252,
+      "brand_slug": "zil"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/zontes/",
+      "h1_text": "40 оголошень про продаж Zontes",
+      "parsed_brand": "40 Оголошень Про Zontes",
+      "parsed_count": 40,
+      "brand_slug": "zontes"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/zremb/",
+      "h1_text": "21 оголошення про продаж Zremb",
+      "parsed_brand": "21 Про Zremb",
+      "parsed_count": 21,
+      "brand_slug": "zremb"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/zx/",
+      "h1_text": "17 оголошень про продаж ZX",
+      "parsed_brand": "17 Оголошень Про Zx",
+      "parsed_count": 17,
+      "brand_slug": "zx"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kazanka/",
+      "h1_text": "51 оголошення про продаж Казанка",
+      "parsed_brand": "51 Про Казанка",
+      "parsed_count": 51,
+      "brand_slug": "kazanka"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kayo/",
+      "h1_text": "118 оголошень про продаж Kayo",
+      "parsed_brand": "118 Оголошень Про Kayo",
+      "parsed_count": 118,
+      "brand_slug": "kayo"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kamaz/",
+      "h1_text": "448 оголошень про продаж КамАЗ",
+      "parsed_brand": "448 Оголошень Про Камаз",
+      "parsed_count": 448,
+      "brand_slug": "kamaz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/cardi/",
+      "h1_text": "12 оголошень про продаж Cardi",
+      "parsed_brand": "12 Оголошень Про Cardi",
+      "parsed_count": 12,
+      "brand_slug": "cardi"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/carnehl/",
+      "h1_text": "58 оголошень про продаж Carnehl",
+      "parsed_brand": "58 Оголошень Про Carnehl",
+      "parsed_count": 58,
+      "brand_slug": "carnehl"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kassbohrer/",
+      "h1_text": "68 оголошень про продаж Kassbohrer",
+      "parsed_brand": "68 Оголошень Про Kassbohrer",
+      "parsed_count": 68,
+      "brand_slug": "kassbohrer"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/krym/",
+      "h1_text": "54 оголошення про продаж Крим",
+      "parsed_brand": "54 Про Крим",
+      "parsed_count": 54,
+      "brand_slug": "krym"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/sea-ray/",
+      "h1_text": "10 оголошень про продаж Sea Ray",
+      "parsed_brand": "10 Оголошень Про Sea Ray",
+      "parsed_count": 10,
+      "brand_slug": "sea-ray"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kelberg/",
+      "h1_text": "27 оголошень про продаж Kelberg",
+      "parsed_brand": "27 Оголошень Про Kelberg",
+      "parsed_count": 27,
+      "brand_slug": "kelberg"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kempf/",
+      "h1_text": "56 оголошень про продаж Kempf",
+      "parsed_brand": "56 Оголошень Про Kempf",
+      "parsed_count": 56,
+      "brand_slug": "kempf"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/case-construction/",
+      "h1_text": "21 оголошення про продаж Case Construction",
+      "parsed_brand": "21 Про Case Construction",
+      "parsed_count": 21,
+      "brand_slug": "case-construction"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/knapen/",
+      "h1_text": "14 оголошень про продаж Knapen",
+      "parsed_brand": "14 Оголошень Про Knapen",
+      "parsed_count": 14,
+      "brand_slug": "knapen"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kobelco/",
+      "h1_text": "15 оголошень про продаж Kobelco",
+      "parsed_brand": "15 Оголошень Про Kobelco",
+      "parsed_count": 15,
+      "brand_slug": "kobelco"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/cobo/",
+      "h1_text": "12 оголошень про продаж Cobo",
+      "parsed_brand": "12 Оголошень Про Cobo",
+      "parsed_count": 12,
+      "brand_slug": "cobo"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kovi/",
+      "h1_text": "311 оголошень про продаж Kovi",
+      "parsed_brand": "311 Оголошень Про Kovi",
+      "parsed_count": 311,
+      "brand_slug": "kovi"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/coder/",
+      "h1_text": "12 оголошень про продаж Coder",
+      "parsed_brand": "12 Оголошень Про Coder",
+      "parsed_count": 12,
+      "brand_slug": "coder"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/komatsu/",
+      "h1_text": "64 оголошення про продаж Komatsu",
+      "parsed_brand": "64 Про Komatsu",
+      "parsed_count": 64,
+      "brand_slug": "komatsu"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/comman/",
+      "h1_text": "40 оголошень про продаж Comman",
+      "parsed_brand": "40 Оголошень Про Comman",
+      "parsed_count": 40,
+      "brand_slug": "comman"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kraz/",
+      "h1_text": "79 оголошень про продаж КрАЗ",
+      "parsed_brand": "79 Оголошень Про Краз",
+      "parsed_count": 79,
+      "brand_slug": "kraz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/cupra/",
+      "h1_text": "56 оголошень про продаж Cupra",
+      "parsed_brand": "56 Оголошень Про Cupra",
+      "parsed_count": 56,
+      "brand_slug": "cupra"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/keeway/",
+      "h1_text": "22 оголошення про продаж Keeway",
+      "parsed_brand": "22 Про Keeway",
+      "parsed_count": 22,
+      "brand_slug": "keeway"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kymco/",
+      "h1_text": "18 оголошень про продаж Kymco",
+      "parsed_brand": "18 Оголошень Про Kymco",
+      "parsed_count": 18,
+      "brand_slug": "kymco"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kinlon/",
+      "h1_text": "11 оголошень про продаж Kinlon",
+      "parsed_brand": "11 Оголошень Про Kinlon",
+      "parsed_count": 11,
+      "brand_slug": "kinlon"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/l-a-g/",
+      "h1_text": "10 оголошень про продаж L.A.G.",
+      "parsed_brand": "10 Оголошень Про L.a.g.",
+      "parsed_count": 10,
+      "brand_slug": "l-a-g"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/laz/",
+      "h1_text": "14 оголошень про продаж ЛАЗ",
+      "parsed_brand": "14 Оголошень Про Лаз",
+      "parsed_count": 14,
+      "brand_slug": "laz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/lamberet/",
+      "h1_text": "61 оголошення про продаж Lamberet",
+      "parsed_brand": "61 Про Lamberet",
+      "parsed_count": 61,
+      "brand_slug": "lamberet"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/langendorf/",
+      "h1_text": "47 оголошень про продаж Langendorf",
+      "parsed_brand": "47 Оголошень Про Langendorf",
+      "parsed_count": 47,
+      "brand_slug": "langendorf"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/lecinena/",
+      "h1_text": "15 оголошень про продаж Lecinena",
+      "parsed_brand": "15 Оголошень Про Lecinena",
+      "parsed_count": 15,
+      "brand_slug": "lecinena"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ldv/",
+      "h1_text": "16 оголошень про продаж LDV",
+      "parsed_brand": "16 Оголошень Про Ldv",
+      "parsed_count": 16,
+      "brand_slug": "ldv"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/lds/",
+      "h1_text": "13 оголошень про продаж LDS",
+      "parsed_brand": "13 Оголошень Про Lds",
+      "parsed_count": 13,
+      "brand_slug": "lds"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/lev/",
+      "h1_text": "25 оголошень про продаж Лев",
+      "parsed_brand": "25 Оголошень Про Лев",
+      "parsed_count": 25,
+      "brand_slug": "lev"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/lecitrailer/",
+      "h1_text": "21 оголошення про продаж LeciTrailer",
+      "parsed_brand": "21 Про Lecitrailer",
+      "parsed_count": 21,
+      "brand_slug": "lecitrailer"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/loncin/",
+      "h1_text": "278 оголошень про продаж Loncin",
+      "parsed_brand": "278 Оголошень Про Loncin",
+      "parsed_count": 278,
+      "brand_slug": "loncin"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/lvovskij-pogruzchik/",
+      "h1_text": "18 оголошень про продаж Львовский погрузчик",
+      "parsed_brand": "18 Оголошень Про Львовский Погрузчик",
+      "parsed_count": 18,
+      "brand_slug": "lvovskij-pogruzchik"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/lucid/",
+      "h1_text": "17 оголошень про продаж Lucid",
+      "parsed_brand": "17 Оголошень Про Lucid",
+      "parsed_count": 17,
+      "brand_slug": "lucid"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/linde/",
+      "h1_text": "80 оголошень про продаж Linde",
+      "parsed_brand": "80 Оголошень Про Linde",
+      "parsed_count": 80,
+      "brand_slug": "linde"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/linhai/",
+      "h1_text": "108 оголошень про продаж Linhai",
+      "parsed_brand": "108 Оголошень Про Linhai",
+      "parsed_count": 108,
+      "brand_slug": "linhai"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/liugong/",
+      "h1_text": "13 оголошень про продаж LiuGong",
+      "parsed_brand": "13 Оголошень Про Liugong",
+      "parsed_count": 13,
+      "brand_slug": "liugong"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/magyar/",
+      "h1_text": "100 оголошень про продаж Magyar",
+      "parsed_brand": "100 Оголошень Про Magyar",
+      "parsed_count": 100,
+      "brand_slug": "magyar"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/maz/",
+      "h1_text": "332 оголошення про продаж МАЗ",
+      "parsed_brand": "332 Про Маз",
+      "parsed_count": 332,
+      "brand_slug": "maz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/meierling/",
+      "h1_text": "11 оголошень про продаж Meierling",
+      "parsed_brand": "11 Оголошень Про Meierling",
+      "parsed_count": 11,
+      "brand_slug": "meierling"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/maxus/",
+      "h1_text": "35 оголошень про продаж Maxus",
+      "parsed_brand": "35 Оголошень Про Maxus",
+      "parsed_count": 35,
+      "brand_slug": "maxus"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/manitou/",
+      "h1_text": "46 оголошень про продаж Manitou",
+      "parsed_brand": "46 Оголошень Про Manitou",
+      "parsed_count": 46,
+      "brand_slug": "manitou"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/maisonneuv/",
+      "h1_text": "17 оголошень про продаж Maisonneuv",
+      "parsed_brand": "17 Оголошень Про Maisonneuv",
+      "parsed_count": 17,
+      "brand_slug": "maisonneuv"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/meiller/",
+      "h1_text": "30 оголошень про продаж Meiller",
+      "parsed_brand": "30 Оголошень Про Meiller",
+      "parsed_count": 30,
+      "brand_slug": "meiller"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/menci/",
+      "h1_text": "29 оголошень про продаж Menci",
+      "parsed_brand": "29 Оголошень Про Menci",
+      "parsed_count": 29,
+      "brand_slug": "menci"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/merceron/",
+      "h1_text": "18 оголошень про продаж Merceron",
+      "parsed_brand": "18 Оголошень Про Merceron",
+      "parsed_count": 18,
+      "brand_slug": "merceron"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/metaco/",
+      "h1_text": "14 оголошень про продаж Metaco",
+      "parsed_brand": "14 Оголошень Про Metaco",
+      "parsed_count": 14,
+      "brand_slug": "metaco"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/mmz/",
+      "h1_text": "13 оголошень про продаж ММЗ",
+      "parsed_brand": "13 Оголошень Про Ммз",
+      "parsed_count": 13,
+      "brand_slug": "mmz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/mol/",
+      "h1_text": "18 оголошень про продаж MOL",
+      "parsed_brand": "18 Оголошень Про Mol",
+      "parsed_count": 18,
+      "brand_slug": "mol"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/montracon/",
+      "h1_text": "15 оголошень про продаж Montracon",
+      "parsed_brand": "15 Оголошень Про Montracon",
+      "parsed_count": 15,
+      "brand_slug": "montracon"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/moskvich-azlk/",
+      "h1_text": "488 оголошень про продаж Москвич/АЗЛК",
+      "parsed_brand": "488 Оголошень Про Москвич/азлк",
+      "parsed_count": 488,
+      "brand_slug": "moskvich-azlk"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/voskhod/",
+      "h1_text": "11 оголошень про продаж Восход",
+      "parsed_brand": "11 Оголошень Про Восход",
+      "parsed_count": 11,
+      "brand_slug": "voskhod"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/moto-leader/",
+      "h1_text": "31 оголошення про продаж Moto-Leader",
+      "parsed_brand": "31 Про Moto-leader",
+      "parsed_count": 31,
+      "brand_slug": "moto-leader"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/musstang/",
+      "h1_text": "326 оголошень про продаж Musstang",
+      "parsed_brand": "326 Оголошень Про Musstang",
+      "parsed_count": 326,
+      "brand_slug": "musstang"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/mustang/",
+      "h1_text": "36 оголошень про продаж Mustang",
+      "parsed_brand": "36 Оголошень Про Mustang",
+      "parsed_count": 36,
+      "brand_slug": "mustang"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/mikilon/",
+      "h1_text": "21 оголошення про продаж Mikilon",
+      "parsed_brand": "21 Про Mikilon",
+      "parsed_count": 21,
+      "brand_slug": "mikilon"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/minsk/",
+      "h1_text": "92 оголошення про продаж Мінськ",
+      "parsed_brand": "92 Про Мінськ",
+      "parsed_count": 92,
+      "brand_slug": "minsk"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/novatrail/",
+      "h1_text": "20 оголошень про продаж Novatrail",
+      "parsed_brand": "20 Оголошень Про Novatrail",
+      "parsed_count": 20,
+      "brand_slug": "novatrail"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/npp-palych/",
+      "h1_text": "19 оголошень про продаж НПП Палич",
+      "parsed_brand": "19 Оголошень Про Нпп Палич",
+      "parsed_count": 19,
+      "brand_slug": "npp-palych"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/nooteboom/",
+      "h1_text": "14 оголошень про продаж Nooteboom",
+      "parsed_brand": "14 Оголошень Про Nooteboom",
+      "parsed_count": 14,
+      "brand_slug": "nooteboom"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/niewiadow/",
+      "h1_text": "30 оголошень про продаж Niewiadow",
+      "parsed_brand": "30 Оголошень Про Niewiadow",
+      "parsed_count": 30,
+      "brand_slug": "niewiadow"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ova/",
+      "h1_text": "11 оголошень про продаж Ova",
+      "parsed_brand": "11 Оголошень Про Ova",
+      "parsed_count": 11,
+      "brand_slug": "ova"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/omt/",
+      "h1_text": "10 оголошень про продаж OMT",
+      "parsed_brand": "10 Оголошень Про Omt",
+      "parsed_count": 10,
+      "brand_slug": "omt"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/pavam/",
+      "h1_text": "11 оголошень про продаж ПАВАМ",
+      "parsed_brand": "11 Оголошень Про Павам",
+      "parsed_count": 11,
+      "brand_slug": "pavam"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/paz/",
+      "h1_text": "105 оголошень про продаж ПАЗ",
+      "parsed_brand": "105 Оголошень Про Паз",
+      "parsed_count": 105,
+      "brand_slug": "paz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/panav/",
+      "h1_text": "50 оголошень про продаж Panav",
+      "parsed_brand": "50 Оголошень Про Panav",
+      "parsed_count": 50,
+      "brand_slug": "panav"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/pva/",
+      "h1_text": "11 оголошень про продаж ПВА",
+      "parsed_brand": "11 Оголошень Про Пва",
+      "parsed_count": 11,
+      "brand_slug": "pva"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/pgmf/",
+      "h1_text": "53 оголошення про продаж ПГМФ",
+      "parsed_brand": "53 Про Пгмф",
+      "parsed_count": 53,
+      "brand_slug": "pgmf"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/plymouth/",
+      "h1_text": "14 оголошень про продаж Plymouth",
+      "parsed_brand": "14 Оголошень Про Plymouth",
+      "parsed_count": 14,
+      "brand_slug": "plymouth"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/polestar/",
+      "h1_text": "122 оголошення про продаж Polestar",
+      "parsed_brand": "122 Про Polestar",
+      "parsed_count": 122,
+      "brand_slug": "polestar"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/pp/",
+      "h1_text": "10 оголошень про продаж ПП",
+      "parsed_brand": "10 Оголошень Про Пп",
+      "parsed_count": 10,
+      "brand_slug": "pp"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/pricep/",
+      "h1_text": "80 оголошень про продаж Причеп",
+      "parsed_brand": "80 Оголошень Про Причеп",
+      "parsed_count": 80,
+      "brand_slug": "pricep"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/varz/",
+      "h1_text": "10 оголошень про продаж ВАРЗ",
+      "parsed_brand": "10 Оголошень Про Варз",
+      "parsed_count": 10,
+      "brand_slug": "varz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/gkb/",
+      "h1_text": "125 оголошень про продаж ГКБ",
+      "parsed_brand": "125 Оголошень Про Гкб",
+      "parsed_count": 125,
+      "brand_slug": "gkb"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kremen/",
+      "h1_text": "10 оголошень про продаж Кремінь",
+      "parsed_brand": "10 Оголошень Про Кремінь",
+      "parsed_count": 10,
+      "brand_slug": "kremen"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/mega/",
+      "h1_text": "87 оголошень про продаж MEGA",
+      "parsed_brand": "87 Оголошень Про Mega",
+      "parsed_count": 87,
+      "brand_slug": "mega"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/muravej/",
+      "h1_text": "17 оголошень про продаж Муравей",
+      "parsed_brand": "17 Оголошень Про Муравей",
+      "parsed_count": 17,
+      "brand_slug": "muravej"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/odaz/",
+      "h1_text": "88 оголошень про продаж ОДАЗ",
+      "parsed_brand": "88 Оголошень Про Одаз",
+      "parsed_count": 88,
+      "brand_slug": "odaz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/santej/",
+      "h1_text": "28 оголошень про продаж Сантей",
+      "parsed_brand": "28 Оголошень Про Сантей",
+      "parsed_count": 28,
+      "brand_slug": "santej"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/szap/",
+      "h1_text": "40 оголошень про продаж СЗАП",
+      "parsed_brand": "40 Оголошень Про Сзап",
+      "parsed_count": 40,
+      "brand_slug": "szap"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/chmzap/",
+      "h1_text": "16 оголошень про продаж ЧМЗАП",
+      "parsed_brand": "16 Оголошень Про Чмзап",
+      "parsed_count": 16,
+      "brand_slug": "chmzap"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/progress/",
+      "h1_text": "77 оголошень про продаж Прогресс",
+      "parsed_brand": "77 Оголошень Про Прогресс",
+      "parsed_count": 77,
+      "brand_slug": "progress"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/prt/",
+      "h1_text": "10 оголошень про продаж ПРТ",
+      "parsed_brand": "10 Оголошень Про Прт",
+      "parsed_count": 10,
+      "brand_slug": "prt"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ravon/",
+      "h1_text": "90 оголошень про продаж Ravon",
+      "parsed_brand": "90 Оголошень Про Ravon",
+      "parsed_count": 90,
+      "brand_slug": "ravon"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/rider/",
+      "h1_text": "32 оголошення про продаж Rider",
+      "parsed_brand": "32 Про Rider",
+      "parsed_count": 32,
+      "brand_slug": "rider"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ram/",
+      "h1_text": "79 оголошень про продаж Ram",
+      "parsed_brand": "79 Оголошень Про Ram",
+      "parsed_count": 79,
+      "brand_slug": "ram"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/reisch/",
+      "h1_text": "41 оголошення про продаж Reisch",
+      "parsed_brand": "41 Про Reisch",
+      "parsed_count": 41,
+      "brand_slug": "reisch"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/renders/",
+      "h1_text": "70 оголошень про продаж Renders",
+      "parsed_brand": "70 Оголошень Про Renders",
+      "parsed_count": 70,
+      "brand_slug": "renders"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/robuste/",
+      "h1_text": "18 оголошень про продаж Robuste",
+      "parsed_brand": "18 Оголошень Про Robuste",
+      "parsed_count": 18,
+      "brand_slug": "robuste"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/rohr/",
+      "h1_text": "16 оголошень про продаж Rohr",
+      "parsed_brand": "16 Оголошень Про Rohr",
+      "parsed_count": 16,
+      "brand_slug": "rohr"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ruta/",
+      "h1_text": "133 оголошення про продаж РУТА",
+      "parsed_brand": "133 Про Рута",
+      "parsed_count": 133,
+      "brand_slug": "ruta"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/rivian/",
+      "h1_text": "53 оголошення про продаж Rivian",
+      "parsed_brand": "53 Про Rivian",
+      "parsed_count": 53,
+      "brand_slug": "rivian"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/saab/",
+      "h1_text": "103 оголошення про продаж Saab",
+      "parsed_brand": "103 Про Saab",
+      "parsed_count": 103,
+      "brand_slug": "saab"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/samand/",
+      "h1_text": "78 оголошень про продаж Samand",
+      "parsed_brand": "78 Оголошень Про Samand",
+      "parsed_count": 78,
+      "brand_slug": "samand"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/samodelnyj/",
+      "h1_text": "128 оголошень про продаж Саморобний",
+      "parsed_brand": "128 Оголошень Про Саморобний",
+      "parsed_count": 128,
+      "brand_slug": "samodelnyj"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/samro/",
+      "h1_text": "66 оголошень про продаж Samro",
+      "parsed_brand": "66 Оголошень Про Samro",
+      "parsed_count": 66,
+      "brand_slug": "samro"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/soueast/",
+      "h1_text": "12 оголошень про продаж SouEast",
+      "parsed_brand": "12 Оголошень Про Soueast",
+      "parsed_count": 12,
+      "brand_slug": "soueast"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/swift/",
+      "h1_text": "10 оголошень про продаж SWIFT",
+      "parsed_brand": "10 Оголошень Про Swift",
+      "parsed_count": 10,
+      "brand_slug": "swift"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/segway/",
+      "h1_text": "42 оголошення про продаж Segway",
+      "parsed_brand": "42 Про Segway",
+      "parsed_count": 42,
+      "brand_slug": "segway"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/setra/",
+      "h1_text": "64 оголошення про продаж Setra",
+      "parsed_brand": "64 Про Setra",
+      "parsed_count": 64,
+      "brand_slug": "setra"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/skybike/",
+      "h1_text": "43 оголошення про продаж SkyBike",
+      "parsed_brand": "43 Про Skybike",
+      "parsed_count": 43,
+      "brand_slug": "skybike"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/skymoto/",
+      "h1_text": "29 оголошень про продаж SkyMoto",
+      "parsed_brand": "29 Оголошень Про Skymoto",
+      "parsed_count": 29,
+      "brand_slug": "skymoto"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/sma/",
+      "h1_text": "11 оголошень про продаж SMA",
+      "parsed_brand": "11 Оголошень Про Sma",
+      "parsed_count": 11,
+      "brand_slug": "sma"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/cmt/",
+      "h1_text": "17 оголошень про продаж CMT",
+      "parsed_brand": "17 Оголошень Про Cmt",
+      "parsed_count": 17,
+      "brand_slug": "cmt"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/sommer/",
+      "h1_text": "22 оголошення про продаж Sommer",
+      "parsed_brand": "22 Про Sommer",
+      "parsed_count": 22,
+      "brand_slug": "sommer"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/spier/",
+      "h1_text": "14 оголошень про продаж Spier",
+      "parsed_brand": "14 Оголошень Про Spier",
+      "parsed_count": 14,
+      "brand_slug": "spier"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/spark/",
+      "h1_text": "565 оголошень про продаж Spark",
+      "parsed_brand": "565 Оголошень Про Spark",
+      "parsed_count": 565,
+      "brand_slug": "spark"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/stas/",
+      "h1_text": "119 оголошень про продаж STAS",
+      "parsed_brand": "119 Оголошень Про Stas",
+      "parsed_count": 119,
+      "brand_slug": "stas"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/stokota/",
+      "h1_text": "15 оголошень про продаж Stokota",
+      "parsed_brand": "15 Оголошень Про Stokota",
+      "parsed_count": 15,
+      "brand_slug": "stokota"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/still/",
+      "h1_text": "12 оголошень про продаж Still",
+      "parsed_brand": "12 Оголошень Про Still",
+      "parsed_count": 12,
+      "brand_slug": "still"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/stim/",
+      "h1_text": "18 оголошень про продаж Stim",
+      "parsed_brand": "18 Оголошень Про Stim",
+      "parsed_count": 18,
+      "brand_slug": "stim"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/sumitomo/",
+      "h1_text": "19 оголошень про продаж Sumitomo",
+      "parsed_brand": "19 Оголошень Про Sumitomo",
+      "parsed_count": 19,
+      "brand_slug": "sumitomo"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/scion/",
+      "h1_text": "52 оголошення про продаж Scion",
+      "parsed_brand": "52 Про Scion",
+      "parsed_count": 52,
+      "brand_slug": "scion"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/xiaomi/",
+      "h1_text": "49 оголошень про продаж Xiaomi",
+      "parsed_brand": "49 Оголошень Про Xiaomi",
+      "parsed_count": 49,
+      "brand_slug": "xiaomi"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/sym/",
+      "h1_text": "54 оголошення про продаж Sym",
+      "parsed_brand": "54 Про Sym",
+      "parsed_count": 54,
+      "brand_slug": "sym"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/tabbert/",
+      "h1_text": "21 оголошення про продаж Tabbert",
+      "parsed_brand": "21 Про Tabbert",
+      "parsed_count": 21,
+      "brand_slug": "tabbert"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/tad/",
+      "h1_text": "16 оголошень про продаж TAD",
+      "parsed_brand": "16 Оголошень Про Tad",
+      "parsed_count": 16,
+      "brand_slug": "tad"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/tadano/",
+      "h1_text": "10 оголошень про продаж Tadano",
+      "parsed_brand": "10 Оголошень Про Tadano",
+      "parsed_count": 10,
+      "brand_slug": "tadano"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/tatra/",
+      "h1_text": "12 оголошень про продаж Tatra",
+      "parsed_brand": "12 Оголошень Про Tatra",
+      "parsed_count": 12,
+      "brand_slug": "tatra"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/tekken/",
+      "h1_text": "170 оголошень про продаж Tekken",
+      "parsed_brand": "170 Оголошень Про Tekken",
+      "parsed_count": 170,
+      "brand_slug": "tekken"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/terex/",
+      "h1_text": "16 оголошень про продаж Terex",
+      "parsed_brand": "16 Оголошень Про Terex",
+      "parsed_count": 16,
+      "brand_slug": "terex"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/chtz/",
+      "h1_text": "15 оголошень про продаж ЧТЗ",
+      "parsed_brand": "15 Оголошень Про Чтз",
+      "parsed_count": 15,
+      "brand_slug": "chtz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/trailer/",
+      "h1_text": "37 оголошень про продаж Trailer",
+      "parsed_brand": "37 Оголошень Про Trailer",
+      "parsed_count": 37,
+      "brand_slug": "trailer"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/trailor/",
+      "h1_text": "92 оголошення про продаж Trailor",
+      "parsed_brand": "92 Про Trailor",
+      "parsed_count": 92,
+      "brand_slug": "trailor"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/trouillet/",
+      "h1_text": "19 оголошень про продаж Trouillet",
+      "parsed_brand": "19 Оголошень Про Trouillet",
+      "parsed_count": 19,
+      "brand_slug": "trouillet"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/triumph/",
+      "h1_text": "126 оголошень про продаж Triumph",
+      "parsed_brand": "126 Оголошень Про Triumph",
+      "parsed_count": 126,
+      "brand_slug": "triumph"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/tula/",
+      "h1_text": "12 оголошень про продаж Тула",
+      "parsed_brand": "12 Оголошень Про Тула",
+      "parsed_count": 12,
+      "brand_slug": "tula"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/uaz/",
+      "h1_text": "429 оголошень про продаж УАЗ",
+      "parsed_brand": "429 Оголошень Про Уаз",
+      "parsed_count": 429,
+      "brand_slug": "uaz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ukrainska-mriya/",
+      "h1_text": "9 оголошень про продаж Українська мрія",
+      "parsed_brand": "9 Оголошень Про Українська Мрія",
+      "parsed_count": 9,
+      "brand_slug": "ukrainska-mriya"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ural/",
+      "h1_text": "84 оголошення про продаж Урал",
+      "parsed_brand": "84 Про Урал",
+      "parsed_count": 84,
+      "brand_slug": "ural"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/fada/",
+      "h1_text": "75 оголошень про продаж Fada",
+      "parsed_brand": "75 Оголошень Про Fada",
+      "parsed_count": 75,
+      "brand_slug": "fada"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/faymonville/",
+      "h1_text": "11 оголошень про продаж Faymonville",
+      "parsed_brand": "11 Оголошень Про Faymonville",
+      "parsed_count": 11,
+      "brand_slug": "faymonville"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/feldbinder/",
+      "h1_text": "55 оголошень про продаж Feldbinder",
+      "parsed_brand": "55 Оголошень Про Feldbinder",
+      "parsed_count": 55,
+      "brand_slug": "feldbinder"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/floor/",
+      "h1_text": "15 оголошень про продаж Floor",
+      "parsed_brand": "15 Оголошень Про Floor",
+      "parsed_count": 15,
+      "brand_slug": "floor"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/fluid/",
+      "h1_text": "10 оголошень про продаж Fluid",
+      "parsed_brand": "10 Оголошень Про Fluid",
+      "parsed_count": 10,
+      "brand_slug": "fluid"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/fliegl/",
+      "h1_text": "56 оголошень про продаж Fliegl",
+      "parsed_brand": "56 Оголошень Про Fliegl",
+      "parsed_count": 56,
+      "brand_slug": "fliegl"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/four-winns/",
+      "h1_text": "12 оголошень про продаж Four Winns",
+      "parsed_brand": "12 Оголошень Про Four Winns",
+      "parsed_count": 12,
+      "brand_slug": "four-winns"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/forte/",
+      "h1_text": "Forte — 261 пропозиція",
+      "parsed_brand": "Forte — 261 Пропозиція",
+      "parsed_count": null,
+      "brand_slug": "forte"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/foton/",
+      "h1_text": "46 оголошень про продаж Foton",
+      "parsed_brand": "46 Оголошень Про Foton",
+      "parsed_count": 46,
+      "brand_slug": "foton"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/fruehauf/",
+      "h1_text": "235 оголошень про продаж Fruehauf",
+      "parsed_brand": "235 Оголошень Про Fruehauf",
+      "parsed_count": 235,
+      "brand_slug": "fruehauf"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/feber/",
+      "h1_text": "14 оголошень про продаж Feber",
+      "parsed_brand": "14 Оголошень Про Feber",
+      "parsed_count": 14,
+      "brand_slug": "feber"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/finval/",
+      "h1_text": "19 оголошень про продаж Finval",
+      "parsed_brand": "19 Оголошень Про Finval",
+      "parsed_count": 19,
+      "brand_slug": "finval"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/haval/",
+      "h1_text": "189 оголошень про продаж Haval",
+      "parsed_brand": "189 Оголошень Про Haval",
+      "parsed_count": 189,
+      "brand_slug": "haval"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/khaz-antorus/",
+      "h1_text": "17 оголошень про продаж ХАЗ (Анторус)",
+      "parsed_brand": "17 Оголошень Про Хаз",
+      "parsed_count": 17,
+      "brand_slug": "khaz-antorus"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/hamer/",
+      "h1_text": "38 оголошень про продаж Hamer",
+      "parsed_brand": "38 Оголошень Про Hamer",
+      "parsed_count": 38,
+      "brand_slug": "hamer"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/hamm/",
+      "h1_text": "26 оголошень про продаж Hamm",
+      "parsed_brand": "26 Оголошень Про Hamm",
+      "parsed_count": 26,
+      "brand_slug": "hamm"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/hammer/",
+      "h1_text": "37 оголошень про продаж Hammer",
+      "parsed_brand": "37 Оголошень Про Hammer",
+      "parsed_count": 37,
+      "brand_slug": "hammer"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/hunter/",
+      "h1_text": "35 оголошень про продаж Hunter",
+      "parsed_brand": "35 Оголошень Про Hunter",
+      "parsed_count": 35,
+      "brand_slug": "hunter"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/haulotte/",
+      "h1_text": "51 оголошення про продаж Haulotte",
+      "parsed_brand": "51 Про Haulotte",
+      "parsed_count": 51,
+      "brand_slug": "haulotte"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/hafei/",
+      "h1_text": "10 оголошень про продаж Hafei",
+      "parsed_brand": "10 Оголошень Про Hafei",
+      "parsed_count": 10,
+      "brand_slug": "hafei"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/hendricks/",
+      "h1_text": "23 оголошення про продаж Hendricks",
+      "parsed_brand": "23 Про Hendricks",
+      "parsed_count": 23,
+      "brand_slug": "hendricks"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/hobby/",
+      "h1_text": "62 оголошення про продаж Hobby",
+      "parsed_brand": "62 Про Hobby",
+      "parsed_count": 62,
+      "brand_slug": "hobby"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/howo/",
+      "h1_text": "11 оголошень про продаж Howo",
+      "parsed_brand": "11 Оголошень Про Howo",
+      "parsed_count": 11,
+      "brand_slug": "howo"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/hongda/",
+      "h1_text": "16 оголошень про продаж Hongda",
+      "parsed_brand": "16 Оголошень Про Hongda",
+      "parsed_count": 16,
+      "brand_slug": "hongda"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/hornet/",
+      "h1_text": "16 оголошень про продаж Hornet",
+      "parsed_brand": "16 Оголошень Про Hornet",
+      "parsed_count": 16,
+      "brand_slug": "hornet"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/xcmg/",
+      "h1_text": "28 оголошень про продаж XCMG",
+      "parsed_brand": "28 Оголошень Про Xcmg",
+      "parsed_count": 28,
+      "brand_slug": "xcmg"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/hyster/",
+      "h1_text": "26 оголошень про продаж Hyster",
+      "parsed_brand": "26 Оголошень Про Hyster",
+      "parsed_count": 26,
+      "brand_slug": "hyster"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/citycoco/",
+      "h1_text": "18 оголошень про продаж Citycoco",
+      "parsed_brand": "18 Оголошень Про Citycoco",
+      "parsed_count": 18,
+      "brand_slug": "citycoco"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/chana/",
+      "h1_text": "22 оголошення про продаж Chana",
+      "parsed_brand": "22 Про Chana",
+      "parsed_count": 22,
+      "brand_slug": "chana"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/changan/",
+      "h1_text": "49 оголошень про продаж Changan",
+      "parsed_brand": "49 Оголошень Про Changan",
+      "parsed_count": 49,
+      "brand_slug": "changan"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/cezet-chezet/",
+      "h1_text": "10 оголошень про продаж Cezet (Чезет)",
+      "parsed_brand": "10 Оголошень Про Cezet",
+      "parsed_count": 10,
+      "brand_slug": "cezet-chezet"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/changhe/",
+      "h1_text": "13 оголошень про продаж Changhe",
+      "parsed_brand": "13 Оголошень Про Changhe",
+      "parsed_count": 13,
+      "brand_slug": "changhe"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/chereau/",
+      "h1_text": "46 оголошень про продаж Chereau",
+      "parsed_brand": "46 Оголошень Про Chereau",
+      "parsed_count": 46,
+      "brand_slug": "chereau"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/buster/",
+      "h1_text": "8 оголошень про продаж Buster",
+      "parsed_brand": "8 Оголошень Про Buster",
+      "parsed_count": 8,
+      "brand_slug": "buster"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/kolibri-kolibri/",
+      "h1_text": "19 оголошень про продаж Kolibri (Колибри)",
+      "parsed_brand": "19 Оголошень Про Kolibri",
+      "parsed_count": 19,
+      "brand_slug": "kolibri-kolibri"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ob/",
+      "h1_text": "12 оголошень про продаж Обь",
+      "parsed_brand": "12 Оголошень Про Обь",
+      "parsed_count": 12,
+      "brand_slug": "ob"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/skif/",
+      "h1_text": "20 оголошень про продаж Скиф",
+      "parsed_brand": "20 Оголошень Про Скиф",
+      "parsed_count": 20,
+      "brand_slug": "skif"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ums/",
+      "h1_text": "17 оголошень про продаж UMS",
+      "parsed_brand": "17 Оголошень Про Ums",
+      "parsed_count": 17,
+      "brand_slug": "ums"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/qingqi/",
+      "h1_text": "21 оголошення про продаж Qingqi",
+      "parsed_brand": "21 Про Qingqi",
+      "parsed_count": 21,
+      "brand_slug": "qingqi"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/shineray/",
+      "h1_text": "351 оголошення про продаж Shineray",
+      "parsed_brand": "351 Про Shineray",
+      "parsed_count": 351,
+      "brand_slug": "shineray"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/schmidt/",
+      "h1_text": "40 оголошень про продаж SCHMIDT",
+      "parsed_brand": "40 Оголошень Про Schmidt",
+      "parsed_count": 40,
+      "brand_slug": "schmidt"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/spitzer/",
+      "h1_text": "25 оголошень про продаж Spitzer",
+      "parsed_brand": "25 Оголошень Про Spitzer",
+      "parsed_count": 25,
+      "brand_slug": "spitzer"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/yuzhanka/",
+      "h1_text": "19 оголошень про продаж Южанка",
+      "parsed_brand": "19 Оголошень Про Южанка",
+      "parsed_count": 19,
+      "brand_slug": "yuzhanka"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/jungheinrich/",
+      "h1_text": "19 оголошень про продаж Jungheinrich",
+      "parsed_brand": "19 Оголошень Про Jungheinrich",
+      "parsed_count": 19,
+      "brand_slug": "jungheinrich"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/yutong/",
+      "h1_text": "12 оголошень про продаж YUTONG",
+      "parsed_brand": "12 Оголошень Про Yutong",
+      "parsed_count": 12,
+      "brand_slug": "yutong"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/jawa-yava-cz/",
+      "h1_text": "21 оголошення про продаж Jawa (Ява)-cz",
+      "parsed_brand": "21 Про Jawa",
+      "parsed_count": 21,
+      "brand_slug": "jawa-yava-cz"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/yadea/",
+      "h1_text": "26 оголошень про продаж Yadea",
+      "parsed_brand": "26 Оголошень Про Yadea",
+      "parsed_count": 26,
+      "brand_slug": "yadea"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/yale/",
+      "h1_text": "11 оголошень про продаж Yale",
+      "parsed_brand": "11 Оголошень Про Yale",
+      "parsed_count": 11,
+      "brand_slug": "yale"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/yanmar/",
+      "h1_text": "Yanmar — 171 пропозиція",
+      "parsed_brand": "Yanmar — 171 Пропозиція",
+      "parsed_count": null,
+      "brand_slug": "yanmar"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/izh/",
+      "h1_text": "467 оголошень про продаж ИЖ",
+      "parsed_brand": "467 Оголошень Про Иж",
+      "parsed_count": 467,
+      "brand_slug": "izh"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ikarus/",
+      "h1_text": "14 оголошень про продаж Ikarus",
+      "parsed_brand": "14 Оголошень Про Ikarus",
+      "parsed_count": 14,
+      "brand_slug": "ikarus"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/indox/",
+      "h1_text": "11 оголошень про продаж Indox",
+      "parsed_brand": "11 Оголошень Про Indox",
+      "parsed_count": 11,
+      "brand_slug": "indox"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/indian/",
+      "h1_text": "50 оголошень про продаж Indian",
+      "parsed_brand": "50 Оголошень Про Indian",
+      "parsed_count": 50,
+      "brand_slug": "indian"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/inter-cars/",
+      "h1_text": "30 оголошень про продаж Inter Cars",
+      "parsed_brand": "30 Оголошень Про Inter Cars",
+      "parsed_count": 30,
+      "brand_slug": "inter-cars"
+    },
+    {
+      "input_brand": "",
+      "url": "https://auto.ria.com/uk/car/ifa-ifa/",
+      "h1_text": "14 оголошень про продаж IFA (ІФА)",
+      "parsed_brand": "14 Оголошень Про Ifa",
+      "parsed_count": 14,
+      "brand_slug": "ifa-ifa"
+    }
+  ]
+}

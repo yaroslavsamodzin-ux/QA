@@ -1,0 +1,30 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://automoto.com.lv/en/cars');
+  await page.getByRole('button', { name: 'Atteikt visus cookies' }).click();
+  await page.getByRole('button', { name: 'Sorting' }).click();
+  await page.getByText('Date added ascending').click();
+  await page.waitForTimeout(2000);
+  await page.getByRole('button', { name: 'Sorting' }).click();
+  await page.getByText('Date added descending').click();
+  await page.waitForTimeout(2000);
+  await page.getByRole('button', { name: 'Sorting' }).click();
+  await page.getByText('Price: from low to high').click();
+  await page.waitForTimeout(2000);
+  await page.getByRole('button', { name: 'Sorting' }).click();
+  await page.getByText('Price: from high to low').click();
+  await page.waitForTimeout(2000);
+  await page.getByRole('button', { name: 'Sorting' }).click();
+  await page.getByText('Mileage: ascending').click();
+  await page.waitForTimeout(2000);
+  await page.getByRole('button', { name: 'Sorting' }).click();
+  await page.getByText('Mileage: descending').click();
+  await page.waitForTimeout(2000);
+  await page.getByRole('button', { name: 'Sorting' }).click();
+  await page.getByText('Year of manufacture: ascending').click();
+  await page.waitForTimeout(2000);
+  await page.getByRole('button', { name: 'Sorting' }).click();
+  await page.getByText('Year of manufacture: descending').click();
+  await page.getByRole('link', { name: 'Logo CARS FROM LATVIA AT ONE' }).click();
+});

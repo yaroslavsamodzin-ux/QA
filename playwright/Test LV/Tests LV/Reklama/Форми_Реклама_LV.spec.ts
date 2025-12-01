@@ -1,0 +1,36 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://automoto.com.lv/lv/reklama');
+  await page.getByRole('link', { name: 'Pieprasīt cenu' }).nth(1).click();
+  await page.getByRole('textbox', { name: 'Jūsu vārds' }).click();
+  await page.getByRole('textbox', { name: 'Jūsu vārds' }).fill('Test');
+  await page.getByRole('textbox', { name: 'Tālrunis' }).click();
+  await page.getByRole('textbox', { name: 'Tālrunis' }).fill('+37100000000');
+  await page.getByRole('checkbox', { name: 'Es piekrītu AUTOMOTO.COM.LV' }).check();
+  await page.getByRole('button', { name: 'Nosūtīt' }).click();
+  await page.getByRole('link', { name: 'Atpakaļ' }).click();
+  await page.getByRole('link', { name: 'Pieprasīt cenu' }).first().click();
+  await page.getByRole('textbox', { name: 'Jūsu vārds' }).click();
+  await page.getByRole('textbox', { name: 'Jūsu vārds' }).fill('Test');
+  await page.getByRole('textbox', { name: 'Email' }).click();
+  await page.getByRole('textbox', { name: 'Email' }).fill('Test@posta');
+  await page.getByRole('checkbox', { name: 'Es piekrītu AUTOMOTO.COM.LV' }).check();
+  await page.getByRole('button', { name: 'Nosūtīt' }).click();
+  await page.getByRole('link', { name: 'Atpakaļ' }).click();
+  await page.getByRole('link', { name: 'Pieprasīt konsultāciju' }).click();
+  await page.getByRole('textbox', { name: 'Jūsu vārds' }).click();
+  await page.getByRole('textbox', { name: 'Jūsu vārds' }).fill('Test');
+  await page.getByRole('textbox', { name: 'Tālrunis' }).click();
+  await page.getByRole('textbox', { name: 'Tālrunis' }).fill('+37100000000');
+  await page.getByRole('checkbox', { name: 'Es piekrītu AUTOMOTO.COM.LV' }).check();
+  await page.getByRole('button', { name: 'Nosūtīt' }).click();
+  await page.getByRole('link', { name: 'Atpakaļ' }).click();
+  await page.getByRole('link', { name: 'Skatīt plānus' }).click();
+  await page.getByRole('textbox', { name: 'Jūsu vārds' }).click();
+  await page.getByRole('textbox', { name: 'Jūsu vārds' }).fill('Test');
+  await page.getByRole('textbox', { name: 'Tālrunis' }).click();
+  await page.getByRole('textbox', { name: 'Tālrunis' }).fill('+37100000000');
+  await page.getByRole('checkbox', { name: 'Es piekrītu vietnes lietoš' }).check();
+  await page.getByRole('button', { name: 'Piezvaniet man' }).click();
+});

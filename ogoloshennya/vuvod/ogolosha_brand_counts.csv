@@ -1,0 +1,99 @@
+name,slug,url,count,status,http_status
+Acura,acura,https://ogolosha.ua/transport/legkovye-avtomobili/acura/,4,ok,200
+Alfa Romeo,alfa-romeo,https://ogolosha.ua/transport/legkovye-avtomobili/alfa-romeo/,3,ok,200
+Audi,audi,https://ogolosha.ua/transport/legkovye-avtomobili/audi/,28,ok,200
+Bentley,bentley,https://ogolosha.ua/transport/legkovye-avtomobili/bentley/,,not_found,200
+BMW,bmw,https://ogolosha.ua/transport/legkovye-avtomobili/bmw/,28,ok,200
+Brilliance,brilliance,https://ogolosha.ua/transport/legkovye-avtomobili/brilliance/,,not_found,200
+Buick,buick,https://ogolosha.ua/transport/legkovye-avtomobili/buick/,2,ok,200
+BYD,byd,https://ogolosha.ua/transport/legkovye-avtomobili/byd/,,not_found,200
+Cadillac,cadillac,https://ogolosha.ua/transport/legkovye-avtomobili/cadillac/,1,ok,200
+Chery,chery,https://ogolosha.ua/transport/legkovye-avtomobili/chery/,13,ok,200
+Chevrolet,chevrolet,https://ogolosha.ua/transport/legkovye-avtomobili/chevrolet/,33,ok,200
+Chrysler,chrysler,https://ogolosha.ua/transport/legkovye-avtomobili/chrysler/,2,ok,200
+Citroen,citroen,https://ogolosha.ua/transport/legkovye-avtomobili/citroen/,4,ok,200
+Dacia,dacia,https://ogolosha.ua/transport/legkovye-avtomobili/dacia/,3,ok,200
+Daewoo,daewoo,https://ogolosha.ua/transport/legkovye-avtomobili/daewoo/,15,ok,200
+Daihatsu,daihatsu,https://ogolosha.ua/transport/legkovye-avtomobili/daihatsu/,,not_found,200
+Dodge,dodge,https://ogolosha.ua/transport/legkovye-avtomobili/dodge/,5,ok,200
+Ferrari,ferrari,https://ogolosha.ua/transport/legkovye-avtomobili/ferrari/,,not_found,200
+Fiat,fiat,https://ogolosha.ua/transport/legkovye-avtomobili/fiat/,11,ok,200
+Ford,ford,https://ogolosha.ua/transport/legkovye-avtomobili/ford/,45,ok,200
+Geely,geely,https://ogolosha.ua/transport/legkovye-avtomobili/geely/,11,ok,200
+GMC,gmc,https://ogolosha.ua/transport/legkovye-avtomobili/gmc/,2,ok,200
+Great Wall,great-wall,https://ogolosha.ua/transport/legkovye-avtomobili/great-wall/,2,ok,200
+Honda,honda,https://ogolosha.ua/transport/legkovye-avtomobili/honda/,10,ok,200
+Hummer,hummer,https://ogolosha.ua/transport/legkovye-avtomobili/hummer/,,not_found,200
+Hyundai,hyundai,https://ogolosha.ua/transport/legkovye-avtomobili/hyundai/,29,ok,200
+Infiniti,infiniti,https://ogolosha.ua/transport/legkovye-avtomobili/infiniti/,,not_found,200
+Isuzu,isuzu,https://ogolosha.ua/transport/legkovye-avtomobili/isuzu/,,not_found,200
+JAC,jac,https://ogolosha.ua/transport/legkovye-avtomobili/jac/,,not_found,200
+Jaguar,jaguar,https://ogolosha.ua/transport/legkovye-avtomobili/jaguar/,1,ok,200
+Jeep,jeep,https://ogolosha.ua/transport/legkovye-avtomobili/jeep/,10,ok,200
+Kia,kia,https://ogolosha.ua/transport/legkovye-avtomobili/kia/,19,ok,200
+Lancia,lancia,https://ogolosha.ua/transport/legkovye-avtomobili/lancia/,1,ok,200
+Land Rover,land-rover,https://ogolosha.ua/transport/legkovye-avtomobili/land-rover/,4,ok,200
+Lexus,lexus,https://ogolosha.ua/transport/legkovye-avtomobili/lexus/,10,ok,200
+Lifan,lifan,https://ogolosha.ua/transport/legkovye-avtomobili/lifan/,,not_found,200
+Lincoln,lincoln,https://ogolosha.ua/transport/legkovye-avtomobili/lincoln/,4,ok,200
+Maybach,maybach,https://ogolosha.ua/transport/legkovye-avtomobili/maybach/,,not_found,200
+Mazda,mazda,https://ogolosha.ua/transport/legkovye-avtomobili/mazda/,14,ok,200
+Mercedes-Benz,mercedes-benz,https://ogolosha.ua/transport/legkovye-avtomobili/mercedes-benz/,22,ok,200
+Mercury,mercury,https://ogolosha.ua/transport/legkovye-avtomobili/mercury/,,not_found,200
+Mini,mini,https://ogolosha.ua/transport/legkovye-avtomobili/mini/,,not_found,200
+Mitsubishi,mitsubishi,https://ogolosha.ua/transport/legkovye-avtomobili/mitsubishi/,34,ok,200
+Nissan,nissan,https://ogolosha.ua/transport/legkovye-avtomobili/nissan/,43,ok,200
+Opel,opel,https://ogolosha.ua/transport/legkovye-avtomobili/opel/,29,ok,200
+Peugeot,peugeot,https://ogolosha.ua/transport/legkovye-avtomobili/peugeot/,10,ok,200
+Pontiac,pontiac,https://ogolosha.ua/transport/legkovye-avtomobili/pontiac/,,not_found,200
+Porsche,porsche,https://ogolosha.ua/transport/legkovye-avtomobili/porsche/,1,ok,200
+Renault,renault,https://ogolosha.ua/transport/legkovye-avtomobili/renault/,14,ok,200
+Rolls-Royce,rolls-royce,https://ogolosha.ua/transport/legkovye-avtomobili/rolls-royce/,,not_found,200
+Rover,rover,https://ogolosha.ua/transport/legkovye-avtomobili/rover/,,not_found,200
+Saab,saab,https://ogolosha.ua/transport/legkovye-avtomobili/saab/,1,ok,200
+SEAT,seat,https://ogolosha.ua/transport/legkovye-avtomobili/seat/,1,ok,200
+Skoda,skoda,https://ogolosha.ua/transport/legkovye-avtomobili/skoda/,19,ok,200
+Smart,smart,https://ogolosha.ua/transport/legkovye-avtomobili/smart/,2,ok,200
+Ssang Yong,ssang-yong,https://ogolosha.ua/transport/legkovye-avtomobili/ssang-yong/,2,ok,200
+Subaru,subaru,https://ogolosha.ua/transport/legkovye-avtomobili/subaru/,5,ok,200
+Suzuki,suzuki,https://ogolosha.ua/transport/legkovye-avtomobili/suzuki/,4,ok,200
+Tesla,tesla,https://ogolosha.ua/transport/legkovye-avtomobili/tesla/,10,ok,200
+Toyota,toyota,https://ogolosha.ua/transport/legkovye-avtomobili/toyota/,41,ok,200
+Volkswagen,volkswagen,https://ogolosha.ua/transport/legkovye-avtomobili/volkswagen/,76,ok,200
+Volvo,volvo,https://ogolosha.ua/transport/legkovye-avtomobili/volvo/,5,ok,200
+Москвич/ АЗЛК,moskvich-azlk,https://ogolosha.ua/transport/legkovye-avtomobili/moskvich-azlk/,6,ok,200
+Заз,zaz,https://ogolosha.ua/transport/legkovye-avtomobili/zaz/,19,ok,200
+Газ,gaz,https://ogolosha.ua/transport/legkovye-avtomobili/gaz/,12,ok,200
+Ваз,vaz,https://ogolosha.ua/transport/legkovye-avtomobili/vaz/,51,ok,200
+Уаз,uaz,https://ogolosha.ua/transport/legkovye-avtomobili/uaz/,1,ok,200
+Другая модель,drugaja-model,https://ogolosha.ua/transport/legkovye-avtomobili/drugaja-model/,20,ok,200
+е39,q-е39,https://ogolosha.ua/transport/legkovye-avtomobili/q-е39/,,not_found,200
+тюнинг,q-тюнинг,https://ogolosha.ua/transport/legkovye-avtomobili/q-тюнинг/,,not_found,200
+ибица,q-ибица,https://ogolosha.ua/transport/legkovye-avtomobili/q-ибица/,,not_found,200
+зберігання,q-зберігання,https://ogolosha.ua/transport/legkovye-avtomobili/q-зберігання/,,not_found,200
+ягуар,q-ягуар,https://ogolosha.ua/transport/legkovye-avtomobili/q-ягуар/,,not_found,200
+механічни,q-механічни,https://ogolosha.ua/transport/legkovye-avtomobili/q-механічни/,,not_found,200
+неил,q-неил,https://ogolosha.ua/transport/legkovye-avtomobili/q-неил/,,not_found,200
+неьем,q-неьем,https://ogolosha.ua/transport/legkovye-avtomobili/q-неьем/,,not_found,200
+ней,q-ней,https://ogolosha.ua/transport/legkovye-avtomobili/q-ней/,,not_found,200
+неом,q-неом,https://ogolosha.ua/transport/legkovye-avtomobili/q-неом/,,not_found,200
+шевроле авео,q-шевроле+авео,https://ogolosha.ua/transport/legkovye-avtomobili/q-шевроле+авео/,,not_found,200
+механической,q-механической,https://ogolosha.ua/transport/legkovye-avtomobili/q-механической/,,not_found,200
+кенго,q-кенго,https://ogolosha.ua/transport/legkovye-avtomobili/q-кенго/,,not_found,200
+дзеркала,q-дзеркала,https://ogolosha.ua/transport/legkovye-avtomobili/q-дзеркала/,,not_found,200
+бита,q-бита,https://ogolosha.ua/transport/legkovye-avtomobili/q-бита/,,not_found,200
+дзеркао,q-дзеркао,https://ogolosha.ua/transport/legkovye-avtomobili/q-дзеркао/,,not_found,200
+битые,q-битые,https://ogolosha.ua/transport/legkovye-avtomobili/q-битые/,,not_found,200
+пикап,q-пикап,https://ogolosha.ua/transport/legkovye-avtomobili/q-пикап/,,not_found,200
+фиат,q-фиат,https://ogolosha.ua/transport/legkovye-avtomobili/q-фиат/,,not_found,200
+система,q-система,https://ogolosha.ua/transport/legkovye-avtomobili/q-система/,,not_found,200
+фиат добло,q-фиат+добло,https://ogolosha.ua/transport/legkovye-avtomobili/q-фиат+добло/,,not_found,200
+литва,q-литва,https://ogolosha.ua/transport/legkovye-avtomobili/q-литва/,,not_found,200
+підсилювач,q-підсилювач,https://ogolosha.ua/transport/legkovye-avtomobili/q-підсилювач/,,not_found,200
+сітроен берлінго,q-сітроен+берлінго,https://ogolosha.ua/transport/legkovye-avtomobili/q-сітроен+берлінго/,,not_found,200
+віваро,q-віваро,https://ogolosha.ua/transport/legkovye-avtomobili/q-віваро/,,not_found,200
+фіат скудо,q-фіат+скудо,https://ogolosha.ua/transport/legkovye-avtomobili/q-фіат+скудо/,,not_found,200
+акцент,q-акцент,https://ogolosha.ua/transport/legkovye-avtomobili/q-акцент/,,not_found,200
+власник,q-власник,https://ogolosha.ua/transport/legkovye-avtomobili/q-власник/,,not_found,200
+элила,q-элила,https://ogolosha.ua/transport/legkovye-avtomobili/q-элила/,,not_found,200
+эли,q-эли,https://ogolosha.ua/transport/legkovye-avtomobili/q-эли/,,not_found,200

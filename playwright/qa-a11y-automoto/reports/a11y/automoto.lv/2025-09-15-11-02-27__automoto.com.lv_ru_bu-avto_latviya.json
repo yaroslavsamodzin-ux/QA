@@ -1,0 +1,1185 @@
+{
+  "url": "https://automoto.com.lv/ru/bu-avto/latviya",
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"cursor-pointer bg-[#F3F4F6]/80 text-[#255592] h-[40px] w-[40px] rounded-full flex justify-center items-center\" @click=\"favorite();\">",
+          "target": [
+            "div[data-auto-id=\"68628778\"] > .bg-\\[\\#F3F4F6\\]\\/80.h-\\[40px\\].w-\\[40px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"cursor-pointer bg-[#F3F4F6]/80 text-[#255592] h-[40px] w-[40px] rounded-full flex justify-center items-center\" @click=\"favorite();\">",
+          "target": [
+            "div[data-auto-id=\"68628777\"] > .bg-\\[\\#F3F4F6\\]\\/80.h-\\[40px\\].w-\\[40px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"cursor-pointer bg-[#F3F4F6]/80 text-[#255592] h-[40px] w-[40px] rounded-full flex justify-center items-center\" @click=\"favorite();\">",
+          "target": [
+            "div[data-auto-id=\"68628776\"] > .bg-\\[\\#F3F4F6\\]\\/80.h-\\[40px\\].w-\\[40px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"cursor-pointer bg-[#F3F4F6]/80 text-[#255592] h-[40px] w-[40px] rounded-full flex justify-center items-center\" @click=\"favorite();\">",
+          "target": [
+            "div[data-auto-id=\"68628775\"] > .bg-\\[\\#F3F4F6\\]\\/80.h-\\[40px\\].w-\\[40px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"cursor-pointer bg-[#F3F4F6]/80 text-[#255592] h-[40px] w-[40px] rounded-full flex justify-center items-center\" @click=\"favorite();\">",
+          "target": [
+            "div[data-auto-id=\"68628774\"] > .bg-\\[\\#F3F4F6\\]\\/80.h-\\[40px\\].w-\\[40px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"cursor-pointer bg-[#F3F4F6]/80 text-[#255592] h-[40px] w-[40px] rounded-full flex justify-center items-center\" @click=\"favorite();\">",
+          "target": [
+            "div[data-auto-id=\"68628773\"] > .bg-\\[\\#F3F4F6\\]\\/80.h-\\[40px\\].w-\\[40px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"cursor-pointer bg-[#F3F4F6]/80 text-[#255592] h-[40px] w-[40px] rounded-full flex justify-center items-center\" @click=\"favorite();\">",
+          "target": [
+            "div[data-auto-id=\"68628772\"] > .bg-\\[\\#F3F4F6\\]\\/80.h-\\[40px\\].w-\\[40px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"cursor-pointer bg-[#F3F4F6]/80 text-[#255592] h-[40px] w-[40px] rounded-full flex justify-center items-center\" @click=\"favorite();\">",
+          "target": [
+            "div[data-auto-id=\"68628771\"] > .bg-\\[\\#F3F4F6\\]\\/80.h-\\[40px\\].w-\\[40px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"cursor-pointer bg-[#F3F4F6]/80 text-[#255592] h-[40px] w-[40px] rounded-full flex justify-center items-center\" @click=\"favorite();\">",
+          "target": [
+            "div[data-auto-id=\"68628770\"] > .bg-\\[\\#F3F4F6\\]\\/80.h-\\[40px\\].w-\\[40px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"cursor-pointer bg-[#F3F4F6]/80 text-[#255592] h-[40px] w-[40px] rounded-full flex justify-center items-center\" @click=\"favorite();\">",
+          "target": [
+            "div[data-auto-id=\"68628769\"] > .bg-\\[\\#F3F4F6\\]\\/80.h-\\[40px\\].w-\\[40px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button @click=\"expanded = ! expanded\" class=\"text-[#252525] bg-gray-100 hover:bg-gray-200 px-2 rounded-t-md font-medium block cursor-pointer mr-auto\">",
+          "target": [
+            ".hover\\:bg-gray-200"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://automoto.com.lv/ru/bu-avto/latviya?page=2\" class=\"flex items-center justify-center h-8.5 min-w-8.5 md:h-10 md:min-w-10 text-[#255592] bg-white border border-gray-300 rounded-md hover:bg-gray-100 hover:text-gray-700\">",
+          "target": [
+            "li:nth-child(5) > .border-gray-300.hover\\:text-gray-700.h-8\\.5"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": "serious",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/list?application=playwright",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": {
+                "values": "svg"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-4 shrink-0\">\n                        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m8.25 4.5 7.5 7.5-7.5 7.5\"></path>\n                    </svg>",
+                  "target": [
+                    ".size-4[stroke-width=\"1.5\"][stroke=\"currentColor\"]:nth-child(2)"
+                  ]
+                },
+                {
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-4 shrink-0\">\n                        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m8.25 4.5 7.5 7.5-7.5 7.5\"></path>\n                    </svg>",
+                  "target": [
+                    ".size-4[stroke-width=\"1.5\"][stroke=\"currentColor\"]:nth-child(4)"
+                  ]
+                },
+                {
+                  "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-4 shrink-0\">\n                        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m8.25 4.5 7.5 7.5-7.5 7.5\"></path>\n                    </svg>",
+                  "target": [
+                    ".size-4[stroke-width=\"1.5\"][stroke=\"currentColor\"]:nth-child(6)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "List element has direct children that are not allowed: svg"
+            }
+          ],
+          "impact": "serious",
+          "html": "<ol id=\"scrollBreadcrumb\" data-overlayscrollbars-initialize=\"\" class=\"flex *:flex w-full flex-nowrap whitespace-nowrap overflow-x-auto items-center *:items-center space-x-2 *:space-x-2 p-4 md:py-8\">",
+          "target": [
+            "#scrollBreadcrumb"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: svg"
+        }
+      ]
+    },
+    {
+      "id": "meta-viewport",
+      "impact": "critical",
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "wcag2aa",
+        "wcag144",
+        "EN-301-549",
+        "EN-9.1.4.4",
+        "ACT"
+      ],
+      "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling must not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "meta-viewport",
+              "data": "maximum-scale",
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "maximum-scale on <meta> tag disables zooming on mobile devices"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1\">",
+          "target": [
+            "meta[name=\"viewport\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  maximum-scale on <meta> tag disables zooming on mobile devices"
+        }
+      ]
+    },
+    {
+      "id": "select-name",
+      "impact": "critical",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "description": "Ensure select element has an accessible name",
+      "help": "Select element must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/select-name?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select id=\"yearTo\" name=\"filter[yearTo]\" class=\"col-start-1 row-start-1 appearance-none border border-[#CED4DA] hover:border-[#255592] focus:border-[#255592] rounded-md focus:outline-hidden block w-full leading-tight\n                 py-3 px-5\">",
+          "target": [
+            ".w-full:nth-child(6) > .grid-cols-2.gap-4.grid > .grid-cols-subgrid.grid-cols-2.grid:nth-child(2) > select[name=\"filter[yearTo]\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select id=\"priceTo\" name=\"filter[priceTo]\" class=\"col-start-1 row-start-1 appearance-none border border-[#CED4DA] hover:border-[#255592] focus:border-[#255592] rounded-md focus:outline-hidden block w-full leading-tight\n                 py-3 px-5\">",
+          "target": [
+            ".w-full:nth-child(7) > .grid-cols-2.gap-4.grid > .grid-cols-subgrid.grid-cols-2.grid:nth-child(2) > select[name=\"filter[priceTo]\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select id=\"country\" name=\"filter[country]\" class=\"col-start-1 row-start-1 appearance-none border border-[#CED4DA] hover:border-[#255592] focus:border-[#255592] rounded-md focus:outline-hidden block w-full leading-tight\n                 py-3 px-5\">",
+          "target": [
+            ".w-full:nth-child(9) > .grid-cols-1.grid.shrink-0 > select[name=\"filter[country]\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select id=\"gearbox\" name=\"filter[gearBox]\" class=\"col-start-1 row-start-1 appearance-none border border-[#CED4DA] hover:border-[#255592] focus:border-[#255592] rounded-md focus:outline-hidden block w-full leading-tight\n                 py-3 px-5\">",
+          "target": [
+            ".w-full:nth-child(12) > .grid-cols-1.grid.shrink-0 > select[name=\"filter[gearBox]\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select id=\"exchange\" name=\"filter[exchange]\" class=\"col-start-1 row-start-1 appearance-none border border-[#CED4DA] hover:border-[#255592] focus:border-[#255592] rounded-md focus:outline-hidden block w-full leading-tight\n                 py-3 px-5\">",
+          "target": [
+            ".lg\\:block > form > .divide-y-2.divide-gray-200.gap-4 > .gap-8.pt-4.pb-8 > .w-full:nth-child(14) > .grid-cols-1.grid.shrink-0 > select[name=\"filter[exchange]\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}

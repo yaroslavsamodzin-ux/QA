@@ -1,0 +1,174 @@
+{
+  "base": "https://automoto.com.lv/ru/avto",
+  "range": {
+    "start": 1,
+    "end": 50
+  },
+  "scannedPages": 49,
+  "cardsApprox": 881,
+  "uniqueModelsWithDash": 27,
+  "models": [
+    {
+      "brand": "honda",
+      "model": "cr-v",
+      "count": 5,
+      "example": "https://automoto.com.lv/ru/avto?page=14"
+    },
+    {
+      "brand": "volkswagen",
+      "model": "t-roc",
+      "count": 5,
+      "example": "https://automoto.com.lv/ru/avto?page=41"
+    },
+    {
+      "brand": "volkswagen",
+      "model": "t-cross",
+      "count": 5,
+      "example": "https://automoto.com.lv/ru/avto?page=42"
+    },
+    {
+      "brand": "mercedes-benz",
+      "model": "c-220",
+      "count": 3,
+      "example": "https://automoto.com.lv/ru/avto?page=10"
+    },
+    {
+      "brand": "mercedes-benz",
+      "model": "e-200",
+      "count": 3,
+      "example": "https://automoto.com.lv/ru/avto?page=22"
+    },
+    {
+      "brand": "mercedes-benz",
+      "model": "clc-220",
+      "count": 2,
+      "example": "https://automoto.com.lv/ru/avto?page=6"
+    },
+    {
+      "brand": "mazda",
+      "model": "cx-3",
+      "count": 2,
+      "example": "https://automoto.com.lv/ru/avto?page=21"
+    },
+    {
+      "brand": "ford",
+      "model": "c-max",
+      "count": 2,
+      "example": "https://automoto.com.lv/ru/avto?page=27"
+    },
+    {
+      "brand": "toyota",
+      "model": "c-hr",
+      "count": 2,
+      "example": "https://automoto.com.lv/ru/avto?page=30"
+    },
+    {
+      "brand": "mercedes-benz",
+      "model": "e-class",
+      "count": 2,
+      "example": "https://automoto.com.lv/ru/avto?page=30"
+    },
+    {
+      "brand": "mini",
+      "model": "cooper-s",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto"
+    },
+    {
+      "brand": "mercedes-benz",
+      "model": "gl-class",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto"
+    },
+    {
+      "brand": "jaguar",
+      "model": "f-pace",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=12"
+    },
+    {
+      "brand": "nissan",
+      "model": "x-trail",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=15"
+    },
+    {
+      "brand": "saab",
+      "model": "9-5",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=15"
+    },
+    {
+      "brand": "mercedes-benz",
+      "model": "cls-class",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=20"
+    },
+    {
+      "brand": "audi",
+      "model": "e-tron",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=20"
+    },
+    {
+      "brand": "ford",
+      "model": "s-max",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=21"
+    },
+    {
+      "brand": "mercedes-benz",
+      "model": "gls-class",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=24"
+    },
+    {
+      "brand": "mercedes-benz",
+      "model": "c-270",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=32"
+    },
+    {
+      "brand": "mercedes-benz",
+      "model": "c-320",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=32"
+    },
+    {
+      "brand": "saab",
+      "model": "9-3",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=40"
+    },
+    {
+      "brand": "mazda",
+      "model": "cx-30",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=42"
+    },
+    {
+      "brand": "mercedes-benz",
+      "model": "a-250",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=43"
+    },
+    {
+      "brand": "fiat",
+      "model": "500-x",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=44"
+    },
+    {
+      "brand": "lexus",
+      "model": "nx-300",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=45"
+    },
+    {
+      "brand": "mercedes-benz",
+      "model": "gl-420",
+      "count": 1,
+      "example": "https://automoto.com.lv/ru/avto?page=48"
+    }
+  ]
+}

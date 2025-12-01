@@ -1,0 +1,3835 @@
+{
+  "url": "https://automoto.ua/car/Europe",
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"btn btn-link mb-0 p-0 d-block collapsed\" role=\"button\" data-toggle=\"collapse\" data-target=\"#europe-country-menu\" aria-expanded=\"false\">",
+          "target": [
+            "div[data-target=\"#europe-country-menu\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "aria-progressbar-name",
+      "impact": "serious",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag111",
+        "EN-301-549",
+        "EN-9.1.1.1"
+      ],
+      "description": "Ensure every ARIA progressbar node has an accessible name",
+      "help": "ARIA progressbar nodes must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-progressbar-name?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"progress-bar bg-main\" role=\"progressbar\" style=\"width: 0;\" aria-valuenow=\"0\" aria-valuemin=\"0\" aria-valuemax=\"100\" id=\"ajax-progressbar\">\n    </div>",
+          "target": [
+            "#ajax-progressbar"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"btn btn-link p-0 border-0\" @click.prevent=\"toggle\" :class=\"{active: includes}\">\n                        <i class=\"icon-star\" :class=\"[includes ? 'active' : 'not-active']\"></i>\n                    </button>",
+          "target": [
+            "auto-notepad[auto=\"87033858\"] > .ml-auto.position-relative.d-flex > .p-0.border-0[\\@click\\.prevent=\"toggle\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"btn btn-link p-0 border-0\" @click.prevent=\"toggle\" :class=\"{active: includes}\">\n                        <i class=\"icon-star\" :class=\"[includes ? 'active' : 'not-active']\"></i>\n                    </button>",
+          "target": [
+            "auto-notepad[auto=\"87033778\"] > .ml-auto.position-relative.d-flex > .p-0.border-0[\\@click\\.prevent=\"toggle\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"btn btn-link p-0 border-0\" @click.prevent=\"toggle\" :class=\"{active: includes}\">\n                        <i class=\"icon-star\" :class=\"[includes ? 'active' : 'not-active']\"></i>\n                    </button>",
+          "target": [
+            "auto-notepad[auto=\"87032770\"] > .ml-auto.position-relative.d-flex > .p-0.border-0[\\@click\\.prevent=\"toggle\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"btn btn-link p-0 border-0\" @click.prevent=\"toggle\" :class=\"{active: includes}\">\n                        <i class=\"icon-star\" :class=\"[includes ? 'active' : 'not-active']\"></i>\n                    </button>",
+          "target": [
+            "auto-notepad[auto=\"87032693\"] > .ml-auto.position-relative.d-flex > .p-0.border-0[\\@click\\.prevent=\"toggle\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"btn btn-link p-0 border-0\" @click.prevent=\"toggle\" :class=\"{active: includes}\">\n                        <i class=\"icon-star\" :class=\"[includes ? 'active' : 'not-active']\"></i>\n                    </button>",
+          "target": [
+            "auto-notepad[auto=\"87032685\"] > .ml-auto.position-relative.d-flex > .p-0.border-0[\\@click\\.prevent=\"toggle\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"btn btn-link p-0 border-0\" @click.prevent=\"toggle\" :class=\"{active: includes}\">\n                        <i class=\"icon-star\" :class=\"[includes ? 'active' : 'not-active']\"></i>\n                    </button>",
+          "target": [
+            "auto-notepad[auto=\"87032615\"] > .ml-auto.position-relative.d-flex > .p-0.border-0[\\@click\\.prevent=\"toggle\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"btn btn-link p-0 border-0\" @click.prevent=\"toggle\" :class=\"{active: includes}\">\n                        <i class=\"icon-star\" :class=\"[includes ? 'active' : 'not-active']\"></i>\n                    </button>",
+          "target": [
+            "auto-notepad[auto=\"87032144\"] > .ml-auto.position-relative.d-flex > .p-0.border-0[\\@click\\.prevent=\"toggle\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"btn btn-link p-0 border-0\" @click.prevent=\"toggle\" :class=\"{active: includes}\">\n                        <i class=\"icon-star\" :class=\"[includes ? 'active' : 'not-active']\"></i>\n                    </button>",
+          "target": [
+            "auto-notepad[auto=\"87030086\"] > .ml-auto.position-relative.d-flex > .p-0.border-0[\\@click\\.prevent=\"toggle\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"btn btn-link p-0 border-0\" @click.prevent=\"toggle\" :class=\"{active: includes}\">\n                        <i class=\"icon-star\" :class=\"[includes ? 'active' : 'not-active']\"></i>\n                    </button>",
+          "target": [
+            "auto-notepad[auto=\"87030071\"] > .ml-auto.position-relative.d-flex > .p-0.border-0[\\@click\\.prevent=\"toggle\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"btn btn-link p-0 border-0\" @click.prevent=\"toggle\" :class=\"{active: includes}\">\n                        <i class=\"icon-star\" :class=\"[includes ? 'active' : 'not-active']\"></i>\n                    </button>",
+          "target": [
+            "auto-notepad[auto=\"87030063\"] > .ml-auto.position-relative.d-flex > .p-0.border-0[\\@click\\.prevent=\"toggle\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"btn btn-link p-0 border-0\" @click.prevent=\"toggle\" :class=\"{active: includes}\">\n                        <i class=\"icon-star\" :class=\"[includes ? 'active' : 'not-active']\"></i>\n                    </button>",
+          "target": [
+            "auto-notepad[auto=\"87029820\"] > .ml-auto.position-relative.d-flex > .p-0.border-0[\\@click\\.prevent=\"toggle\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"button\" class=\"btn btn-link p-0 border-0\" @click.prevent=\"toggle\" :class=\"{active: includes}\">\n                        <i class=\"icon-star\" :class=\"[includes ? 'active' : 'not-active']\"></i>\n                    </button>",
+          "target": [
+            "auto-notepad[auto=\"87029721\"] > .ml-auto.position-relative.d-flex > .p-0.border-0[\\@click\\.prevent=\"toggle\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button class=\"btn btn-light btn-sm btn-fixed\" style=\"border-top-left-radius: .25rem;\n    border-top-right-radius: .25rem;padding-top: 0;padding-bottom: 0;\" type=\"button\" data-toggle=\"collapse\" data-target=\"#fixedBlock\" aria-expanded=\"false\">",
+          "target": [
+            ".btn-light"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#ff8026",
+                "contrastRatio": 2.5,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button class=\"btn btn-main rounded px-3 align-self-center\" type=\"submit\" @click=\"waitAndSubmit\">\n                    Показать                </button>",
+                  "target": [
+                    ".btn-main"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.5 (foreground color: #ffffff, background color: #ff8026, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"btn btn-main rounded px-3 align-self-center\" type=\"submit\" @click=\"waitAndSubmit\">\n                    Показать                </button>",
+          "target": [
+            ".btn-main"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.5 (foreground color: #ffffff, background color: #ff8026, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#3dac00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.95,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card\">",
+                  "target": [
+                    ".col:nth-child(1) > auto-item > .card"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"price_usa\">\n                37 894 $\n            </div>",
+          "target": [
+            ".col:nth-child(1) > auto-item > .card > .py-md-0.card-body > .card-price.align-items-baseline.d-flex > .price_usa"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#3dac00",
+                "contrastRatio": 2.95,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87033858\">\n                    Доставить и растаможить                </button>",
+                  "target": [
+                    "button[data-target=\"#wah-modal-87033858\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87033858\">\n                    Доставить и растаможить                </button>",
+          "target": [
+            "button[data-target=\"#wah-modal-87033858\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#3dac00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.95,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card\">",
+                  "target": [
+                    ".col:nth-child(2) > auto-item > .card"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"price_usa\">\n                10 630 $\n            </div>",
+          "target": [
+            ".col:nth-child(2) > auto-item > .card > .py-md-0.card-body > .card-price.align-items-baseline.d-flex > .price_usa"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#3dac00",
+                "contrastRatio": 2.95,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87033778\">\n                    Доставить и растаможить                </button>",
+                  "target": [
+                    "button[data-target=\"#wah-modal-87033778\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87033778\">\n                    Доставить и растаможить                </button>",
+          "target": [
+            "button[data-target=\"#wah-modal-87033778\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#3dac00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.95,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card\">",
+                  "target": [
+                    ".col:nth-child(3) > auto-item > .card"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"price_usa\">\n                15 908 $\n            </div>",
+          "target": [
+            ".col:nth-child(3) > auto-item > .card > .py-md-0.card-body > .card-price.align-items-baseline.d-flex > .price_usa"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#3dac00",
+                "contrastRatio": 2.95,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87032770\">\n                    Доставить и растаможить                </button>",
+                  "target": [
+                    "button[data-target=\"#wah-modal-87032770\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87032770\">\n                    Доставить и растаможить                </button>",
+          "target": [
+            "button[data-target=\"#wah-modal-87032770\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#3dac00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.95,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card\">",
+                  "target": [
+                    ".col:nth-child(5) > auto-item > .card"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"price_usa\">\n                34 262 $\n            </div>",
+          "target": [
+            ".col:nth-child(5) > auto-item > .card > .py-md-0.card-body > .card-price.align-items-baseline.d-flex > .price_usa"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#3dac00",
+                "contrastRatio": 2.95,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87032693\">\n                    Доставить и растаможить                </button>",
+                  "target": [
+                    "button[data-target=\"#wah-modal-87032693\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87032693\">\n                    Доставить и растаможить                </button>",
+          "target": [
+            "button[data-target=\"#wah-modal-87032693\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#3dac00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.95,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card\">",
+                  "target": [
+                    ".col:nth-child(6) > auto-item > .card"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"price_usa\">\n                15 715 $\n            </div>",
+          "target": [
+            ".col:nth-child(6) > auto-item > .card > .py-md-0.card-body > .card-price.align-items-baseline.d-flex > .price_usa"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#3dac00",
+                "contrastRatio": 2.95,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87032685\">\n                    Доставить и растаможить                </button>",
+                  "target": [
+                    "button[data-target=\"#wah-modal-87032685\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87032685\">\n                    Доставить и растаможить                </button>",
+          "target": [
+            "button[data-target=\"#wah-modal-87032685\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#3dac00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.95,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card\">",
+                  "target": [
+                    ".col:nth-child(7) > auto-item > .card"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"price_usa\">\n                64 407 $\n            </div>",
+          "target": [
+            ".col:nth-child(7) > auto-item > .card > .py-md-0.card-body > .card-price.align-items-baseline.d-flex > .price_usa"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#3dac00",
+                "contrastRatio": 2.95,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87032615\">\n                    Доставить и растаможить                </button>",
+                  "target": [
+                    "button[data-target=\"#wah-modal-87032615\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87032615\">\n                    Доставить и растаможить                </button>",
+          "target": [
+            "button[data-target=\"#wah-modal-87032615\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#3dac00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.95,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card\">",
+                  "target": [
+                    ".col:nth-child(8) > auto-item > .card"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"price_usa\">\n                27 119 $\n            </div>",
+          "target": [
+            ".col:nth-child(8) > auto-item > .card > .py-md-0.card-body > .card-price.align-items-baseline.d-flex > .price_usa"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#3dac00",
+                "contrastRatio": 2.95,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87032144\">\n                    Доставить и растаможить                </button>",
+                  "target": [
+                    "button[data-target=\"#wah-modal-87032144\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87032144\">\n                    Доставить и растаможить                </button>",
+          "target": [
+            "button[data-target=\"#wah-modal-87032144\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#3dac00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.95,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card\">",
+                  "target": [
+                    ".col:nth-child(9) > auto-item > .card"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"price_usa\">\n                6 296 $\n            </div>",
+          "target": [
+            ".col:nth-child(9) > auto-item > .card > .py-md-0.card-body > .card-price.align-items-baseline.d-flex > .price_usa"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#3dac00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.95,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card\">",
+                  "target": [
+                    ".col:nth-child(10) > auto-item > .card"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"price_usa\">\n                31 163 $\n            </div>",
+          "target": [
+            ".col:nth-child(10) > auto-item > .card > .py-md-0.card-body > .card-price.align-items-baseline.d-flex > .price_usa"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#3dac00",
+                "contrastRatio": 2.95,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87030071\">\n                    Доставить и растаможить                </button>",
+                  "target": [
+                    "button[data-target=\"#wah-modal-87030071\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87030071\">\n                    Доставить и растаможить                </button>",
+          "target": [
+            "button[data-target=\"#wah-modal-87030071\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#3dac00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.95,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card\">",
+                  "target": [
+                    ".col:nth-child(11) > auto-item > .card"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"price_usa\">\n                22 979 $\n            </div>",
+          "target": [
+            ".col:nth-child(11) > auto-item > .card > .py-md-0.card-body > .card-price.align-items-baseline.d-flex > .price_usa"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#3dac00",
+                "contrastRatio": 2.95,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87030063\">\n                    Доставить и растаможить                </button>",
+                  "target": [
+                    "button[data-target=\"#wah-modal-87030063\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87030063\">\n                    Доставить и растаможить                </button>",
+          "target": [
+            "button[data-target=\"#wah-modal-87030063\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#3dac00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.95,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card\">",
+                  "target": [
+                    ".col:nth-child(12) > auto-item > .card"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"price_usa\">\n                24 456 $\n            </div>",
+          "target": [
+            ".col:nth-child(12) > auto-item > .card > .py-md-0.card-body > .card-price.align-items-baseline.d-flex > .price_usa"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#3dac00",
+                "contrastRatio": 2.95,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87029820\">\n                    Доставить и растаможить                </button>",
+                  "target": [
+                    "button[data-target=\"#wah-modal-87029820\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87029820\">\n                    Доставить и растаможить                </button>",
+          "target": [
+            "button[data-target=\"#wah-modal-87029820\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#3dac00",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.95,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"card\">",
+                  "target": [
+                    ".col:nth-child(15) > auto-item > .card"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"price_usa\">\n                26 611 $\n            </div>",
+          "target": [
+            ".col:nth-child(15) > auto-item > .card > .py-md-0.card-body > .card-price.align-items-baseline.d-flex > .price_usa"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #3dac00, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#3dac00",
+                "contrastRatio": 2.95,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87029721\">\n                    Доставить и растаможить                </button>",
+                  "target": [
+                    "button[data-target=\"#wah-modal-87029721\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"btn btn-success w-100 rounded\" type=\"button\" data-toggle=\"modal\" data-target=\"#wah-modal-87029721\">\n                    Доставить и растаможить                </button>",
+          "target": [
+            "button[data-target=\"#wah-modal-87029721\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #3dac00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an alt attribute"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<img src=\"/automoto-webpack/src/img/icon-1.png\" height=\"45\" width=\"45\" loading=\"lazy\">",
+          "target": [
+            "li:nth-child(1) > .gtm-social-our[target=\"_blank\"][rel=\"nofollow\"] > img[height=\"45\"][width=\"45\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an alt attribute"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<img src=\"/automoto-webpack/src/img/icon-2.png\" height=\"45\" width=\"45\" loading=\"lazy\">",
+          "target": [
+            "li:nth-child(2) > .gtm-social-our[target=\"_blank\"][rel=\"nofollow\"] > img[height=\"45\"][width=\"45\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an alt attribute"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<img src=\"/automoto-webpack/src/img/icon-3.png\" height=\"45\" width=\"45\" loading=\"lazy\">",
+          "target": [
+            "a[href$=\"+0xWvhqmgTuw2YWM6\"] > img[height=\"45\"][width=\"45\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an alt attribute"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<img src=\"/automoto-webpack/src/img/icon-4.png\" height=\"45\" width=\"45\" loading=\"lazy\">",
+          "target": [
+            "li:nth-child(4) > .gtm-social-our[target=\"_blank\"][rel=\"nofollow\"] > img[height=\"45\"][width=\"45\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an alt attribute"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<img src=\"/automoto-webpack/src/img/icon-5.png\" height=\"45\" width=\"45\" loading=\"lazy\">",
+          "target": [
+            "li:nth-child(5) > .gtm-social-our[target=\"_blank\"][rel=\"nofollow\"] > img[height=\"45\"][width=\"45\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an alt attribute"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<img src=\"/automoto-webpack/src/img/icon-6.png\" height=\"45\" width=\"45\" loading=\"lazy\">",
+          "target": [
+            "li:nth-child(6) > .gtm-social-our[target=\"_blank\"][rel=\"nofollow\"] > img[height=\"45\"][width=\"45\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an alt attribute"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<img src=\"/automoto-webpack/src/img/icon-7.png\" height=\"45\" width=\"45\" loading=\"lazy\">",
+          "target": [
+            "li:nth-child(7) > .gtm-social-our[target=\"_blank\"][rel=\"nofollow\"] > img[height=\"45\"][width=\"45\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "impact": "critical",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "description": "Ensure every form element has a label",
+      "help": "Form elements must have labels",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "non-empty-placeholder",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no placeholder attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<input :id=\"'type_region_' + state.id\" v-model=\"searchModel.state\" :value=\"state.id\" class=\"custom-control-input\" name=\"state[]\" type=\"checkbox\">",
+          "target": [
+            "div[v-for=\"state in states.slice(0, 5)\"] > .custom-control-input[v-model=\"searchModel.state\"][name=\"state[]\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "non-empty-placeholder",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no placeholder attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<input class=\"custom-control-input\" :id=\"'Transmission_check_lg_' + gearbox.id\" name=\"gearbox[]\" type=\"checkbox\" v-model.lazy=\"searchModel.gearbox\" :value=\"gearbox.id\" @change=\"selectGearbox(gearbox, $event.target.checked); waitAndSubmit()\">",
+          "target": [
+            ".form-group:nth-child(16) > .custom-control.custom-checkbox > .custom-control-input[name=\"gearbox[]\"][v-model\\.lazy=\"searchModel.gearbox\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "non-empty-placeholder",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no placeholder attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<input type=\"checkbox\" class=\"custom-control-input\" :id=\"'Typeofdrive_check_lg_' + drive.id\" name=\"drive[]\" v-model.lazy=\"searchModel.drive\" :value=\"drive.id\" @change=\"waitAndSubmit\">",
+          "target": [
+            "input[name=\"drive[]\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "non-empty-placeholder",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no placeholder attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<input :id=\"'Fuel_check_lg_' + fuel.id\" :value=\"fuel.id\" class=\"custom-control-input\" name=\"fuel[]\" type=\"checkbox\" v-model=\"searchModel.fuel\" @change=\"selectFuel(fuel, $event.target.checked); waitAndSubmit()\">",
+          "target": [
+            "div[v-for=\"fuel in fuels.slice(0, 5)\"] > .custom-control-input[name=\"fuel[]\"][v-model=\"searchModel.fuel\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "non-empty-placeholder",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no placeholder attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<input :id=\"'Color_check_m_' + color.id\" v-model=\"searchModel.color\" :value=\"color.id\" class=\"custom-control-input\" name=\"color[]\" type=\"checkbox\" @change=\"waitAndSubmit()\">",
+          "target": [
+            "input[v-model=\"searchModel.color\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "fgContrast",
+                "contrastRatio": 1.3,
+                "requiredContrastRatio": 3,
+                "nodeColor": "#255592",
+                "parentColor": "#666666"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"group-info\">",
+                  "target": [
+                    ".nav-item:nth-child(2) > .group-info"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "The link has insufficient color contrast of 1.3:1 with the surrounding text. (Minimum contrast is 3:1, link text: #255592, surrounding text: #666666)"
+            },
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"group-info\">",
+                  "target": [
+                    ".nav-item:nth-child(2) > .group-info"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/search/search\" title=\"Всего объявлений на Automoto.ua\" class=\"pseudo-link\" v-text=\"formatNumber(all)\">516 354</a>",
+          "target": [
+            ".nav-item:nth-child(2) > .group-info > .pseudo-link[v-text=\"formatNumber(all)\"][href$=\"search\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.3:1 with the surrounding text. (Minimum contrast is 3:1, link text: #255592, surrounding text: #666666)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        },
+        {
+          "any": [
+            {
+              "id": "link-in-text-block",
+              "data": {
+                "messageKey": "fgContrast",
+                "contrastRatio": 1.3,
+                "requiredContrastRatio": 3,
+                "nodeColor": "#255592",
+                "parentColor": "#666666"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"group-info\">",
+                  "target": [
+                    ".nav-item:nth-child(2) > .group-info"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "The link has insufficient color contrast of 1.3:1 with the surrounding text. (Minimum contrast is 3:1, link text: #255592, surrounding text: #666666)"
+            },
+            {
+              "id": "link-in-text-block-style",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"group-info\">",
+                  "target": [
+                    ".nav-item:nth-child(2) > .group-info"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/search/day\" title=\"Объявлений за день на Automoto.ua\" class=\"pseudo-link\" v-text=\"formatNumber(day)\">8 579</a>",
+          "target": [
+            ".nav-item:nth-child(2) > .group-info > .pseudo-link[href$=\"day\"][v-text=\"formatNumber(day)\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.3:1 with the surrounding text. (Minimum contrast is 3:1, link text: #255592, surrounding text: #666666)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a class=\"nav-link btn-link\" href=\"/cabinet/bloknot\" v-if=\"user\">",
+          "target": [
+            "a[href$=\"bloknot\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"/car/Europe?page=2\" class=\"prev\">\n        <svg width=\"16\" height=\"26\" viewBox=\"0 0 16 26\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\n            <path d=\"M0 22.945L9.88934 13L0 3.055L3.04453 0L16 13L3.04453 26L0 22.945Z\"></path>\n        </svg>\n    </a>",
+          "target": [
+            ".prev"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://www.instagram.com/automoto.ua/\" rel=\"nofollow\" target=\"_blank\" class=\"gtm-social-our\">\n                                <img src=\"/automoto-webpack/src/img/icon-1.png\" height=\"45\" width=\"45\" loading=\"lazy\">\n                            </a>",
+          "target": [
+            "li:nth-child(1) > .gtm-social-our[target=\"_blank\"][rel=\"nofollow\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://www.facebook.com/AutoMoto.ua\" rel=\"nofollow\" target=\"_blank\" class=\"gtm-social-our\">\n                                <img src=\"/automoto-webpack/src/img/icon-2.png\" height=\"45\" width=\"45\" loading=\"lazy\">\n                            </a>",
+          "target": [
+            "li:nth-child(2) > .gtm-social-our[target=\"_blank\"][rel=\"nofollow\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://t.me/+0xWvhqmgTuw2YWM6\" rel=\"nofollow\" target=\"_blank\" class=\"gtm-social-our\">\n                                <img src=\"/automoto-webpack/src/img/icon-3.png\" height=\"45\" width=\"45\" loading=\"lazy\">\n                            </a>",
+          "target": [
+            "a[href$=\"+0xWvhqmgTuw2YWM6\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://www.youtube.com/channel/UCSfua2Om-4H9CzKyb_FietQ\" rel=\"nofollow\" target=\"_blank\" class=\"gtm-social-our\">\n                                <img src=\"/automoto-webpack/src/img/icon-4.png\" height=\"45\" width=\"45\" loading=\"lazy\">\n                            </a>",
+          "target": [
+            "li:nth-child(4) > .gtm-social-our[target=\"_blank\"][rel=\"nofollow\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://www.tiktok.com/@automoto.ua\" rel=\"nofollow\" target=\"_blank\" class=\"gtm-social-our\">\n                                <img src=\"/automoto-webpack/src/img/icon-5.png\" height=\"45\" width=\"45\" loading=\"lazy\">\n                            </a>",
+          "target": [
+            "li:nth-child(5) > .gtm-social-our[target=\"_blank\"][rel=\"nofollow\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://www.threads.net/@automoto.ua?igshid=MzRlODBiNWFlZA==\" rel=\"nofollow\" target=\"_blank\" class=\"gtm-social-our\">\n                                <img src=\"/automoto-webpack/src/img/icon-6.png\" height=\"45\" width=\"45\" loading=\"lazy\">\n                            </a>",
+          "target": [
+            "li:nth-child(6) > .gtm-social-our[target=\"_blank\"][rel=\"nofollow\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://twitter.com/AUTOMOTO__UA\" rel=\"nofollow\" target=\"_blank\" class=\"gtm-social-our\">\n                                <img src=\"/automoto-webpack/src/img/icon-7.png\" height=\"45\" width=\"45\" loading=\"lazy\">\n                            </a>",
+          "target": [
+            "li:nth-child(7) > .gtm-social-our[target=\"_blank\"][rel=\"nofollow\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": "serious",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/list?application=playwright",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": {
+                "values": "my-office-login-header"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<my-office-login-header inline-template=\"\">",
+                  "target": [
+                    "my-office-login-header:nth-child(3)"
+                  ]
+                },
+                {
+                  "html": "<my-office-login-header inline-template=\"\">",
+                  "target": [
+                    "my-office-login-header:nth-child(4)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "List element has direct children that are not allowed: my-office-login-header"
+            }
+          ],
+          "impact": "serious",
+          "html": "<ul class=\"navbar-nav top-line ml-lg-auto\">",
+          "target": [
+            ".top-line"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: my-office-login-header"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": {
+                "values": "my-office-login-header"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<my-office-login-header inline-template=\"\">",
+                  "target": [
+                    "#navbarSupportedContent > header-counters > .line.navbar-nav > my-office-login-header"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "List element has direct children that are not allowed: my-office-login-header"
+            }
+          ],
+          "impact": "serious",
+          "html": "<ul class=\"navbar-nav line\">",
+          "target": [
+            "#navbarSupportedContent > header-counters > .line.navbar-nav"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: my-office-login-header"
+        }
+      ]
+    },
+    {
+      "id": "listitem",
+      "impact": "serious",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "description": "Ensure <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/listitem?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item does not have a <ul>, <ol> parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li class=\"nav-item dropdown\">",
+          "target": [
+            "my-office-login-header:nth-child(3) > .dropdown.nav-item"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item does not have a <ul>, <ol> parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li class=\"nav-item\">",
+          "target": [
+            "my-office-login-header:nth-child(4) > .nav-item"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        }
+      ]
+    },
+    {
+      "id": "meta-viewport",
+      "impact": "critical",
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "wcag2aa",
+        "wcag144",
+        "EN-301-549",
+        "EN-9.1.4.4",
+        "ACT"
+      ],
+      "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling must not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "meta-viewport",
+              "data": "user-scalable",
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "user-scalable on <meta> tag disables zooming on mobile devices"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no\">",
+          "target": [
+            "meta[name=\"viewport\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  user-scalable on <meta> tag disables zooming on mobile devices"
+        }
+      ]
+    },
+    {
+      "id": "select-name",
+      "impact": "critical",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "description": "Ensure select element has an accessible name",
+      "help": "Select element must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/select-name?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select class=\"form-control\" v-model=\"value\" name=\"category\">",
+          "target": [
+            "select[name=\"category\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select class=\"form-control form-control-sm choices choices_mark\" v-model=\"value\" :name=\"`groups[${$parent.$attrs.index}][mark]`\">",
+          "target": [
+            "auto-search-form-group > div > .form-group:nth-child(1) > marks-modal > div > mark-choices > .choices_mark.choices[v-model=\"value\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select class=\"form-control form-control-sm choices choices_model\" v-model=\"value\" :name=\"`groups[${$parent.$attrs.index}][model]`\">",
+          "target": [
+            ".form-group:nth-child(2) > models-modal > div > default-choices[v-model=\"selectedModel\"] > .choices_model.choices[v-model=\"value\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select v-model.number.lazy=\"value\" class=\"form-control form-control-sm choices\" :name=\"`groups[${$parent.index}][yearMin]`\">",
+          "target": [
+            ".form-group:nth-child(3) > .form-row > .col:nth-child(1) > default-choices[v-model=\"group.yearMin\"] > .choices[v-model\\.number\\.lazy=\"value\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select v-model.number.lazy=\"value\" class=\"form-control form-control-sm choices\" :name=\"`groups[${$parent.index}][yearMax]`\">",
+          "target": [
+            ".form-group:nth-child(3) > .form-row > .col:nth-child(2) > default-choices[v-model=\"group.yearMax\"] > .choices[v-model\\.number\\.lazy=\"value\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select class=\"form-control form-control-sm choices_count\" name=\"currency\" v-model=\"value\">",
+          "target": [
+            ".choices_count"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select class=\"form-control form-control-sm choices choices_city\" v-model.lazy=\"value\" name=\"city[]\" multiple=\"\">",
+          "target": [
+            ".choices_city"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select class=\"form-control form-control-sm\" @change=\"redirect($event.target.value)\">",
+          "target": [
+            ".form-group:nth-child(20) > select[\\@change=\"redirect($event.target.value)\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select class=\"form-control form-control-sm\" v-model=\"searchModel.add_time\" name=\"add_time\" @change=\"waitAndSubmit\">",
+          "target": [
+            "select[v-model=\"searchModel.add_time\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select class=\"form-control form-control-sm choices choices_sort_main\" @input=\"redirect($event.target.value)\">",
+          "target": [
+            ".choices_sort_main"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}

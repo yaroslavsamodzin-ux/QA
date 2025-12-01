@@ -1,0 +1,13 @@
+{
+  "name": "brands-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "scrape:auto24lv": "node scripts/sites/auto24lv.js",
+    "scrape": "node scripts/run.js"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.47.2",
+    "csv-writer": "^1.6.0"
+  }
+}

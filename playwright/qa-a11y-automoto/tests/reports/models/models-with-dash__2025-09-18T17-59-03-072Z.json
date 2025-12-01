@@ -1,0 +1,11 @@
+{
+  "base": "https://automoto.com.lv/ru/avto",
+  "range": {
+    "start": 1,
+    "end": 50
+  },
+  "scannedPages": 40,
+  "cardsApprox": 0,
+  "uniqueModelsWithDash": 0,
+  "models": []
+}
