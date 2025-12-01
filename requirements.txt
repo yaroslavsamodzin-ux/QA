@@ -1,0 +1,26 @@
+# --- Core QA Stack ---
+pytest==7.4.4
+pytest-playwright==0.5.3
+
+# --- Playwright (Python) ---
+playwright==1.40.0
+
+# --- Selenium (WebDriver) ---
+selenium==4.16.0
+webdriver-manager==4.0.1
+
+# --- HTTP / API Testing ---
+requests==2.31.0
+urllib3==2.0.7
+python-dotenv==1.0.0
+
+# --- Parsing / Scraping ---
+beautifulsoup4==4.12.2
+lxml==4.9.4
+
+# --- Data validation / Models ---
+pydantic==2.5.2
+
+# --- Utils ---
+tqdm==4.66.1      # progress bars
+fake-useragent==1.5.1
