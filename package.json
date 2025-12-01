@@ -1,0 +1,25 @@
+{
+  "name": "qa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaroslavsamodzin-ux/QA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yaroslavsamodzin-ux/QA/issues"
+  },
+  "homepage": "https://github.com/yaroslavsamodzin-ux/QA#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "playwright": "^1.57.0"
+  }
+}
