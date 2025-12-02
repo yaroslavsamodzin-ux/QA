@@ -1,0 +1,28 @@
+Title
+	EN  
+		await expect(page.locator('main h1, h1').first()).toBeVisible();
+  		await expect(page).toHaveTitle(/title/i);
+	LV
+		await expect(page.locator('main h1, h1').first()).toBeVisible();
+  		await expect(page).toHaveTitle(/title/i);
+	
+	RU
+		await expect(page.locator('main h1, h1').first()).toBeVisible();
+  		await expect(page).toHaveTitle(/title/i);
+Description
+
+	EN
+  		const metaDescription = page.locator('meta[name="description"]');
+  		await expect(metaDescription).toHaveAttribute('content', /description/i);
+
+	LV 
+		const metaDescription = page.locator('meta[name="description"]');
+  		await expect(metaDescription).toHaveAttribute('content', /description/i);
+
+	RU
+		const metaDescription = page.locator('meta[name="description"]');
+  		await expect(metaDescription).toHaveAttribute('content', /description/i);
+
+Other
+.*(Ludza).* - пропуск слова, з ним і без нього буде валідація
+{ name: /Show \d+ listings/ } -  для динамічних данних (зазвичай для кнопки "показать")
