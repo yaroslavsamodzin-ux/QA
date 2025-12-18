@@ -1,0 +1,786 @@
+[
+  {
+    "id": "106",
+    "brand": "-Kita-"
+  },
+  {
+    "id": "38657",
+    "brand": "A1 PRO"
+  },
+  {
+    "id": "33934",
+    "brand": "Abarth"
+  },
+  {
+    "id": "105",
+    "brand": "AC"
+  },
+  {
+    "id": "104",
+    "brand": "Acura"
+  },
+  {
+    "id": "33416",
+    "brand": "Aiways"
+  },
+  {
+    "id": "108",
+    "brand": "Aixam"
+  },
+  {
+    "id": "103",
+    "brand": "Alfa Romeo"
+  },
+  {
+    "id": "30765",
+    "brand": "Alke"
+  },
+  {
+    "id": "112",
+    "brand": "Alpina"
+  },
+  {
+    "id": "32350",
+    "brand": "Alpine"
+  },
+  {
+    "id": "121",
+    "brand": "AMC"
+  },
+  {
+    "id": "33698",
+    "brand": "Ariel"
+  },
+  {
+    "id": "102",
+    "brand": "ARO"
+  },
+  {
+    "id": "101",
+    "brand": "Asia"
+  },
+  {
+    "id": "100",
+    "brand": "Aston Martin"
+  },
+  {
+    "id": "99",
+    "brand": "Audi"
+  },
+  {
+    "id": "15642",
+    "brand": "Austin Rover"
+  },
+  {
+    "id": "27791",
+    "brand": "Austin-Healey"
+  },
+  {
+    "id": "33053",
+    "brand": "Baic"
+  },
+  {
+    "id": "38427",
+    "brand": "Barkas"
+  },
+  {
+    "id": "38661",
+    "brand": "BAW"
+  },
+  {
+    "id": "28319",
+    "brand": "BELLIER"
+  },
+  {
+    "id": "98",
+    "brand": "Bentley"
+  },
+  {
+    "id": "97",
+    "brand": "BMW"
+  },
+  {
+    "id": "29863",
+    "brand": "Bolloré"
+  },
+  {
+    "id": "38373",
+    "brand": "Bontu"
+  },
+  {
+    "id": "19319",
+    "brand": "Briliance"
+  },
+  {
+    "id": "19781",
+    "brand": "Bugatti"
+  },
+  {
+    "id": "96",
+    "brand": "Buick"
+  },
+  {
+    "id": "32287",
+    "brand": "BYD"
+  },
+  {
+    "id": "95",
+    "brand": "Cadillac"
+  },
+  {
+    "id": "37549",
+    "brand": "Casalini"
+  },
+  {
+    "id": "36918",
+    "brand": "Caterham"
+  },
+  {
+    "id": "33744",
+    "brand": "Cenntro"
+  },
+  {
+    "id": "30429",
+    "brand": "Chatenet"
+  },
+  {
+    "id": "38365",
+    "brand": "Chery"
+  },
+  {
+    "id": "94",
+    "brand": "Chevrolet"
+  },
+  {
+    "id": "93",
+    "brand": "Chrysler"
+  },
+  {
+    "id": "92",
+    "brand": "Citroen"
+  },
+  {
+    "id": "19829",
+    "brand": "Cobra"
+  },
+  {
+    "id": "28897",
+    "brand": "Cupra"
+  },
+  {
+    "id": "110",
+    "brand": "Dacia"
+  },
+  {
+    "id": "91",
+    "brand": "Daewoo"
+  },
+  {
+    "id": "25072",
+    "brand": "DAF"
+  },
+  {
+    "id": "90",
+    "brand": "Daihatsu"
+  },
+  {
+    "id": "16088",
+    "brand": "Datsun"
+  },
+  {
+    "id": "38459",
+    "brand": "Deepal"
+  },
+  {
+    "id": "18736",
+    "brand": "Delorean"
+  },
+  {
+    "id": "19741",
+    "brand": "Desoto"
+  },
+  {
+    "id": "30789",
+    "brand": "DFSK"
+  },
+  {
+    "id": "89",
+    "brand": "Dodge"
+  },
+  {
+    "id": "38625",
+    "brand": "Dongfeng"
+  },
+  {
+    "id": "31682",
+    "brand": "Dorcen"
+  },
+  {
+    "id": "16572",
+    "brand": "DR"
+  },
+  {
+    "id": "29763",
+    "brand": "DS Automobiles"
+  },
+  {
+    "id": "38665",
+    "brand": "e.GO"
+  },
+  {
+    "id": "88",
+    "brand": "Eagle"
+  },
+  {
+    "id": "31123",
+    "brand": "Excalibur"
+  },
+  {
+    "id": "30795",
+    "brand": "FAW"
+  },
+  {
+    "id": "87",
+    "brand": "Ferrari"
+  },
+  {
+    "id": "86",
+    "brand": "Fiat"
+  },
+  {
+    "id": "18542",
+    "brand": "Fisker"
+  },
+  {
+    "id": "85",
+    "brand": "Ford"
+  },
+  {
+    "id": "38621",
+    "brand": "Forthing"
+  },
+  {
+    "id": "37914",
+    "brand": "Foton"
+  },
+  {
+    "id": "109",
+    "brand": "GAZ"
+  },
+  {
+    "id": "33954",
+    "brand": "GEELY"
+  },
+  {
+    "id": "32616",
+    "brand": "Genesis"
+  },
+  {
+    "id": "117",
+    "brand": "Geo"
+  },
+  {
+    "id": "41",
+    "brand": "GMC"
+  },
+  {
+    "id": "19091",
+    "brand": "Gonow"
+  },
+  {
+    "id": "34099",
+    "brand": "GWM"
+  },
+  {
+    "id": "84",
+    "brand": "Honda"
+  },
+  {
+    "id": "33163",
+    "brand": "Hongqi"
+  },
+  {
+    "id": "27783",
+    "brand": "Hudson"
+  },
+  {
+    "id": "83",
+    "brand": "Hummer"
+  },
+  {
+    "id": "82",
+    "brand": "Hyundai"
+  },
+  {
+    "id": "33507",
+    "brand": "IFA"
+  },
+  {
+    "id": "37152",
+    "brand": "Ineos"
+  },
+  {
+    "id": "81",
+    "brand": "Infiniti"
+  },
+  {
+    "id": "13507",
+    "brand": "International"
+  },
+  {
+    "id": "80",
+    "brand": "Isuzu"
+  },
+  {
+    "id": "125",
+    "brand": "Iveco"
+  },
+  {
+    "id": "30005",
+    "brand": "JAC"
+  },
+  {
+    "id": "79",
+    "brand": "Jaguar"
+  },
+  {
+    "id": "38379",
+    "brand": "JDM"
+  },
+  {
+    "id": "78",
+    "brand": "Jeep"
+  },
+  {
+    "id": "32724",
+    "brand": "Jonway"
+  },
+  {
+    "id": "33844",
+    "brand": "KGM"
+  },
+  {
+    "id": "77",
+    "brand": "Kia"
+  },
+  {
+    "id": "18799",
+    "brand": "Koenigsegg"
+  },
+  {
+    "id": "31421",
+    "brand": "KTM"
+  },
+  {
+    "id": "76",
+    "brand": "Lada"
+  },
+  {
+    "id": "75",
+    "brand": "Lamborghini"
+  },
+  {
+    "id": "74",
+    "brand": "Lancia"
+  },
+  {
+    "id": "73",
+    "brand": "Land Rover"
+  },
+  {
+    "id": "123",
+    "brand": "Landwind"
+  },
+  {
+    "id": "33999",
+    "brand": "LDV"
+  },
+  {
+    "id": "72",
+    "brand": "Lexus"
+  },
+  {
+    "id": "18723",
+    "brand": "Ligier"
+  },
+  {
+    "id": "71",
+    "brand": "Lincoln"
+  },
+  {
+    "id": "37569",
+    "brand": "LIXIANG"
+  },
+  {
+    "id": "70",
+    "brand": "Lotus"
+  },
+  {
+    "id": "119",
+    "brand": "LuAZ"
+  },
+  {
+    "id": "33181",
+    "brand": "Lucid"
+  },
+  {
+    "id": "33720",
+    "brand": "Lynk &amp; Co"
+  },
+  {
+    "id": "16535",
+    "brand": "Mahindra"
+  },
+  {
+    "id": "30847",
+    "brand": "MAN"
+  },
+  {
+    "id": "33936",
+    "brand": "Marcos Mantis"
+  },
+  {
+    "id": "69",
+    "brand": "Maserati"
+  },
+  {
+    "id": "35741",
+    "brand": "Maxus"
+  },
+  {
+    "id": "111",
+    "brand": "Maybach"
+  },
+  {
+    "id": "68",
+    "brand": "Mazda"
+  },
+  {
+    "id": "24629",
+    "brand": "Mclaren"
+  },
+  {
+    "id": "67",
+    "brand": "Mercedes-Benz"
+  },
+  {
+    "id": "66",
+    "brand": "Mercury"
+  },
+  {
+    "id": "65",
+    "brand": "MG"
+  },
+  {
+    "id": "16127",
+    "brand": "Microcar"
+  },
+  {
+    "id": "64",
+    "brand": "Mini"
+  },
+  {
+    "id": "63",
+    "brand": "Mitsubishi"
+  },
+  {
+    "id": "17392",
+    "brand": "Morgan"
+  },
+  {
+    "id": "116",
+    "brand": "Moskvich"
+  },
+  {
+    "id": "32450",
+    "brand": "MPM"
+  },
+  {
+    "id": "33872",
+    "brand": "NIO"
+  },
+  {
+    "id": "62",
+    "brand": "Nissan"
+  },
+  {
+    "id": "16543",
+    "brand": "Norster"
+  },
+  {
+    "id": "24732",
+    "brand": "Nysa"
+  },
+  {
+    "id": "61",
+    "brand": "Oldsmobile"
+  },
+  {
+    "id": "60",
+    "brand": "Opel"
+  },
+  {
+    "id": "37104",
+    "brand": "Ozeta"
+  },
+  {
+    "id": "18607",
+    "brand": "Packard"
+  },
+  {
+    "id": "37164",
+    "brand": "Panther"
+  },
+  {
+    "id": "37216",
+    "brand": "Paxster"
+  },
+  {
+    "id": "59",
+    "brand": "Peugeot"
+  },
+  {
+    "id": "30863",
+    "brand": "Piaggio"
+  },
+  {
+    "id": "58",
+    "brand": "Plymouth"
+  },
+  {
+    "id": "31465",
+    "brand": "Polestar"
+  },
+  {
+    "id": "57",
+    "brand": "Pontiac"
+  },
+  {
+    "id": "56",
+    "brand": "Porsche"
+  },
+  {
+    "id": "55",
+    "brand": "Proton"
+  },
+  {
+    "id": "34075",
+    "brand": "RAM"
+  },
+  {
+    "id": "54",
+    "brand": "Renault"
+  },
+  {
+    "id": "34257",
+    "brand": "Rivian"
+  },
+  {
+    "id": "53",
+    "brand": "Rolls-Royce"
+  },
+  {
+    "id": "13514",
+    "brand": "Roosevelt"
+  },
+  {
+    "id": "52",
+    "brand": "Rover"
+  },
+  {
+    "id": "38405",
+    "brand": "ROX"
+  },
+  {
+    "id": "33107",
+    "brand": "RUNHORSE"
+  },
+  {
+    "id": "51",
+    "brand": "Saab"
+  },
+  {
+    "id": "31692",
+    "brand": "SAIC"
+  },
+  {
+    "id": "107",
+    "brand": "Santana"
+  },
+  {
+    "id": "50",
+    "brand": "Saturn"
+  },
+  {
+    "id": "114",
+    "brand": "Scion"
+  },
+  {
+    "id": "49",
+    "brand": "Seat"
+  },
+  {
+    "id": "16546",
+    "brand": "Secma"
+  },
+  {
+    "id": "30799",
+    "brand": "Seres"
+  },
+  {
+    "id": "10861",
+    "brand": "Shuanghuan"
+  },
+  {
+    "id": "33972",
+    "brand": "Silence"
+  },
+  {
+    "id": "48",
+    "brand": "Skoda"
+  },
+  {
+    "id": "38590",
+    "brand": "Skut"
+  },
+  {
+    "id": "31676",
+    "brand": "Skywell"
+  },
+  {
+    "id": "47",
+    "brand": "Smart"
+  },
+  {
+    "id": "19699",
+    "brand": "Spartan"
+  },
+  {
+    "id": "37633",
+    "brand": "Sportequipe"
+  },
+  {
+    "id": "17593",
+    "brand": "Spyker"
+  },
+  {
+    "id": "40",
+    "brand": "SsangYong"
+  },
+  {
+    "id": "19711",
+    "brand": "Studebaker"
+  },
+  {
+    "id": "46",
+    "brand": "Subaru"
+  },
+  {
+    "id": "45",
+    "brand": "Suzuki"
+  },
+  {
+    "id": "21501",
+    "brand": "Talbot"
+  },
+  {
+    "id": "24569",
+    "brand": "Tartan"
+  },
+  {
+    "id": "10863",
+    "brand": "Tata"
+  },
+  {
+    "id": "120",
+    "brand": "Tatra"
+  },
+  {
+    "id": "17577",
+    "brand": "Tazzari"
+  },
+  {
+    "id": "19524",
+    "brand": "Tesla"
+  },
+  {
+    "id": "24720",
+    "brand": "Think"
+  },
+  {
+    "id": "38611",
+    "brand": "Tiudo"
+  },
+  {
+    "id": "44",
+    "brand": "Toyota"
+  },
+  {
+    "id": "21506",
+    "brand": "Trabant"
+  },
+  {
+    "id": "124",
+    "brand": "Triumph"
+  },
+  {
+    "id": "115",
+    "brand": "UAZ"
+  },
+  {
+    "id": "15983",
+    "brand": "Vauxhall"
+  },
+  {
+    "id": "17380",
+    "brand": "Venturi"
+  },
+  {
+    "id": "43",
+    "brand": "Volkswagen"
+  },
+  {
+    "id": "42",
+    "brand": "Volvo"
+  },
+  {
+    "id": "36240",
+    "brand": "Voyah"
+  },
+  {
+    "id": "10871",
+    "brand": "Wanderer"
+  },
+  {
+    "id": "118",
+    "brand": "Wartburg"
+  },
+  {
+    "id": "37537",
+    "brand": "XEV"
+  },
+  {
+    "id": "38463",
+    "brand": "Xiaomi"
+  },
+  {
+    "id": "33626",
+    "brand": "Xpeng"
+  },
+  {
+    "id": "113",
+    "brand": "ZAZ"
+  },
+  {
+    "id": "36061",
+    "brand": "Zeekr"
+  },
+  {
+    "id": "37251",
+    "brand": "Zhidou"
+  },
+  {
+    "id": "28623",
+    "brand": "Zimmer"
+  }
+]

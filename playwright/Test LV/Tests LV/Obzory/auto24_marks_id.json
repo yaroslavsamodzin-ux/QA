@@ -1,0 +1,334 @@
+[
+  {
+    "id": "9",
+    "title": "Alfa Romeo"
+  },
+  {
+    "id": "372",
+    "title": "Alpina"
+  },
+  {
+    "id": "149",
+    "title": "Aston Martin"
+  },
+  {
+    "id": "2",
+    "title": "Audi"
+  },
+  {
+    "id": "247",
+    "title": "Bentley"
+  },
+  {
+    "id": "4",
+    "title": "BMW"
+  },
+  {
+    "id": "38",
+    "title": "Buick"
+  },
+  {
+    "id": "1148",
+    "title": "BYD"
+  },
+  {
+    "id": "44",
+    "title": "Cadillac"
+  },
+  {
+    "id": "31",
+    "title": "Chevrolet"
+  },
+  {
+    "id": "28",
+    "title": "Chrysler"
+  },
+  {
+    "id": "20",
+    "title": "Citroen"
+  },
+  {
+    "id": "1434",
+    "title": "Cupra"
+  },
+  {
+    "id": "254",
+    "title": "Dacia"
+  },
+  {
+    "id": "55",
+    "title": "Daihatsu"
+  },
+  {
+    "id": "418",
+    "title": "Daimler"
+  },
+  {
+    "id": "48",
+    "title": "Datsun"
+  },
+  {
+    "id": "1714",
+    "title": "DFSK"
+  },
+  {
+    "id": "24",
+    "title": "Dodge"
+  },
+  {
+    "id": "1259",
+    "title": "DS"
+  },
+  {
+    "id": "70",
+    "title": "Ferrari"
+  },
+  {
+    "id": "14",
+    "title": "Fiat"
+  },
+  {
+    "id": "713",
+    "title": "Fisker"
+  },
+  {
+    "id": "7",
+    "title": "Ford"
+  },
+  {
+    "id": "45",
+    "title": "GAZ"
+  },
+  {
+    "id": "54",
+    "title": "GMC"
+  },
+  {
+    "id": "1671",
+    "title": "GWM"
+  },
+  {
+    "id": "1",
+    "title": "Honda"
+  },
+  {
+    "id": "193",
+    "title": "Hummer"
+  },
+  {
+    "id": "34",
+    "title": "Hyundai"
+  },
+  {
+    "id": "255",
+    "title": "Infiniti"
+  },
+  {
+    "id": "15",
+    "title": "Isuzu"
+  },
+  {
+    "id": "26",
+    "title": "Iveco"
+  },
+  {
+    "id": "443",
+    "title": "IZ"
+  },
+  {
+    "id": "36",
+    "title": "Jaguar"
+  },
+  {
+    "id": "32",
+    "title": "Jeep"
+  },
+  {
+    "id": "1450",
+    "title": "Karma"
+  },
+  {
+    "id": "25",
+    "title": "Kia"
+  },
+  {
+    "id": "18",
+    "title": "Lada"
+  },
+  {
+    "id": "376",
+    "title": "Lamborghini"
+  },
+  {
+    "id": "37",
+    "title": "Lancia"
+  },
+  {
+    "id": "42",
+    "title": "Land Rover"
+  },
+  {
+    "id": "35",
+    "title": "Lexus"
+  },
+  {
+    "id": "76",
+    "title": "Lincoln"
+  },
+  {
+    "id": "29",
+    "title": "Lotus"
+  },
+  {
+    "id": "60",
+    "title": "Maserati"
+  },
+  {
+    "id": "1657",
+    "title": "Maxus"
+  },
+  {
+    "id": "6",
+    "title": "Mazda"
+  },
+  {
+    "id": "751",
+    "title": "McLaren"
+  },
+  {
+    "id": "1470",
+    "title": "Mercedes-AMG"
+  },
+  {
+    "id": "12",
+    "title": "Mercedes-Benz"
+  },
+  {
+    "id": "379",
+    "title": "MG"
+  },
+  {
+    "id": "144",
+    "title": "MINI"
+  },
+  {
+    "id": "3",
+    "title": "Mitsubishi"
+  },
+  {
+    "id": "181",
+    "title": "Moskvich"
+  },
+  {
+    "id": "11",
+    "title": "Nissan"
+  },
+  {
+    "id": "5",
+    "title": "Opel"
+  },
+  {
+    "id": "16",
+    "title": "Peugeot"
+  },
+  {
+    "id": "66",
+    "title": "Plymouth"
+  },
+  {
+    "id": "1483",
+    "title": "Polestar"
+  },
+  {
+    "id": "71",
+    "title": "Pontiac"
+  },
+  {
+    "id": "140",
+    "title": "Porsche"
+  },
+  {
+    "id": "19",
+    "title": "Renault"
+  },
+  {
+    "id": "168",
+    "title": "Rolls-Royce"
+  },
+  {
+    "id": "30",
+    "title": "Rover"
+  },
+  {
+    "id": "17",
+    "title": "Saab"
+  },
+  {
+    "id": "640",
+    "title": "Scion"
+  },
+  {
+    "id": "22",
+    "title": "SEAT"
+  },
+  {
+    "id": "1361",
+    "title": "Seres"
+  },
+  {
+    "id": "40",
+    "title": "Skoda"
+  },
+  {
+    "id": "1574",
+    "title": "Skywell"
+  },
+  {
+    "id": "102",
+    "title": "Smart"
+  },
+  {
+    "id": "39",
+    "title": "SsangYong"
+  },
+  {
+    "id": "23",
+    "title": "Subaru"
+  },
+  {
+    "id": "41",
+    "title": "Suzuki"
+  },
+  {
+    "id": "1282",
+    "title": "SWM"
+  },
+  {
+    "id": "642",
+    "title": "Tesla"
+  },
+  {
+    "id": "13",
+    "title": "Toyota"
+  },
+  {
+    "id": "52",
+    "title": "VAZ"
+  },
+  {
+    "id": "8",
+    "title": "Volkswagen"
+  },
+  {
+    "id": "10",
+    "title": "Volvo"
+  },
+  {
+    "id": "1713",
+    "title": "Xpeng"
+  },
+  {
+    "id": "232",
+    "title": "ZAZ"
+  }
+]

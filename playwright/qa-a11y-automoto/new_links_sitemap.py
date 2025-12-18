@@ -4,7 +4,7 @@ import requests
 import xml.etree.ElementTree as ET
 
 urls = [
-    "https://new.automoto.com.lv/lv/sitemaps/catalog-new.xml.gz",
+"https://new.automoto.com.lv/lv/sitemaps/catalog-new.xml.gz",
 "https://new.automoto.com.lv/lv/sitemaps/catalog-used.xml.gz",
 "https://new.automoto.com.lv/lv/sitemaps/catalog-used-1.xml.gz",
 "https://new.automoto.com.lv/lv/sitemaps/catalog-used-2.xml.gz",

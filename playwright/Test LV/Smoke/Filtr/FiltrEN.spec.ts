@@ -127,8 +127,7 @@ test('RU', async ({ page }) => {
   await page.getByRole('dialog').getByText('Черный').click();
   await page.getByText('Латвия').first().click();
   await page.getByText('Рижский район').first().click();
-  await page.getByText('Рига').nth(5).click();
-  await page.getByText('Автомат', { exact: true }).nth(5).click();
+  await page.getByText('Рига').nth(4).click();
   await page.getByText('Передний привод').first().click();
   await page.getByRole('link', { name: 'Logo CARS FROM LATVIA AT ONE' }).click();
 });
