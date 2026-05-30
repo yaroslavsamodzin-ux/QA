@@ -28,7 +28,7 @@ test ("Go to registration", async ({ page })=>{
     await page.waitForTimeout(3000);
 });
 
-test.only ("status code is 200", async ({page})=>{
+test ("status code is 200", async ({page})=>{
     const resp = await page.request.get("https://www.google.com");
     expect(resp.status()).toBe(200);
 });
