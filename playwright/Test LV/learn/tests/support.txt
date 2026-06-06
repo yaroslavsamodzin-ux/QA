@@ -1,0 +1,52 @@
+ця шляпа шоб почало робити дії на другій сторінці
+const page1Promise = page.waitForEvent('popup');
+const page1 = await page1Promise;
+
+await page.getByRole('button', { name: 'Контакты продавца' }).click();
+page.locator('span.swiper-pagination-total')
+// Клікнути по першій кнопці всередині блоку згоди з куками
+await page.locator('#onetrust-button-group').getByRole('button').first().click();
+
+//пошук елементів
+// За тегом: page.locator('button')
+
+// За класом: page.locator('.submit-btn')
+
+// За ID: page.locator('#username')
+
+// За атрибутом: page.locator('[type="submit"]')
+
+// Комбінація: page.locator('input[name="email"].error')
+
+// Вкладеність (нащадки): page.locator('form #password') (пароль всередині форми)
+
+// Прямий нащадок (child): page.locator('ul > li')
+
+Звичайний шлях: page.locator('//div[@id="container"]/button')
+
+Пошук за текстом: page.locator('//span[contains(text(), "Реєстрація")]')
+
+// Знайти картку товару, всередині якої є кнопка "Купити"
+page.locator('.product-card').filter({ has: page.locator('button', { name: 'Купити' }) })
+
+// Шукаємо форму за ID, в ній шукаємо списки, а в списках елемент із текстом
+await page.locator('#login-form >> ul >> text=Увійти').click();
+
+
+
+// await page.locator('label[for="autoStatusNew"]').click();
+await page.locator('label[for="autoStatusNew"]').filter({visible:true, hasText: 'Новые'}).click();
+// await page.locator('label:has-text("Новые")').click();
+
+const linkcart = (page.locator('a', {has: page.locator('span[class="absolute inset-0"]')}).first());
+const karta = page.locator('a[class="block text-[#252525] text-xl font-medium"]').first();
+
+// await page.getByRole ('button', {name: 'Показать'}).click();
+
+// await page.click('button[type="submit"]');
+
+// await expect(secondTodo).not.toHaveClass(/completed/);
+
+// await firstTodo.getByRole('checkbox').click();
+
+// await page.click('button[type="submit"]').filter({name: 'Войти'}).click();

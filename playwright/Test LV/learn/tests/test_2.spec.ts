@@ -20,7 +20,7 @@ test ("Automation form", async ({page})=>{
     await expect(firstTodo).toHaveClass(/completed/);
 });
 
-test.only ("Handling form", async ({page}) =>{
+test ("Handling form", async ({page}) =>{
     await page.goto(goUrl);
     const placeHolder = page.getByPlaceholder("What needs to be done?");
     await placeHolder.fill("Buy auto");
