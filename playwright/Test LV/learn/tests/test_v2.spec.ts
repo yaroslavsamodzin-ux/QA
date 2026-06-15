@@ -62,184 +62,203 @@ const onlyNumber = (text: string | null | undefined): string => {
     return text.replace(/[^0-9.]/g, '').trim();
 };
 
-test("Universal test for parser", async ({ page }) => {
+test("Universal test for parser with pagination", async ({ page }) => {
     
     await page.goto("https://automoto.com.lv/ru/bu-avto");
-    
-    // 1. Отримуємо локатор для ВСІХ карток на сторінці
-    const allCardsLocator = page.locator(SELECTOR.automoto.listing.cart);
-    const cardsCount = await allCardsLocator.count();
-    
-    console.log(`Знайдено ${cardsCount} оголошень для тестування.`);
+    await page.waitForLoadState('domcontentloaded');
 
-    // 2. Запускаємо цикл по кожній картці
-    for (let i = 0; i < cardsCount; i++) {
-        console.log(`--- Старт тесту оголошення №${i + 1} з ${cardsCount} ---`);
-        
-        // Беремо конкретну картку за її індексом
-        const currentCard = allCardsLocator.nth(i);
-        
-        // Збираємо дані з картки лістингу
-        const cart = ((await currentCard.textContent()) ?? '').trim().toLowerCase();
-        const marka = (cart.match(/^([^\s,]+)/) ?? [])[1] ?? '';
-        const model = (cart.match(/^\S+\s+([^\s,]+)/) ?? [])[1] ?? '';
-        const markaModel = `${marka} ${model}`;
+    let currentPage = 1;
+    const maxPages = 3;
 
-        // Клікаємо на картку, щоб відкрилася кінцева сторінка automoto
-        await currentCard.click();
+    while (currentPage <= maxPages) {
 
-        // Парсимо базові значення на сторінці автомобіля (automoto)
-        const pole = ((await page.locator(SELECTOR.automoto.kinseva.pole).textContent()) ?? '').toLowerCase();
-        expect(pole).toContain(marka);
-        expect(pole).toContain(model);
+        // Отримуємо картки для поточної сторінки
+        const allCardsLocator = page.locator(SELECTOR.automoto.listing.cart);
+        const cardsCount = await allCardsLocator.count();
         
-        const countPhotos = ((await page.locator(SELECTOR.automoto.kinseva.countPhotos).textContent()) ?? '').trim();
-        const kpp = ((await page.locator(SELECTOR.automoto.kinseva.harakteristiki).nth(2).textContent()) ?? '').trim().toLowerCase();
-        const color = (await page.locator(SELECTOR.automoto.kinseva.color).textContent() ?? '').toLowerCase().replace(/цвет/, '').trim();
-        const price = (await page.locator(SELECTOR.automoto.kinseva.price).filter({hasText: '€'}).textContent() ?? '').replace(/[^0-9]/g, '').trim();
-        const kuzov = ((await page.locator(SELECTOR.automoto.kinseva.harakteristiki).nth(1).textContent()) ?? '').trim().toLowerCase();
-        const palivo = (await page.locator(SELECTOR.automoto.kinseva.palivo).textContent() ?? '').replace(/топливо/g, "").trim().toLowerCase();
-        const obyemDviguna = onlyNumber((await page.locator(SELECTOR.automoto.kinseva.obyemDviguna).textContent() ?? '').replace(/Двигатель/g, "").trim());
-        const seller = (await page.locator(SELECTOR.automoto.kinseva.seller).last().textContent() ?? '').trim().toLowerCase();
-        const privod = (await page.locator(SELECTOR.automoto.kinseva.privod).textContent() ?? '').trim().toLowerCase();
+        console.log(`Знайдено ${cardsCount} оголошень на сторінці ${currentPage}.`);
 
-        const km = onlyNumber((await page.locator(SELECTOR.automoto.kinseva.harakteristiki).nth(0).textContent() ?? '').trim());
-        const kmNumber = km.length;
-        const kmNumber_2 = km.substring(0, 3);
-
-        // Перехід на сайт-джерело (відкриваємо поп-ап)
-        const page1Promise = page.waitForEvent('popup');
-        await page.locator(SELECTOR.automoto.kinseva.submitButton).first().click();
-        const page1 = await page1Promise;
-        await page1.waitForLoadState('domcontentloaded');
-
-        // Визначаємо куди ми потрапили по URL
-        const siteUrl = page1.url();
-        let currentConfig: TargetSiteConfig | undefined;
-
-        for (const key of Object.keys(SITE_CONFIGS)) {
-            if (siteUrl.includes(key)) {
-                currentConfig = SITE_CONFIGS[key];
-                break;
-            }
-        }
-
-        // Якщо прилетів невідомий сайт, ми не валимо весь цикл, а просто логуємо або кидаємо помилку
-        if (!currentConfig) {
-            await page1.close(); // закриваємо вкладку перед виходом
-            throw new Error(`Тест впав: Немає конфігурації для сайту донора! Поточний URL: ${siteUrl}`);
-        }
-
-        // --- ТУТ ІДУТЬ ВАШІ ПЕРЕВІРКИ (Блоки expect 1-11, які ви написали) ---
-        // (Залиште ваші блоки перевірок без змін)
-        
-        // 1. Перевірка Марки Моделі
-            if (currentConfig.titleSelector){
-                const siteTitle = (await page1.locator(currentConfig.titleSelector).first().textContent() ?? '').toLowerCase();
-                expect(siteTitle).toContain(markaModel);
-            } else {
-                console.log(`На  не знайшли марку: ${markaModel}`)
-            };
-            // 2. Кількість фото
-            const sitePhotosCount = await currentConfig.photoCountMethod(page1);
-            expect(sitePhotosCount).toBe(countPhotos);
-        
-            // 3. Тип кузова
-            let siteKuzov = (await page1.locator(currentConfig.kuzovSelector).first().textContent() ?? '').toLowerCase().trim();
-            if (siteKuzov.includes("хетчбэк") || siteKuzov.includes("хетчбек")) {
-                siteKuzov = "хэтчбек";
-            }
-            expect(siteKuzov).toContain(kuzov);
-        
-            // 4. КПП
-            const siteKpp = (await page1.locator(currentConfig.kppSelector).first().textContent() ?? '').toLowerCase().replace(/коробка передач/, '').trim();
-            expect(siteKpp).toContain(kpp);
-        
-            // 5. Колір
-            const siteColor = (await page1.locator(currentConfig.colorSelector).first().textContent() ?? '').toLowerCase().replace(/цвет/, '').trim();
-            expect(siteColor).toContain(color);
-        
-            // 6. Об'єм двигуна
-            if(currentConfig.obyemDvigunaSelector){
-            const siteobyemDviguna = onlyNumber((await page1.locator(currentConfig.obyemDvigunaSelector).first().textContent() ?? '').toLowerCase().trim());
-            expect(siteobyemDviguna).toContain(obyemDviguna);
-            } else {
-                console.log(`На ${siteUrl} немає об'єму двигуна: ${obyemDviguna}`)
-            }
-        
-            // 7. Продавець
-            if(currentConfig.sellerSelector){
-            const siteseller = (await page1.locator(currentConfig.sellerSelector).first().textContent() ?? '').toLowerCase().replace(/цвет/, '').trim();
-            expect(siteseller).toContain(seller);
-            } else {
-                console.log(`На ${siteUrl} немає продавця: ${seller}`)
-            }
-        
-            // 8. Тип приводу
-            if (currentConfig && currentConfig.privodSelector) {
-        
-            const privodLocator = page1.locator(currentConfig.privodSelector);
-        
-                if (await privodLocator.count() > 0) {
-                    const sitePrivod = (await privodLocator.first().textContent() ?? '').trim().toLowerCase();
-                    if(privod.includes("передний привод")){
-        
-                        textToContainAnySynonym(privod, SYNONYMS.kinseva.privod.FWD);
-                        textToContainAnySynonym(sitePrivod, SYNONYMS.kinseva.privod.FWD);
-        
-                    } else if(privod.includes("полный привод")){
-        
-                        textToContainAnySynonym(privod, SYNONYMS.kinseva.privod.AWD);
-                        textToContainAnySynonym(sitePrivod, SYNONYMS.kinseva.privod.AWD);
-        
-                    }
-                } else {
-                    console.log(`На ${siteUrl} немає типу приводу: ${privod}`);
-                }
-                } else {
-                    console.log(`На ${siteUrl} не налаштовано privodLocator в конфігу`);
-            };
-        
-            // 9. Ціна
-            const sitePrice = onlyNumber(await page1.locator(currentConfig.priceSelector).first().textContent() ?? '');
-            expect(sitePrice).toContain(price);
+        //  Внутрішній цикл по картках поточної сторінки
+        for (let i = 0; i < cardsCount; i++) {
+            console.log(`--- Старт тесту оголошення №${i + 1} з ${cardsCount} (Сторінка ${currentPage}) ---`);
             
-            // 10. Паливо
-            if (currentConfig && currentConfig.palivoSelector) {
-        
-            const palivoLocator = page1.locator(currentConfig.palivoSelector);
-        
-                if (await palivoLocator.count() > 0) {
-                    const sitePalivo = (await palivoLocator.first().textContent() ?? '').trim().toLowerCase();
-                    if(palivo.includes("дизель")){
-        
-                        textToContainAnySynonym(palivo, SYNONYMS.kinseva.palivo.dizel);
-                        textToContainAnySynonym(sitePalivo, SYNONYMS.kinseva.palivo.dizel);
-        
-                    } else if(palivo.includes("электро")){
-        
-                        textToContainAnySynonym(palivo, SYNONYMS.kinseva.palivo.electo);
-                        textToContainAnySynonym(sitePalivo, SYNONYMS.kinseva.palivo.electo);
-        
-                    }
+            // Заново перевизначаємо локатор картки на кожної ітерації
+            const currentCard = page.locator(SELECTOR.automoto.listing.cart).nth(i);
+            
+            // Збираємо дані з картки лістингу
+            const cart = ((await currentCard.textContent()) ?? '').trim().toLowerCase();
+            const marka = (cart.match(/^([^\s,]+)/) ?? [])[1] ?? '';
+            const model = (cart.match(/^\S+\s+([^\s,]+)/) ?? [])[1] ?? '';
+            const markaModel = `${marka} ${model}`;
+
+            // Клікаємо на картку
+            await currentCard.click();
+            await page.waitForLoadState('domcontentloaded');
+
+            // Парсимо базові значення
+                const pole = ((await page.locator(SELECTOR.automoto.kinseva.pole).textContent()) ?? '').toLowerCase();
+                expect(pole).toContain(marka);
+                expect(pole).toContain(model);
+                
+                const countPhotos = ((await page.locator(SELECTOR.automoto.kinseva.countPhotos).textContent()) ?? '').trim();
+                const kpp = ((await page.locator(SELECTOR.automoto.kinseva.harakteristiki).nth(2).textContent()) ?? '').trim().toLowerCase();
+                const color = (await page.locator(SELECTOR.automoto.kinseva.color).textContent() ?? '').toLowerCase().replace(/цвет/, '').trim();
+                const price = (await page.locator(SELECTOR.automoto.kinseva.price).filter({hasText: '€'}).textContent() ?? '').replace(/[^0-9]/g, '').trim();
+                const kuzov = ((await page.locator(SELECTOR.automoto.kinseva.harakteristiki).nth(1).textContent()) ?? '').trim().toLowerCase();
+                const palivo = (await page.locator(SELECTOR.automoto.kinseva.palivo).textContent() ?? '').replace(/топливо/g, "").trim().toLowerCase();
+                const obyemDviguna = onlyNumber((await page.locator(SELECTOR.automoto.kinseva.obyemDviguna).textContent() ?? '').replace(/Двигатель/g, "").trim());
+                const seller = (await page.locator(SELECTOR.automoto.kinseva.seller).last().textContent() ?? '').trim().toLowerCase();
+                const privod = (await page.locator(SELECTOR.automoto.kinseva.privod).textContent() ?? '').trim().toLowerCase();
+            
+                const km = onlyNumber((await page.locator(SELECTOR.automoto.kinseva.harakteristiki).nth(0).textContent() ?? '').trim());
+                const kmNumber = km.length;
+                const kmNumber_2 = km.substring(0, 3);
+
+            // Перехід на сайт-джерело (поп-ап)
+            const page1Promise = page.waitForEvent('popup');
+            await page.locator(SELECTOR.automoto.kinseva.submitButton).first().click();
+            const page1 = await page1Promise;
+            await page1.waitForLoadState('domcontentloaded');
+
+            // Визначаємо куди потрапили і беремо конфіг
+            const siteUrl = page1.url();
+            let currentConfig = Object.keys(SITE_CONFIGS).find(key => siteUrl.includes(key)) 
+                ? SITE_CONFIGS[Object.keys(SITE_CONFIGS).find(key => siteUrl.includes(key))!] 
+                : undefined;
+
+            if (!currentConfig) {
+                await page1.close();
+                throw new Error(`Тест впав: Немає конфігурації для сайту донора! URL: ${siteUrl}`);
+            }
+
+            // Перевірки
+                
+                // 1. Перевірка Марки Моделі
+                if (currentConfig.titleSelector){
+                    const siteTitle = (await page1.locator(currentConfig.titleSelector).first().textContent() ?? '').toLowerCase();
+                    expect(siteTitle).toContain(markaModel);
                 } else {
-                    console.log(`На ${siteUrl} немає палива: ${palivo}`);
+                    console.log(`На  не знайшли марку: ${markaModel}`)
+                };
+                // 2. Кількість фото
+                const sitePhotosCount = await currentConfig.photoCountMethod(page1);
+                expect(sitePhotosCount).toBe(countPhotos);
+            
+                // 3. Тип кузова
+                let siteKuzov = (await page1.locator(currentConfig.kuzovSelector).first().textContent() ?? '').toLowerCase().trim();
+                if (siteKuzov.includes("хетчбэк") || siteKuzov.includes("хетчбек")) {
+                    siteKuzov = "хэтчбек";
                 }
+                expect(siteKuzov).toContain(kuzov);
+            
+                // 4. КПП
+                const siteKpp = (await page1.locator(currentConfig.kppSelector).first().textContent() ?? '').toLowerCase().replace(/коробка передач/, '').trim();
+                expect(siteKpp).toContain(kpp);
+            
+                // 5. Колір
+                const siteColor = (await page1.locator(currentConfig.colorSelector).first().textContent() ?? '').toLowerCase().replace(/цвет/, '').trim();
+                expect(siteColor).toContain(color);
+            
+                // 6. Об'єм двигуна
+                if(currentConfig.obyemDvigunaSelector){
+                const siteobyemDviguna = onlyNumber((await page1.locator(currentConfig.obyemDvigunaSelector).first().textContent() ?? '').toLowerCase().trim());
+                expect(siteobyemDviguna).toContain(obyemDviguna);
                 } else {
-                    console.log(`На ${siteUrl} не налаштовано palivoSelector в конфігу`);
-            };
-        
-            // 11. Пробіг
-            const siteKm = onlyNumber((await page1.locator(currentConfig.kmSelector).first().textContent() ?? '').trim());
-            expect(siteKm.length).toBe(kmNumber);
-            expect(siteKm).toContain(kmNumber_2);
-        
-        // === ВАЖЛИВИЙ КРОК НАПРИКІНЦІ ЦИКЛУ ===
-        // Закриваємо вкладку сайту-джерела (page1)
-        await page1.close();
-        
-        // Повертаємося назад на сторінку лістингу на головній вкладці (page), щоб взяти наступну картку
-        await page.goBack(); 
-        await page.waitForLoadState('domcontentloaded');
+                    console.log(`На ${siteUrl} немає об'єму двигуна: ${obyemDviguna}`)
+                }
+            
+                // 7. Продавець
+                if(currentConfig.sellerSelector){
+                const siteseller = (await page1.locator(currentConfig.sellerSelector).first().textContent() ?? '').toLowerCase().replace(/цвет/, '').trim();
+                expect(siteseller).toContain(seller);
+                } else {
+                    console.log(`На ${siteUrl} немає продавця: ${seller}`)
+                }
+            
+                // 8. Тип приводу
+                if (currentConfig && currentConfig.privodSelector) {
+            
+                const privodLocator = page1.locator(currentConfig.privodSelector);
+            
+                    if (await privodLocator.count() > 0) {
+                        const sitePrivod = (await privodLocator.first().textContent() ?? '').trim().toLowerCase();
+                        if(privod.includes("передний привод")){
+            
+                            textToContainAnySynonym(privod, SYNONYMS.kinseva.privod.FWD);
+                            textToContainAnySynonym(sitePrivod, SYNONYMS.kinseva.privod.FWD);
+            
+                        } else if(privod.includes("полный привод")){
+            
+                            textToContainAnySynonym(privod, SYNONYMS.kinseva.privod.AWD);
+                            textToContainAnySynonym(sitePrivod, SYNONYMS.kinseva.privod.AWD);
+            
+                        }
+                    } else {
+                        console.log(`На ${siteUrl} немає типу приводу: ${privod}`);
+                    }
+                    } else {
+                        console.log(`На ${siteUrl} не налаштовано privodLocator в конфігу`);
+                };
+            
+                // 9. Ціна
+                const sitePrice = onlyNumber(await page1.locator(currentConfig.priceSelector).first().textContent() ?? '');
+                expect(sitePrice).toContain(price);
+                
+                // 10. Паливо
+                if (currentConfig && currentConfig.palivoSelector) {
+            
+                const palivoLocator = page1.locator(currentConfig.palivoSelector);
+            
+                    if (await palivoLocator.count() > 0) {
+                        const sitePalivo = (await palivoLocator.first().textContent() ?? '').trim().toLowerCase();
+                        if(palivo.includes("дизель")){
+            
+                            textToContainAnySynonym(palivo, SYNONYMS.kinseva.palivo.dizel);
+                            textToContainAnySynonym(sitePalivo, SYNONYMS.kinseva.palivo.dizel);
+            
+                        } else if(palivo.includes("электро")){
+            
+                            textToContainAnySynonym(palivo, SYNONYMS.kinseva.palivo.electo);
+                            textToContainAnySynonym(sitePalivo, SYNONYMS.kinseva.palivo.electo);
+            
+                        }
+                    } else {
+                        console.log(`На ${siteUrl} немає палива: ${palivo}`);
+                    }
+                    } else {
+                        console.log(`На ${siteUrl} не налаштовано palivoSelector в конфігу`);
+                };
+            
+                // 11. Пробіг
+                const siteKm = onlyNumber((await page1.locator(currentConfig.kmSelector).first().textContent() ?? '').trim());
+                expect(siteKm.length).toBe(kmNumber);
+                expect(siteKm).toContain(kmNumber_2);
+
+            // Закриваємо вкладку джерела
+            await page1.close();
+            
+            // Повертаємося на лістинг автомобілів
+            await page.goBack();
+            await page.waitForLoadState('domcontentloaded');
+        }
+
+        // 3. ПЕРЕХІД НА НАСТУПНУ СТОРІНКУ ЛІСТИНГУ
+        currentPage++;
+        if (currentPage <= maxPages) {
+            const nextPageButton = page.locator(SELECTOR.automoto.listing.nextPageButton);
+
+            // Перевіряємо, чи кнопка взагалі є і чи вона активна (не заблокована)
+            if (await nextPageButton.count() > 0 && await nextPageButton.isVisible()) {
+                console.log(`👉 Клікаємо на наступну сторінку (${currentPage})...`);
+                await nextPageButton.click();
+                await page.waitForLoadState('domcontentloaded');
+                // Даємо трохи часу на рендер нових карток
+                await page.waitForTimeout(2000); 
+            } else {
+                console.log(" Кнопка наступної сторінки відсутня або неактивна. Завершуємо тест.");
+                break; 
+            }
+        }
     }
+    console.log(" Тестування всіх запланованих сторінок завершено успішно!");
 });

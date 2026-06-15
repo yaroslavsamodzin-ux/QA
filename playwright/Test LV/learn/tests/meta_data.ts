@@ -12,9 +12,22 @@ export const SYNONYMS = {
             electo:["электро", "электрический"],
             dizel:["дизель"],
         },
+
         privod:{
             AWD:["полный привод", "четырехприводный", "4wd", "4x4"],
             FWD:["передний привод", "переднеприводный", "fwd"],
+        },
+
+        color:{
+            black:["черный", "чёрный"],
+        },
+
+        kuzov:{
+            vnedorojnik:["джип", "внедорожник"],
+        },
+
+        marka:{
+            mercedes:["mercedes-benz", "mercedes"],
         },
         
 
@@ -31,7 +44,7 @@ export const SELECTOR = {
         },
         listing:{
             cart: 'a[class="block text-[#252525] text-xl font-medium"]',
-
+            nextPageButton: 'a[data-click-arg="pagination_next"]'
         },
         kinseva:{
             pole: 'h1[class="text-[#252525] text-[28px] font-medium leading-none"]', //title
