@@ -7,6 +7,19 @@ page.locator('span.swiper-pagination-total')
 // Клікнути по першій кнопці всередині блоку згоди з куками
 await page.locator('#onetrust-button-group').getByRole('button').first().click();
 
+//фічі
+const privodFoundAutoPlius = (SYNONYMS_AWD.some(synonym => privod.toLowerCase().includes(synonym)));
+
+const privodFound = (SYNONYMS_AWD.some(synonym => privod.toLowerCase().includes(synonym)));
+//found marka (first slovo)
+    const match = cart.match(/^([^\s,]+)/);
+    const marka = match ? match[1] : '';
+    //found model (second slovo)
+    const match_2 = cart.match(/^\S+\s+([^\s,]+)/);
+    const model = match_2 ? match_2[1] : '';
+    //combinate marka and model
+    const markaModel = `${marka} ${model}`;
+
 //пошук елементів
 // За тегом: page.locator('button')
 
