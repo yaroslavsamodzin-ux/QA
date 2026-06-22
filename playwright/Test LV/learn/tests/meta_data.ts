@@ -8,26 +8,35 @@ export const TEST_DATA = {
 
 export const SYNONYMS = {
     kinseva:{
+        sold: ["продано", "не существует", "не актульное", "продал"],
         palivo:{
             electo:["электро", "электрический"],
             dizel:["дизель"],
+            gaz_benz:["газ/бензин", "бензин/газ"],
         },
 
         privod:{
-            AWD:["полный привод", "четырехприводный", "4wd", "4x4"],
-            FWD:["передний привод", "переднеприводный", "fwd"],
+            AWD:["полный привод", "четырехприводный", "все ведущие", "4wd", "4x4"],
+            FWD:["передний привод", "переднеприводный", "передние ведущие", "fwd"],
         },
 
         color:{
             black:["черный", "чёрный"],
+            green:["зеленый", "зелёный"],
+            gray:["серый", "серого цв."],
         },
 
         kuzov:{
             vnedorojnik:["джип", "внедорожник"],
+            hetchbeck:["хэтчбек", "хетчбэк"],
         },
 
         marka:{
             mercedes:["mercedes-benz", "mercedes"],
+        },
+
+        kpp:{
+            manual:["ручная", "механическая"],
         },
         
 
@@ -74,32 +83,65 @@ export const SELECTOR = {
             palivo: '#tdo_15',
             obyemDviguna: '#tdo_15',//skip for electric
             counterSpan: 'div.pic_dv_thumbnail',
+            registration: 'div.pic_dv_thumbnail',
+            year: '#tdo_18',
         },
     },
     auto24:{
-        golovna:{
-
-        },
-
-        listing:{
-
-        },
-
         kinseva:{
-            title: 'h1.commonSubtitle',
+            sold: 'div[class="e-message -error t-fs-xl t-mb-m"]',
+            title: 'div.tpl-content h1.commonSubtitle',
             seller: 'address[class="section seller"] h2.commonSubtitle',
             kuzov: 'tr.field-keretyyp span.value',
             km: 'tr.field-labisoit span.value',
-            kpp: 'tr.field-kaigukast_kaikudega',
+            kpp: 'tr.field-kaigukast_kaikudega span.value',
             privod: 'tr.field-vedavsild span.value',
-            color: 'tr.field-varvus',
+            color: 'tr.field-varvus span.value',
             price: 'tr.field-hind span.value',
+            price_2: 'tr.field-soodushind span.value',
             palivo: 'table.group.full tr:has-text("Топливо:") td.value',
             obyemDviguna: 'table.group.full tr:has-text("Объем:") td.value',
             counterSpan: 'span.lg-counter-all',
-
+            registration: 'span.lg-counter-all',
         },
-
+    },
+    autogidas:{
+        kinseva:{
+            sold: 'div[class="e-message -error t-fs-xl t-mb-m"]',
+            title: 'h1.sticky-title',
+            seller: 'div.seller-name',
+            kuzov: 'div.list-striped-item:has-text("Тип кузова") div.list-striped-item-value',
+            km: 'div.icon.param-mileage b',
+            kpp: 'div.icon.param-gearbox b',
+            privod: 'div.list-striped-item:has-text("Ведущие колёса") div.list-striped-item-value',
+            color: 'div.list-striped-item:has-text("Цвет") div.list-striped-item-value',
+            price: 'div.sticky-price strong',
+            // price_2: 'tr.field-soodushind span.value',
+            palivo: 'div.icon.param-fuel-type b',
+            obyemDviguna: 'div.icon.param-engine b',
+            counterSpan: '#photoCount',
+            registration: 'div.icon.param-year b',
+            year: 'div.icon.param-year b',
+            bigPhoto: '#big-photo-container',
+        },
+    },
+    autoplius:{
+        kinseva:{
+            sold: 'div[class="e-message -error t-fs-xl t-mb-m"]',
+            title: 'div.title-text',
+            seller: 'div.seller-contact-name',
+            kuzov: 'div.parameter-row:has-text("Тип кузова") div.parameter-value',
+            km: 'div.parameter-row:has-text("Пробег") div.parameter-value',
+            kpp: 'div.parameter-row:has-text("Коробка передач") div.parameter-value',
+            privod: 'div.parameter-row:has-text("Тип трансмиссии") div.parameter-value',
+            color: 'div.parameter-row:has-text("Цвет") div.parameter-value',
+            price: 'div.price',
+            palivo: 'div.parameter-row:has-text("Тип топлива") div.parameter-value',
+            obyemDviguna: '.title-parameters-container .title-parameter:nth-child(2)',
+            counterSpan: 'span.announcement-gallery-carousel__counter',
+            registration: 'div.parameter-row:has-text("Первая регистрация") div.parameter-value',
+            year: 'div.title-year',
+        },
     },
 };
 
