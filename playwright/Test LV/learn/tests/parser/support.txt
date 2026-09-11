@@ -1,0 +1,257 @@
+ця шляпа шоб почало робити дії на другій сторінці
+const page1Promise = page.waitForEvent('popup');
+const page1 = await page1Promise;
+
+await page.getByRole('button', { name: 'Контакты продавца' }).click();
+page.locator('span.swiper-pagination-total')
+// Клікнути по першій кнопці всередині блоку згоди з куками
+await page.locator('#onetrust-button-group').getByRole('button').first().click();
+
+//фічі
+const privodFoundAutoPlius = (SYNONYMS_AWD.some(synonym => privod.toLowerCase().includes(synonym)));
+
+const privodFound = (SYNONYMS_AWD.some(synonym => privod.toLowerCase().includes(synonym)));
+//found marka (first slovo)
+    const match = cart.match(/^([^\s,]+)/);
+    const marka = match ? match[1] : '';
+    //found model (second slovo)
+    const match_2 = cart.match(/^\S+\s+([^\s,]+)/);
+    const model = match_2 ? match_2[1] : '';
+    //combinate marka and model
+    const markaModel = `${marka} ${model}`;
+
+//пошук елементів
+// За тегом: page.locator('button')
+
+// За класом: page.locator('.submit-btn')
+
+// За ID: page.locator('#username')
+
+// За атрибутом: page.locator('[type="submit"]')
+
+// Комбінація: page.locator('input[name="email"].error')
+
+// Вкладеність (нащадки): page.locator('form #password') (пароль всередині форми)
+
+// Прямий нащадок (child): page.locator('ul > li')
+
+Звичайний шлях: page.locator('//div[@id="container"]/button')
+
+Пошук за текстом: page.locator('//span[contains(text(), "Реєстрація")]')
+
+// Знайти картку товару, всередині якої є кнопка "Купити"
+page.locator('.product-card').filter({ has: page.locator('button', { name: 'Купити' }) })
+
+// Шукаємо форму за ID, в ній шукаємо списки, а в списках елемент із текстом
+await page.locator('#login-form >> ul >> text=Увійти').click();
+
+
+
+// await page.locator('label[for="autoStatusNew"]').click();
+await page.locator('label[for="autoStatusNew"]').filter({visible:true, hasText: 'Новые'}).click();
+// await page.locator('label:has-text("Новые")').click();
+
+const linkcart = (page.locator('a', {has: page.locator('span[class="absolute inset-0"]')}).first());
+const karta = page.locator('a[class="block text-[#252525] text-xl font-medium"]').first();
+
+// await page.getByRole ('button', {name: 'Показать'}).click();
+
+// await page.click('button[type="submit"]');
+
+// await expect(secondTodo).not.toHaveClass(/completed/);
+
+// await firstTodo.getByRole('checkbox').click();
+
+// await page.click('button[type="submit"]').filter({name: 'Войти'}).click();
+
+
+
+// 11. Цена
+            const priceSelector = page1.locator(currentConfig.priceSelector);
+            if (await priceSelector.count() > 0) {
+                const rawPriceText = await page1.locator(currentConfig.priceSelector).first().textContent() ?? '';
+                const firstNumbersMatch = rawPriceText.trim().match(/^\d+[\s\u00A0]?\d+/);
+                const sitePrice = onlyNumber(firstNumbersMatch ? firstNumbersMatch[0] : '');
+                // const sitePrice = onlyNumber(await page1.locator(currentConfig.priceSelector).first().innerText() ?? '');
+
+                if (sitePrice == price) {
+
+                    expect(sitePrice).toContain(price);
+                    console.log(`GOOD: First Price, "${sitePrice}" include "${price}"`)
+
+                } else {
+
+                    expect(sitePrice).toContain(price);
+                    console.error(`FAIL: Біда з основною ціною`)
+                    console.log(sitePrice)
+                    console.log(price)
+                };
+
+            } else if (currentConfig && currentConfig.priceSelector_2) {
+
+                const priceSelector_2 = page1.locator(currentConfig.priceSelector_2);
+
+                if (await priceSelector_2.count() > 0) {
+
+                    const sitePrice_2 = onlyNumber(await page1.locator(currentConfig.priceSelector_2).textContent() ?? '');
+                    expect(sitePrice_2).toContain(price)
+                    console.log(`GOOD: Action Price, "${sitePrice_2}" include "${price}"`)
+
+                } else {
+
+                    console.error(`FAIL: Біда з ціною`)
+                }
+
+            } else {
+
+                console.error(`FAIL: На ${siteUrl} немає ціни: "${price}"`);
+
+            };
+
+
+            
+
+            // 8. Об'єм двигуна
+            if (currentConfig && currentConfig.obyemDvigunaSelector) {
+
+                const obyemDvigunaLocator = page1.locator(currentConfig.obyemDvigunaSelector);
+
+                if (await obyemDvigunaLocator.count() > 0) {
+
+                    const siteobyemDviguna = onlyNumber((await page1.locator(currentConfig.obyemDvigunaSelector).first().textContent() ?? '').toLowerCase().trim());
+                    
+                    if (obyemDviguna.includes("0.0")) {
+
+                        console.log(`CHECK, FAIL : На ${automotoUrl} немає об'єму двигуна: ${obyemDviguna}`)
+                    } else if (obyemDviguna.includes(siteobyemDviguna)) {
+
+                        expect (obyemDviguna).toContain(siteobyemDviguna)
+                        console.log(`GOOD: Obyem, "${obyemDviguna}" include "${siteobyemDviguna}"`)
+                    } else if (siteobyemDviguna.includes(obyemDviguna)) {
+
+                        expect (siteobyemDviguna).toContain(obyemDviguna)
+                        console.log(`GOOD: Obyem, "${siteobyemDviguna}" include "${obyemDviguna}"`)
+                    } else if (currentConfig.obyemDvigunaSelector_kwh) {
+                        
+                        const obyemDvigunaLocator_kwh = page1.locator(currentConfig.obyemDvigunaSelector_kwh);
+
+                        if (await obyemDvigunaLocator_kwh.count() > 0) {
+                            
+                            const siteobyemDviguna_2 = onlyNumber((await page1.locator(currentConfig.obyemDvigunaSelector_kwh).first().textContent() ?? '').toLowerCase().trim());
+                            
+                                expect(siteobyemDviguna_2).toContain(obyemDviguna);
+                                console.log(`GOOD: Obyem KWH, "${siteobyemDviguna_2}" include "${obyemDviguna}"`)
+                        } else {
+                            console.log(`FAIL: На ${siteUrl} немає об'єму двигуна kWh: ${obyemDviguna}, або невідповідний об'єм ${siteobyemDviguna} `);
+                            // expect(siteobyemDviguna).toContain(obyemDviguna); поки в коменті бо часто падає коли об'єм 1490 - на сайті це 1.5, а у нас це 1.49
+                        }
+
+                    } else {
+                        expect (siteobyemDviguna).toContain(obyemDviguna);
+                        console.log(`FAIL: На ${siteUrl} не налаштовано obyemDvigunaLocator_kwh в конфігу`);
+                    }
+
+                } else if (currentConfig.obyemDvigunaSelector_kwh) {
+                        
+                        const obyemDvigunaLocator_kwh = page1.locator(currentConfig.obyemDvigunaSelector_kwh);
+
+                        if (await obyemDvigunaLocator_kwh.count() > 0) {
+                            
+                            const siteobyemDviguna_2 = onlyNumber((await page1.locator(currentConfig.obyemDvigunaSelector_kwh).first().textContent() ?? '').toLowerCase().trim());
+                            
+                                expect(siteobyemDviguna_2).toContain(obyemDviguna);
+                                console.log(`GOOD: Obyem KWH, "${siteobyemDviguna_2}" include "${obyemDviguna}"`)
+                        } else {
+                            console.log(`FAIL: На ${siteUrl} немає об'єму двигуна kWh: ${obyemDviguna} `);
+                            // expect(siteobyemDviguna).toContain(obyemDviguna); поки в коменті бо часто падає коли об'єм 1490 - на сайті це 1.5, а у нас це 1.49
+                        }
+
+                    } else {
+                        // expect (siteobyemDviguna).toContain(obyemDviguna);
+                        console.log(`FAIL: На ${siteUrl} не налаштовано obyemDvigunaLocator_kwh в конфігу`);
+                }
+            } else {
+                console.log(`FAIL: На ${siteUrl} не налаштовано obyemDvigunaLocator в конфігу`);
+            };
+
+            //9. Продавець
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            приклад гарного тесту
+
+
+            if (currentConfig && (currentConfig.obyemDvigunaSelector || currentConfig.obyemDvigunaSelector_kwh)) {
+
+    // Спочатку перевіряємо, який саме локатор є на сторінці, і зчитуємо текст
+    let rawText = '';
+    let isKwhUsed = false;
+
+    if (currentConfig.obyemDvigunaSelector && await page1.locator(currentConfig.obyemDvigunaSelector).count() > 0) {
+        rawText = await page1.locator(currentConfig.obyemDvigunaSelector).first().textContent() ?? '';
+    } else if (currentConfig.obyemDvigunaSelector_kwh && await page1.locator(currentConfig.obyemDvigunaSelector_kwh).count() > 0) {
+        rawText = await page1.locator(currentConfig.obyemDvigunaSelector_kwh).first().textContent() ?? '';
+        isKwhUsed = true;
+    }
+
+    // Якщо текст успішно знайшли (неважливо, з першого чи з другого селектора)
+    if (rawText !== '') {
+        const siteobyemDviguna = onlyNumber(rawText.toLowerCase().trim());
+        
+        // --- Ваша оригінальна логіка перевірок (Пункти 2 та 3 — БЕЗ ЗМІН) ---
+        if (obyemDviguna.includes("0.0")) {
+
+            console.log(`CHECK, FAIL : На ${automotoUrl} немає об'єму двигуна: ${obyemDviguna}`)
+        } else if (obyemDviguna.includes(siteobyemDviguna)) {
+
+            expect (obyemDviguna).toContain(siteobyemDviguna)
+            console.log(`GOOD: Obyem, "${obyemDviguna}" include "${siteobyemDviguna}"`)
+        } else if (siteobyemDviguna.includes(obyemDviguna)) {
+
+            expect (siteobyemDviguna).toContain(obyemDviguna)
+            console.log(`GOOD: Obyem, "${siteobyemDviguna}" include "${obyemDviguna}"`)
+        } else if (isKwhUsed) { 
+            // Якщо ми вже на початку зчитали кВт·год, то відразу перевіряємо його тут
+            expect(siteobyemDviguna).toContain(obyemDviguna);
+            console.log(`GOOD: Obyem KWH, "${siteobyemDviguna}" include "${obyemDviguna}"`)
+        } else if (currentConfig.obyemDvigunaSelector_kwh) {
+            
+            const obyemDvigunaLocator_kwh = page1.locator(currentConfig.obyemDvigunaSelector_kwh);
+
+            if (await obyemDvigunaLocator_kwh.count() > 0) {
+                
+                const siteobyemDviguna_2 = onlyNumber((await page1.locator(currentConfig.obyemDvigunaSelector_kwh).first().textContent() ?? '').toLowerCase().trim());
+                
+                    expect(siteobyemDviguna_2).toContain(obyemDviguna);
+                    console.log(`GOOD: Obyem KWH, "${siteobyemDviguna_2}" include "${obyemDviguna}"`)
+            } else {
+                console.log(`FAIL: На ${siteUrl} немає об'єму двигуна kWh: ${obyemDviguna}, або невідповідний об'єм ${siteobyemDviguna} `);
+                // expect(siteobyemDviguna).toContain(obyemDviguna); поки в коменті бо часто падає коли об'єм 1490 - на сайті це 1.5, а у нас це 1.49
+            }
+
+        } else {
+            expect (siteobyemDviguna).toContain(obyemDviguna);
+            console.log(`FAIL: На ${siteUrl} не налаштовано obyemDvigunaLocator_kwh в конфігу`);
+        }
+
+    } else {
+        // Лог на випадок, якщо селектори в конфігу є, але на самій сторінці елементи відсутні
+        console.log(`FAIL: На ${siteUrl} елементи об'єму двигуна не знайдені на сторінці`);
+    }
+
+} else {
+    console.log(`FAIL: На ${siteUrl} не налаштовано жодного селектора об'єму в конфігу`);
+}

@@ -1,0 +1,30 @@
+1. Додати скіп для оголошень від наших юзерів, спаршені = data-click-arg="button_contact_partner"/ наші = data-click-arg="button_contact_cabinet"
+
+2. Доробити перевірки по кількості селекторів для всіх перевірок
+
+3. Зробити перевірки для дати реєстрації
+
+4. Додати обход клаудфлейр
+
+5. Додати нормалізацію для моделей через дефіз с4-picasso (c4 picasso)
+
+6. expect(siteKm).toContain(kmNumber_2); //закомєнтив, потім переробити перевірку, якщо пробіг буде 68 000 км 	68 300, зараз береться з третьої цифри
+
+7+. додати фільтр для каунтера фото коли є відео https://automoto.com.lv/ru/bu-avto/litva/vilnyus/volkswagen/tiguan/2012/69096576.html
+
+8+. додати фільтр для каунтера фото коли є фото з карти https://autogidas.lt/ru/skelbimas/opel-meriva-2008-g-miniven-0139384991.html#gallery/0
+gallery.addImage
+
+9. придумать шо робить з такой парашою Expected substring: "volvo xc90"
+                                        Received string:    "volvo xc 90"
+
+10. Додати sellerMethod const sellerName = await page.$eval('div.seller-contact-name > a', el => el.innerText.trim());
+або sellerMethod якщо в блоці присутній sellerName - то гуд
+
+11. Проблема з MollerAuto буде поки не перейду на playwright-extra
+
+12. Додати селектори для dalder.lv https://tukuman.dalder.lv/tukums/ru/prodayetsya-mercedes-benz-s63-amg-long-527-l-s-v8-2007-god-vypuska-969906
+
+13. Змінити логіку для двойної ціни автоплюса https://automoto.com.lv/ru/bu-avto/estoniya/tallin/toyota/corolla/2020/69138622.html
+
+14. Add locators for site AutoBonus https://www.autobonus.lt/auto/skelbimas/volkswagen-golf/lt/371482 https://automoto.com.lv/ru/bu-avto/litva/vilnyus/volkswagen/golf/2009/69143582.html
