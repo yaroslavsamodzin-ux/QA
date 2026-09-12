@@ -1,0 +1,138 @@
+{
+  "_meta": {
+    "опис": "Набори граничних значень для ручного й напівавтоматичного тестування полів.",
+    "expect": {
+      "accept": "має прийнятися без помилки",
+      "reject": "має відхилитись зі зрозумілим повідомленням",
+      "escape": "має зберегтись як текст і вивестись екранованим, не виконатись"
+    }
+  },
+
+  "email": [
+    { "value": "test@example.com", "label": "звичайний", "expect": "accept" },
+    { "value": "a@b.co", "label": "мінімально короткий", "expect": "accept" },
+    { "value": "first.last+tag@sub.example.co.uk", "label": "плюс-тег і піддомен", "expect": "accept" },
+    { "value": "ярослав@пошта.укр", "label": "кирилиця (IDN)", "expect": "accept" },
+    { "value": "test@example.com ", "label": "пробіл у кінці — часта причина фейлу", "expect": "accept" },
+    { "value": "TEST@EXAMPLE.COM", "label": "великі літери — має нормалізуватись", "expect": "accept" },
+    { "value": "plainaddress", "label": "без @", "expect": "reject" },
+    { "value": "@example.com", "label": "без локальної частини", "expect": "reject" },
+    { "value": "test@", "label": "без домену", "expect": "reject" },
+    { "value": "test@@example.com", "label": "два @", "expect": "reject" },
+    { "value": "test@example", "label": "домен без TLD", "expect": "reject" },
+    { "value": "test @example.com", "label": "пробіл усередині", "expect": "reject" },
+    { "value": "тест@example.com", "label": "кирилиця в локальній частині", "expect": "reject" },
+    { "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com", "label": "локальна частина 65 символів (ліміт 64)", "expect": "reject" }
+  ],
+
+  "text": [
+    { "value": "", "label": "порожнє", "expect": "reject" },
+    { "value": " ", "label": "лише пробіл", "expect": "reject" },
+    { "value": "   текст   ", "label": "пробіли по краях — має обрізатись", "expect": "accept" },
+    { "value": "О'Коннор", "label": "апостроф прямий", "expect": "accept" },
+    { "value": "В'ячеслав", "label": "український апостроф", "expect": "accept" },
+    { "value": "Ґудзик їжак Єлизавета Їжак", "label": "ґ є і ї — часто ламають кодування", "expect": "accept" },
+    { "value": "Müller-Şahin Ångström", "label": "діакритика", "expect": "accept" },
+    { "value": "北京市朝阳区", "label": "ієрогліфи", "expect": "accept" },
+    { "value": "مرحبا بالعالم", "label": "RTL (арабська)", "expect": "accept" },
+    { "value": "Тест 🔥👨‍👩‍👧‍👦 емодзі", "label": "емодзі з ZWJ-послідовністю", "expect": "accept" },
+    { "value": "Тест\u200Bневидимий", "label": "zero-width space всередині", "expect": "accept" },
+    { "value": "рядок1\nрядок2", "label": "перенос рядка", "expect": "accept" },
+    { "value": "Ім'я\tз\tтабами", "label": "табуляції", "expect": "accept" },
+    { "value": "aaaaaaaaaa", "label": "10 символів", "expect": "accept" },
+    { "value": "Лорем іпсум долор сіт амет консектетур адіпісцинг еліт сед до еюсмод темпор інцідідунт ут лаборе ет долоре магна аліква Ут енім ад мінім веніам квіс ностуд екерцітатіон улламко лаборіс нісі ут аліквіп екс еа коммодо консекват Дуіс ауте іруре долор ін репрехендеріт ін волуптате веліт ессе ціллум долоре еу фугіат нулла паріатур", "label": "~330 символів — перевірка ліміту й верстки", "expect": "reject" },
+    { "value": "----------НЕРОЗРИВНИЙ_ДУЖЕ_ДОВГИЙ_РЯДОК_БЕЗ_ПРОБІЛІВ_ЯКИЙ_ЛАМАЄ_ВЕРСТКУ_КАРТКИ_І_ВИЛАЗИТЬ_ЗА_МЕЖІ----------", "label": "довге слово без пробілів — ламає верстку", "expect": "accept" }
+  ],
+
+  "number": [
+    { "value": "0", "label": "нуль", "expect": "accept" },
+    { "value": "1", "label": "мінімум", "expect": "accept" },
+    { "value": "-1", "label": "відʼємне", "expect": "reject" },
+    { "value": "0.1", "label": "дробове з крапкою", "expect": "accept" },
+    { "value": "0,1", "label": "дробове з комою — локаль", "expect": "accept" },
+    { "value": "1.005", "label": "округлення до копійок", "expect": "accept" },
+    { "value": "007", "label": "провідні нулі", "expect": "accept" },
+    { "value": "1e3", "label": "експоненційний запис", "expect": "reject" },
+    { "value": "2147483648", "label": "int32 + 1 — перевірка переповнення", "expect": "reject" },
+    { "value": "9007199254740993", "label": "більше за MAX_SAFE_INTEGER", "expect": "reject" },
+    { "value": "1 000", "label": "пробіл як роздільник тисяч", "expect": "reject" },
+    { "value": "٣", "label": "арабська цифра 3", "expect": "reject" },
+    { "value": "abc", "label": "букви замість числа", "expect": "reject" },
+    { "value": "Infinity", "label": "Infinity", "expect": "reject" },
+    { "value": "NaN", "label": "NaN", "expect": "reject" }
+  ],
+
+  "phone_ua": [
+    { "value": "+380671234567", "label": "міжнародний повний", "expect": "accept" },
+    { "value": "380671234567", "label": "без плюса", "expect": "accept" },
+    { "value": "0671234567", "label": "національний", "expect": "accept" },
+    { "value": "+38 (067) 123-45-67", "label": "з форматуванням", "expect": "accept" },
+    { "value": "067 123 45 67", "label": "з пробілами", "expect": "accept" },
+    { "value": "+38067123456", "label": "на цифру менше", "expect": "reject" },
+    { "value": "+3806712345678", "label": "на цифру більше", "expect": "reject" },
+    { "value": "+380001234567", "label": "неіснуючий код оператора", "expect": "reject" },
+    { "value": "+1234567890", "label": "не українській номер", "expect": "reject" },
+    { "value": "телефон", "label": "текст", "expect": "reject" }
+  ],
+
+  "date": [
+    { "value": "2024-02-29", "label": "29 лютого високосного року", "expect": "accept" },
+    { "value": "2025-02-29", "label": "29 лютого невисокосного — не існує", "expect": "reject" },
+    { "value": "2025-12-31", "label": "кінець року", "expect": "accept" },
+    { "value": "2026-01-01", "label": "початок року", "expect": "accept" },
+    { "value": "2025-13-01", "label": "13-й місяць", "expect": "reject" },
+    { "value": "2025-00-10", "label": "нульовий місяць", "expect": "reject" },
+    { "value": "01.01.2026", "label": "формат DD.MM.YYYY", "expect": "accept" },
+    { "value": "1900-01-01", "label": "дуже давня дата", "expect": "reject" },
+    { "value": "2099-12-31", "label": "далеке майбутнє", "expect": "reject" },
+    { "value": "2025-03-30", "label": "день переходу на літній час", "expect": "accept" }
+  ],
+
+  "password": [
+    { "value": "Aa1!", "label": "закороткий", "expect": "reject" },
+    { "value": "Passw0rd!", "label": "валідний", "expect": "accept" },
+    { "value": "password", "label": "без цифр і спецсимволів", "expect": "reject" },
+    { "value": "        ", "label": "лише пробіли", "expect": "reject" },
+    { "value": "Пароль123!", "label": "кирилиця в паролі", "expect": "accept" },
+    { "value": "пароль з пробілами 123!", "label": "пробіли всередині", "expect": "accept" },
+    { "value": "Aa1!Aa1!Aa1!Aa1!Aa1!Aa1!Aa1!Aa1!Aa1!Aa1!Aa1!Aa1!Aa1!Aa1!Aa1!Aa1!Aa1!", "label": "68 символів — перевірка ліміту bcrypt (72 байти)", "expect": "accept" },
+    { "value": "🔥🔥🔥🔥🔥🔥🔥🔥", "label": "лише емодзі", "expect": "accept" }
+  ],
+
+  "sanitization": [
+    { "value": "<script>console.log('qa-xss-probe')</script>", "label": "скрипт-тег", "expect": "escape" },
+    { "value": "<img src=x onerror=\"console.log('qa-xss-probe')\">", "label": "onerror на битій картинці", "expect": "escape" },
+    { "value": "\"><b>жирний</b>", "label": "вихід з атрибута", "expect": "escape" },
+    { "value": "{{7*7}}", "label": "шаблонізатор — не має дати 49", "expect": "escape" },
+    { "value": "${7*7}", "label": "template literal", "expect": "escape" },
+    { "value": "' OR '1'='1", "label": "класичний SQL", "expect": "escape" },
+    { "value": "admin'--", "label": "SQL-коментар", "expect": "escape" },
+    { "value": "../../etc/passwd", "label": "обхід каталогу", "expect": "escape" },
+    { "value": "%00", "label": "null-байт", "expect": "escape" },
+    { "value": "=1+1", "label": "формула — перевірка експорту в CSV/Excel", "expect": "escape" },
+    { "value": "@SUM(1+1)", "label": "CSV-інʼєкція через @", "expect": "escape" }
+  ],
+
+  "url": [
+    { "value": "https://example.com", "label": "звичайний", "expect": "accept" },
+    { "value": "http://example.com:8080/path?a=1#hash", "label": "порт, query, hash", "expect": "accept" },
+    { "value": "https://пример.укр", "label": "IDN-домен", "expect": "accept" },
+    { "value": "example.com", "label": "без схеми", "expect": "reject" },
+    { "value": "javascript:console.log('qa-probe')", "label": "javascript: — має блокуватись", "expect": "reject" },
+    { "value": "data:text/html,<h1>hi</h1>", "label": "data: URI", "expect": "reject" },
+    { "value": "file:///C:/Windows/win.ini", "label": "локальний файл", "expect": "reject" },
+    { "value": "http://localhost:8080/admin", "label": "SSRF-проба на localhost", "expect": "reject" },
+    { "value": "http://169.254.169.254/latest/meta-data/", "label": "SSRF на метадані хмари", "expect": "reject" }
+  ],
+
+  "filename": [
+    { "value": "звіт.pdf", "label": "кирилиця в назві", "expect": "accept" },
+    { "value": "file name with spaces.png", "label": "пробіли", "expect": "accept" },
+    { "value": "file.PNG", "label": "великий регістр розширення", "expect": "accept" },
+    { "value": "archive.tar.gz", "label": "подвійне розширення", "expect": "accept" },
+    { "value": "shell.php.png", "label": "подвійне розширення з виконуваним", "expect": "reject" },
+    { "value": "CON.txt", "label": "зарезервоване імʼя Windows", "expect": "reject" },
+    { "value": "..\\..\\web.config", "label": "обхід каталогу", "expect": "reject" },
+    { "value": "файл_з_дуже_довгою_назвою_яка_перевищує_типові_обмеження_файлової_системи_на_кількість_символів_у_назві_і_має_бути_обрізана_або_відхилена_сервером.pdf", "label": "назва ~155 символів", "expect": "reject" }
+  ]
+}

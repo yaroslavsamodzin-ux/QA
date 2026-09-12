@@ -1,0 +1,10 @@
+# згенероване під час прогонів
+responsive/report/
+visual/report/
+visual/test-results/
+bug/out/
+android/platform-tools/
+*.log
+
+# еталони візуальної регресії комітимо свідомо — розкоментуй, якщо не треба
+# visual/baseline/
