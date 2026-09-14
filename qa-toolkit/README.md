@@ -71,10 +71,10 @@ qa-toolkit/
   android/
     setup.ps1          встановлення adb
     adb.ps1            команди під тестування
-  bug/out/             скріншоти й GIF до баг-репортів
+  tasks/<KEY>/         докази по задачі: скріншоти, GIF, JSON логів, звіт
 ```
 
-Згенеровані папки (`report/`, `out/`, `test-results/`) у git не потрапляють —
+Згенеровані папки (`report/`, `tasks/`, `test-results/`) у git не потрапляють —
 див. `qa-toolkit/.gitignore`.
 
 ---

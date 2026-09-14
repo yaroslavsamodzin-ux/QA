@@ -2,7 +2,7 @@
 responsive/report/
 visual/report/
 visual/test-results/
-bug/out/
+tasks/
 android/platform-tools/
 *.log
 
