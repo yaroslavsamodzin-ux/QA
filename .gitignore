@@ -1,1 +1,18 @@
 node_modules
+
+# Секрети — ніколи в git
+Postman_Vault_Key*.txt
+*.vault-key
+.env
+
+# Службове Claude Code
+.claude/worktrees/
+
+# Граф знань — перебудовується /graphify, містить кеш копій файлів
+graphify-out/
+
+# Результати прогонів qa-toolkit (еталони visual/baseline комітяться)
+report/
+out/
+test-results/
+playwright-report/
