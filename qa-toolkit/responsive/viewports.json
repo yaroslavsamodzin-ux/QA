@@ -1,56 +1,16 @@
 {
   "mobile": [
-    {
-      "name": "360-android",
-      "width": 360,
-      "height": 800,
-      "mobile": true
-    },
-    {
-      "name": "390-iphone",
-      "width": 390,
-      "height": 844,
-      "mobile": true
-    },
-    {
-      "name": "414-plus",
-      "width": 414,
-      "height": 896,
-      "mobile": true
-    }
+    { "name": "360-android",  "width": 360,  "height": 800,  "mobile": true },
+    { "name": "390-iphone",   "width": 390,  "height": 844,  "mobile": true },
+    { "name": "414-plus",     "width": 414,  "height": 896,  "mobile": true }
   ],
   "tablet": [
-    {
-      "name": "768-portrait",
-      "width": 768,
-      "height": 1024,
-      "mobile": true
-    },
-    {
-      "name": "1024-land",
-      "width": 1024,
-      "height": 768,
-      "mobile": false
-    }
+    { "name": "768-portrait", "width": 768,  "height": 1024, "mobile": true },
+    { "name": "1024-land",    "width": 1024, "height": 768,  "mobile": false }
   ],
   "desktop": [
-    {
-      "name": "1280-laptop",
-      "width": 1280,
-      "height": 800,
-      "mobile": false
-    },
-    {
-      "name": "1440-mac",
-      "width": 1440,
-      "height": 900,
-      "mobile": false
-    },
-    {
-      "name": "1920-fullhd",
-      "width": 1920,
-      "height": 1080,
-      "mobile": false
-    }
+    { "name": "1280-laptop",  "width": 1280, "height": 800,  "mobile": false },
+    { "name": "1440-mac",     "width": 1440, "height": 900,  "mobile": false },
+    { "name": "1920-fullhd",  "width": 1920, "height": 1080, "mobile": false }
   ]
 }
