@@ -1,0 +1,157 @@
+{
+  "info": {
+    "_postman_id": "231be69a-3da6-488b-9f15-314ef99a020c",
+    "name": "Джоби або запити",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "47857381"
+  },
+  "item": [
+    {
+      "name": "Чи є кошти на BSG (Для смсок)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json, text/plain, */*"
+          },
+          {
+            "key": "accept-language",
+            "value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json;charset=UTF-8"
+          },
+          {
+            "key": "origin",
+            "value": "https://automoto.ua"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "referer",
+            "value": "https://automoto.ua/uk/"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\""
+          },
+          {
+            "key": "sec-ch-ua-arch",
+            "value": "\"x86\""
+          },
+          {
+            "key": "sec-ch-ua-bitness",
+            "value": "\"64\""
+          },
+          {
+            "key": "sec-ch-ua-full-version",
+            "value": "\"149.0.7827.156\""
+          },
+          {
+            "key": "sec-ch-ua-full-version-list",
+            "value": "\"Google Chrome\";v=\"149.0.7827.156\", \"Chromium\";v=\"149.0.7827.156\", \"Not)A;Brand\";v=\"24.0.0.0\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-model",
+            "value": "\"\""
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "sec-ch-ua-platform-version",
+            "value": "\"19.0.0\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "same-origin"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "x-xsrf-token",
+            "value": "{{xsrf_token}}"
+          },
+          {
+            "key": "Cookie",
+            "value": "{{cookie}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"phone\":\"{{phone}}\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://automoto.ua/uk/my-office/login_new",
+          "protocol": "https",
+          "host": [
+            "automoto",
+            "ua"
+          ],
+          "path": [
+            "uk",
+            "my-office",
+            "login_new"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "cookie",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "xsrf_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "phone",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "info": {
+    "_postman_id": "3fe794a0-0772-4279-a446-d1b327cfcde6",
+    "name": "Фокстрот",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "47857381"
+  },
+  "item": [
+    {
+      "name": "Логін динамічного для токену Шутов",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response is valid JSON and contains token\", function () {\r",
+              "    pm.response.to.be.json;\r",
+              "    pm.expect(pm.response.json()).to.have.property(\"token\");\r",
+              "    pm.collectionVariables.set(\"token_shutov\", pm.response.json().token);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "login",
+            "value": "{{api_login}}",
+            "type": "text"
+          },
+          {
+            "key": "password",
+            "value": "{{api_password}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://shutov.api-exchange.foxtrot.cloud/v0/authentication/token",
+          "protocol": "https",
+          "host": [
+            "shutov",
+            "api-exchange",
+            "foxtrot",
+            "cloud"
+          ],
+          "path": [
+            "v0",
+            "authentication",
+            "token"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Запуск індексації на динамічному Шутов",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token_shutov}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://shutov.api-exchange.foxtrot.cloud/v0/data-index/elasticsearch",
+          "protocol": "http",
+          "host": [
+            "shutov",
+            "api-exchange",
+            "foxtrot",
+            "cloud"
+          ],
+          "path": [
+            "v0",
+            "data-index",
+            "elasticsearch"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Токен",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "pm.test(\"Response is valid JSON and contains token\", function () {",
+              "    pm.response.to.be.json;",
+              "    pm.expect(pm.response.json()).to.have.property(\"token\");",
+              "    pm.collectionVariables.set(\"token\", pm.response.json().token);",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "login",
+            "value": "{{api_login}}",
+            "type": "text"
+          },
+          {
+            "key": "password",
+            "value": "{{api_password}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://samodzin.api-exchange.foxtrot.cloud/v0/authentication/token",
+          "protocol": "http",
+          "host": [
+            "samodzin",
+            "api-exchange",
+            "foxtrot",
+            "cloud"
+          ],
+          "path": [
+            "v0",
+            "authentication",
+            "token"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Джоба Редіс аксес, послуг",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://samodzin.api-exchange.foxtrot.cloud/v1/1/job/services_redis/execute",
+          "protocol": "http",
+          "host": [
+            "samodzin",
+            "api-exchange",
+            "foxtrot",
+            "cloud"
+          ],
+          "path": [
+            "v1",
+            "1",
+            "job",
+            "services_redis",
+            "execute"
+          ]
+        },
+        "description": "Джоба по таскі\n\n[https://jira.entri.com.ua/browse/CMS-27181](https://jira.entri.com.ua/browse/CMS-27181)\n\nнаписать ване  \nнайди в редисе такой ключ - pwsc-\\*  \nключа нет  \nзапускаем джобу  \nчто-бы он потом подключиться к той базе данных  \nи проверил ещё раз  \nи когда ключ есть - идти на сайт проверять всё остальноеEndFragment"
+      },
+      "response": []
+    },
+    {
+      "name": "Джоба для магазинів",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://samodzin.api-exchange.foxtrot.cloud/v0/38044/3/job/shops",
+          "protocol": "http",
+          "host": [
+            "samodzin",
+            "api-exchange",
+            "foxtrot",
+            "cloud"
+          ],
+          "path": [
+            "v0",
+            "38044",
+            "3",
+            "job",
+            "shops"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "api_login",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "api_password",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "token_shutov",
+      "value": ""
+    },
+    {
+      "key": "Vault",
+      "value": ""
+    },
+    {
+      "key": "auth_secret_0tu5",
+      "secret": true
+    },
+    {
+      "key": "token",
+      "value": ""
+    }
+  ]
+}
