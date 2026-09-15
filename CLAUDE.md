@@ -114,7 +114,7 @@
 |---|---|---|
 | Головна | стара | https://www.foxtrot.com.ua/ |
 | Лістинг категорії | нова | https://www.foxtrot.com.ua/uk/shop/mobilnye_telefony.html |
-| Кінцева (картка товару) | нова | товар із лістинга вище |
+| Кінцева (картка товару) | нова | будь-який товар з лістинга або головної — URL товару вказувати у звіті |
 | Пошук | нова | https://www.foxtrot.com.ua/uk/search?query=айфончік |
 | Магазини | нова | https://www.foxtrot.com.ua/uk/stores |
 | Акції | нова | https://www.foxtrot.com.ua/uk/actions |
