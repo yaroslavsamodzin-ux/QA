@@ -13,6 +13,7 @@ Claude сам знає, коли її брати, але можна виклик
 | `/qa-responsive` | верстка на всіх розширеннях + візуальна регресія |
 | `/qa-testdata` | граничні дані й автопрогін форм |
 | `/qa-trace` | звʼязує UI з логами Kibana та відповідями API |
+| `/qa-browsershot` | скріншот вікна браузера разом з його UI — видно, який це браузер |
 
 ---
 
@@ -43,6 +44,20 @@ node qa-toolkit/testdata/autofill.js --list
 node qa-toolkit/testdata/autofill.js https://стенд/reg --field "#email" --set email --submit "button[type=submit]"
 ```
 
+### Скріншот вікна браузера з його інтерфейсом
+
+```powershell
+powershell -ExecutionPolicy Bypass -File qa-toolkit\screenshots\window-capture.ps1 list
+powershell -ExecutionPolicy Bypass -File qa-toolkit\screenshots\window-capture.ps1 shot chrome -Task CMS-1234
+powershell -ExecutionPolicy Bypass -File qa-toolkit\screenshots\window-capture.ps1 all -Task CMS-1234
+```
+
+Знімає вікно цілком — вкладки, адресний рядок, рамку, — тому в доказі видно, що це
+саме Chrome, Opera, Firefox чи Edge. Захват іде через `user32!PrintWindow`, вікно
+не мусить бути на передньому плані. `all` додає `browsers.json` з версіями.
+Розширення браузера для цього не потрібне; сторінку в потрібному браузері
+відкриває Ярослав.
+
 ### Android
 
 ```powershell
@@ -71,6 +86,8 @@ qa-toolkit/
   android/
     setup.ps1          встановлення adb
     adb.ps1            команди під тестування
+  screenshots/
+    window-capture.ps1 знімок вікна браузера разом з його UI
   tasks/<KEY>/         докази по задачі: скріншоти, GIF, JSON логів, звіт
 ```
 
