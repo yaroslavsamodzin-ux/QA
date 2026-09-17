@@ -146,6 +146,9 @@ const BASH_WRITE_PATTERNS = [
   { re: new RegExp(CMD_START + String.raw`glab\s+(?:mr|issue)\s+(?:create|note|approve|merge|close|update)\b`), what: 'glab — зміна стану MR/issue' },
   { re: new RegExp(CMD_START + String.raw`curl\b[^|;&]*\s-X\s*(?:POST|PUT|PATCH|DELETE)\b`, 'i'), what: 'curl з мутуючим методом' },
   { re: new RegExp(CMD_START + String.raw`curl\b[^|;&]*\s(?:--data|--data-raw|--data-binary|--form|-d\s|-F\s)`), what: 'curl з тілом запиту' },
+  // PowerShell-еквіваленти curl: Invoke-WebRequest / Invoke-RestMethod та їхні аліаси.
+  { re: new RegExp(CMD_START + String.raw`(?:Invoke-WebRequest|Invoke-RestMethod|iwr|irm|wget)\b[^|;&]*-Method\s+(?:POST|PUT|PATCH|DELETE)\b`, 'i'), what: 'PowerShell-запит з мутуючим методом' },
+  { re: new RegExp(CMD_START + String.raw`(?:Invoke-WebRequest|Invoke-RestMethod|iwr|irm)\b[^|;&]*-(?:Body|InFile|Form)\b`, 'i'), what: 'PowerShell-запит з тілом' },
 ];
 
 function checkBash(command, config) {
@@ -181,7 +184,9 @@ function main() {
   const fullName = payload.tool_name || '';
   const toolInput = payload.tool_input || {};
 
-  if (fullName === 'Bash') {
+  // PowerShell — окремий інструмент із тим самим полем `command`. На Windows він
+  // основний, тому матчити лише Bash означало б лишити двері відчиненими.
+  if (fullName === 'Bash' || fullName === 'PowerShell') {
     const reason = checkBash(toolInput.command, config);
     respond(reason ? 'deny' : null, reason);
   }

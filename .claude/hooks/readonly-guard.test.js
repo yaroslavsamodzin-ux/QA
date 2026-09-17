@@ -68,6 +68,16 @@ expect('grep по шаблону', bash('grep -rn "gh' + ' pr comment" CLAUDE.md
 expect('echo з шаблоном', bash('echo \'{"cmd":"gh' + ' pr create"}\' > /tmp/x.json'), 'pass');
 expect('шлях із назвою jira', bash('cat qa-toolkit/tasks/CMS-1/jira.entri.com.ua.txt'), 'pass');
 
+// ── PowerShell: на Windows це основний шелл, і він теж має бути закритий ──
+const ps = (command) => ask('PowerShell', { command });
+
+expect('PS POST у Jira', ps('Invoke-RestMethod -Uri https://jira.entri.com.ua/rest/api/2/issue -Method POST -Body $b'), 'deny');
+expect('PS з тілом у GitLab', ps('Invoke-WebRequest https://git.foxtrot.ua/api/v4/notes -Body $n'), 'deny');
+expect('PS GET у Jira', ps('Invoke-RestMethod https://jira.entri.com.ua/browse/CMS-1'), 'pass');
+expect('PS POST на стенд', ps('Invoke-RestMethod https://yaroslav.foxtrot.cloud/api -Method POST'), 'pass');
+expect('PS читання файлу', ps('Get-Content qa-toolkit/README.md'), 'pass');
+expect('PS шаблон у тексті', ps('Select-String -Pattern "-Method POST" CLAUDE.md'), 'pass');
+
 // ── вивід ─────────────────────────────────────────────────────────────────
 let failed = 0;
 for (const c of cases) {
