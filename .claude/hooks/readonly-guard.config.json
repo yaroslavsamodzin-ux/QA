@@ -1,0 +1,20 @@
+{
+  "_comment": "Хости, де діє правило «тільки читання». mode: deny — блокувати мовчки; ask — питати Ярослава щоразу; off — вимкнути охорону для хоста. Змінити режим = відредагувати цей файл, перезапуск сесії не потрібен.",
+
+  "readonlyHosts": [
+    { "match": "jira.entri.com.ua",  "label": "Jira",   "mode": "ask" },
+    { "match": "git.foxtrot.ua",     "label": "GitLab", "mode": "ask" },
+    { "match": "github.com",         "label": "GitHub", "mode": "ask" },
+    { "match": "kibana",             "label": "Kibana", "mode": "ask" }
+  ],
+
+  "_comment_uploads": "Завантаження файлів і виконання JS на readonly-хостах. Колатералу нема: читати Jira/GitLab можна через read_page і get_page_text.",
+  "uploadsAndScripts": "deny",
+
+  "_comment_stands": "Хости продукту, який ми тестуємо. Ніколи не блокуються — це і є робота.",
+  "allowHosts": [
+    "foxtrot.com.ua",
+    "foxtrot.cloud",
+    "localhost"
+  ]
+}

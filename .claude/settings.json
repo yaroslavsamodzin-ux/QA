@@ -1,3 +1,17 @@
 {
-  "worktree": { "bgIsolation": "none" }
+  "worktree": { "bgIsolation": "none" },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|mcp__claude-in-chrome__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/readonly-guard.js\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
 }

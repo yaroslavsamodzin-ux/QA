@@ -16,3 +16,6 @@ report/
 out/
 test-results/
 playwright-report/
+
+# Стан хука readonly-guard (tabId -> url)
+.claude/hooks/.state/
