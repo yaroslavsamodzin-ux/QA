@@ -78,6 +78,16 @@ expect('PS POST на стенд', ps('Invoke-RestMethod https://yaroslav.foxtrot
 expect('PS читання файлу', ps('Get-Content qa-toolkit/README.md'), 'pass');
 expect('PS шаблон у тексті', ps('Select-String -Pattern "-Method POST" CLAUDE.md'), 'pass');
 
+// ── MCP зовнішніх систем: охорона стоїть наперед, ще до конектора ─────────
+expect('MCP створює задачу', ask('mcp__atlassian__createJiraIssue', {}), 'deny');
+expect('MCP коментує', ask('mcp__atlassian__addCommentToJiraIssue', {}), 'deny');
+expect('MCP міняє статус', ask('mcp__jira__transition_issue', {}), 'deny');
+expect('MCP мержить MR', ask('mcp__gitlab__merge_merge_request', {}), 'deny');
+expect('MCP читає задачу', ask('mcp__atlassian__getJiraIssue', {}), 'pass');
+expect('MCP шукає', ask('mcp__atlassian__searchJiraIssuesUsingJql', {}), 'pass');
+expect('MCP список MR', ask('mcp__gitlab__list_merge_requests', {}), 'pass');
+expect('чужий MCP не чіпаємо', ask('mcp__dataviz__render_chart', {}), 'pass');
+
 // ── вивід ─────────────────────────────────────────────────────────────────
 let failed = 0;
 for (const c of cases) {

@@ -168,6 +168,32 @@ function checkBash(command, config) {
        + 'Підготуй текст і віддай Ярославу — публікує він сам.';
 }
 
+// ── MCP-сервери зовнішніх систем ────────────────────────────────────────────
+
+/**
+ * Конектор до Jira чи GitLab пише напряму: ні браузера, ні шелла в цьому шляху немає.
+ * Тому тут свідомо fail-closed: пропускаємо лише те, чиє імʼя явно читає.
+ * Повертає причину блокування або null.
+ */
+function checkMcpTool(fullName, config) {
+  const m = /^mcp__([^_]+(?:[^_]|_(?!_))*)__(.+)$/.exec(fullName);
+  if (!m) return null;
+
+  const [, server, tool] = m;
+  const serverLc = server.toLowerCase();
+
+  const known = (config.mcpExternalServers || []).find((s) => serverLc.includes(String(s).toLowerCase()));
+  if (!known) return null;
+
+  const toolLc = tool.toLowerCase();
+  const reads = config.mcpReadVerbs || [];
+  if (reads.some((v) => toolLc.includes(String(v).toLowerCase()))) return null;
+
+  return `${fullName} — запис у зовнішню систему (${known}). CLAUDE.md: там тільки читання. `
+       + 'Якщо ця тулза насправді читає, додай її дієслово в mcpReadVerbs у '
+       + '.claude/hooks/readonly-guard.config.json.';
+}
+
 // ── головне ─────────────────────────────────────────────────────────────────
 
 function main() {
@@ -191,7 +217,10 @@ function main() {
     respond(reason ? 'deny' : null, reason);
   }
 
-  if (!fullName.startsWith('mcp__claude-in-chrome__')) respond(null);
+  if (!fullName.startsWith('mcp__claude-in-chrome__')) {
+    const reason = checkMcpTool(fullName, config);
+    respond(reason ? 'deny' : null, reason);
+  }
   const tool = fullName.slice('mcp__claude-in-chrome__'.length);
 
   // navigate / tabs_create — самі по собі читання, але це наше єдине джерело

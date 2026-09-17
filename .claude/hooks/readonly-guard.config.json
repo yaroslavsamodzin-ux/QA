@@ -11,7 +11,11 @@
   "_comment_uploads": "Завантаження файлів і виконання JS на readonly-хостах. Колатералу нема: читати Jira/GitLab можна через read_page і get_page_text.",
   "uploadsAndScripts": "deny",
 
-  "_comment_future": "Охорона покриває браузер (claude-in-chrome), Bash і PowerShell. Якщо колись додамо MCP-плагін atlassian чи gitlab — їхні тулзи пишуть у Jira/GitLab напряму, повз цей хук. Тоді треба дописати їхні імена в matcher у .claude/settings.json і обробку в readonly-guard.js.",
+  "_comment_mcp": "MCP-сервери зовнішніх систем. Якщо колись зʼявиться робочий конектор до Jira чи GitLab, його тулзи пишуть напряму — повз браузер і повз шелл. Тому охорона вмикається наперед: усе, що не є явним читанням, блокується. Додати новий сервер = дописати рядок сюди; matcher у settings.json уже ловить будь-який mcp__*.",
+  "mcpExternalServers": ["atlassian", "jira", "confluence", "gitlab", "bitbucket", "github", "kibana", "elastic"],
+
+  "_comment_mcp_reads": "Дієслова читання. Тулза, чиє імʼя не містить жодного з них, вважається записом і блокується — навмисно fail-closed.",
+  "mcpReadVerbs": ["get", "list", "search", "read", "fetch", "view", "show", "describe", "query", "find", "lookup", "diff", "download", "export"],
 
   "_comment_stands": "Хости продукту, який ми тестуємо. Ніколи не блокуються — це і є робота. Перевіряються ПІСЛЯ readonlyHosts, бо Kibana живе всередині foxtrot.cloud.",
   "allowHosts": [
