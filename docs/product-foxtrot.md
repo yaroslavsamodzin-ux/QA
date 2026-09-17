@@ -78,6 +78,48 @@ Default branch скрізь `master`, крім `evinent.foxtrot` (`develop`) і
   `aws.foxtrot.com.ua`, усе в `.mc.gcf`. На них частина логіки поводиться інакше —
   якщо фіча працює на тестовому домені й не працює на проді (або навпаки), перша
   гіпотеза саме тут.
+- **dev-01 — статичний спільний стенд:** https://dev-01.foxtrot.com.ua. Не
+  `<user>.foxtrot.cloud`: публічний, за Cloudflare, не за VPN. У
+  `CustomSettings.TestSitesUrls` його немає, тобто сайт не вважає його тестовим
+  доменом. Логи — в **окремому кластері** (див. нижче).
+
+### Kibana: два кластери, різні мапінги
+
+| Стенди | Kibana | LogType |
+|---|---|---|
+| динамічні `<user>.foxtrot.cloud` | `foxtrot01-dev-dyn-kibana-g.foxtrot.cloud` (VPN) | `site-foxtrot-<user>`, `api-main-<user>`, … |
+| статичний dev-01 | `foxtrot01-dev-kibana-g.foxtrot.local` | `foxtrot-site`, `api-main`, `api-catalog`, `api-cms`, `api-exchange` — **без суфікса** |
+
+Шукати логи dev-01 у dyn-кластері марно: там лежать тільки стенди по розробниках
+(9 суфіксів). Індекси в обох — `logstash-*` і `logstash9-*`; корисне майже все в
+`logstash9-*`, у `logstash-*` живе `macaron`.
+
+**Рівні логів — лише `Error` і `Warning`.** `Fatal` і `Critical` не існують
+(перевірено 2026-09-17 по обох кластерах за 14 днів) — не писати їх у фільтр.
+
+**Помилка — це тільки `level: Error`.** `Warning` у цьому продукті інформаційний:
+його десятки тисяч на день у штатному потоці, і сам по собі він нічого не означає.
+Фільтр при пошуку збоїв — завжди `level: Error`; у звіт як «помилки» йдуть тільки
+вони. Кількість записів `Warning` не називати кількістю помилок.
+
+Водночас `Warning` часто містить **доказ до** `Error`: наприклад збій відправки GA4
+фіксується як `Error` (`Execution attempt … Result: '502'`), а куди слалось і що
+відповіло — лежить у `Warning` (`CartProviderBase:GA4MeasurementAnalytics … result: …`)
+з тим самим `RequestPath` і сусідньою мілісекундою. Тому `Warning` підтягувати як
+контекст до знайденого `Error`, а не рахувати окремими дефектами.
+
+**Поле `level` змаплено по-різному:** на dev-01 це text із підполем
+(`level.keyword`), на динамічних стендах — уже `keyword` (`level`). Невірний шлях
+до поля **не падає з помилкою, а мовчки віддає нуль** — порожній результат тут
+означає «не те поле», а не «помилок немає». Перед першим фільтром по рівню
+перевіряти мапінг:
+`POST /api/console/proxy?path=logstash9-<дата>%2F_mapping%2Ffield%2Flevel&method=GET`.
+`fields.LogType` — text в обох, агрегація тільки через `fields.LogType.keyword`.
+
+**Структура документа різна:** на dev-01 є масив `exceptions[]` зі структурованими
+`ClassName` / `Message` / `StackTraceString`, а `messageTemplate` часто просто
+`Exception occured`. На динамічних стендах стек лежить текстом прямо в `message`.
+Тому пошук по винятку має йти і по `message`, і по `exceptions.*`.
 
 ## Робочий процес у GitLab
 
