@@ -1,0 +1,16 @@
+$kind: http-request
+description: |-
+  Облікові дані — з оточення «Фокстрот local» (PostmanCollection/local.postman_environment.json). Не перевірено, що api-main приймає той самий apiConsumer, що й api-exchange: якщо 401 — потрібен інший логін.
+url: "http://samodzin.api-main.foxtrot.cloud/v0/authentication/token"
+method: GET
+headers:
+  login: "{{api_login}}"
+  password: "{{api_password}}"
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('200', () => pm.response.to.have.status(200));
+      const t = (() => { try { const j = pm.response.json(); return j.token || j.accessToken || j; } catch (e) { return pm.response.text().replace(/"/g, ''); } })();
+      pm.collectionVariables.set('token_api_main', t);
+    language: text/javascript
+order: 1000

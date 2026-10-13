@@ -1,0 +1,15 @@
+$kind: http-request
+description: |-
+  200 []
+url: "http://samodzin.api-main.foxtrot.cloud/v0/38044/1/comparison/-1/{{cmp_classId}}/category-products"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{token_api_main}}"
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('не 500', () => pm.expect(pm.response.code).to.be.below(500));
+    language: text/javascript
+order: 28000

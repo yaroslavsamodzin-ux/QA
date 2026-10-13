@@ -12,3 +12,21 @@ variables:
   - key: token_shutov
     value: ""
     secret: false
+  - key: token_api_main
+    value: ""
+    secret: false
+  - key: cmp_customerId
+    value: ""
+    secret: false
+  - key: cmp_classId
+    value: "22281"
+    secret: false
+  - key: cmp_objectId
+    value: "526"
+    secret: false
+  - key: cmp_classId2
+    value: "45996"
+    secret: false
+  - key: cmp_objectId2
+    value: "11"
+    secret: false

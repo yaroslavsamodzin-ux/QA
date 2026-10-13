@@ -11,6 +11,7 @@ Postman CLI. Що змінив у застосунку — те й запуск�
 | `Dynamic` | samodzin.*.foxtrot.cloud: токени, джоби, AI-описи |
 | `Stage` | stage.*.foxtrot.local (через RDP/VPN) |
 | `kviatkovska`, `osipov`, `shutov` | dyn-стенди колег |
+| `CMS-28048 порівняння` | api-main samodzin, порівняння: P/N/R/C-кейси, K1 (контроль), V1–V9 (невалідні значення). Змінні `cmp_*` і `token_api_main` — у змінних колекції; P4b очищає порівняння клієнта |
 
 ### Логіни й паролі
 
