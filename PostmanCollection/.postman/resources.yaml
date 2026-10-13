@@ -1,0 +1,13 @@
+workspace:
+  id: d455b679-3bc6-47f8-9a7d-a88d50d3e9b7
+
+localResources:
+  collections:
+    - ../Postman extendet Yaroslav Samodzin
+    - ../Фокстрот
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../Фокстрот: 47857381-3fe794a0-0772-4279-a446-d1b327cfcde6
