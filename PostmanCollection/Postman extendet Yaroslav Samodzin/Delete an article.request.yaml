@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{BASE_URL}}articles/{{slugConduit}}"
+method: DELETE
+headers:
+  Authorization: Token {{tokenConduit}}
+order: 6000

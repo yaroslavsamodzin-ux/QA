@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{BASE_URL}}articles/{{slugConduit}}/comments/{{commentId}}"
+method: DELETE
+headers:
+  Authorization: Token {{tokenConduit}}
+  Content-Type: application/json
+scripts:
+  - type: afterResponse
+    code: "\r\n"
+    language: text/javascript
+order: 5000

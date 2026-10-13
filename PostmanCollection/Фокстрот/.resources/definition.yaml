@@ -1,0 +1,14 @@
+$kind: collection
+description: ""
+variables:
+  - key: Vault
+    value: ""
+    secret: false
+  - key: auth_secret_0tu5
+    secret: true
+  - key: token
+    value: ""
+    secret: false
+  - key: token_shutov
+    value: ""
+    secret: false

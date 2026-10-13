@@ -69,11 +69,16 @@ Discover) в `qa-toolkit/tasks/<KEY>/`. Індекси ротуються — ч
 
 ## Крок 3. Звірка з API
 
-Колекції: `PostmanCollection/`, `PostmanTests/`. `newman` встановлений глобально.
+Колекції: `PostmanCollection/`, `PostmanTests/`. Основна — тека `PostmanCollection/Фокстрот/`
+(YAML, та сама, яку Ярослав редагує в Postman); запуск — Postman CLI, логіни/паролі з локального
+оточення (`PostmanCollection/README.md`):
 
 ```
-newman run "PostmanCollection/Фокстрот.postman_collection.json" -e "PostmanCollection/Prod.env.json"
+postman collection run "PostmanCollection/Фокстрот" -e "PostmanCollection/local.postman_environment.json" -i "<назва запиту або теки>"
 ```
+
+Повний прогін колекції не робити — частина запитів запускає джоби на стендах. Старі JSON-колекції
+(`PostmanTests/`, задачні в `qa-toolkit/tasks/<KEY>/api/`) — далі через `newman run <файл>.json`.
 
 Навіщо це в ручному тестуванні:
 

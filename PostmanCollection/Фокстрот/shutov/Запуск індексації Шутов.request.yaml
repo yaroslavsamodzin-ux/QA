@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://shutov.api-exchange.foxtrot.cloud/v0/data-index/elasticsearch
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{token_shutov}}"
+order: 3000

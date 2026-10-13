@@ -1,0 +1,20 @@
+$kind: http-request
+description: |-
+  Джоба по таскі
+
+  [https://jira.entri.com.ua/browse/CMS-27181](https://jira.entri.com.ua/browse/CMS-27181)
+
+  написать ване  
+  найди в редисе такой ключ - pwsc-\*  
+  ключа нет  
+  запускаем джобу  
+  что-бы он потом подключиться к той базе данных  
+  и проверил ещё раз  
+  и когда ключ есть - идти на сайт проверять всё остальноеEndFragment
+url: http://samodzin.api-exchange.foxtrot.cloud/v1/1/job/services_redis/execute
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+order: 3000

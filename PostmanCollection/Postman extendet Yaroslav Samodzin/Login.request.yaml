@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{BASE_URL}}users/login"
+method: POST
+headers:
+  Authorization: Token {{tokenConduit}}
+  Content-Type: application/json
+body:
+  type: text
+  content: |
+    {
+      "user": {
+        "email": "{{emailConduit}}",
+        "password": "{{passwordConduit}}"
+      }
+    }
+order: 2000

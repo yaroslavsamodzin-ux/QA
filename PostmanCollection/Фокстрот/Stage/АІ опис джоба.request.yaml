@@ -1,0 +1,18 @@
+$kind: http-request
+url: http://stage.api-ai-generator.foxtrot.local/reviewsSummaryBulk
+method: GET
+headers:
+  login: "{{api_login}}"
+  password: "{{api_password}}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+scripts:
+  - type: afterResponse
+    code: |
+      pm.test("Status code is 200", function () {
+          pm.response.to.have.status(200);
+      });
+    language: text/javascript
+order: 4000

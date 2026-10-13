@@ -1,0 +1,43 @@
+$kind: http-request
+url: "{{BASE_URL}}users"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "user": {
+        "username": "{{usernameConduit}}",
+        "email": "{{emailConduit}}",
+        "password": "{{passwordConduit}}"
+      }
+    }
+scripts:
+  - type: afterResponse
+    code: "pm.collectionVariables.set(\"emailConduit\", pm.response.json().user.email);\r
+
+      pm.collectionVariables.set(\"tokenConduit\", pm.response.json().user.token);\r
+
+      \r
+
+      \r
+
+      // 2) Парсимо ФАКТИЧНЕ тіло запиту (із підставленими {{$random...}}) і зберігаємо пароль\r
+
+      const resolved = pm.variables.replaceIn(pm.request.body.raw);\r
+
+      const pwd = JSON.parse(resolved).user.password;\r
+
+      pm.collectionVariables.set('passwordConduit', pwd);"
+    language: text/javascript
+  - type: beforeRequest
+    code: "const ts = Date.now();\r
+
+      pm.collectionVariables.set(\"emailConduit\", `qa_${ts}@gmail.com`);\r
+
+      pm.collectionVariables.set(\"usernameConduit\", `qa_user_${ts}`);\r
+
+      pm.collectionVariables.set(\"passwordConduit\", \"Secret123!\");"
+    language: text/javascript
+order: 1000

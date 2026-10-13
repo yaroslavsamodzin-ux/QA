@@ -1,0 +1,9 @@
+$kind: http-request
+name: Запуск джоби по генерації АІ відгуків
+url: http://stage.api-exchange.foxtrot.local/v1/3/job/reviews_summary/execute
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+order: 3000

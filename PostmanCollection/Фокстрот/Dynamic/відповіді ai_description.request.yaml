@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://samodzin.api-catalog.foxtrot.cloud/v0/38044/1/products/ai/description-scroll
+method: GET
+headers:
+  - key: login
+    value: "{{ai_login}}"
+    disabled: true
+  - key: password
+    value: "{{ai_password}}"
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+order: 6000

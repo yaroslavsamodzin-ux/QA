@@ -102,7 +102,8 @@ qa-toolkit/
   `npx playwright install chromium`, якщо скрипт скаржиться на відсутній executable.
 - **adb** — ставиться скриптом `android/setup.ps1` у `%LOCALAPPDATA%\platform-tools`,
   без прав адміністратора і без root на телефоні.
-- **newman** — уже встановлений глобально, для колекцій із `PostmanCollection/`.
+- **Postman CLI** (`postman`, 1.31) — запускає YAML-колекцію `PostmanCollection/Фокстрот/`, спільну з
+  застосунком Postman; **newman** — для JSON-колекцій (`PostmanTests/`, задачних). Див. `PostmanCollection/README.md`.
 - **VPN** — обовʼязковий для Kibana.
 
 ## Особливості середовища

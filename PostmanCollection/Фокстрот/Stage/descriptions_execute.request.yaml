@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://stage.api-exchange.foxtrot.local/v1/1/job/descriptions/execute
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+order: 8000

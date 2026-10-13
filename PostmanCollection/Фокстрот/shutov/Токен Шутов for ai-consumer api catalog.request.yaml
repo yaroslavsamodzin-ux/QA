@@ -1,0 +1,27 @@
+$kind: http-request
+url: https://shutov.api-catalog.foxtrot.cloud/v0/authentication/token
+method: GET
+headers:
+  login: "{{ai_login}}"
+  password: "{{ai_password}}"
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status code is 200\", function () {\r
+
+      \    pm.response.to.have.status(200);\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Response is valid JSON and contains token\", function () {\r
+
+      \    pm.response.to.be.json;\r
+
+      \    pm.expect(pm.response.json()).to.have.property(\"token\");\r
+
+      \    pm.collectionVariables.set(\"token\", pm.response.json().token);\r
+
+      });"
+    language: text/javascript
+order: 2000

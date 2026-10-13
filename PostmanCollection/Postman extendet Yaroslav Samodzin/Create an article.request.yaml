@@ -1,0 +1,35 @@
+$kind: http-request
+url: "{{BASE_URL}}articles"
+method: POST
+headers:
+  Authorization: Token {{tokenConduit}}
+body:
+  type: json
+  content: "{\r
+
+    \t\"article\":{\r
+
+    \    \"title\": \"string\",\r
+
+    \    \"description\": \"string\",\r
+
+    \    \"body\": \"string\",\r
+
+    \    \"tagList\": []\r
+
+    \  }\r
+
+    }"
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Successful POST request\", function () {\r
+
+      \    pm.expect(pm.response.code).to.be.oneOf([200, 201]);\r
+
+      \  const h = pm.response.json();\r
+
+      pm.collectionVariables.set(\"slugConduit\", h.article.slug);\r
+
+      });"
+    language: text/javascript
+order: 3000

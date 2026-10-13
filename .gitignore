@@ -4,6 +4,11 @@ node_modules
 Postman_Vault_Key*.txt
 *.vault-key
 .env
+# Postman: значення логінів/паролів — лише локально; колекція тримає {{змінні}}
+*.local.postman_environment.json
+PostmanCollection/local.postman_environment.json
+PostmanCollection/postman/environments/
+postman-cli-reports/
 
 # Службове Claude Code
 .claude/worktrees/
