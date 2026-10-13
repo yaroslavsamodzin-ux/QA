@@ -12,6 +12,9 @@ variables:
   - key: token_shutov
     value: ""
     secret: false
+  - key: cmp_base
+    value: "http://samodzin.api-main.foxtrot.cloud"
+    secret: false
   - key: token_api_main
     value: ""
     secret: false

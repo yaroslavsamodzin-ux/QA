@@ -1,7 +1,7 @@
 $kind: http-request
 description: |-
   Контроль: перевірка Count == 0 тут була ще до MR !901 — 200 [] і до, і після фіксу.
-url: "http://samodzin.api-main.foxtrot.cloud/v0/38044/1/comparison/{{cmp_customerId}}/{{cmp_classId}}/category-products"
+url: "{{cmp_base}}/v0/38044/1/comparison/{{cmp_customerId}}/{{cmp_classId}}/category-products"
 method: GET
 auth:
   type: bearer

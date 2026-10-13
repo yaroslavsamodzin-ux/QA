@@ -1,7 +1,7 @@
 $kind: http-request
 description: |-
   Очікуємо 200 [] (гілка id == null), не 500.
-url: "http://samodzin.api-main.foxtrot.cloud/v0/38044/1/comparison/999999999/all-products"
+url: "{{cmp_base}}/v0/38044/1/comparison/999999999/all-products"
 method: GET
 auth:
   type: bearer

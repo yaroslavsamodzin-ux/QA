@@ -1,5 +1,5 @@
 $kind: http-request
-url: "http://samodzin.api-main.foxtrot.cloud/v0/38044/1/comparison/{{cmp_customerId}}/{{cmp_classId}}/{{cmp_objectId}}/add-product"
+url: "{{cmp_base}}/v0/38044/1/comparison/{{cmp_customerId}}/{{cmp_classId}}/{{cmp_objectId}}/add-product"
 method: PUT
 auth:
   type: bearer

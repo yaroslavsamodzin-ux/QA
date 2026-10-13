@@ -1,7 +1,7 @@
 $kind: collection
 description: |-
   CMS-28047 / MR foxtrot-api-main !901: all-products з порожнім порівнянням давав 500.
-  Стенд samodzin. Спершу «0 Токен api-main», далі по порядку: P2–P5 додають і ВИДАЛЯЮТЬ товари,
+  Стенд — змінна cmp_base (samodzin з фіксом; для «до фіксу» — api-main dev-01 або стейджу). Спершу «0 Токен api-main», далі по порядку: P2–P5 додають і ВИДАЛЯЮТЬ товари,
   P4b очищає все порівняння клієнта — для них потрібен тестовий клієнт з порожнім порівнянням.
   Змінні колекції: cmp_customerId, cmp_classId/cmp_objectId, cmp_classId2/cmp_objectId2, token_api_main.
 order: 6000

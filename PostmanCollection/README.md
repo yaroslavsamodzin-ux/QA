@@ -28,6 +28,9 @@ Postman CLI. Що змінив у застосунку — те й запуск�
   postman collection run "PostmanCollection/postman/collections/Фокстрот" -e "PostmanCollection/local.postman_environment.json" -i "Токен мій"
   ```
   `-i` — назва запиту або теки. **Усю колекцію не запускати:** частина запитів стартує джоби на стендах.
+  Postman CLI 1.31 **не читає змінні колекції** з `.resources/definition.yaml` (застосунок — читає): їх треба
+  передати `--env-var key=value`, напр. для папки CMS-28048:
+  `--env-var cmp_base=http://samodzin.api-main.foxtrot.cloud --env-var cmp_customerId=<id> --env-var cmp_classId=22281`.
 
 ### Правила
 

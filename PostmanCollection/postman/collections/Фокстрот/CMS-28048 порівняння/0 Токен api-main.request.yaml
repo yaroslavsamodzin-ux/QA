@@ -1,7 +1,7 @@
 $kind: http-request
 description: |-
   Облікові дані — з оточення «Фокстрот local» (PostmanCollection/local.postman_environment.json). Не перевірено, що api-main приймає той самий apiConsumer, що й api-exchange: якщо 401 — потрібен інший логін.
-url: "http://samodzin.api-main.foxtrot.cloud/v0/authentication/token"
+url: "{{cmp_base}}/v0/authentication/token"
 method: GET
 headers:
   login: "{{api_login}}"

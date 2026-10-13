@@ -1,7 +1,7 @@
 $kind: http-request
 description: |-
   400
-url: "http://samodzin.api-main.foxtrot.cloud/v0/38044/1/comparison/{{cmp_customerId}}/-1/category-products"
+url: "{{cmp_base}}/v0/38044/1/comparison/{{cmp_customerId}}/-1/category-products"
 method: GET
 auth:
   type: bearer
