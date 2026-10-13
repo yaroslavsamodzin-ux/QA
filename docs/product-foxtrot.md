@@ -91,7 +91,7 @@ Default branch скрізь `master`, крім `evinent.foxtrot` (`develop`) і
 
 ### Джоби стенду — через колекцію «Фокстрот»
 
-Тека `PostmanCollection/Фокстрот/` (YAML, з 13.10.2026 — спільна для Postman і Claude) тримає запуски
+Тека `PostmanCollection/postman/collections/Фокстрот/` (YAML, з 13.10.2026 — спільна для Postman і Claude) тримає запуски
 джоб по стендах. Ендпоінт api-exchange вимагає Bearer-токен, який видає окремий запит тієї ж колекції:
 
 ```

@@ -2,8 +2,10 @@
 
 ## «Фокстрот» — одна колекція для Postman і для Claude
 
-Джерело правди — тека **`Фокстрот/`** (формат Postman Local: YAML, по файлу на запит).
-Postman бачить її через `.postman/resources.yaml` (`localResources → ../Фокстрот`), Claude запускає її
+Джерело правди — тека **`postman/collections/Фокстрот/`** (формат Postman Local: YAML, по файлу на запит).
+Postman показує в панелі Collections лише теки з `postman/collections/` — колекцію поза нею він не бачить
+і через Import зробить копію (так з'явився дубль `Фокстрот-1`). У `.postman/resources.yaml` тека прив'язана
+до хмарної колекції «Фокстрот» (`cloudResources`). Claude запускає її
 Postman CLI. Що змінив у застосунку — те й запускається з термінала, і навпаки; диф видно в git.
 
 | Тека | Що там |
@@ -23,13 +25,13 @@ Postman CLI. Що змінив у застосунку — те й запуск�
   Нові облікові дані додавай у це оточення (або Vault), не в заголовок запиту.
 - **Термінал / Claude:**
   ```
-  postman collection run "PostmanCollection/Фокстрот" -e "PostmanCollection/local.postman_environment.json" -i "Токен мій"
+  postman collection run "PostmanCollection/postman/collections/Фокстрот" -e "PostmanCollection/local.postman_environment.json" -i "Токен мій"
   ```
   `-i` — назва запиту або теки. **Усю колекцію не запускати:** частина запитів стартує джоби на стендах.
 
 ### Правила
 
-- Пароль, токен, телефон, cookie — тільки в оточення. Перед комітом: `grep -rn "password: [^\"]" PostmanCollection/Фокстрот`
+- Пароль, токен, телефон, cookie — тільки в оточення. Перед комітом: `grep -rn "password: [^\"]" PostmanCollection/postman/collections/Фокстрот`
   має бути порожнім.
 - Назва запиту = ім'я файлу; `/` у назві Postman замінює на `_`.
 - Старий `Фокстрот.postman_collection.json` прибрано 13.10.2026 — усе з нього перенесено в теку
