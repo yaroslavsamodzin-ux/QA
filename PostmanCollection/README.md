@@ -13,12 +13,13 @@ Postman CLI. Що змінив у застосунку — те й запуск�
 | `Dynamic` | samodzin.*.foxtrot.cloud: токени, джоби, AI-описи |
 | `Stage` | stage.*.foxtrot.local (через RDP/VPN) |
 | `kviatkovska`, `osipov`, `shutov` | dyn-стенди колег |
-| `CMS-28048 порівняння` | api-main samodzin, порівняння: P/N/R/C-кейси, K1 (контроль), V1–V9 (невалідні значення). Змінні `cmp_*` і `token_api_main` — у змінних колекції; P4b очищає порівняння клієнта |
+| `CMS-28048 порівняння` | api-main samodzin, порівняння: P/N/R/C-кейси, K1 (контроль), V1–V9 (невалідні значення). Змінні `cmp_*` — в оточенні, `token_api_main` ставить запит «0 Токен»; P4b очищає порівняння клієнта |
 
 ### Логіни й паролі
 
 У запитах — лише змінні: `{{api_login}}`, `{{api_password}}` (apiConsumer, api-exchange) і
-`{{ai_login}}`, `{{ai_password}}` (ai-consumer, api-catalog). Значення — у
+`{{ai_login}}`, `{{ai_password}}` (ai-consumer, api-catalog), `{{api_main_login}}`, `{{api_main_password}}` (api-main має власні
+акаунти з `foxtrot.api-main/appsettings.json` → `AuthenticationSettings.Accounts`; apiConsumer він не знає — 400 «Token for login … has not been received»). Значення — у
 **`local.postman_environment.json`**, він у `.gitignore` і нікуди не комітиться.
 
 - **Postman:** Import → `local.postman_environment.json` → вибрати оточення «Фокстрот local» справа вгорі.
