@@ -281,6 +281,16 @@ Trade-in (Breezy), відеоконсультації (TokBox/OpenTok), чат (
 На динамічному стенді `foxtrot-api` є лише тоді, коли збірка з `DEPLOY_API = true`
 (у #11260 його не було, `samodzin.api.foxtrot.cloud` не резолвиться).
 
+**Ланцюжок мобільних фіч через T22** (14.10.2026, CMS-28469 / FMA-7651, Daily Check-in):
+застосунок → `foxtrot-api` (`api/v1/customer/...`, `customerId` з токена через
+`[FromTokenCustomer]`, тут же зведення даних і кеш) → `foxtrot-api-main`
+(`/v0/{city}/{lang}/customer/{customerId}/...`, тонкий проксі під службовим акаунтом) →
+`foxtrot-common` (`third-party-integration/foxtrot.api-t22/T22CustomerProvider.cs`,
+`{T22}/services/customer/api/...`). Одна FMA-задача дає MR у всіх трьох репо, а в CMS-клон
+на тестування сайтовій команді зазвичай ідуть лише `api-main` + `common`; MR у `foxtrot-api`
+бере мобільний QA (FMA-підзадача типу Test). Помилки T22 у `T22CustomerProvider` ковтаються:
+метод повертає `null` або `[]`, а api-main віддає це як успіх (`Ok(null)` → 204, `[]` → 200).
+
 Порівняння на сайті (samodzin, 13.10.2026): `ExternalCustomer = true`, рядки — у
 `externalcustomercomparisons` (`customerid`, `classid`, `catalogobjectid`, `datein`). Ендпоінти сайту:
 `POST /uk/products/addtocomparelist` (`classId`, `objectId`), `DELETE /uk/compare/remove`,
