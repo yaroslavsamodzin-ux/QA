@@ -1,11 +1,11 @@
 $kind: http-request
 description: |-
-  Облікові дані — з оточення «Фокстрот local» (PostmanCollection/local.postman_environment.json). Не перевірено, що api-main приймає той самий apiConsumer, що й api-exchange: якщо 401 — потрібен інший логін.
+  Облікові дані — з оточення «Фокстрот local» (PostmanCollection/local.postman_environment.json). api-main має власні акаунти (foxtrot-api-main/appsettings.json → AuthenticationSettings.Accounts); apiConsumer з api-exchange він не знає (400). Тут — mobile-app-consumer (роль mobile), той самий шлях, що в застосунку. Порожнє порівняння в ComparisonController дозволене ролям site і mobile.
 url: "{{cmp_base}}/v0/authentication/token"
 method: GET
 headers:
-  login: "{{api_login}}"
-  password: "{{api_password}}"
+  login: "{{api_main_login}}"
+  password: "{{api_main_password}}"
 scripts:
   - type: afterResponse
     code: |-
