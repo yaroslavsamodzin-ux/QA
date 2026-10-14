@@ -291,6 +291,25 @@ Trade-in (Breezy), відеоконсультації (TokBox/OpenTok), чат (
 бере мобільний QA (FMA-підзадача типу Test). Помилки T22 у `T22CustomerProvider` ковтаються:
 метод повертає `null` або `[]`, а api-main віддає це як успіх (`Ok(null)` → 204, `[]` → 200).
 
+**Тестовий T22 напряму:** шлюз `https://gate-test.foxtrot.ua/services/customer/api/...` у Work Chrome
+відкривається без токена — GET-роути T22 можна читати прямо з браузера й звіряти з api-main 1:1.
+Клієнт за телефоном: `customers/active/phones/{380…}?type=INDIVIDUAL` → `id` (= `customerId`) і
+`loyaltyPointValue` (баланс бонусів, база для перевірки нарахувань).
+
+**Куди api-main ходить за T22:** `GetT22Url()` = `CustomSettings.SendToProductionT22 ? T22Settings.BaseUrl :
+BaseUrlTest`. У `foxtrot.api-main/appsettings.json` на master (14.10.2026) `SendToProductionT22: true`,
+`BaseUrl` = `foxcc-new.foxtrot.ua` (прод T22), `BaseUrlTest` = `foxcc-dev.foxtrot.ua`. Тобто динамічний стенд
+без перевизначення конфігу бере **прод T22** — нові роути T22, які є лише на тесті, там відповідають помилкою, а
+api-main віддає 204/`[]`. Обидва хости `foxcc-*` з браузера не відкриваються (внутрішня мережа).
+
+**Нова фіча T22 = блокер для стенда до релізу T22 на прод.** Перевірено 14.10.2026 (CMS-28469): прод-шлюз
+`gate.foxtrot.ua` (потрібен доступ) на `…/api/daily-bonuses/days` і `…/customers/{id}/daily-bonuses` віддає 404
+«No static resource», а `gate-test` — 200 з даними; решта роутів прод-шлюзу (`customers/active/phones/…`) — 200.
+Тож перед тестуванням інтеграції з новими роутами T22 спершу перевірити їх на `gate.foxtrot.ua`. Обійти можна
+лише конфігом середовища, не MR: змінна оточення пода api-main `CustomSettings__SendToProductionT22=false`
+(у параметрах Jenkins `deploy-dyn-env-paralell` такої опції немає — через девопса). Чи `foxcc-dev` = `gate-test`,
+не з'ясовано.
+
 Порівняння на сайті (samodzin, 13.10.2026): `ExternalCustomer = true`, рядки — у
 `externalcustomercomparisons` (`customerid`, `classid`, `catalogobjectid`, `datein`). Ендпоінти сайту:
 `POST /uk/products/addtocomparelist` (`classId`, `objectId`), `DELETE /uk/compare/remove`,
