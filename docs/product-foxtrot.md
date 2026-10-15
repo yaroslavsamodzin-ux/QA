@@ -116,6 +116,11 @@ GET http://<user>.api-exchange.foxtrot.cloud/v1/1/job/services_redis/execute
 «без фіксу», результат перевірки — тільки з `foxtrot_dev`. На 30.09.2026 у `foxtrot_dev` є
 `backup_current_202609280953_01`, тобто дані туди заливали зі стейдж-бекапу 28.09.
 
+**Персональні дані в обох БД знеособлені** (перевірено 15.10.2026, CMS-28186): `customers` і `customersphones` —
+0 рядків, `ordercustomers.phone` замасковані (1–5 символів, літери). Справжні номери в `foxtrot_dev` є лише в
+тестових замовленнях зі стендів (33 шт., усі `380…`). На питання «чи бувають у клієнтів такі дані» ці БД не
+відповідають, тут потрібні аналітик або прод.
+
 **`rests` відповідає `Job rests failed` → спершу конфіг стенда.** 30.09.2026 на samodzin
 причина була `defaultCityId ('0')` у `CityRepository.GetCitiesStoragesRelationships`: на стенді
 не заданий `RestsJobSettings:CityId` (у `appsettings.json` master він `11`). Відповідь API
@@ -518,6 +523,8 @@ MSTest**, `netcoreapp3.1`, `chromedriver.exe` лежить у репо. Обла
   з `undefined`. `signInToEs` старий вхід публікував ще до CMS-28186.
 - Чекаут: телефон у `#Phone` — без «38» («+38» — окремий селектор країни); власний payload замовлення
   (`localStorage._requestsDetails.customer.phone`) — у форматі `380…`.
+- `normalizeUkrainePhone()` (`src/scripts/common.js`): лише цифри; 10 цифр з «0» → без нуля; інакше перші
+  9 цифр. Обраної країни не знає, тож «+48 123456789» → `123456789` → у події `380123456789` (CMS-28186, 2d1fdd71).
 - Виклики на **завантаженні** сторінки звичайним хуком не зловити (defer-скрипти вже відпрацювали), iframe
   стенд забороняє. Робочий спосіб — popup того ж домену по реальному кліку + цикл через `MessageChannel`
   в opener (не троттлиться), обгорнути `popup.eS.c`, щойно з'явилась заглушка
@@ -534,6 +541,10 @@ https://git.foxtrot.ua/<група>/<репо>/-/blob/master/<шлях>?plain=1
 відкрити, зачекати ~3 с, забрати текст сторінки. Списки (проєкти, мітки, гілки,
 дерево) зручніше через API: `/api/v4/groups/121/projects?simple=true`,
 `/api/v4/groups/121/labels`, `/api/v4/projects/<id>/repository/tree?ref=master&path=<шлях>`.
+
+Diff одного коміту — сторінка коміту вантажить diff ліниво, а `.diff` завантажується файлом. Працює API:
+`/api/v4/projects/274/repository/commits/<sha>/diff` (274 = foxtrot-site). Знайти функцію у великому файлі гілки:
+`/api/v4/projects/274/search?scope=blobs&search=<ім'я>&ref=<гілка>` — повертає фрагменти з номером рядка.
 
 ## Застереження
 
