@@ -307,6 +307,12 @@ BaseUrlTest`. У `foxtrot.api-main/appsettings.json` на master (14.10.2026) `S
 без перевизначення конфігу бере **прод T22** — нові роути T22, які є лише на тесті, там відповідають помилкою, а
 api-main віддає 204/`[]`. Обидва хости `foxcc-*` з браузера не відкриваються (внутрішня мережа).
 
+**Стенд на тестовому T22 без авторизації ламає кошик і вхід** (15.10.2026, CMS-28186, samodzin). Після перемикання
+api-main на `foxcc-dev` (під CMS-28469) усі виклики T22 віддають 401. `cart-cost` 401 → `/uk/cart.html` і чекаут показують
+порожній кошик навіть одразу після «Купити» (лічильник у шапці при цьому живий). Вхід по SMS: `phones` 401 →
+`/api/phone-auth` без BaseAddress → `PUT customers` 401 → NRE `AccountController.ProcessNewCustomer`. Перед прогоном
+будь-якої задачі з кошиком чи входом — Kibana `message:"Unauthorized" and message:"T22Consumer"`.
+
 **Нова фіча T22 = блокер для стенда до релізу T22 на прод.** Перевірено 14.10.2026 (CMS-28469): прод-шлюз
 `gate.foxtrot.ua` (потрібен доступ) на `…/api/daily-bonuses/days` і `…/customers/{id}/daily-bonuses` віддає 404
 «No static resource», а `gate-test` — 200 з даними; решта роутів прод-шлюзу (`customers/active/phones/…`) — 200.
@@ -521,6 +527,11 @@ MSTest**, `netcoreapp3.1`, `chromedriver.exe` лежить у репо. Обла
   `#main[data-category-title]`), ProductPage (PDP), CustomerData з `#userInfo`/thank-you/профілю.
 - Старі сторінки: `wwwroot/src/scripts/softcube-events.js`, шлють `PageView` явно; головна — ще `MainPage`
   з `undefined`. `signInToEs` старий вхід публікував ще до CMS-28186.
+- Скрипт eSputnik шле `webcontact` **при зміні** телефону/email (стан у `localStorage.esState.webContact`), однаковий
+  payload CustomerData повторно в мережу не відправляє; власної черги немає — подія, викликана за <0,5 с до `location.reload()`,
+  губиться (CMS-28186 D7). Нова сесія для тесту — видалити ключі `es*` з localStorage.
+- Гостьове замовлення на зареєстрований номер відкриває попап «Підтвердження телефону» (SMS/Viber на номер); закриття попапа
+  хрестиком **оформлює замовлення як гостьове**. Чужі номери для гостьових замовлень на стенді не використовувати — він ходить у прод-T22.
 - Чекаут: телефон у `#Phone` — без «38» («+38» — окремий селектор країни); власний payload замовлення
   (`localStorage._requestsDetails.customer.phone`) — у форматі `380…`.
 - `normalizeUkrainePhone()` (`src/scripts/common.js`): лише цифри; 10 цифр з «0» → без нуля; інакше перші
