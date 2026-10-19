@@ -371,6 +371,15 @@ api-main на `foxcc-dev` (під CMS-28469) усі виклики T22 відд�
 локалізації взагалі немає** (у ноутбуках це десятки товарів на 32 тисячі).
 Замір: `qa-toolkit/tasks/CMS-27767/evidence/noutbuki-locales-2026-09-18.txt`.
 
+### Акції з вкладками: фільтр на 0 товарів → 500 (15.10.2026)
+
+Акції з `specialoffers.showtabs = true` (на стейджі 441 і 47439) будують вкладки-категорії з
+товарів, що лишились після фільтра; список категорій — у `extradata`, а не в `specialoffersgoodslinks`
+(там у 441 нуль записів, хоча на сторінці 11 тис. товарів). Фільтр, що дає 0 товарів (напр. «Ціна» 3–4
+на `/uk/actions/441`), → AJAX `/uk/actions/update/441` → `.First()` у `Views/SpecialOffer/_Tabs.cshtml`
+→ `InvalidOperationException: Sequence contains no elements`, сторінка висне в сірому оверлеї.
+Є і на проді (~60 за тиждень). Фікс — окремий PR, на 15.10 протестований і чекає релізу.
+
 ### Подарунки до товару: `packages` type 7 (13.10.2026, стейдж)
 
 - **Подарунок = пакет `packages.packagetypeid = 7`**: головний товар у `mainobjectclassid/mainobjectid`,
@@ -482,6 +491,44 @@ MSTest**, `netcoreapp3.1`, `chromedriver.exe` лежить у репо. Обла
 - Видалення товару має **два** варіанти розмітки: `.checkout-tovar__remove` (десктоп,
   іконка-хрестик) і `.checkout-tovar__remove_mob` (мобілка, текст «Видалити»;
   для зв'язки товар+послуга — «Видалити все»). Перевіряти обидва.
+
+### Чекаут: доставки й додаткові послуги з T22 (CMS-28605, 16.10.2026)
+
+- **Список доставок рендерить сервер** (`Views/Checkout/_Deliveries.cshtml`), XHR з даними T22 немає. Блоки:
+  Foxtrot (`IsFoxtrot`) і кур'єри НП / Meest / Укрпошта — з «Додатковими послугами» (підйом, поверх, ліфт,
+  «Розміщення на місце у квартирі»); iPost / Uklon / відділення / поштомати / самовивіз — без них.
+  DOM для перевірки: `input.delivery-input[name=deliveryType]` (id `delivery_<typeDeliveryId>_<shipmentId>`, напр.
+  `delivery_129_150` = НП Кур'єр), у блоці `.liftonfloor` і `.delivery-to-flat-input[data-price]`.
+- **Джерело даних — T22 `calculate-available`**: `POST https://gate.foxtrot.ua/integration-api-reactive/api/deliveries/calculate-available`.
+  У Work Chrome викликається `fetch`-ом зі сторінки самого `gate.foxtrot.ua` (GET дає 405). Тіло — як у Request з логів
+  api-catalog (`calcDetails`, `city.cityId`, `deliveryCost {liftExist, floor}`, `saleDetails[]`, `strategy: LOGISTIC`, `channelId: 2`).
+  Це розрахунок, нічого не створює. Стенд ходить у цей самий прод-шлюз.
+- **У dyn-Kibana** api-catalog пише `JVeraProvider::GetDeliveryForMultipleProducts Request Json` і `… Response Json`
+  (`fields.LogType: api-catalog-<user>`). Великі Response (кошик з кількох товарів) у лог **не потрапляють** — лишається тільки Request.
+- **`placementCost`**: є на верхньому рівні `deliveryCost` і в кожному `byWh[]`. Сайт (`DeliveryProvider`) рахує
+  `DeliveryToFlatCost` по `byWh`: будь-який null → null. Станом на 16.10.2026 прод-T22 по складах ніде не віддає не-null
+  (10 товарів у Києві, 8 міст, 7 днів логів), а для кошика з кількох товарів верхній рівень = **0** при null по складах.
+- **ES|QL у Discover через URL** працює і вміє те, чого не вміє KQL по `message`: `RLIKE`, `GROK`, `STATS … BY`.
+  `_a=(dataSource:(type:esql),query:(esql:'FROM logstash9-* METADATA _id, _index | WHERE … | KEEP …'))`;
+  `+` у регулярці кодувати як `%2B`, `last` — зарезервоване слово.
+- **Номер замовлення на thank-you ≠ `orders.id`.** Сторінка подяки показує зовнішній номер (19084920), а в БД стенда
+  (`pg.py -t dev`) замовлення лежить під своїм `id` (26154950); шукати останні: `where id > (select max(id) - 300 from orders)`
+  (фільтр за `datein` / `groupid` впирається в таймаут 60 с). Доставка й прапорці — у `orders.customproperties` (JSON-рядок:
+  `DeliveryTitle`, `DeliveryOnFloor`, `HasFloor`, `DeliveryAddress`, `DeliveryToFlatCost` — лише коли послуга обрана).
+- **Кошик з товарів на різних складах відкриває спліт-чекаут** (`Splitted/IndexSplitted.cshtml`, скрипт
+  `checkout-splitted-page.js`, плашка «Вибрані товари знаходяться на різних складах…» і «Замовлення №1/№2»; сабміт —
+  `/uk/splittedcheckout/submit`, thank-you — `/uk/cartsplitted/thanks/<groupId>`). Звичайний шаблон (`checkout-page.js`,
+  доставки — `_Deliveries.cshtml`) — для 1 товару, передзамовлення, комбінованого товару, трейд-іну, якщо груп немає, або
+  з `?simple=true` (так можна відкрити той самий кошик на звичайному шаблоні). Логіка — `CheckoutController.Index`.
+  Відрізнити шаблон: `[...document.scripts].map(s=>s.src)` → `checkout-page.js` чи `checkout-splitted-page.js`.
+  (16.10.2026 тут було записано навпаки — помилка, виправлено 19.10.)
+- **У спліт-чекауті «Розміщення на місце у квартирі» не буває взагалі:** у `Splitted/_CommonAddresses` і
+  `_SeparateAddresses` блок закоментований `@* … *@`, лишається тільки підйом на поверх. Тестувати розміщення —
+  тільки на звичайному шаблоні (один товар або `?simple=true`).
+- **Розміщення колись працювало:** у БД stage 35 замовлень `DeliveryToFlatCost: 5` (Кур'єр Фокстрот, 23.11.2024–31.05.2025),
+  далі лише `0` (Meest). Тариф вмикається в Т2.2 / Управление тарифами КД / «На место в кв» (галочка «Считать»), не на сайті
+  (CMS-4164; Confluence T22 pageId 36408662). Ознака за ТЗ — `deliveryCost.placementCost`; T22 для кількох складів складає
+  `byWh` і рахує null як 0 (799 + 329 = 1128, `placementCost` null + null = 0).
 
 ### Мобільний таббар і каталог: дві реалізації (CMS-25439, 07.10.2026)
 
