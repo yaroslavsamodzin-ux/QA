@@ -23,6 +23,11 @@ $tools = @(
 Set-Location $repo
 "=== $(Get-Date -Format s) старт ===" | Out-File -FilePath $log -Encoding utf8
 
+# Hook-и Claude Code на Windows виконуються через Git Bash. Без нього $CLAUDE_PROJECT_DIR у
+# команді readonly-guard не розкривається, hook падає і (fail-closed) блокує всі тулзи Chrome.
+# Git тут стоїть у D:\Git, а не в Program Files, тому шлях задаємо явно.
+if (-not $env:CLAUDE_CODE_GIT_BASH_PATH) { $env:CLAUDE_CODE_GIT_BASH_PATH = 'D:\Git\bin\bash.exe' }
+
 $prompt | & claude -p --chrome `
   --permission-mode acceptEdits `
   --allowedTools $tools `
