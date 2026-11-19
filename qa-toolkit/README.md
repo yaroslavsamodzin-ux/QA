@@ -88,7 +88,9 @@ qa-toolkit/
     adb.ps1            команди під тестування
   screenshots/
     window-capture.ps1 знімок вікна браузера разом з його UI
-  tasks/<KEY>/         докази по задачі: скріншоти, GIF, JSON логів, звіт
+  tasks/<KEY>/         незавершена задача: скріншоти, GIF, JSON логів, звіт
+  tasks/_done/<KEY>/   завершені задачі й разові дослідження
+  tasks/_watch/        робоча папка /qa-watch
 ```
 
 Згенеровані папки (`report/`, `tasks/`, `test-results/`) у git не потрапляють —
