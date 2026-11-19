@@ -17,7 +17,9 @@ $prompt  = Get-Content -Raw -Encoding UTF8 (Join-Path $here 'prompt.md')
 $tools = @(
   'mcp__claude-in-chrome',
   'Read', 'Glob', 'Grep', 'Write', 'Edit',
-  'Skill', 'Artifact', 'ToolSearch', 'PushNotification'
+  'Skill', 'Artifact', 'ToolSearch', 'PushNotification',
+  # Єдина дозволена shell-команда: перенесення завершеної папки в tasks/_done/
+  'Bash(powershell.exe -NoProfile -ExecutionPolicy Bypass -File qa-toolkit/daily-checklists/archive-task.ps1 *)'
 ) -join ','
 
 Set-Location $repo
