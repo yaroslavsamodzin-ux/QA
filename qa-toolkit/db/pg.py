@@ -6,6 +6,7 @@
     echo "select 1" | python qa-toolkit/db/pg.py
     python qa-toolkit/db/pg.py --target dev "select 1"   # foxtrot01-dev-shared / foxtrot_dev
     python qa-toolkit/db/pg.py -t dev --write -f CMS-28525.sql   # запис, лише в БД динамічних стендів
+    python qa-toolkit/db/pg.py -t dev01 "select 1"   # статичний стенд dev-01 / fox_dev_current
 
 Пароль береться з %APPDATA%\\postgresql\\pgpass.conf — у коді й аргументах його немає.
 Сесія відкривається з default_transaction_read_only=on: будь-який INSERT/UPDATE/DELETE/DDL
@@ -29,6 +30,8 @@ TARGETS = {
                   dbname="fox_stage_current", user="foxtrot_stage"),
     "dev": dict(host="foxtrot01-dev-shared.crlrw0q1dnnx.eu-central-1.rds.amazonaws.com",
                 dbname="foxtrot_dev", user="shared"),
+    "dev01": dict(host="foxtrot01-dev-postgres14.crlrw0q1dnnx.eu-central-1.rds.amazonaws.com",
+                  dbname="fox_dev_current", user="foxtrot_dev"),
 }
 CONN = dict(COMMON, **TARGETS["stage"])
 
@@ -54,10 +57,10 @@ if __name__ == "__main__":
     p.add_argument("sql", nargs="?")
     p.add_argument("-f", "--file")
     p.add_argument("-t", "--target", choices=TARGETS, default="stage")
-    p.add_argument("--write", action="store_true", help="зняти read-only (тільки для -t dev)")
+    p.add_argument("--write", action="store_true", help="зняти read-only (тільки для -t dev / dev01)")
     a = p.parse_args()
-    if a.write and a.target != "dev":
-        p.error("--write дозволений тільки з -t dev")
+    if a.write and a.target not in ("dev", "dev01"):
+        p.error("--write дозволений тільки з -t dev або -t dev01")
     CONN = dict(COMMON, **TARGETS[a.target])
     if a.write:
         CONN["options"] = "-c statement_timeout=60000"
