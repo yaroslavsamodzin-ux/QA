@@ -106,7 +106,7 @@ GET http://<user>.api-exchange.foxtrot.cloud/v1/1/job/services_redis/execute
 існування джоби без токена неможливо. Назви джоб — у `foxtrot-api-exchange`,
 `BusinessLayer/Providers/JobExecutionProvider.cs` (напр. `rests` → `RestsJob`,
 `products`). Токен короткоживучий: брати свіжий перед кожним запуском
-(`qa-toolkit/tasks/CMS-25396/run-job.js <job> <user>` робить обидва кроки). Прогін `services_redis` на повному стенді
+(`qa-toolkit/tasks/_done/CMS-25396/run-job.js <job> <user>` робить обидва кроки). Прогін `services_redis` на повному стенді
 займає ~1 секунду.
 
 **БД динамічних стендів — `foxtrot01-dev-shared` / `foxtrot_dev`, не стейдж.** Вона спільна
@@ -385,7 +385,7 @@ api-main на `foxcc-dev` (під CMS-28469) усі виклики T22 відд�
 Наслідок для коду: запит до класу можна побудувати тільки конкатенацією імені
 таблиці, тож у сервісах трапляється інтерпольований SQL (`cc_{className}`).
 Наслідок для QA: щоб знайти дані по всіх класах, потрібен згенерований
-`union all` по `classes` — див. `qa-toolkit/tasks/CMS-27767/queries.sql`.
+`union all` по `classes` — див. `qa-toolkit/tasks/_done/CMS-27767/queries.sql`.
 
 Назва товару має два джерела: старе `productcommonrelations.goodtitle` і
 `cc_<class>_.naimenovanie` за локаллю. Локалей у таблиці **три**, не дві:
@@ -397,7 +397,7 @@ api-main на `foxcc-dev` (під CMS-28469) усі виклики T22 відд�
 дорівнює `rows_total`. Тобто `nullif(naimenovanie, '')` на практиці ніколи не
 спрацьовує, а fallback на іншу локаль вмикається тільки там, де **рядка
 локалізації взагалі немає** (у ноутбуках це десятки товарів на 32 тисячі).
-Замір: `qa-toolkit/tasks/CMS-27767/evidence/noutbuki-locales-2026-09-18.txt`.
+Замір: `qa-toolkit/tasks/_done/CMS-27767/evidence/noutbuki-locales-2026-09-18.txt`.
 
 ### Акції з вкладками: фільтр на 0 товарів → 500 (15.10.2026)
 
@@ -448,7 +448,7 @@ api-main на `foxcc-dev` (під CMS-28469) усі виклики T22 відд�
   треба відповідь з БД за `code`, а не очікувати повного збігу кількості.
 - **Кеш `pd:`/`pdai:` пише джоба `descriptions`** (`DescriptionsJob`, api-exchange):
   `GET http://<user>.api-exchange.foxtrot.cloud/v1/1/job/descriptions/execute`, токен «Токен мій»
-  (`qa-toolkit/tasks/CMS-25396/run-job.js descriptions <user>`). На yatsun 29.09: «Updated 502029
+  (`qa-toolkit/tasks/_done/CMS-25396/run-job.js descriptions <user>`). На yatsun 29.09: «Updated 502029
   description records. Updated 535 reviews summary records». На samodzin 01.10 падала з 500
   `Value cannot be null. (Parameter 'configuration')` у `ProductsRedisService..ctor`: у конфігу
   api-exchange стенда немає підключення до products-Redis. Це конфіг стенда, а не баг.
@@ -614,7 +614,7 @@ MSTest**, `netcoreapp3.1`, `chromedriver.exe` лежить у репо. Обла
 - Виклики на **завантаженні** сторінки звичайним хуком не зловити (defer-скрипти вже відпрацювали), iframe
   стенд забороняє. Робочий спосіб — popup того ж домену по реальному кліку + цикл через `MessageChannel`
   в opener (не троттлиться), обгорнути `popup.eS.c`, щойно з'явилась заглушка
-  (`qa-toolkit/tasks/CMS-28186/evidence/capture-pageload.js`, опис — `…/2026-10-12_pageload_anon.md`).
+  (`qa-toolkit/tasks/_done/CMS-28186/evidence/capture-pageload.js`, опис — `…/2026-10-12_pageload_anon.md`).
 
 ## Як читати файли GitLab без клієнта
 

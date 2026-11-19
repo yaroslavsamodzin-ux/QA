@@ -2,7 +2,7 @@
 
 Використання:
     python qa-toolkit/db/pg.py "select 1"
-    python qa-toolkit/db/pg.py -f qa-toolkit/tasks/CMS-27767/queries.sql
+    python qa-toolkit/db/pg.py -f qa-toolkit/tasks/_done/CMS-27767/queries.sql
     echo "select 1" | python qa-toolkit/db/pg.py
     python qa-toolkit/db/pg.py --target dev "select 1"   # foxtrot01-dev-shared / foxtrot_dev
     python qa-toolkit/db/pg.py -t dev --write -f CMS-28525.sql   # запис, лише в БД динамічних стендів
